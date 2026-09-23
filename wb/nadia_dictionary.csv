@@ -1,0 +1,15 @@
+variable,type_or_unit,definition,rule
+row_id,string,Source office row identifier; one GP-head office,Unique across187 roster rows
+source_gp_serial; source_gp_key,string,Printed serial and source-PDF serial key,"Within-document identifiers, not national codes"
+q13,binary or missing,2013 Pradhan office women reservation,Full explicit source category; blank remainsNA
+caste13,category or missing,SC/ST/OBC/unrestricted caste allocation stratum,Distinct from women axis
+membership_row_id; membership_source_page; membership_source_bbox,source reference,Evidence for GP-to-block assignment,Unique printed name match; no deduplication of repeated source text
+demand_key,string,Normalized district/block/GP administrative report key,Unique in each187-row year; matched across both years
+household_months_2012; household_months_2014,household-month demand,Sum of twelve monthly household demand counts in FY2012–13 orFY2014–15,Not unique annual households; all12 values required
+person_months_2012; person_months_2014,person-month demand,Sum of twelve monthly person demand counts in FY2012–13 orFY2014–15,Not unique annual persons or person-days; all12 required
+linked_complete_eligible,boolean,Unique source/block links and complete treatment/covariates/outcomes,101GPs before support amendment
+singleton_caste_no_residual_support,boolean,Caste category has only one linked complete GP,Gobindapur retained in audit; excluded from common model sample
+analysis_eligible,boolean,Linked complete GP outside singleton caste category,"100GPs,50 women-reserved,13blocks"
+exclusion_reason,string,First failed identity/completeness/support criterion,All187 office records conserved
+estimate; conf.low; conf.high,outcome units,q13 OLS coefficient and marginal95% interval,Explicit HC2/HC3 or block CR2; equal GP weight
+p_holm,probability,Holm adjusted p-value across two outcomes per specification family,Not a simultaneous confidence interval

@@ -1,0 +1,15 @@
+{
+  "cd_gp_rows": 166,
+  "cd_complete": 161,
+  "cd_strict": 158,
+  "cd_village_rows": 498,
+  "cd_random_villages": 322,
+  "beaman_gp_rows": 165,
+  "explicit_2003": 163,
+  "survey_observed": 161,
+  "valid_2006_visits": 160,
+  "beaman_strict_2003": 158,
+  "beaman_strict_history": 146,
+  "sex_conflicts": 2,
+  "pooled_with_official_data": false
+}

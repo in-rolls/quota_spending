@@ -1,0 +1,10 @@
+{
+  "analysis_plan": "nadia_pap.md",
+  "sha256": "42142acd498784991782d49ec1e1aa0f2f4ef681458ee26f0baa9aa9eea59222",
+  "frozen_before_any_nadia_reservation_outcome_estimate": true,
+  "amendment_before_freeze": "Included root-requested block-clustered CR2 sensitivity before estimation.",
+  "initial_plan_sha256": "5311a2ece10871cf83f9a7e4e9f3665b4fa90516bbd861003bbd1c78e9a101d6",
+  "amendment_utc": "2026-09-08T04:27:13.097358+00:00",
+  "support_amendment": "Exclude singleton caste classes from all same-sample models; initialplan retained; no estimate seen.",
+  "support_amendment_blinding": "Outcome-blind; treatment/design inspected; not treatment-blind"
+}
