@@ -1,0 +1,3 @@
+"observed_estimate","assumed_effect","se","normal_model_power","type_s","type_m","mde80","assumption","assumed_effect_share_of_control_mean"
+5.42975083836825,22.913831644778,8.04614708180615,0.812686747319554,9.39024030591608e-07,1.11622744542575,22.5419667271509,"Normal estimator with fixed observed SE; not randomization inference",0.1
+5.42975083836825,45.827663289556,8.04614708180615,0.999906380623831,9.6239252021079e-15,1.00006533121099,22.5419667271509,"Normal estimator with fixed observed SE; not randomization inference",0.2

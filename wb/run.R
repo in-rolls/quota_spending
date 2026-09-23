@@ -4,7 +4,10 @@ main <- function() {
   root <- dirname(normalizePath(sub("^--file=", "", invocation[1])))
   source_root <- Sys.getenv("WB_LOCAL_ELECTIONS", unset = file.path(root, "../../local_elections"))
   shared_root <- root
-  packages <- c("haven", "arrow", "dplyr", "digest", "jsonlite", "estimatr", "broom", "knitr", "ggplot2", "janitor", "purrr", "stringr")
+  packages <- c(
+    "haven", "arrow", "dplyr", "digest", "jsonlite", "estimatr", "broom", "knitr", "ggplot2",
+    "janitor", "purrr", "stringr", "sandwich"
+  )
   missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
   if (length(missing)) stop("Install R packages: ", paste(missing, collapse = ", "))
   dir.create(file.path(root, "logs"), showWarnings = FALSE)
@@ -23,13 +26,20 @@ main <- function() {
   source(file.path(root, "scripts", "05_spending_prep.R"))
   source(file.path(root, "tests", "spending_contracts.R"))
   wb_test_spending_synthetic()
-  wb_test_spending_contracts(wb_spending_prepare(normalizePath(source_root), root), normalizePath(source_root))
+  spending <- wb_spending_prepare(normalizePath(source_root), root)
+  wb_test_spending_contracts(spending, normalizePath(source_root))
   if (!"--prepare-only" %in% commandArgs(trailingOnly = TRUE)) {
     source(file.path(root, "scripts", "01_public_goods.R"))
     wb_public_goods(d, root)
     nadia <- wb_nadia_demand(normalizePath(source_root), root)
     source(file.path(root, "scripts", "03_nadia_report.R"))
     wb_nadia_report(nadia, root)
+    source(file.path(root, "scripts", "06_spending_estimate.R"))
+    estimates <- wb_spending_estimate(spending, root)
+    source(file.path(root, "tests", "spending_estimate_checks.R"))
+    wb_test_spending_estimates(estimates)
+    source(file.path(root, "scripts", "07_spending_report.R"))
+    wb_spending_report(estimates, root)
   }
   capture.output(sessionInfo(), file = file.path(root, "logs", "sessionInfo.txt"))
   cat("Completed:", format(Sys.time(), tz = "UTC"), "UTC\n")
