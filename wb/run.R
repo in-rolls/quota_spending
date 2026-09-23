@@ -4,7 +4,7 @@ main <- function() {
   root <- dirname(normalizePath(sub("^--file=", "", invocation[1])))
   source_root <- Sys.getenv("WB_LOCAL_ELECTIONS", unset = file.path(root, "../../local_elections"))
   shared_root <- root
-  packages <- c("haven", "arrow", "dplyr", "digest", "jsonlite", "estimatr", "broom", "knitr", "ggplot2")
+  packages <- c("haven", "arrow", "dplyr", "digest", "jsonlite", "estimatr", "broom", "knitr", "ggplot2", "janitor", "purrr", "stringr")
   missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
   if (length(missing)) stop("Install R packages: ", paste(missing, collapse = ", "))
   dir.create(file.path(root, "logs"), showWarnings = FALSE)
@@ -20,6 +20,10 @@ main <- function() {
   source(file.path(root, "tests", "nadia_contracts.R"))
   wb_test_nadia_synthetic()
   wb_test_nadia_contracts(wb_nadia_prepare(normalizePath(source_root), root))
+  source(file.path(root, "scripts", "05_spending_prep.R"))
+  source(file.path(root, "tests", "spending_contracts.R"))
+  wb_test_spending_synthetic()
+  wb_test_spending_contracts(wb_spending_prepare(normalizePath(source_root), root), normalizePath(source_root))
   if (!"--prepare-only" %in% commandArgs(trailingOnly = TRUE)) {
     source(file.path(root, "scripts", "01_public_goods.R"))
     wb_public_goods(d, root)

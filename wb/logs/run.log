@@ -1,3 +1,5 @@
-Started: 2026-09-08 04:41:15 UTC
+Started: 2026-09-23 03:46:28 UTC
 Source, join, timing, sentinel and missingness contracts passed.
-Completed: 2026-09-08 04:41:21 UTC
+Spending manifest tamper test passed.
+Spending contracts passed: 3654 GP-years.
+Completed: 2026-09-23 03:46:47 UTC
