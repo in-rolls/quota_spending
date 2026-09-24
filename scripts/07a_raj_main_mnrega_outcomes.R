@@ -208,6 +208,47 @@ custom_stargazer(comp_expenditure_models,
                      (v) Trad. Water: The expenditure on projects to maintain traditional water bodies."),
                  out = here("tabs/mnrega_raj_05_10_main_comp_expenditure.tex"))
 
+## Caste-quota controls (appendix robustness)
+# Women's seats are drawn within caste-reservation strata, so women's and caste
+# reservation are correlated by construction; condition on both years' caste
+# category (GEN/OBC/SC/ST).
+caste_models <- set_names(mod_cols, mod_cols) %>%
+     map(~ lm(as.formula(paste(.x, "~ female_res_2005 + female_res_2010 + factor(caste_res_2005) + factor(caste_res_2010)")),
+              data = mnrega_elex_raj_05_10))
+
+caste_note <- "All models include indicators for the 2005 and 2010 caste reservation of the Pradhan office (OBC, SC, ST; GEN omitted)."
+
+custom_stargazer(caste_models[names(caste_models) %in% n_comp_proj],
+                 title = "Effects of Reservations on the Number of Completed MNREGA Projects, 2011--2014 (Controlling for Caste Reservation)",
+                 covariate.labels = c("2005", "2010", "Constant"),
+                 column.labels = c("All", "Rural Roads", "Sanitation", "Water Conservation", "Trad. Water"),
+                 add.lines = list(c("Caste reservation controls", rep("Yes", 5))),
+                 label = "main_mnrega_caste_ctrl",
+                 omit = "^factor\\(caste",
+                 notes = paste(cons_term, caste_note, "The outcomes are from MNREGA administrative data for years 2011--2014.", main_outcome_caption),
+                 out = here("tabs/mnrega_raj_05_10_main_comp_caste_ctrl.tex"))
+
+custom_stargazer(caste_models[names(caste_models) %in% n_ongoing_proj],
+                 title = "Effects of Reservations on the Number of Ongoing MNREGA Projects, 2011--2014 (Controlling for Caste Reservation)",
+                 covariate.labels = c("2005", "2010", "Constant"),
+                 column.labels = c("All", "Rural Roads", "Sanitation", "Water Conservation", "Trad. Water"),
+                 add.lines = list(c("Caste reservation controls", rep("Yes", 5))),
+                 label = "main_mnrega_ongoing_caste_ctrl",
+                 omit = "^factor\\(caste",
+                 notes = paste(cons_term, caste_note, "The outcomes are from MNREGA administrative data for years 2011--2014.",
+                               "They are the number of ongoing projects in each area; All includes areas not listed here."),
+                 out = here("tabs/mnrega_raj_05_10_main_ongoing_caste_ctrl.tex"))
+
+custom_stargazer(caste_models[names(caste_models) %in% comp_expenditure],
+                 title = "Effects of Reservations on the Expenditure on Completed MNREGA Projects, 2011-2014 (Controlling for Caste Reservation)",
+                 covariate.labels = c("2005", "2010", "Constant"),
+                 column.labels = c("All", "Rural Roads", "Sanitation", "Water Conservation", "Trad. Water"),
+                 add.lines = list(c("Caste reservation controls", rep("Yes", 5))),
+                 label = "main_mnrega_expenditure_caste_ctrl",
+                 omit = "^factor\\(caste",
+                 notes = paste(cons_term, caste_note, "The outcomes are from MNREGA administrative data for years 2011--2014; expenditure is in lakh rupees."),
+                 out = here("tabs/mnrega_raj_05_10_main_comp_expenditure_caste_ctrl.tex"))
+
 ## Let's do district/block FE
 
 # Actual 

@@ -105,6 +105,58 @@ custom_stargazer(selected_models,
   out = "tabs/mnrega_up_05_10_main.tex"
 )
 
+# Caste-quota controls (appendix robustness). Women's seats are drawn within
+# caste-reservation strata, so condition on both years' caste category. ST has
+# 11-12 GPs a year and is pooled with SC to avoid near-singleton cells.
+caste_category <- function(status) {
+  caste <- sub(" - Female$", "", status)
+  caste[caste %in% c("Female", "Unreserved")] <- "Unreserved"
+  caste[caste == "Scheduled Tribe"] <- "Scheduled Caste"
+  caste
+}
+caste_data <- mnrega_elex_up_05_10 |>
+  mutate(
+    caste_2005 = caste_category(gp_res_status_fin_eng_2005),
+    caste_2010 = caste_category(gp_res_status_fin_eng_2010)
+  )
+stopifnot(
+  setequal(caste_data$caste_2005, c("Unreserved", "Other Backward Class", "Scheduled Caste")),
+  setequal(caste_data$caste_2010, c("Unreserved", "Other Backward Class", "Scheduled Caste"))
+)
+caste_models <- set_names(mod_cols) |>
+  map(\(outcome) {
+    lm(
+      reformulate(
+        c("female_res_2005", "female_res_2010", "factor(caste_2005)", "factor(caste_2010)"),
+        response = outcome
+      ),
+      data = caste_data
+    )
+  })
+
+custom_stargazer(caste_models[names(caste_models) %in% selected_model_names],
+  title = paste(
+    "Effects of Reservations on the Number of Completed MNREGA Projects,",
+    "2011--2014 (UP, Controlling for Caste Reservation)"
+  ),
+  covariate.labels = c("2005", "2010", "Constant"),
+  column.labels = c(
+    "All", "Rural Roads", "Sanitation", "Water Conservation", "Trad. Water"
+  ),
+  add.lines = list(c("Caste reservation controls", rep("Yes", 5))),
+  label = "main_mnrega_up_2005_2010_caste_ctrl",
+  omit = "^factor\\(caste",
+  notes = paste(
+    cons_term,
+    "All models include indicators for the 2005 and 2010 caste reservation",
+    "of the Pradhan office (OBC; SC or ST, pooled because ST has 11-12 GPs",
+    "a year; unreserved omitted).",
+    "The outcomes are from MNREGA administrative data for years 2011--2014.",
+    main_outcome_caption
+  ),
+  out = "tabs/mnrega_up_05_10_main_caste_ctrl.tex"
+)
+
 # Bose and Das Districts
 
 bose_das_sample <- mnrega_elex_up_05_10 |>
