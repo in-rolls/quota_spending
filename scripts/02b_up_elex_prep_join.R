@@ -17,7 +17,7 @@ panels <- list(
 )
 for (name in names(panels)) {
   years <- panels[[name]]
-  panel <- read_parquet(up_path(paste0("up_gp_panel_", paste(years, collapse = "_"), ".parquet"))) |>
+  panel <- read_parquet(up_path(paste0("panels/gp_panel_", paste(years, collapse = "_"), ".parquet"))) |>
     filter(if_all(all_of(paste0("women_reserved_", years)), ~ !is.na(.x))) |>
     mutate(
       district_name_eng_2010 = recode(district_name_eng_2010, "Ramabai Nagar" = "Kanpur Dehat"),

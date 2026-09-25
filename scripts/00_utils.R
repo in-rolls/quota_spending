@@ -204,7 +204,7 @@ sibling_path <- function(file, source = "local_elections_up") {
 }
 
 ## Convenience wrappers so call sites read as what they are.
-up_path  <- function(f) sibling_path(file.path("data/fin", f))
+up_path  <- function(f) sibling_path(file.path("data/release", f))
 ref_path <- function(f) sibling_path(file.path("data/external/weaver", f))
 
 ## Reference datasets: public downloads shared by several repos, held once in the

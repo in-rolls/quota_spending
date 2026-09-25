@@ -13,7 +13,7 @@ cache_dir: ~/data
 upstream:
   local_elections_rajasthan:
     repo: in-rolls/local_elections_rajasthan
-    ref: 0b0dbf254c9e54f9fa162ce7d370644ba682acaf
+    ref: b543c4759519dd44682fbd278d81bdccaa152e99
     raw: https://raw.githubusercontent.com/in-rolls/local_elections_rajasthan
     sibling: ../local_elections_rajasthan
     files:
@@ -26,22 +26,22 @@ upstream:
       data/source/sarpanch/sp_05_10_15_20_best_manual.csv: a7eee0ce69fe8536e6db682c4ac62522b633833ac79ceee51eb7d0f11fb0d395
   local_elections_up:
     repo: in-rolls/local_elections_up
-    ref: 5d4659d9ad2d9ccb11b6030d3f24fec1deba408e
+    ref: 3ef1d56f278a2ca98a2b9a61027c130781fb236f
     raw: https://raw.githubusercontent.com/in-rolls/local_elections_up
     sibling: ../local_elections_up
     files:
-      data/fin/up_gp_adjacent_links.parquet: 16e7f28ebd926b2db6b0cecd0f767ab7335b63429a95dcb0dac25526f54df5e9
-      data/fin/up_gp_four_election_links.parquet: af379f5a584dffdcd8062d48c39c697c5dda4ab198632eb973f409b3623733b7
-      data/fin/up_gp_panel_2005_2010.parquet: 95b7578b6165206fdf3e8adfa1cdd201443ad424f5399fa907774521dbdf9af0
-      data/fin/up_gp_panel_2005_2010_2015_2021.parquet: a056c15ae9d56d88e5f2ef5a26a8681cfd4df8cc7c981dd7e0e14e431d2acb97
-      data/fin/up_gp_panel_2010_2015.parquet: ddf624786ead6f20480abe442be6fa52528f2e486648bb5bda151d91a9337a15
-      data/fin/up_gp_panel_2015_2021.parquet: da125f69f71a24993843b5400ffea4f8239fd418ac96e0b0bf8e382659c25444
-      data/fin/weaver_20250302_wide.parquet: e7a6411af5b2980255c670d80af1c171baaef431515157ab35f1addac90eb695
-      data/fin/weaver_20250317_wide.parquet: d2a3a0c5ee079850e83ef241d5ad9e5bb4198fa725c76ec9f0a4b520f7a46f85
-      data/fin/up_gp_sarpanch_2005_fixed_with_transliteration.parquet: 2d5826be50563a7b978cabd451f6fb0505909339b59429dbe6144b9e129f24d6
-      data/fin/up_gp_sarpanch_2010_fixed_with_transliteration.parquet: 81cbf6d0b25c369a9c9b905b37fe31bbf185538609c27c6c53f53a1ed2a34c74
-      data/fin/up_gp_sarpanch_2015_fixed_with_transliteration.parquet: 2e7cde2ad328d9a7f7d8ad078295e47ef274f48f22b0272a6aaf10ed00cf9b45
-      data/fin/up_gp_sarpanch_2021_fixed_with_transliteration.parquet: 4b02015d5e4e827ff272d7f8201a87b28c7a8a7e184c086d89f3371834125d16
+      data/release/panels/gp_adjacent_links.parquet: 16e7f28ebd926b2db6b0cecd0f767ab7335b63429a95dcb0dac25526f54df5e9
+      data/release/panels/gp_four_election_links.parquet: af379f5a584dffdcd8062d48c39c697c5dda4ab198632eb973f409b3623733b7
+      data/release/panels/gp_panel_2005_2010.parquet: 95b7578b6165206fdf3e8adfa1cdd201443ad424f5399fa907774521dbdf9af0
+      data/release/panels/gp_panel_2005_2010_2015_2021.parquet: 8b3999f2b7fd434142e3c33212e92de32e813b9a022e0a74b88525292d762e5a
+      data/release/panels/gp_panel_2010_2015.parquet: c0f4988fe080c78cbaabbb168b6729d52b40536c2612e162490b3b9e2a257d8b
+      data/release/panels/gp_panel_2015_2021.parquet: 43eb83b00dc0c564584ecde3b2b2dec811f894f1f589cc28f6eda604a940c989
+      data/release/weaver/weaver_20250302_wide.parquet: e7a6411af5b2980255c670d80af1c171baaef431515157ab35f1addac90eb695
+      data/release/weaver/weaver_20250317_wide.parquet: d2a3a0c5ee079850e83ef241d5ad9e5bb4198fa725c76ec9f0a4b520f7a46f85
+      data/release/gp/gp_head_winner_records_2005.parquet: f6b9087ab7c844b5eec6188e78ef1b29ca095db4c4c0530155e06b8a27a7fe2a
+      data/release/gp/gp_head_winner_records_2010.parquet: 5c9e0de7b58b84cc8c4a046e37ca50d939e9252dbd9b364aadc188e5d9093631
+      data/release/gp/gp_head_winner_records_2015.parquet: d1a064de88b5a80eef04a25bf77b6c26847c48ad7173565d25a29f41eecaabc2
+      data/release/gp/gp_head_candidates_2021.parquet: 3f6e3e1cba08bd6cc012a445369f2f360b20a67bce1e7a022657d06d8263e0bd
       data/external/weaver/weaver_data.dta.gz: 1e561493bfda584b29f312080a91b0ff2a1580fea0081248e45614f7599dee11
       data/external/weaver/weaver_data_2.dta.gz: 2a79036d7de6c1bfcfd17fdad7652caad58d70458a298eb1ad534fd383515aec
       data/external/weaver/nw_election10.dta.gz: dca9d0c13040d40893f6557e7b8ace969c9780ac9867e9aea02949eda9b30d21
