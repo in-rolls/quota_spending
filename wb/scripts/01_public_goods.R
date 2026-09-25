@@ -1,0 +1,135 @@
+# Replication benchmarks and exploratory 2003 public-goods contrasts.
+# Writes wb/tabs/, wb/figs/ and a generated wb/RESULTS.md.
+
+wb_public_goods <- function(d, out) {
+  g <- d$gp98[d$gp98$source_complete, ]
+  v <- d$village98[d$village98$prvill == "NO" & d$village98$source_complete, ]
+  stopifnot(nrow(g) == 161, nrow(v) == 322)
+  specs <- data.frame(
+    level = c("gp", "village", "village", "village", "gp", "gp", "gp"),
+    outcome = c(
+      "female98", "water", "road_good_moderate", "school_buildings",
+      "water_built", "metal_road", "ssk_present"
+    ),
+    published_treated = c(1, 23.83, 0.41, 0.59, 1, 0.67, 0.67),
+    published_control = c(0.065, 14.74, 0.23, 0.51, 0.93, 0.48, 0.82),
+    published_difference = c(0.935, 9.09, 0.18, 0.07, 0.07, 0.19, -0.16),
+    published_se = c(0.0338, 4.02, 0.06, 0.10, 0.03, 0.08, 0.07),
+    status = c(
+      "Released archive female count differs", "Literal aggregate differs",
+      "Good or moderate; published label says good", "Aggregate underdocumented",
+      "Direct questionnaire indicator", "Built or repaired indicator",
+      "Informal school presence; different from formal school buildings"
+    ),
+    stringsAsFactors = FALSE
+  )
+  estimates <- list()
+  ladder <- list()
+  for (i in seq_len(nrow(specs))) {
+    sample <- if (specs$level[i] == "gp") g else v
+    cl <- if (specs$level[i] == "gp") NULL else "gp_id"
+    y <- specs$outcome[i]
+    row <- wb_estimate(sample, y, "q98", "q98", "Released archive", cl)
+    row$mean_reserved <- mean(sample[[y]][sample$q98 == 1], na.rm = TRUE)
+    row$mean_unreserved <- mean(sample[[y]][sample$q98 == 0], na.rm = TRUE)
+    row <- cbind(row, specs[i, setdiff(names(specs), "outcome"), drop = FALSE])
+    row$benchmark_source <- paste(
+      "NBER w8615, PDF page31 Table1 or page37 Table7;",
+      "2001 working-paper version"
+    )
+    row$delta_from_paper <- row$estimate - row$published_difference
+    estimates[[i]] <- row
+    ladder[[i]] <- wb_ladder(sample, y, "q98", "q98", "Released archive", cl)
+  }
+  replication <- dplyr::bind_rows(estimates)
+  wb_table(replication, "cd_replication", out)
+  wb_table(dplyr::bind_rows(ladder), "cd_se_ladder", out)
+  sensitivity <- dplyr::bind_rows(
+    wb_estimate(v, "road_good_only", "q98", "q98", "Literal good road", "gp_id"),
+    wb_estimate(v, "schools_all", "q98", "q98", "Include schools without buildings", "gp_id"),
+    wb_estimate(g[g$strict, ], "female98", "q98", "q98", "Source-conflict exclusion"),
+    wb_estimate(v[v$strict, ], "water", "q98", "q98", "Source-conflict exclusion", "gp_id"),
+    wb_estimate(
+      v[v$strict, ], "road_good_moderate", "q98", "q98",
+      "Source-conflict exclusion", "gp_id"
+    ),
+    wb_estimate(
+      v[v$strict, ], "school_buildings", "q98", "q98",
+      "Source-conflict exclusion", "gp_id"
+    )
+  )
+  wb_table(sensitivity, "cd_sensitivity", out)
+
+  x <- d$gp03[d$gp03$strict03, ]
+  history <- x[x$history_strict, ]
+  adj <- "q03 + q98 + sc98 + st98 + sc03 + st03 + factor(block)"
+  extension <- list()
+  for (y in c("water", "metal_road_km", "ssk_new")) {
+    same <- history[stats::complete.cases(history[c(
+      y, "q03", "q98", "sc98", "st98",
+      "sc03", "st03", "block"
+    )]), ]
+    extension <- c(extension, list(
+      wb_estimate(x, y, "q03", "q03", "2003 quota unadjusted"),
+      wb_estimate(same, y, "q03", "q03", "Unadjusted on adjusted sample"),
+      wb_estimate(same, y, adj, "q03", "2003 quota adjusted"),
+      wb_estimate(same, y, adj, "q98", "1998 quota adjusted")
+    ))
+  }
+  extension <- dplyr::bind_rows(extension) |>
+    dplyr::group_by(model) |>
+    dplyr::mutate(p_holm = stats::p.adjust(p.value, method = "holm")) |>
+    dplyr::ungroup()
+  wb_table(extension, "beaman_public_goods", out)
+  wb_selection_audit(d, out)
+  support <- dplyr::bind_rows(lapply(c("water", "metal_road_km", "ssk_new"), function(y) {
+    z <- wb_support(history, y, adj, "q03", y)
+    z
+  }))
+  wb_table(support, "public_goods_leverage", out)
+  extra <- list()
+  for (y in c("water", "metal_road_km", "ssk_new")) {
+    relaxed <- d$gp03[
+      d$gp03$explicit03 & d$gp03$survey_observed & d$gp03$survey_year_valid,
+    ]
+    extra <- c(extra, list(
+      wb_estimate(x[x$exact_gp_name, ], y, "q03", "q03", "Exact GP spelling"),
+      wb_estimate(relaxed, y, "q03", "q03", "Allow interview-ID repair"),
+      wb_ladder(x, y, "q03", "q03", "2003 quota")
+    ))
+  }
+  wb_table(dplyr::bind_rows(extra), "beaman_public_goods_sensitivity", out)
+  wb_plot(
+    extension[extension$model %in% c("2003 quota unadjusted", "2003 quota adjusted"), ],
+    "beaman_public_goods", out,
+    "Exploratory quota associations: GP goods reported since 2003",
+    "Difference in source outcome units (95% interval)"
+  )
+  findings <- extension[extension$model %in% c("2003 quota unadjusted", "2003 quota adjusted"), ]
+  lines <- c(
+    "# West Bengal public-goods replication and extension", "",
+    "Generated by scripts/01_public_goods.R. See pap.md, data/validation.json and source_dictionary.csv.",
+    "", "## Released-data replication", "",
+    "These are selected rows from NBER w8615 Tables 1 and 7, not a complete paper replication.",
+    "The CSV reports published benchmarks beside released-archive results. The first stage and",
+    "literal water/building aggregates differ from the paper. Road means align only when",
+    "good and moderate are combined; the good-only measure is reported separately.",
+    "CR2/HC2 intervals are modern inference comparisons, not claims of exact legacy-SE replication.",
+    "", as.character(knitr::kable(replication[c(
+      "outcome", "estimate", "conf.low", "conf.high",
+      "published_difference", "n"
+    )], digits = 3)),
+    "", "## Exploratory 2003 extension", "",
+    "One GP per row. Outcomes are reported in the 2006 current-officeholder survey for the period",
+    "since 2003. Adjusted models include prior/current caste quotas, prior women quota and block",
+    "effects. Rotation, recall, reporting and survey selection prevent an automatic causal interpretation.",
+    "Counts and kilometers have different units; they are not a common spending index.",
+    "", as.character(knitr::kable(findings[c("model", "outcome", "estimate", "conf.low", "conf.high", "n", "p_holm")],
+      digits = 3
+    )),
+    "", "No Birbhum MNREGA/SHRUG merge is made here. The separate Nadia demand analysis is in NADIA_RESULTS.md.",
+    "All sample variants and SE comparisons are in tabs/. Raw sources remain in local_elections."
+  )
+  writeLines(lines, file.path(out, "RESULTS.md"))
+  invisible(list(replication = replication, extension = extension))
+}

@@ -1,0 +1,8 @@
+{
+  "plan": "spending_pap.md",
+  "sha256": "41e576271c21ca45d926df73e3c04ea342b688158a11274e8cf9d0ee33e20c94",
+  "frozen_at_utc": "2026-09-23T10:39:02Z",
+  "outcomes_by_treatment_seen": false,
+  "panel": "data/spending_panel.parquet",
+  "panel_sha256": "b867c12e96d38a29ccf0524e2dc9367ac712332e243845a797ea6427b90b922d"
+}

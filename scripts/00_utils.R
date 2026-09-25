@@ -153,7 +153,7 @@ custom_stargazer <- function(models, notes, digits = 2, float.env = "table", ...
 ## including on the cache hit. A mismatch stops the run; it never silently hands
 ## back different data.
 ##
-## The point is not disk space. quota, quota_raj, local_elections and others all
+## The point is not disk space. quota_spending, quota_representation, local_elections and others all
 ## read the same UP sarpanch files, and until now each kept its own copy with
 ## nothing to notice when they drifted apart.
 

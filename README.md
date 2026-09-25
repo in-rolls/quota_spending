@@ -173,11 +173,11 @@ Don Green, Manu Singh, and Gaurav Sood
 - [in-rolls/local_elections_up](https://github.com/in-rolls/local_elections_up) — UP Local Election Data --- GP and ULB. Seat reservation, winner, and candidates for some elections
 - [in-rolls/local_elections_bihar](https://github.com/in-rolls/local_elections_bihar) — Candidate Info. + Valid Votes Won by Cands. in the 2016 Bihar Panchayat Elections
 
-Rajasthan election sources and historical manual election linkages are consumed from a pinned commit of `local_elections_rajasthan`, with SHA-256 checks in `data/manifest.yaml`. Files resolve from the versioned cache, a sibling checkout, or the pinned GitHub source. The migration preserves source values and historical links; study-specific exclusions and election-to-outcome joins remain here. These Rajasthan manual-history inputs are a separate upstream vintage from the one-to-one panels used by `quota_raj`. They retain older link decisions and 2020 reservation values; sharing the provider does not make those panels interchangeable.
+Rajasthan election sources and historical manual election linkages are consumed from a pinned commit of `local_elections_rajasthan`, with SHA-256 checks in `data/manifest.yaml`. Files resolve from the versioned cache, a sibling checkout, or the pinned GitHub source. The migration preserves source values and historical links; study-specific exclusions and election-to-outcome joins remain here. These Rajasthan manual-history inputs are a separate upstream vintage from the one-to-one panels used by `quota_representation`. They retain older link decisions and 2020 reservation values; sharing the provider does not make those panels interchangeable.
 
 
 UP cross-election panels and Weaver preparations are produced in
-`local_elections_up`. This repository and `quota_raj` pin the same commit and
+`local_elections_up`. This repository and `quota_representation` pin the same commit and
 SHA-256 values in their manifests. Adjacent-year links are built independently,
 then composed through identical intermediate source-election IDs. Name
 normalization preserves Hindi vowel marks and rejects conflicting numeric

@@ -1,0 +1,71 @@
+audit_data.py  /tmp/wb_analysis_20260908/quota/wb/data/nadia_demand_analysis.parquet
+
+========================================================================
+1. SHAPE AND KEYS
+========================================================================
+rows 100   columns 54
+key ['row_id']: 100 distinct, 0 duplicate rows
+
+========================================================================
+2. MISSINGNESS (level, and -- what matters -- differential)
+========================================================================
+no missing values anywhere
+
+differential missingness by 'q13' (max-min fill rate > 2pp):
+  none
+
+========================================================================
+3. ZEROS VS MISSING
+========================================================================
+column                                           zeros       %   missing       %
+source_table                                       100  100.0%         0    0.0%
+woman_reserved                                      50   50.0%         0    0.0%
+q13                                                 50   50.0%         0    0.0%
+source_table_row                                     2    2.0%         0    0.0%
+
+For every column with BOTH: is the zero 'measured, none found' or
+'not measured'? If the data cannot tell them apart, neither can the model.
+
+========================================================================
+4. DTYPE TRAPS
+========================================================================
+none found
+
+========================================================================
+5. VALUES OUTSIDE THEIR LOGICAL RANGE
+========================================================================
+none found
+
+========================================================================
+6. DISTRIBUTIONS, SKEW AND TAILS
+========================================================================
+                column    median        max  max/med   skew  n_top  top_n_mass
+    person_months_2014 9,853.000 42,546.000    4.318  1.524      1       0.039
+    person_months_2012 5,134.000 20,366.000    3.967  0.981      1       0.030
+ household_months_2012 4,046.500 18,188.000    4.495  0.952      1       0.034
+ household_months_2014 7,365.000 20,134.000    2.734  0.866      1       0.026
+           source_page    59.000     62.000    1.051  0.349      1       0.010
+      source_gp_serial    74.500    187.000    2.510  0.280      1       0.023
+membership_source_page    72.000     74.000    1.028  0.166      1       0.010
+      source_table_row    21.000     41.000    1.952 -0.150      1       0.021
+
+'top_n_mass' is the share of the total held by the n_top largest values
+(n_top = max(1, n/100), so it is a single value below n = 200). Both it
+and max/med are blank for columns with negative values, where neither is
+interpretable.
+
+========================================================================
+7. RATE COLUMNS AND THEIR RECONSTRUCTED DENOMINATORS
+========================================================================
+no columns whose name suggests a rate; skipping
+
+========================================================================
+8. LEVERAGE ON THE HEADLINE OUTCOME
+========================================================================
+statsmodels not installed; skipping
+
+========================================================================
+SUMMARY
+========================================================================
+no hard failures. The soft findings above still need judgement --
+this script narrows where to look, it does not decide.

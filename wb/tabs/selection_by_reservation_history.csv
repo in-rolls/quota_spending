@@ -1,0 +1,9 @@
+"history_evidence","q98","q03","source_rows","current_year_explicit","survey_observed","consistent_ids","visit_2006","previous_source_conflicts","sex_conflicts","primary_followup_eligible","primary_sex_observed"
+"explicit_1998",0,0,69,69,67,67,67,0,1,67,66
+"explicit_1998",0,1,33,32,32,32,32,1,1,32,31
+"explicit_1998",1,0,30,30,29,28,29,0,0,28,28
+"explicit_1998",1,1,20,20,20,20,19,0,0,19,19
+"inferred_1998",0,0,4,4,4,4,4,0,0,0,0
+"inferred_1998",0,1,2,2,2,2,2,1,0,0,0
+"inferred_1998",1,0,4,4,4,4,4,1,0,0,0
+"other_or_unknown",,0,3,2,3,3,3,0,0,0,0

@@ -1,0 +1,26 @@
+[
+  {
+    "role": "nadia_demand_2012",
+    "path": "data/nadia_raw/r3_nadia_2012.csv",
+    "sha256": "4c9d082737d00c544aa37d130871a66b16d6c8cab20041fd280af33cab71d197",
+    "raw_source_path": "/Users/soodoku/Documents/GitHub/quota/data/mnrega/r3/r3-all-2012.csv.gz",
+    "raw_source_sha256": "3861cbcd41a4d465e63ea34ff14870bc93930d11fa82ea82cc92b395aea09a15",
+    "git_commit": "a8f5ccabfb8016778eb192ff0570ebe6c5345e80",
+    "git_blob_sha1": "230fb8896a90d193d8d88d437daeca1f9122dd38",
+    "extraction": "state == WEST BENGAL; district == NADIA; Panchayat observed; original columns retained; no outcome recoding",
+    "fiscal_year": "2012-2013",
+    "rows": 187
+  },
+  {
+    "role": "nadia_demand_2014",
+    "path": "data/nadia_raw/r3_nadia_2014.csv",
+    "sha256": "5eb659169957f88c6964b983deba257b36c4abaad5d73260dce625875e39cae5",
+    "raw_source_path": "/Users/soodoku/Documents/GitHub/quota/data/mnrega/r3/r3-all-2014.csv.gz",
+    "raw_source_sha256": "84f07677a8e39562fcbb192851eff1aa0bffbbc50b6b79178044ed657ad4df79",
+    "git_commit": "a8f5ccabfb8016778eb192ff0570ebe6c5345e80",
+    "git_blob_sha1": "a07bc920ae1dfc0f9094dc84bd092ac6a5fea6a2",
+    "extraction": "state == WEST BENGAL; district == NADIA; Panchayat observed; original columns retained; no outcome recoding",
+    "fiscal_year": "2014-2015",
+    "rows": 187
+  }
+]

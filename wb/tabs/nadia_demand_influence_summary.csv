@@ -1,0 +1,3 @@
+"model","max_leverage","min_leave_one_out","max_leave_one_out","rank","residual_df"
+"household_months",0.5111674231191,-522.767619389633,103.53065792104,17,83
+"person_months",0.517419577482452,-1256.09003913568,-409.722056226471,17,83

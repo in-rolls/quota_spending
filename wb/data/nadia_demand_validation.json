@@ -1,0 +1,16 @@
+{
+  "source_office_rows": 187,
+  "baseline_gp_rows": 187,
+  "post_gp_rows": 187,
+  "membership_matched": 161,
+  "demand_matched": 101,
+  "linked_complete_gps": 101,
+  "singleton_caste_excluded": 1,
+  "analysis_gps": 100,
+  "treated_gps": 50,
+  "blocks": 13,
+  "blank_source_category": 1,
+  "normalization": "case and separators only; Roman and numeric suffixes preserved",
+  "analysis_plan_sha256": "42142acd498784991782d49ec1e1aa0f2f4ef681458ee26f0baa9aa9eea59222",
+  "interpretation": "Model-based demand association; not a randomized effect or employment/spending outcome"
+}
