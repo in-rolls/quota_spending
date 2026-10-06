@@ -167,7 +167,7 @@ Don Green, Manu Singh, and Gaurav Sood
 
 ## 🔗 Adjacent Repositories
 
-- [in-rolls/mnrega_social](https://github.com/in-rolls/mnrega_social) — MNREGA Social Audit Data
+- [in-rolls/mnrega_social_audit](https://github.com/in-rolls/mnrega_social_audit) — MNREGA Social Audit Data
 - [in-rolls/electoral_rolls_up_2023](https://github.com/in-rolls/electoral_rolls_up_2023)
 - [in-rolls/local_elections_kerala](https://github.com/in-rolls/local_elections_kerala) — Kerala Local Government Seat Reservation Data and Winner Attributes
 - [in-rolls/local_elections_up](https://github.com/in-rolls/local_elections_up) — UP Local Election Data --- GP and ULB. Seat reservation, winner, and candidates for some elections
