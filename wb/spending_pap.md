@@ -146,7 +146,7 @@ errors, from `wb_power` for the primary estimate.
 
 - The estimand is the effect of the reservation, not of a woman Pradhan. Winner
   sex is not observed.
-- r6 records expenditure on works attributed to a GP. It is not labor
+- r6 records expenditure on works attributed to a GP. It is not labour
   person-days or wages, and not the GP's own discretionary budget.
 - The six district-terms were chosen because their Form 1B orders survive
   online, not by design. Results describe these districts.
