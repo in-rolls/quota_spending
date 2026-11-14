@@ -1,0 +1,254 @@
+key: pathakMacours2017
+versions:
+  - id: wp2016
+    file: pathak_macours_2016_wp.pdf
+    citation: "HAL author manuscript hal-01590823, April 2016"
+    year: 2016
+    page_offset: "printed = pdf - 1"
+  - id: edcc2017
+    file: pathak_macours_2017_edcc.pdf
+    citation: "Economic Development and Cultural Change 65(4), 2017, pp. 741-766"
+    year: 2017
+    page_offset: "printed = pdf + 740"
+meta:
+  year_first: 2016
+  year_published: 2017
+  setting: "Rural Andhra Pradesh, Young Lives panel (2002, 2007, 2009); 59 matched villages = GPs (20 reserved 1995, 12 in 2001, 27 in 2006); 685 children 12-17 months in 2002"
+  design: "random/rotational reservation, panel; compares GPs reserved 1995-2001 with GPs reserved 2006-2011 (timing of exposure, not reserved vs never)"
+  note: "lit/version_diffs/pathak.md: every number in Tables 1-10 is the same in both versions; the changes are copyedits (abstract dropped, footnotes renumbered n -> n-1). So mechanisms and normative claims are coded for both versions, and estimates once, from edcc2017."
+
+mechanism:
+  - version: wp2016
+    claim: "Gains are consistent with women leaders prioritizing whatever most constrains children's human capital in their GP; the pathway is not investigated."
+    type: preferences
+    status: speculated
+    direction: explains_effect
+    quote: "While the paper does not investigate the causal pathway, we note that these results are at least consistent with female leaders prioritizing key constraints for children’s human capital, constraints that may well differ from GP to GP."
+    page: "15"
+    note: "The authors disclaim attribution: 'We do not aim to attribute these results to specific policy choices by female leaders' (p. 4)."
+  - version: edcc2017
+    claim: "Same claim as in wp2016."
+    type: preferences
+    status: speculated
+    direction: explains_effect
+    quote: "While the article does not investigate the causal pathway, we note that these results are at least consistent with female leaders prioritizing key constraints for children's human capital, constraints that may well differ from GP to GP."
+    page: "762"
+    note: "'paper' -> 'article' is the only change. Disclaimer at p. 744."
+  - version: wp2016
+    claim: "Even if women leaders serve women's own needs (food, preventive care), children benefit indirectly through in-utero protection."
+    type: preferences
+    status: speculated
+    direction: explains_effect
+    quote: "That said, even if women focus more directly on their own needs, such as their access to food and preventive health care, this could result in indirect benefits for children, in particular through better protection during the critical in utero period."
+    page: "4"
+    note: "Offered in the introduction as a possible channel. Not estimated."
+  - version: edcc2017
+    claim: "Same claim as in wp2016."
+    type: preferences
+    status: speculated
+    direction: explains_effect
+    quote: "That said, even if women focus more directly on their own needs, such as their access to food and preventive health care, this could result in indirect benefits for children, in particular through better protection during the critical in utero period."
+    page: "744"
+    note: ""
+  - version: wp2016
+    claim: "Preferences differ across GPs, so reservation changes different investments in different places; this is why no single intermediate channel or robust infrastructure change shows up."
+    type: preferences
+    status: asserted
+    direction: explains_null
+    quote: "Similarly, data on village infrastructure changes in the different periods do not reveal any robust changes, consistent with reservation leading to different investments in different GPs."
+    page: "15"
+    note: "fn. 22. The intermediate-outcome and infrastructure analyses are mentioned but not reported."
+  - version: edcc2017
+    claim: "Same claim as in wp2016."
+    type: preferences
+    status: asserted
+    direction: explains_null
+    quote: "Similarly, data on village infrastructure changes in the different periods do not reveal any robust changes, consistent with reservation leading to different investments in different GPs."
+    page: "762"
+    note: "fn. 21."
+  - version: wp2016
+    claim: "Alternative reading: later reservation cycles mattered less because other political actors adapted to the initial shock."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "This could be because other political actors might have been able to respond to the initial shock of reservation and possibly made it ineffective in affecting policy choices by the time the third group of GPs benefited from reservation."
+    page: "15"
+    note: "fn. 23. It would explain why 2006 reservation gave the late group little advantage. Coded discretion_institutions (others' counter-moves limit the leader's influence); could also be read as patriarchy_backlash."
+  - version: edcc2017
+    claim: "Same claim as in wp2016."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "The reason could be that other political actors might have been able to respond to the initial shock of reservation and possibly made it ineffective in affecting policy choices by the time the third group of GPs benefited from reservation ."
+    page: "762"
+    note: "fn. 22; the opening words changed from 'This could be because'."
+
+normative:
+  - version: wp2016
+    claim: "Empowering women leaders may matter especially for the health and nutrition of very young children."
+    stance: pro_quota
+    quote: "They suggest in particular that empowering female leaders might be especially important for improving the health and nutrition of very young children, and that this in turn can lead to substantial longer-term impacts."
+    page: "15"
+    note: "Hedged ('might be'). The closing policy sentence is about early-childhood interventions in general, not quotas."
+  - version: edcc2017
+    claim: "Same claim as in wp2016."
+    stance: pro_quota
+    quote: "They suggest in particular that empowering female leaders might be especially important for improving the health and nutrition of very young children and that this in turn can lead to substantial longer-term impacts."
+    page: "762"
+    note: ""
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: varies_by_place
+    tested_gap: not_applicable
+    quote: "Indeed, both Chattopadhayay and Duflo (2004) and Ban and Rao (2008) show that female and male preferences can be quite heterogeneous between GPs, so that one would not necessarily expect reservation to lead to similar investments in all GPs."
+    page: "743-744 (edcc2017); 4 (wp2016)"
+    note: "Nothing is measured. The paper assumes from the literature that gender preference gaps vary by GP, which is why gap_assumption = varies_by_place."
+  outcomes:
+    source: villager_survey
+    units: "Child-level test z-scores (EGRA, math, PPVT), height-for-age z, stunting, verified vaccinations, schooling indicators"
+    n_units: 47
+    assignment_unit: gp
+    quote: "The 8-year-old children were given the Early Grade Reading Assessment test, which measures the basic skills required for literacy acquisition in early years of schooling."
+    page: "754"
+    note: "Young Lives household/child survey, with tests and anthropometrics measured by enumerators. n_units = 20 (1995) + 27 (2006) GPs in the main comparison; each YLS village is a distinct GP (WP fn. 10). Clustered at GP."
+
+estimates:
+  - version: edcc2017
+    estimand: provision
+    outcome: "Average test z-score in 2009, children 12-17 months in 2002 (1995- vs 2006-reserved GPs)"
+    outcome_family: child_outcomes
+    diff: 0.188
+    se: 0.085
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 0.035
+    control_sd: null
+    n_units: 47
+    n_obs: 502
+    adjusted: true
+    table: "Table 4"
+    page: "756"
+    preferred: true
+    note: "Identical in wp2016 (Table 4, p. 26). 'Provision' here is the effect of early vs late exposure to reservation. Controls: child and mother covariates, mandal FE."
+  - version: edcc2017
+    estimand: provision
+    outcome: "Height-for-age z-score in 2009, children 12-17 months in 2002"
+    outcome_family: child_outcomes
+    diff: 0.258
+    se: 0.12
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: -1.602
+    control_sd: null
+    n_units: 47
+    n_obs: 501
+    adjusted: true
+    table: "Table 4"
+    page: "756"
+    preferred: true
+    note: ""
+  - version: edcc2017
+    estimand: provision
+    outcome: "Stunted in 2009, children 12-17 months in 2002"
+    outcome_family: child_outcomes
+    diff: -0.064
+    se: 0.046
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.339
+    control_sd: null
+    n_units: 47
+    n_obs: 501
+    adjusted: true
+    table: "Table 4"
+    page: "756"
+    preferred: true
+    note: "Not significant."
+  - version: edcc2017
+    estimand: provision
+    outcome: "Stunted in 2002 (age 12-17 months)"
+    outcome_family: child_outcomes
+    diff: -0.118
+    se: 0.049
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 0.400
+    control_sd: null
+    n_units: 47
+    n_obs: 500
+    adjusted: true
+    table: "Table 5"
+    page: "757"
+    preferred: true
+    note: "In 2002 the 2006 GPs had never been reserved, so this is the absolute short-term effect of six years of reservation (wp2016 p. 12). 2007 stunting: -0.127 (0.060)."
+  - version: edcc2017
+    estimand: provision
+    outcome: "Number of verified vaccinations (BCG, measles, polio; out of 3) in 2002"
+    outcome_family: health
+    diff: 0.182
+    se: 0.080
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 2.670
+    control_sd: null
+    n_units: 47
+    n_obs: 520
+    adjusted: true
+    table: "Table 5"
+    page: "757"
+    preferred: true
+    note: ""
+  - version: edcc2017
+    estimand: provision
+    outcome: "Receives a midday meal at school in 2009"
+    outcome_family: schools
+    diff: -0.126
+    se: 0.045
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: 0.628
+    control_sd: null
+    n_units: 47
+    n_obs: 500
+    adjusted: true
+    table: "Table 6"
+    page: "758"
+    preferred: true
+    note: "Negative because the comparison group was under reservation in 2006-2011 during primary school. Read as an advantage of the late group."
+  - version: edcc2017
+    estimand: provision
+    outcome: "Average test z-score in 2009, children 6-11 months in 2002 (1995- vs 2006-reserved)"
+    outcome_family: child_outcomes
+    diff: -0.008
+    se: 0.061
+    se_source: reported
+    p_or_stars: null
+    control_mean: -0.057
+    control_sd: null
+    n_units: 47
+    n_obs: 420
+    adjusted: true
+    table: "Table 8"
+    page: "760"
+    preferred: false
+    note: "Younger cohort, little in-utero exposure: null."
+  - version: edcc2017
+    estimand: provision
+    outcome: "Average test z-score in 2009, children 6-11 months in 2002 (2001- vs 2006-reserved)"
+    outcome_family: child_outcomes
+    diff: 0.167
+    se: 0.065
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: -0.057
+    control_sd: null
+    n_units: 39
+    n_obs: 369
+    adjusted: true
+    table: "Table 10"
+    page: "761"
+    preferred: false
+    note: "The authors urge caution: the 2001 vs 2006 groups are imbalanced on maternal education (Table 3), and only 12 GPs were reserved in 2001. n_units = 12 + 27."

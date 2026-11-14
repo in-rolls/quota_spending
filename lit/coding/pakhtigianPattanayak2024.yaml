@@ -1,0 +1,69 @@
+key: pakhtigianPattanayak2024
+versions:
+  - id: wd2024
+    file: pakhtigian_pattanayak_2024_wd_page_capture.pdf
+    citation: "Social setting, gender, and preferences for improved sanitation: Evidence from experimental games in rural India, World Development 177 (May 2024), 106556 (ScienceDirect page capture only)"
+    year: 2024
+    page_offset: "no printed pages: one-page image capture (1920 x 8912) of the ScienceDirect preview; cite 'pdf p. 1'. Text read by OCR (tesseract) of the embedded image; only highlights, abstract, introduction and truncated section snippets are visible"
+meta:
+  year_first: 2024
+  year_published: 2024
+  setting: "Rural Bihar and Odisha, over 1500 participants in 69 villages; household surveys of participants (Bihar revisited a year later)"
+  design: "other: lab-in-the-field sanitation-themed threshold public goods game; group gender composition (women only, men only, mixed) randomized at village level. Not a reservation study."
+
+mechanism:
+  - version: wd2024
+    claim: "The gender mix of a decision-making group changes how much people state they will invest in sanitation; women invest more when deciding among only women."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Our study finds that individuals playing in single gender groups make larger contributions; these increases are driven by women playing in groups with only women. In mixed gender groups, contributions increase with the share of male participants and over rounds played."
+    page: "pdf p. 1 (Abstract)"
+    note: "Not a mechanism for reservation effects; recorded because it speaks to how women's expressed preferences depend on the setting (e.g., mixed-gender Gram Sabhas). Randomized group composition. Coefficients and significance are not visible in the capture."
+  - version: wd2024
+    claim: "Women's game contributions do not match their household's sanitation practice because men traditionally make household financial decisions."
+    type: patriarchy_backlash
+    status: speculated
+    direction: explains_null
+    quote: "We find that game contributions match household sanitation behaviors for men but not for women. This may reflect common patterns of intrahousehold decision making in rural India, which traditionally allocate financial decisions to male household members (Routray et al., 2017)."
+    page: "pdf p. 1 (Introduction)"
+    note: "Explains why women's stated preference does not show up in household behaviour; patriarchy_backlash is the closest type (male control of decisions)."
+  - version: wd2024
+    claim: "Expectations about what the group will contribute matter: successful coordination in earlier rounds raises contributions."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "In addition, we find evidence that expectations of group contributions matter. Game participants increased their contributions when they successfully coordinated (reached the public payoff threshold) in previous rounds."
+    page: "pdf p. 1 (Introduction)"
+    note: "Type 'other' = coordination/expectations. Implies contributions mix sanitation valuation with beliefs about others."
+
+normative:
+  - version: wd2024
+    claim: null
+    stance: none_stated
+    quote: null
+    page: null
+    note: "No claim about quota policy. The only policy claim is about sanitation programmes: 'sanitation promotion programs, which rightfully focus on community mobilization, could be more effective if they explicitly incorporated gender preferences and considered the social decision-making environment in their design' (Abstract)."
+
+measurement:
+  preferences:
+    method: wtp_game
+    unit_of_gap: individual
+    gap_assumption: varies_by_group
+    tested_gap: null
+    quote: "We designed a sanitation-themed public goods game in which participants made contributions that corresponded to varying levels of sanitation and hygiene investments."
+    page: "pdf p. 1 (Abstract)"
+    note: "Incentivized stated preference: contributions in a threshold public goods game. The women-men gap depends on the social setting (women-only vs men-only vs mixed groups), so gap_assumption is coded varies_by_group in the sense of group composition, not religion/caste. tested_gap is null because the capture shows no gap test or coefficients. The authors' validation cuts against reading women's contributions as sanitation preference: 'game behavior and sanitation practices are positively correlated for men and negatively correlated for women' (Abstract)."
+  outcomes:
+    source: other
+    units: "Individual game contributions (Rs.) per round; household sanitation and hygiene practices from a participant survey"
+    n_units: 69
+    assignment_unit: village
+    quote: "We implemented these games with over 1500 participants in 69 villages in rural Bihar and Odisha, India, randomly varying group gender composition (women only, men only, and mixed gender)."
+    page: "pdf p. 1 (Abstract)"
+    note: "Not applicable to reservation: no leader, no public-good provision outcome. The 'treatment' is group gender composition, randomized at village level ('Group composition was randomized at the village level', Introduction)."
+
+# No estimates: the capture shows no tables, coefficients, standard errors or
+# sample splits. A pref_gap estimate needs the full text (contribution on
+# gender, pooled and by group type).
+estimates: []

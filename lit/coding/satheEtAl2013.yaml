@@ -1,0 +1,191 @@
+key: satheEtAl2013
+versions:
+  - id: epw2013
+    file: sathe_klasen_priebe_biniwale_2013_epw.pdf
+    citation: "Economic and Political Weekly 48(11): 50-57, 16 March 2013, 'Can the Female Sarpanch Deliver? Evidence from Maharashtra'"
+    year: 2013
+    page_offset: "printed = pdf + 48 (pdf p. 1 is the JSTOR cover). Two-column layout scrambles the -layout text; quotes taken from 'pdftotext -raw', which keeps column order. Line-break hyphens rejoined."
+  - id: dp2013
+    file: sathe_klasen_priebe_biniwale_2013_crc_dp138.pdf
+    citation: "Courant Research Centre PEG Discussion Paper No. 138, April 2013, 'Does Having a Female Sarpanch Promote Service Delivery for Women and Democratic Participation of Women? Evidence from Maharashtra, India'"
+    year: 2013
+    page_offset: "printed = pdf - 2 (pdf p. 3 = printed 1)"
+    note: "Listed second because it is dated April 2013, after the EPW issue, and says 'A version of this article has appeared in Economic and Political Weekly' (p. 1). It is probably the authors' manuscript; text and tables are the same apart from the abstract and copyedits (lit/version_diffs/sathe.md)."
+meta:
+  year_first: 2013
+  year_published: 2013
+  setting: "Sangli district, Maharashtra: 32 villages (16 female-sarpanch, 16 matched male-sarpanch), 640 women respondents, survey Oct-Nov 2008"
+  design: "other: matched cross-section. Female-sarpanch villages drawn PPS by taluka, each matched to a geographically close open-category male-sarpanch village; z-tests on means and respondent-level OLS with gender x election-year (2005 vs 2007) interactions"
+
+mechanism:
+  # ---------------- EPW ----------------
+  - version: epw2013
+    claim: "Female sarpanchs start as disadvantaged political outsiders and need time to gain confidence and experience; they underperform men after one year and outperform them after three to three-and-a-half."
+    type: experience_learning
+    status: tested
+    direction: explains_effect
+    quote: "This is consistent with the idea that female sarpanch, who are more likely to be disadvantaged and political outsiders, need time to gain confidence and experience before they can deliver results."
+    page: "54"
+    note: "Tested through election-year splits (Table 4 rows 2-3, 6) and Gen x Elect05 in Table 6 (IOSA 5.903***, Gen -4.525***). Also explains the negative short-run effect ('after one year, a more experienced and confident male sarpanch might be responsible for better service delivery', p. 54). Election year is a village-level characteristic, so tenure is confounded with whatever differs between 2005- and 2007-election villages (10 villages in the 2007 group). Experience itself is not measured."
+  - version: epw2013
+    claim: "Female sarpanchs raise women's democratic participation, which in turn improves service availability, especially in female-led villages."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Thus, having a female sarpanch affects the political participation of women in a village positively and it is likely to be through this channel that the availability of services improves over a period of three to three-and-a-half years."
+    page: "57"
+    note: "Tested: IODP regressed on Gen (2.601***), IODP in the IOSA regression (0.202***), and Gen x IODP (0.190***) (Table 6, p. 55). Both indices come from the same respondents' answers, so the IODP-IOSA link may reflect reporting; the authors acknowledge 'participation generates greater \"ownership\" of services which leads to a more positive view towards them' (p. 55, text cropped in the JSTOR scan; full sentence in dp2013 p. 10). Significance is one-tailed and SEs are not clustered by village. The EPW abstract drops the DP's sentence on this channel, but the body keeps it."
+
+  # ---------------- CRC DP ----------------
+  - version: dp2013
+    claim: "Female sarpanchs start as disadvantaged political outsiders and need time to gain confidence and experience; they underperform men after one year and outperform them after three to three-and-a-half."
+    type: experience_learning
+    status: tested
+    direction: explains_effect
+    quote: "Thus the somewhat disadvantaged female sarpanchs seem to have gained in confidence and experience, have been on a steep learning curve and start to deliver better than the male sarpanchs after a longer period, while after one year, a more experienced and confident male sarpanch might be responsible for better service delivery."
+    page: "8"
+    note: "Same evidence as EPW. DP abstract states the short-run negative explicitly: 'service delivery in villages with more recently elected female sarpanchs is worse' (p. 1); EPW abstract drops it."
+  - version: dp2013
+    claim: "Female sarpanchs raise women's democratic participation, which in turn improves service availability, especially in female-led villages."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Female leaders ensure that, over time, democratic participation by women improves. This increases service delivery directly and, in addition, increases the impact of democratic participation on service delivery in those villages headed by a female."
+    page: "11"
+    note: "Abstract (p. 1): 'The democratic participation of women, in turn, affects the availability of services very robustly.' Alternative reading offered on p. 10: 'it might also be related to the fact that participation generates greater 'ownership' of services which leads to a more positive view towards them.'"
+
+normative:
+  - version: epw2013
+    claim: "Reservation works with a lag, so the reservation period should be lengthened from five to about ten years, instead of or in addition to raising the quota to 50%."
+    stance: pro_quota
+    quote: "The policy implication that comes out of this is that mandated reservation for female sarpanch would work better if the time period is increased from five years to (say) 10 years. Thus, instead of increasing reservation for women to 50% as has been done, or in addition to it, it may be a good step if the time period of reservation is increased as well."
+    page: "57"
+    note: "A design reform within support for reservation (longer terms), not a condition on support."
+  - version: dp2013
+    claim: "Reservation works with a lag, so the reservation period should be lengthened from five to about ten years, instead of or in addition to raising the quota to 50%."
+    stance: pro_quota
+    quote: "The policy implication that comes out of this is that mandated reservation for female sarpanchs would work better if the time period is increased from 5 years to (say) 10 years. Thus instead of increasing the reservation for women to 50 per cent as has been done, or in addition to it, it may be a good step if the time period of reservation is increased."
+    page: "12"
+    note: "EPW adds 'as well' at the end."
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: not_applicable
+    tested_gap: not_applicable
+    quote: "We have selected such services and issues which are of particular relevance and interest to women. Thus though roads and electricity help women too, we have not included them in this Index."
+    page: "5 (dp2013)"
+    note: "Only women were interviewed, so no men-women preference gap can be measured. The authors choose 'women's' services themselves; no literature is cited for the choice, so assumed_from_literature is the closest code (better read as 'assumed by authors')."
+  outcomes:
+    source: villager_survey
+    units: "Respondent-level Index of Services Availability (IOSA, % of maximum score over 20 questions on water, toilets, gutters, schools, ration shops, SHGs, scheme implementation, male alcoholism) and Index of Democratic Participation (IODP, 18 questions), each 0-100"
+    n_units: 32
+    assignment_unit: "village (gram panchayat with its own sarpanch; villages > 600 population)"
+    quote: "Instead of examining the budgetary allocations, we have conducted a survey of the intended beneficiaries and asked them what kind of services they perceive they have access to."
+    page: "2 (dp2013)"
+    note: "Perceptions, not audited supply. 640 women (20 per village, 10 BPL + 10 APL). Treatment is female vs male sarpanch, not reservation per se; the paper does not report how many female seats were reserved."
+
+estimates:
+  - version: epw2013
+    estimand: provision
+    outcome: "IOSA (index of services availability, 0-100), all 32 villages"
+    outcome_family: other
+    diff: -0.08
+    se: 0.971
+    se_source: computed
+    p_or_stars: "n.s."
+    control_mean: 46.78
+    control_sd: 11.46
+    n_units: 32
+    n_obs: 640
+    adjusted: false
+    table: "Table 4, row 1"
+    page: "54"
+    preferred: true
+    note: "Female 46.70 (SD 13.05, N 320) minus male 46.78 (SD 11.46, N 320). SE computed as a two-sample z with respondents independent; clustering by village would make it larger. Composite of water, sanitation, schools, ration shops etc., hence 'other'. Identical in dp2013 Table 4 p. 17."
+  - version: epw2013
+    estimand: provision
+    outcome: "IOSA, villages with 2005 elections (female sarpanch ~3.5 years in office)"
+    outcome_family: other
+    diff: 2.73
+    se: 1.186
+    se_source: computed
+    p_or_stars: "Significant (5%)"
+    control_mean: 46.73
+    control_sd: 12.0
+    n_units: 22
+    n_obs: 440
+    adjusted: false
+    table: "Table 4, row 2"
+    page: "54"
+    preferred: false
+    note: "Subgroup. Text says 49.6 for the female mean; table 49.46."
+  - version: epw2013
+    estimand: provision
+    outcome: "IOSA, villages with 2007 elections (female sarpanch ~1 year in office)"
+    outcome_family: other
+    diff: -6.25
+    se: 1.529
+    se_source: computed
+    p_or_stars: "Significant (5%)"
+    control_mean: 46.89
+    control_sd: 10.24
+    n_units: 10
+    n_obs: 200
+    adjusted: false
+    table: "Table 4, row 3"
+    page: "54"
+    preferred: false
+    note: "Subgroup; 5 villages per arm."
+  - version: epw2013
+    estimand: provision
+    outcome: "IOSA, OLS with respondent controls (Gen coefficient, model 1)"
+    outcome_family: other
+    diff: -0.478
+    se: null
+    se_source: stars_only
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: true
+    table: "Table 6, col 1"
+    page: "55"
+    preferred: false
+    note: "Controls include IODP (a likely mediator), caste, education, land, assets, age, population, election year, BPL. No SEs printed; stars are one-tailed."
+  - version: epw2013
+    estimand: provision
+    outcome: "IODP (index of women's democratic participation, 0-100), all villages"
+    outcome_family: participation
+    diff: 3.03
+    se: 1.306
+    se_source: computed
+    p_or_stars: "Significant (5%)"
+    control_mean: 36.78
+    control_sd: 15.90
+    n_units: 32
+    n_obs: 640
+    adjusted: false
+    table: "Table 5, row 1"
+    page: "54"
+    preferred: true
+    note: "Female 39.81 (SD 17.12) vs male 36.78 (SD 15.90). Table prints female N = 220, but the row covers all 320 female-village respondents; SE uses 320 (with 220 it is 1.457). Respondents treated as independent."
+  - version: epw2013
+    estimand: provision
+    outcome: "IODP, OLS with respondent controls (Gen coefficient, model 4)"
+    outcome_family: participation
+    diff: 2.601
+    se: null
+    se_source: stars_only
+    p_or_stars: "*** (one-tailed)"
+    control_mean: null
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: true
+    table: "Table 6, col 4"
+    page: "55"
+    preferred: false
+    note: "With Gen x Elect05 (col 5): Gen -5.330***, Gen x Elect05 11.406***."

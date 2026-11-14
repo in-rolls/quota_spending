@@ -1,0 +1,252 @@
+key: rajaramanGupta2008
+versions:
+  - id: wp2009
+    file: rajaraman_gupta_2009_nipfp_wp.pdf
+    citation: "Rajaraman & Gupta, 'Further Evidence on the Policy Impact of Randomised Political Reservation', NIPFP working paper (undated; PDF created 22 Jan 2009)"
+    year: 2009
+    page_offset: "printed = pdf"
+  - id: igdr2012
+    file: rajaraman_gupta_2012_igdr.pdf
+    citation: "Rajaraman & Gupta, 'Public expenditure choices and gender quotas', Indian Growth and Development Review 5(2) 2012, pp. 108-130"
+    year: 2012
+    page_offset: "printed = pdf + 106"
+meta:
+  year_first: 2008   # we hold the 2009 WP. Bardhan et al. (JGD 2010, p. 32) cite 'Rajaraman and Gupta (2008)' with the buildings and revenue results, so a 2008 draft circulated.
+  year_published: 2012
+  setting: "17 purposively chosen districts (9 backward + 8 comparators) in MP, Chhattisgarh, Rajasthan, Orissa; 780 GPs drawn (776 with SGRY spending data); GP-secretary survey, reference year 2005-06"
+  design: "random reservation, cross-section (one year of SGRY spending)"
+
+mechanism:
+  - version: wp2009
+    claim: "Water spending follows economic fundamentals (need, as shown by water-borne disease risk, and per capita funding), not the head's gender."
+    type: other
+    status: tested
+    direction: explains_null
+    quote: "Clearly gender reservation of the post of head does not matter in sectoral choices driven by fundamentals as is the case for water, where the response to factors determining the incidence of water-borne diseases, in terms of ensuring access to safe (non-surface) drinking water over the entire area of the GP, was clearly the overriding consideration."
+    page: "16"
+    note: "Need/fundamentals. Tested by the water probit (Table 2) and a separate disease-incidence probit (Table 3)."
+  - version: wp2009
+    claim: "Decisions are collective, and the uniform one-third quota for women council members, not the sarpanch's gender, probably aligns water spending with need."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "If it is presumed that women are more concerned with water adequacy and quality than men, then the one-third gender reservation of the posts in the council is probably what drives the uniform response to fundamentals, regardless of gender of the head."
+    page: "16"
+    note: "Repeated on p. 19. Not testable: the member quota is the same in every GP. Retained in 2012."
+  - version: wp2009
+    claim: "Because reservation rotates, a female sarpanch has no interest in dominating the council, since domination would later work against women when the seat is unreserved."
+    type: discretion_institutions
+    status: asserted
+    direction: explains_null
+    quote: "With rotating reservation, prima facie, it is not in the interests of the female sarpanch to allow domination even under her stewardship, since that will swing decisions away from the preferences of her group in the subsequent rounds of elections"
+    page: "6"
+    note: "Verbal argument about rotation incentives. 2012 turns this into a formal model (see igdr2012 entries)."
+  - version: wp2009
+    claim: "A reserved woman sarpanch who hopes to win re-election in an open seat will move toward the median voter's preferences, so gender-specific preferences are not enforced."
+    type: other
+    status: asserted
+    direction: explains_null
+    quote: "What if the female sarpanch has personal rather than purely gender-based aspirations, and sees scope for re-election as an unreserved open-field candidate in the subsequent election. In that case again, she is likely to revert to the preferences of the median voter in order to have appeal as an unreserved candidate to the electorate."
+    page: "7"
+    note: "Re-election / median-voter (electoral incentives). Also in the WP conclusion (p. 18). DROPPED in 2012: the IGDR text has no re-election or median-voter-reversion argument (checked by text search; median voter appears only in the literature review, pp. 109, 112)."
+  - version: wp2009
+    claim: "Sarpanch dominance, and hence the head's gender, matters for some decisions (buildings) but not for need-driven ones (water)."
+    type: discretion_institutions
+    status: tested
+    direction: explains_effect
+    quote: "These coefficients point to two conclusions. First, it is clear that in the sample here, sarpanch gender and attributes can matter for some but not all expenditure decisions."
+    page: "16"
+    note: "Based on the buildings probit (Table 4), where female reservation is +0.2349*. Conclusion p. 19: 'Sarpanch domination therefore can vary by type of decision.' The buildings result and this claim are DROPPED in 2012."
+  - version: wp2009
+    claim: "Reserved women heads may copy the building choices of more educated, higher-status (mostly male) sarpanches."
+    type: other
+    status: speculated
+    direction: explains_effect
+    quote: "the robustness of the dummy for high school education, where these will be mostly male (see table A5), suggests that gender-reserved heads may pattern their choices on those made by sarpanches with more education, and therefore higher status."
+    page: "17"
+    note: "Status emulation. Inferred from the education coefficient, not tested directly. Dropped with the buildings analysis in 2012."
+  - version: igdr2012
+    claim: "A formal model: sarpanchs of either gender have short-run incentives to dominate the council, but domination is not inevitable because a rotating female head gains nothing from it in the long run, so effects of the head's gender are context-specific."
+    type: discretion_institutions
+    status: tested
+    direction: explains_null
+    quote: "The second hypothesis is that sarpanch dominance is certainly possible in the short-run, but is not inevitable because of the absence of any long-run incentive for female sarpanches to dominate. This hypothesis is testable cross-sectionally, and is investigated with the data described in the next section."
+    page: "114"
+    note: "New Section 4 model (pp. 112-114). The test is the reservation dummy in the water regressions (insignificant). p. 113: 'any benefit from sarpanch dominance can be secured only in the short run, during the term of the sarpanch, but the mean policy outcome over time reverts to the collective decision'. This replaces the WP's verbal rotation and re-election arguments."
+  - version: igdr2012
+    claim: "Water spending follows fundamentals (disease risk, per capita funding), not the head's gender."
+    type: other
+    status: tested
+    direction: explains_null
+    quote: "The gender of the sarpanch is not significant. Clearly the response to factors determining the incidence of water-borne diseases, in terms of ensuring access to safe (non-surface) drinking water over the entire area of the GP, was the overriding consideration."
+    page: "120"
+    note: "Disease model run first (Table II) and its significant variables 'used as instruments' (p. 118). Water probit/OLS in Table III, quantum OLS in Table IV."
+  - version: igdr2012
+    claim: "The uniform one-third quota for women members probably drives the response to need, regardless of the head's gender."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "If it is presumed that women are more concerned with water adequacy and quality than men, then the one-third gender reservation of the posts in the council is probably what drove the uniform response to fundamentals, regardless of gender of the head."
+    page: "120-121"
+    note: "Repeated in the conclusion (pp. 122-123, 'If, as is commonly presumed, women are more concerned ...')."
+  - version: igdr2012
+    claim: "Sarpanch dominance may come into play where fundamentals are less pressing, as in targeted anti-poverty schemes."
+    type: discretion_institutions
+    status: asserted
+    direction: explains_effect
+    quote: "Where the fundamentals are less pressing, sarpanch dominance may come into play, such as for example in targeted anti-poverty schemes, where individual beneficiary identification may be appropriated by heads of councils as a vehicle for patronage"
+    page: "123"
+    note: "In the WP this claim rested partly on the paper's own buildings result. In 2012 it rests only on other studies of targeting."
+
+normative:
+  - version: wp2009
+    claim: "Because the head's attributes matter for some decisions, keeping decisions collective requires term limits on how long anyone can serve as sarpanch."
+    stance: none_stated
+    quote: "As long as sarpanch attributes matter for any decision, preservation of collective decision-making calls for limits on the permissible number of terms as head for any individual."
+    page: "19"
+    note: "A policy recommendation (term limits for heads), but it is not for or against gender quotas, so stance on quotas is coded none_stated. Recode as conditional if term-limit design counts as quota policy (cf. the brief's 'lengthen reservation terms' example)."
+  - version: igdr2012
+    claim: "Same term-limit recommendation; adds that any finding on a headship gender quota is context-specific and cannot support general expectations."
+    stance: none_stated
+    quote: "As long as sarpanch attributes matter for any decision, preservation of collective decision-making calls for limits on the permissible number of terms as head for any individual."
+    page: "123"
+    note: "Abstract (p. 108): 'any finding on the impact of a gender quota at the level of head will necessarily be context-specific, and cannot become the basis for generalized expectations.' This is skepticism about generalizing the evidence, not about the policy."
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: constant
+    tested_gap: not_applicable
+    quote: "The only objective measure of gender-based preferences in the Indian rural context (C-D, 2004b) also finds gender-based differences in the importance given to water"
+    page: "115"
+    note: "igdr2012 quote; WP p. 14 has the same sentence ('affirms this common presumption'). No households surveyed (WP p. 11; IGDR p. 114). The constant gap is explicit in the 2012 model (p. 112): 'preferences are uniform within each gender'. unit_of_gap null: no gap is estimated."
+  outcomes:
+    source: gp_staff_or_records
+    units: "GP-level SGRY spending in 2005-06: any spending on waterworks (incl. sanitation, drainage, irrigation) or buildings (binary); 2012 adds ln(1+water share) and ln(1+water Rs); WP adds per capita own tax/non-tax revenue"
+    n_units: 776
+    assignment_unit: gp
+    quote: "Both parts of the questionnaire were filled in from the same respondent, who was in most cases the GP secretary, a paid non-elected functionary."
+    page: "114"
+    note: "igdr2012 page (WP p. 11). 255 of 780 GPs reserved for women. 'Water' pools drinking water, irrigation, sanitation and drainage (IGDR p. 115)."
+
+estimates:
+  - version: wp2009
+    estimand: provision
+    outcome: "Any SGRY spending on waterworks incl. drainage (probit marginal effect)"
+    outcome_family: drinking_water
+    diff: -0.0092
+    se: null
+    se_source: stars_only
+    p_or_stars: "n.s. (no star)"
+    control_mean: null
+    control_sd: null
+    n_units: 776
+    n_obs: 776
+    adjusted: true
+    table: "Table 2 (Spec 1)"
+    page: "25"
+    preferred: true
+    note: "Water is not drinking water only; it pools irrigation, sanitation and drainage. No SEs anywhere in the paper. Intercept-dummy marginal effect, with reservation interactions in the model (handpumps, adequacy, toilets, wells, per capita SGRY). 55.15% of all GPs spent on water (Table 1). Spec 2 -0.0094, Spec 3 -0.0340."
+  - version: wp2009
+    estimand: provision
+    outcome: "Any SGRY spending on buildings (probit)"
+    outcome_family: public_works_other
+    diff: 0.2349
+    se: null
+    se_source: stars_only
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: 776
+    n_obs: 776
+    adjusted: true
+    table: "Table 4 (Spec 1)"
+    page: "28"
+    preferred: true
+    note: "The WP's only significant gender result; dropped from the 2012 version. Buildings range from animal/bus shelters to offices and schools. The table does not say whether entries are marginal effects. Reservation x per capita SGRY -0.0021***. Spec 2 0.2207 (n.s.), Spec 3 0.2290*. 45.23% of GPs spent on buildings."
+  - version: wp2009
+    estimand: provision
+    outcome: "Per capita own non-tax revenue (Tobit)"
+    outcome_family: other
+    diff: -0.9233
+    se: null
+    se_source: stars_only
+    p_or_stars: "n.s. (no star)"
+    control_mean: null
+    control_sd: null
+    n_units: 780
+    n_obs: 780
+    adjusted: true
+    table: "Table 5 (Spec 1)"
+    page: "29"
+    preferred: true
+    note: "Revenue, not spending. Dropped from 2012. Tax revenue: -0.0668 (n.s.)."
+  - version: igdr2012
+    estimand: provision
+    outcome: "Any SGRY spending on waterworks incl. drainage (probit marginal effect, aggregated over interactions at means)"
+    outcome_family: drinking_water
+    diff: -0.0264
+    se: null
+    se_source: stars_only
+    p_or_stars: "n.s. (no star)"
+    control_mean: null
+    control_sd: null
+    n_units: 776
+    n_obs: 776
+    adjusted: true
+    table: "Table III (Probit-1)"
+    page: "119"
+    preferred: true
+    note: "Minus sign printed as '2' in extracted text ('20.0264'); sign confirmed against the version diff. Same model as WP Spec 1, but reported as a marginal effect 'aggregated across the intercept, and worked through all variables with which gender is interacted, at the means' (p. 120). This explains the jump from -0.0092. Probit-2 -0.0265. Table notes: standard errors not reported."
+  - version: igdr2012
+    estimand: provision
+    outcome: "Any SGRY spending on waterworks (linear probability model)"
+    outcome_family: drinking_water
+    diff: -0.0102
+    se: null
+    se_source: stars_only
+    p_or_stars: "n.s. (no star)"
+    control_mean: null
+    control_sd: null
+    n_units: 776
+    n_obs: 776
+    adjusted: true
+    table: "Table III (OLS-1)"
+    page: "119"
+    preferred: false
+    note: "Coefficient on the reservation dummy in a model with interactions (not aggregated at means, so it is the effect when the interacted variables are zero). N is printed '76', a typo for 776. OLS-2 -0.0105."
+  - version: igdr2012
+    estimand: provision
+    outcome: "ln(1 + water expenditure / total SGRY expenditure) (OLS)"
+    outcome_family: drinking_water
+    diff: 0.0655
+    se: null
+    se_source: stars_only
+    p_or_stars: "n.s. (no star)"
+    control_mean: null
+    control_sd: null
+    n_units: 776
+    n_obs: 776
+    adjusted: true
+    table: "Table IV (OLS-1)"
+    page: "121"
+    preferred: false
+    note: "New robustness check in 2012. Reservation main effect in a model with interactions. OLS-2 0.0648."
+  - version: igdr2012
+    estimand: provision
+    outcome: "ln(1 + water expenditure in Rs) (OLS)"
+    outcome_family: drinking_water
+    diff: 2.6505
+    se: null
+    se_source: stars_only
+    p_or_stars: "n.s. (no star)"
+    control_mean: null
+    control_sd: null
+    n_units: 776
+    n_obs: 776
+    adjusted: true
+    table: "Table IV (OLS-3)"
+    page: "121"
+    preferred: false
+    note: "Main effect in a model with reservation x ln total SGRY receipts (-0.2898) and other interactions, so it is not interpretable as an average effect. OLS-4 4.5569."

@@ -1,0 +1,50 @@
+key: das2015TownHall
+label: Das (2015)
+pdf: das_2015_wp.pdf
+pdf_version: working paper Nov 2015
+notes: table labels it 2014
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: F
+      status: confirmed
+      source: p. 24, Table 2 (col. 1); caveat p. 25, fn. 22
+      note: |-
+        Stated preferences: REDS individual respondents name their top-3 of 14 items for Panchayat investment; logit of "water in top 3" on a Woman dummy with village FE. Woman = 0.140*** (0.0368), n = 20,918; household-FE OLS (Table 3) 0.0134* (0.00684). F follows from a positive, significant coefficient. Caveat, fn. 22: with schooling/landholding controls the water coefficient "becomes noisier (significant only at 10% significance level)".
+    roads:
+      value: M
+      status: confirmed
+      source: p. 24, Table 2 (col. 3)
+      note: |-
+        Stated top-3 preference, logit with village FE. Woman = -0.259*** (0.0357); household-FE OLS (Table 3) -0.0628***. Negative and significant, so M.
+    irrigation:
+      value: M
+      status: confirmed
+      source: p. 24, Table 2 (col. 6)
+      note: |-
+        Stated top-3 preference ("irrigation canal" item). Woman = -0.517*** (0.0454); household-FE OLS -0.0831***. Negative and significant, so M.
+    educ:
+      value: M
+      status: confirmed
+      source: p. 24, Table 2 (col. 5); caveat p. 25, fn. 22
+      note: |-
+        Stated top-3 preference for "school". Woman = -0.130*** (0.0369); household-FE OLS -0.0307***. M follows. Caveat, fn. 22: "The women coefficient for the school regression (column (5)) loses its significance once other explanatory variables, such as years of schooling and landholding, are included in the regression."
+    sanitation:
+      value: F
+      status: confirmed
+      source: p. 24, Table 2 (col. 2)
+      note: |-
+        Stated top-3 preference ("sanitation and sewage"). Woman = 0.231*** (0.036); household-FE OLS 0.0391***. Positive and significant, so F.
+    health_child_care:
+      value: F
+      status: confirmed
+      source: p. 24, Table 2 (col. 4)
+      note: |-
+        Stated top-3 preference for "health facilities" (no child-care item). Woman = 0.328*** (0.0362); household-FE OLS 0.0496***. Positive and significant, so F. Covers health only.
+audit_notes: |-
+  Label and version: the PDF is dated "November 7, 2015" (title page), but the label says Das (2014). The notes field records this. Either cite the 2015 version or get the 2014 draft; page and table numbers here refer to the Nov 2015 PDF.
+  Data description: the tables.yaml footnote says "REDS 2006". The paper names REDS 2006 but adds "Even though the survey began in the year 2006, most of the households were surveyed in 2008" (p. 21). The final sample is 8,038 households (23,759 adults) in 233 villages across 16 states (p. 21).
+  What is measured: stated preferences. Each adult picks 3 of 14 items for Panchayat investment, and the paper models a 0/1 "mentioned in top 3" marker by logit on a Woman dummy with village FE (Table 2) and by OLS with household FE (Table 3). This is a clean match to the column definition. Only the 6 most-demanded goods are analysed.
+  Blank domains: electrification and street lighting are among the 14 items (fn. 18, p. 21), but no gender estimate is reported for them, so blank is right. No reported domain was left blank.
+  Referee points: (i) the school and water gaps are fragile to controls (fn. 22); (ii) top-3 mention is a salience measure that is not independent across goods, because naming one item crowds out another, so a woman naming water more often mechanically lowers her other mentions; (iii) the paper labels water, sanitation and health as "women preferred" for later analysis (p. 32) based on Table 2, which fits the codes.

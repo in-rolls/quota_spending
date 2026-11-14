@@ -1,0 +1,133 @@
+key: nilekani2010
+label: Nilekani (2010)
+pdf: nilekani_2010_yale_senior_essay.pdf
+pdf_version: 'Yale College senior essay 2010'
+notes: null
+audit_notes: |-
+  The PDF is Janhavi Nilekani, "Reservation for Women in Karnataka Gram
+  Panchayats: The Implications of Non-Random Reservation and the Effect of
+  Women Leaders", Economics Senior Essay, Yale College 2010 (title page). The
+  label "Nilekani (2010)" is correct in author, spelling and year. It needs a
+  bib entry as an unpublished undergraduate thesis. Printed page numbers equal
+  PDF page numbers in this file.
+  Referee points.
+  (1) It is an undergraduate essay, not peer reviewed, and the author calls the
+  results provisional. Fn 22 (p. 32) says "I have procured final data on
+  women's seats for all GPs ... and will be updating the results in the future.
+  I was unable to get the data translated in time".
+  (2) The design is a lottery at the margin. Treatment and control are GPs with
+  equal numbers of women's seats in the same taluk and caste category, where
+  only a subset was reserved (pp. 33-34). But the outcome tests are pooled
+  two-sample t-tests of reserved (887) vs unreserved (923) GPs (p. 34). They do
+  not condition on the taluk-by-category-by-seat-count cells within which the
+  lottery ran. If the reserved share differs across cells, the pooled
+  difference in means is not the lottery-based comparison. Balance on nine
+  Census 2001 variables (Table 4, p. 34) is reassuring but does not fix this.
+  (3) The 286 tests are 116 variables observed in several periods, so they are
+  far from independent (e.g. Vana-Samvadhana grants and spending, p. 37).
+  (4) The RDPR outcomes are self-reported by GPs and "are not audited" (p. 30).
+  (5) All six significant results are in the Gram Swaraj fiscal data. None is
+  in the RDPR water, sanitation or meeting data, and none survives Bonferroni
+  (p. 38).
+summary:
+  sample:
+    value: 1,810 GPs
+    status: confirmed
+    source: p. 34; Table 4 (p. 34)
+    note: |-
+      p. 34 says "Ultimately, I had a treatment group of 887 GPs, and a control
+      group of 923 GPs, and hence a final dataset of 1,810 GPs". These are the GPs
+      at the lottery margin, out of Karnataka's 5,626. Table 4 reports N=1809.
+  location:
+    value: Karnataka
+    status: confirmed
+    source: title page; pp. 30, 33
+    note: null
+  years:
+    value: 2005–2007
+    status: confirmed
+    source: p. 32; p. 35
+    note: |-
+      p. 32 says "my outcome data is for the months April 2005-March 2007, i.e.,
+      the Indian fiscal years '05-'06 and '06-'07". The reservation term is the
+      one starting with the March 2005 elections. The RDPR data are four
+      6-month periods from Apr 2005 to Mar 2007 (p. 35), and the Gram Swaraj data
+      are FY 2005-06 and 2006-07 (p. 36). The reports themselves run to March
+      2008 (p. 30), but that year is not used.
+  kind_of_data_for_outcomes:
+    value: Administrative data
+    status: confirmed
+    source: p. 30
+    note: |-
+      Two administrative sources. One is the RDPR department's bi-yearly
+      reports, which are "supplied to the Karnataka Government by the gram
+      panchayats, and are not audited". The other is Gram Swaraj Project fiscal
+      data, which "have been extensively audited at the panchayat level" (p. 30).
+  number_of_outcomes:
+    value: '286'
+    status: mismatch
+    source: p. 35 (Table 5); p. 36; Appendices B and C
+    note: |-
+      (a) Distinct dependent variables number 116. That is 27 RDPR indicators
+      (Table 5, pp. 35-36; I counted 4 on functioning, 9 on revenue and 14 on
+      water and sanitation) plus "89 variables on tax collection, grants
+      received, and expenditure" from Gram Swaraj (p. 36).
+      (b) Tests number 286. That is 27 x 4 six-month periods = 108 (p. 35, "a
+      total of 108 (27 into 4) independent sampling t-tests") plus 89 x 2 fiscal
+      years = 178 (p. 36). Appendix B has 108 result rows. The current value
+      matches (b), the count of tests, not outcomes. If the column counts
+      dependent variables, as the other rows do, it should be 116.
+    proposed: '116'
+  outcomes:
+    value: |-
+      GP functioning: meetings and decisions.
+
+      Revenue / tax administration: tax demand, collection, balances.
+
+      Water and sanitation: borewells, mini water schemes, piped water schemes, maintenance spending, total water expenditure, water-rate demand/collection, individual and community latrines.
+
+      Additional fiscal/governance outcomes: 89 audited Gram Swaraj fiscal variables on taxes, grants, and expenditure across schemes.
+    status: confirmed
+    source: Table 5 (pp. 35-36); p. 36
+    note: |-
+      This matches the three column heads of Table 5 and the Gram Swaraj
+      description on p. 36. Water items include "not in use" counts, which the
+      cell folds into the scheme names.
+  results:
+    value: “Overall, the results show very weak effects of reservation on the available governance indicators. The difference of means between the two groups on any available indicator of government performance was statistically significant for just 6 t-tests out of 286.” (pg. 36)
+    status: confirmed
+    source: p. 36; pp. 37-38
+    note: |-
+      The quote is verbatim from p. 36, section 4.3. None of the 108 RDPR tests
+      has p<0.05 (p. 36). The 6 significant tests are all Gram Swaraj fiscal
+      items (pp. 37-38). Two are Vana-Samvadhana grants and spending in 2006-07,
+      and two are income from GP permanent assets in both years. The other two,
+      in 2005-06, are general administration spending and total spending, which
+      are lower in reserved GPs, with Cohen's d 0.05-0.08. p. 38 adds "No test
+      was significant at the Bonferroni-corrected significance level."
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: none
+    source: pp. 34-38; Appendices B-C
+    note: |-
+      Every outcome is a separate "independent sampling t-test" of the
+      difference in means (p. 35). Neither the essay nor the appendices report a
+      joint F or Wald test, or a pooled test across outcomes or periods. A text
+      search for "joint" finds only a quoted email in fn 21 (p. 29) about the
+      "joint distribution of all observed factors". The balance check (Table 4)
+      is also variable by variable.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: corrected p-values (Bonferroni over all 286 t-tests; no test survives)
+    source: pp. 37-38, fn 24
+    note: |-
+      p. 38 says "No test was significant at the Bonferroni-corrected
+      significance level". Fn 24 says "the Bonferroni correct significant level
+      is 0.05/286, which is about 0.0002". It also argues from the expected false
+      positives: "At the 95% confidence level, out of a hundred t-tests we can
+      expect five to show a Type I error ... When only 6 of 286 t-tests reject
+      the null hypothesis, it is consistent with this expectation" (pp. 37-38).
+      Bonferroni is conservative here because the tests repeat the same
+      variables across periods.

@@ -1,0 +1,101 @@
+key: deiningerNagarajanSingh2020
+label: Deininger et al. (2020)
+pdf: deininger_nagarajan_singh_2020_jce.pdf
+pdf_version: Journal of Comparative Economics 48(2) 2020, pp. 277-291 (printed page = pdf page + 276)
+notes:
+audit_notes: |-
+  This row is now the JCE paper only. It was split from a mixed row (author approved, 2026-10-24): the bib entry, sample ("163 villages") and location ("12 states") were this paper, but the pdf, outcomes, number_of_outcomes (17) and results (pp. 3, 12, 15) came from World Bank WPS 9350, which is a different study published as Deininger, Jin, Nagarajan and Singh (2022, JDS); those cells moved to deiningerJinNagarajanSingh2022. Every summary cell here was coded fresh from the published article: Deininger, Nagarajan and Singh, "Women's political leadership and economic empowerment: Evidence from public works in India", J. Comparative Economics 48(2): 277-291, 2020, doi 10.1016/j.jce.2019.12.003 (printed on pdf p. 1 and in the Supplementary materials line, p. 290). Printed page = pdf page + 276. Old values are kept in previous.
+
+  The old parentheticals "(242 villages ...)", "(16 states)" and "(2006)" are not analysis samples here either: the only matches are the 1971 REDS base "252 villages of 16 states" and the 2006 REDS round (fn 19, p. 281) and 2006 elections (fn 17).
+
+  Referee points. (a) Job cards: the descriptive Table 2 (p. 283) shows 30% vs 22% of households with job cards in ever- vs never-reserved villages and the text says "reservation broadened the range of those able to register", but the regression (Table 3 col. 1, p. 285) finds "neither current nor past reservation ... had significant impact on household access to a job card" (p. 284). (b) The introduction says past reservation "doubled the share of women opening bank accounts" (p. 278), but Table 5 (p. 287) finds a significant effect of current, not past, reservation on new NREGS accounts, and the text says "Past reservation has no significant impact as this is a one-time event" (p. 287). (c) Tables 4-6 notes say "Bonferroni-adjusted p-values are reported", but the reported F-test p-values equal the unadjusted chi-square(1) p-values (e.g. Table 4A col. 1 F = 2.028, p = 0.154; Table 5A col. 1 F = 5.590, p = 0.0181), so no adjustment is visible. (d) The women-candidate result (55% vs 14%, Table 8, p. 289) is a descriptive comparison of 22 vs 80 villages; the regression is "not reported" (p. 290).
+summary:
+  sample:
+    value: 163 villages. The number of GPs is unspecified.
+    status: corrected
+    source: p. 277 (abstract); p. 281 (Section 4.1); Table 1 (p. 282); Table 7 note (p. 289)
+    note: |-
+      "a complete enumeration in 2014/15 of all adult residents in 163 villages in 12 states ... Information was collected on about 213,000 individuals in 69,206 households, of which 17,948 had a job card" (p. 281). Table 1: 163 villages (83 ever reserved, 80 never). Individual regressions use N = 53,612 job-card household members (Tables 4-6); household regressions 69,206 or 17,948 (Table 3); the village-year regressions use 114 villages in 2007-13, N = 798 (Table 7 note). "163 villages" was right; the "(242 villages in another analysis)" parenthetical is not in this paper.
+    previous: 163 villages (242 villages in another analysis). The number of GPs is unspecified.
+    comment: "2026-10-24, split Deininger row (author approved): dropped '(242 villages in another analysis)'; 163 villages confirmed on p. 281"
+  location:
+    value: 12 states
+    status: corrected
+    source: p. 277 (abstract); p. 278; p. 281 and fn 19
+    note: |-
+      Abstract: "163 villages of 12 main Indian states"; p. 278: "Our sample covers 12 states spread over the entire nation"; fn 19 (p. 281) names them: AP, Bihar, Chhattisgarh, Haryana, Jharkhand, MP, Rajasthan, TN, UP, Maharashtra, Orissa, WB. Consistent throughout. "16 states" is the 1971 base survey (fn 19).
+    previous: 12 states (16 states)
+    comment: "2026-10-24, split Deininger row (author approved): dropped '(16 states)' (1971 base survey, fn 19)"
+  years:
+    value: 2014–2015; village NREGS records 2007–2013
+    status: corrected
+    source: p. 281; p. 288; Table 7 note (p. 289); fn 17 (p. 281)
+    note: |-
+      Individual and household outcomes come from the 2014/15 REDS census (p. 281; Tables 1-2 source lines). Table 7 uses "annual village data for 2007-13 digitized from local administrative records" (p. 288). Reservation history covers elections 2005-2015 (p. 281); 2006 is an election year in fn 17, not an outcome year.
+    previous: 2014–2015 (2006)
+    comment: "2026-10-24, split Deininger row (author approved): dropped '(2006)'; added the 2007-13 village records used in Table 7"
+  kind_of_data_for_outcomes:
+    value: REDS survey + village NREGS administrative records
+    status: corrected
+    source: p. 281; p. 288; Table 7 note (p. 289)
+    note: |-
+      ARIS-REDS 2014/15 household and individual census of job-card households with an NREGS module (participation, applications, bribes, social audits, gram sabha attendance), plus a village questionnaire on elections 2005-2015 (p. 281). Table 7's outcomes are NREGS employment and spending "digitized from local administrative records" for 2007-13 (p. 288).
+    previous: REDS survey
+    comment: '2026-10-24, split Deininger row (author approved): added the village administrative records (Table 7)'
+  number_of_outcomes:
+    value: '30'
+    status: corrected
+    source: Tables 3-7 (pp. 285, 285, 287, 288, 289)
+    note: |-
+      Counting rule: distinct dependent variables regressed on women's reservation in main-text tables. Table 3 (household) = 4: has a job card, log days worked, women's share of days, completed 100 days. Table 4 = 6: formally applied, worked in NREGS, log NREGS days, rationing overall, extensive, intensive. Table 5 = 4: bribe demanded, getting job is tedious, social audit, new NREGS account. Table 6 = 4: attended gram sabha, number of meetings, no information on meetings, problems raised were solved. Table 7 (village-year) = 12: capital-labor ratio and number of work days, each for total and 5 work types. 4+6+4+4+12 = 30. If Table 7's work-type breakdown is counted as 2 outcomes, 20; without Table 7, 18. Table 8 (women candidates) is descriptive only. The old 17 was the WPS 9350 count.
+    previous: '17'
+    comment: '2026-10-24, split Deininger row (author approved): 17 (WPS 9350 count) -> 30 (JCE Tables 3-7)'
+  outcomes:
+    value: |-
+      NREGS access and participation (household): has job card, days worked, women’s share of days worked, completed 100 days.
+      NREGS demand and work (individual): formally applied for work, worked in NREGS, NREGS days worked, rationing (overall, extensive margin, intensive margin).
+      NREGS governance and accountability: bribe demanded, getting a job is tedious, participation in social audit, new NREGS bank account.
+      Participation in village governance: attended gram sabha meetings, number of meetings attended, no information on meetings, problems raised were solved.
+      NREGS works (village level): capital-labor ratio and number of work days, total and by type of work.
+    status: corrected
+    source: Tables 3-7 (pp. 285, 285, 287, 288, 289); Table 8 (p. 289)
+    note: |-
+      Groups follow the table titles: Table 3 "Impact of political reservation on nregs involvement at household level"; Table 4 "... on NREGS work"; Table 5 "... on NREGS governance and accountability"; Table 6 "... on participation in village governance"; Table 7 "capital labor ratio and days of specific types of NREGS work" (water conservation, irrigation, land development, rural road connectivity, others). Not listed because not regressed: share of women candidates and number of candidates in pradhan elections (Table 8, descriptive). The old value was the WPS 9350 outcome list.
+    previous: |-
+      Employment / labor supply: labor-force participation, non-NREGS participation, NREGS participation, total days worked, non-NREGS days worked, NREGS days worked.
+      Sectoral composition of work: self-employment in agriculture, self-employment in non-agriculture, casual labor in agriculture, casual labor in non-agriculture, regular salaried work.
+      Income / labor demand: individual income, would like to work more.
+      Program access / implementation quality: dated receipt, direct payment to bank account, underpayment, complaint if underpaid, complaint addressed.
+      Household agency / bargaining: decisions on food, nonfood, health, education.
+    comment: '2026-10-24, split Deininger row (author approved): replaced WPS 9350 outcome list with the JCE outcomes'
+  results:
+    value: |-
+      “We find that having a female leader imposed by reservation enabled women to more effectively voice their demand for and to benefit from NREGS. It reduced the bribes and harassment they encountered in the process and enhanced their participation in program governance (e.g., by social audits).” (pg. 290)
+
+      “Results in Table 7 suggest that neither current nor past reservation affected the capital-labor ratio or the number of days of NREGS-related work provided.” (pg. 289)
+    status: corrected
+    source: p. 290; p. 289; Tables 4-7 (pp. 285-289)
+    note: |-
+      Both quotes are verbatim (text-layer PDF). Quote 1 is the conclusion (p. 290). Quote 2 (p. 289) records that the effects run through women's access, not through what was built. Supporting numbers, women's effect = beta2 + beta4 for past reservation: formally applied -0.038 + 0.130 = 0.092; worked in NREGS -0.031 + 0.151 = 0.120 (Table 4B, p. 285); bribe -0.018; social audit -0.020 + 0.061 = 0.041 (Table 5B, p. 287). Men's participation falls (beta2 = -0.031, Table 4B). Village governance effects are mixed (Table 6). See audit_notes for the job-card and bank-account inconsistencies in the text. The old value was WPS 9350 text (pp. 3, 12, 15).
+    previous: |-
+      “Three findings stand out: First, contemporaneous reservation affected local governance as measured by the quality of NREGS implementation but had no measurable impact on female labor supply. Second, beyond the reserved period, female leadership reservation had sustained effects on female labor supply to public workfare and to private sector labor markets… Third, past reservation also increased women’s income, their demand for work, and their participation in household decisions relating to spending on food items, health, and education.” (pg. 3)
+
+      “Past reservation is estimated to have led to an 8.2 percentage point increase in
+      the likelihood of female labor force participation.” (pg. 12)
+
+      Lagged reservation increased women’s individual income by about 78%, increased women’s desire to work by about 16 percentage points, and raised women’s participation in household decisions by about 16 percentage points for food, 14 percentage points for health, and 7 percentage points for education. (see pg. 15)
+    comment: '2026-10-24, split Deininger row (author approved): replaced WPS 9350 quotes with JCE quotes (pp. 289, 290)'
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: none
+    source: Tables 3-7 (pp. 285-289)
+    note: |-
+      The F-test rows test linear combinations of reservation coefficients within one outcome (beta1 + beta2 = 0, beta2 + beta4 = 0, ...; p. 281). There is no joint test across outcomes and no summary index. Value left '' as in the other rows, pending the author's decision.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: Bonferroni claimed in notes to Tables 4-6, but the reported p-values look unadjusted; coefficient stars unadjusted
+    source: Notes to Tables 4-6 (pp. 285, 287, 288)
+    note: |-
+      Tables 4-6 notes: "Bonferroni-adjusted p-values are reported for multiple tests in bottom rows of each panel of the table." The reported F-test p-values match unadjusted chi-square(1) tail probabilities: F = 2.028 -> 0.154, 3.207 -> 0.073 (Table 4A); 5.590 -> 0.0181 (Table 5A); 0.715 -> 0.398 (Table 6A). I computed these with scipy. A Bonferroni adjustment over any family of two or more tests would make them larger. Tables 3 and 7 notes make no adjustment claim. Value left '' as in the other rows, pending the author's decision.

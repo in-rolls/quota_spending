@@ -1,0 +1,226 @@
+key: das2015TownHall
+versions:
+  - id: wp2015
+    file: das_2015_wp.pdf
+    citation: "Efficacy of “Town Hall” Meetings in Electoral Democracy: Theory and Evidence from Indian Village Councils, working paper, 7 Nov 2015"
+    year: 2015
+    page_offset: "printed = pdf"
+meta:
+  year_first: 2015
+  year_published: null
+  setting: "REDS 2006 (most households surveyed 2008): 8,038 households, 23,759 adults, 233 villages in 16 states"
+  design: "random/rotational reservation, cross-section (district FE); IV for relative women's Gram Sabha attendance using preference divergence x women reservation"
+
+mechanism:
+  - version: wp2015
+    claim: "Gram Sabha meetings can bind the Pradhan, so the gender mix of attendees shifts public goods toward the group that attends more; women reservation changes who attends."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Using this instrument I show that relative attendance of women changes the composition of public goods construction towards the ones preferred relatively more by women, such as sanitation, health facilities etc, and away from roads, schools etc, which are preferred more by men."
+    page: "6"
+    note: "Tested: relative women attendance on share of women-preferred construction 0.636** (0.261), Table 8 col 1 (p. 34); sanitation 0.503*** (Table 9). Reservation enters through attendance, not directly."
+  - version: wp2015
+    claim: "The Pradhan partly controls meeting procedure, so a woman Pradhan tilts meeting outcomes toward women, and attendance of both genders moves together in response."
+    type: discretion_institutions
+    status: tested
+    direction: explains_effect
+    quote: "Importantly, the model allows the elected policymaker to have partial control over the meeting procedure, and hence, to influence the constraint probabilities in favor of her own group; this new feature of the model makes the meeting outcome depend on policymaker's identity."
+    page: "3"
+    note: "Tested via the co-movement prediction: W.R. 0.184*** and W.R. x women population share -0.355*** on fraction of meetings attended (Table 4, p. 27); same sign for men and women (Table 5, p. 28)."
+  - version: wp2015
+    claim: "Each policymaker implements her own group's preferred policy (citizen-candidate assumption)."
+    type: preferences
+    status: asserted
+    direction: explains_effect
+    quote: "A policymaker always tries to implement her preference"
+    page: "7"
+    note: "Model assumption; the Pradhan's own preference is not measured. Group (gender) preferences are measured for citizens (Tables 2-3)."
+  - version: wp2015
+    claim: "Women attend Gram Sabhas less because discrimination raises their cost of speaking in public meetings."
+    type: patriarchy_backlash
+    status: speculated
+    direction: null
+    quote: "This is consistent with the view that women face significantly higher fixed cost of attendance than men, presumably because of the discrimination they face, especially in public platforms such as Gram Sabha meetings, where systematic perception biases about women (as reported in Beaman et al. (2009)) may make it more costly for them to deliberate."
+    page: "22"
+    note: "Explains the attendance gap (7% women vs 21% men, Table 1), not a reservation effect; direction null because none of the three allowed directions fits."
+  - version: wp2015
+    claim: "Information aggregation (leaders learning preferences at meetings) is rejected because it predicts attendance moving in opposite directions for the two groups."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "Therefore, the attendance rates of the two groups would move in opposite directions following a change in policymaker's group identity."
+    page: "35"
+    note: "Rejected alternative; the data show co-movement (Tables 4-5). Also argues reelection is rare in Indian villages (p. 36)."
+  - version: wp2015
+    claim: "Auditing the leader's effort at meetings is rejected for the same reason."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "Therefore, the prediction about attendance behavior under this mechanism is also inconsistent with the what I observe in the data."
+    page: "36"
+    note: "Rejected alternative (accountability/audit of effort)."
+
+normative:
+  - version: wp2015
+    claim: null
+    stance: none_stated
+    quote: null
+    page: null
+    note: "Conclusion (pp. 36-37) is about deliberative vs representative democracy and says welfare questions are left for future work; no claim about quota policy."
+
+measurement:
+  preferences:
+    method: hh_survey_rank
+    unit_of_gap: individual
+    gap_assumption: varies_by_place
+    tested_gap: yes
+    quote: "In order to elicit public good preference, each individual is asked to specify, in order of preference, 3 public goods out of 14 items where the individual would like the local Panchayat to invest money in."
+    page: "21"
+    note: "Every adult in REDS ranks top 3 of 14 items. Gap tested at the individual level by regressing 'in top 3' on a Woman dummy with village FE (logit, Table 2) and household FE (OLS, Table 3), p. 24. The IV then uses village-specific divergence between average women's and men's ranks |θW - θM| for each good (eq. 5, p. 32), so the gap is allowed to vary by village. Fragility: school gap loses significance and water gap becomes 10% with schooling/landholding controls (fn 22, p. 25). Top-3 mentions are not independent across goods."
+  outcomes:
+    source: villager_survey
+    units: "Village share of public-good construction in women-preferred goods (water, sanitation, health) and in each good, under the current Panchayat; Gram Sabha attendance of individuals in last 4 meetings"
+    n_units: 233
+    assignment_unit: gp
+    quote: "The second survey pertains to the village level information such as stock of public goods, street or neighborhood level construction of public goods under past three Panchayats, information on local elections such as candidate characteristics, vote shares etc."
+    page: "21"
+    note: "REDS village questionnaire (village-level informant survey, not an audit). Construction regressions use 173 villages (Tables 8-9); attendance regressions 22,071 individuals. Reservation is inferred: a council is coded reserved if all Pradhan candidates were women, because the REDS reservation variable is miscoded (fn 16, p. 21). Assignment unit is the village council (GP); REDS samples one village per council."
+
+estimates:
+  - version: wp2015
+    estimand: pref_gap
+    outcome: "drinking water in individual's top 3 (OLS, household FE), women minus men"
+    outcome_family: drinking_water
+    diff: 0.0134
+    se: 0.00684
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 20833
+    adjusted: true
+    table: "Table 3 (col 1)"
+    page: "24"
+    preferred: true
+    note: "Linear probability, household FE, controls marital status and age. Logit with village FE (Table 2 col 1): 0.140*** (0.0368), log-odds units."
+  - version: wp2015
+    estimand: pref_gap
+    outcome: "sanitation and sewage in top 3, women minus men"
+    outcome_family: sanitation
+    diff: 0.0391
+    se: 0.00734
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 19614
+    adjusted: true
+    table: "Table 3 (col 2)"
+    page: "24"
+    preferred: true
+    note: "Logit (Table 2): 0.231*** (0.036)."
+  - version: wp2015
+    estimand: pref_gap
+    outcome: "roads in top 3, women minus men"
+    outcome_family: roads
+    diff: -0.0628
+    se: 0.00709
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 20048
+    adjusted: true
+    table: "Table 3 (col 3)"
+    page: "24"
+    preferred: true
+    note: "Logit (Table 2): -0.259*** (0.0357)."
+  - version: wp2015
+    estimand: pref_gap
+    outcome: "health facilities in top 3, women minus men"
+    outcome_family: health
+    diff: 0.0496
+    se: 0.00740
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 19219
+    adjusted: true
+    table: "Table 3 (col 4)"
+    page: "24"
+    preferred: true
+    note: "Logit (Table 2): 0.328*** (0.0362)."
+  - version: wp2015
+    estimand: pref_gap
+    outcome: "school in top 3, women minus men"
+    outcome_family: schools
+    diff: -0.0307
+    se: 0.00775
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 18151
+    adjusted: true
+    table: "Table 3 (col 5)"
+    page: "24"
+    preferred: true
+    note: "Logit (Table 2): -0.130*** (0.0369); loses significance with schooling/landholding controls (fn 22)."
+  - version: wp2015
+    estimand: pref_gap
+    outcome: "irrigation canal in top 3, women minus men"
+    outcome_family: irrigation
+    diff: -0.0831
+    se: 0.00663
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 15514
+    adjusted: true
+    table: "Table 3 (col 6)"
+    page: "24"
+    preferred: true
+    note: "Logit (Table 2): -0.517*** (0.0454)."
+  - version: wp2015
+    estimand: provision
+    outcome: "share of construction in women-preferred public goods (water, sanitation, health): Women Reservation coefficient conditional on instrumented relative women attendance"
+    outcome_family: other
+    diff: -0.00245
+    se: 0.0495
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 173
+    n_obs: 173
+    adjusted: true
+    table: "Table 8 (col 1)"
+    page: "34"
+    preferred: false
+    note: "Not a total reservation effect: it is the direct effect holding (instrumented) attendance fixed, with district FE and controls. The paper reports no reduced-form total effect of reservation on provision. Sanitation share analogue 0.0325 (0.0310), Table 9 col 1."
+  - version: wp2015
+    estimand: provision
+    outcome: "fraction of last 4 Gram Sabhas attended: Women Reservation (at women population share = 0)"
+    outcome_family: participation
+    diff: 0.184
+    se: 0.065
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: 0.134
+    control_sd: 0.307
+    n_units: null
+    n_obs: 22071
+    adjusted: true
+    table: "Table 4 (col 1)"
+    page: "27"
+    preferred: true
+    note: "Ordered logit marginal effects at means. Interaction with women population share -0.355*** (0.121); the reservation effect is zero at share 0.5, +1.7 pp at 0.47, -2.2 pp at 0.58 (p. 27). Mean is the full-sample mean, not the unreserved mean. Village count not reported for this regression."

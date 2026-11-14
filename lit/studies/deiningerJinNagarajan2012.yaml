@@ -1,0 +1,117 @@
+key: deiningerJinNagarajan2012
+label: Deininger et al. (2011)
+pdf: deininger_jin_nagarajan_xia_2011_wb_wps5708.pdf
+pdf_version: World Bank WPS 5708 2011
+notes: 'candidate only: PDF title differs from bib (NCAER 2012 "Can Political Reservation Improve Female Empowerment?"); confirm which study T1 codes'
+audit_notes: |-
+  Is the candidate PDF the coded study? Very likely yes, as a version of it.
+  WPS 5708 (June 2011; Deininger, Jin, Nagarajan, Xia) and the bib's NCAER
+  working paper (No. 1, Jan 2012; Deininger, Jin, Nagarajan) are two drafts of
+  one project: same NCAER 2008 panchayat survey, same Rs. 100 matched-
+  contribution question, same outcome families. Three things point to WPS 5708
+  as the source of the Table 1 codes: (a) the label year is 2011, which is the
+  WPS date, not the bib's 2012; (b) the four F codes (drinking water, educ,
+  sanitation, health) are exactly the single composite the WPS uses, "water,
+  schools, health, and sanitation" (p. 10); (c) all four carry the same code,
+  which is what you get from one composite coefficient. So I audited against
+  the WPS rather than marking everything unverifiable.
+
+  Cross-check against the bib version. I downloaded the NCAER 2012 paper
+  (IDRC repository; saved in this session's scratchpad as ncaer.pdf, 25 pp.).
+  It reports the same willingness-to-contribute question good by good (Table
+  4, printed p. 10, pdf p. 15), which the WPS does not. That second route
+  shares no aggregation with the WPS, and it disagrees on drinking water:
+  "Comparing levels between men and women suggests that the latter are more
+  likely to contribute to sanitation, education, health, natural resource
+  management, and government schemes compared to higher male contributions to
+  roads, drinking water, and social issues." Hence the drinking_water mismatch.
+
+  What the paper measures, and how F follows. Neither version asks what
+  people want most. The measure is stated willingness to pay: "Imagine the
+  government decides to contribute an additional Rs. 1 Lakh to solve a local
+  problem but only if the majority of village households contribute Rs. 100
+  each. ... Would you be willing to contribute Rs. 100 if the issue was ...?"
+  (NCAER fn 5). Two pieces of evidence are used:
+  (i) gender gaps in the level of willingness to contribute, a
+  stated-preference measure (WPS Table 5 composite: women 1.582 vs men 1.552;
+  NCAER Table 4 good by good). Neither version formally tests the gender gap.
+  (ii) reservation x female interactions in WPS Table 9: women's willingness
+  to contribute to the composite rises under reservation more than men's
+  (lag1 x female 0.0513***). That is a reservation effect on stated
+  willingness to pay, not a preference in itself; the authors read it as
+  "consistent with gendered differences in the preference for different types
+  of public goods" (p. 18).
+  Neither piece is a reservation effect on provision. The perceived-quality
+  outcomes (Table 6) do not enter the F codes.
+
+  Referee points. (1) Label/bib mismatch. The label year (2011) fits WPS
+  5708; the bib cites NCAER 2012. Pick one. The two drafts give different
+  answers for drinking water. WPS 5708 appears to have been published later
+  (WPS 9350 cites "Deininger et al. 2015" for these findings), so the
+  published article may be the better cite. I have not checked it.
+  (2) The WPS evidence is one composite of four goods, so it cannot support
+  four separate F codes. It supports one F for the bundle.
+  (3) The raw composite gender gap in the WPS is tiny (1.582 vs 1.552, in
+  Rs. 100 units) and untested. The F rests mostly on the interaction terms
+  and on the authors' interpretation.
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: F
+      status: mismatch
+      proposed: M
+      source: |-
+        WPS 5708 p. 10, p. 18, Table 9 (p. 28); NCAER 2012 (bib version) Table 4 and text, p. 10
+      note: |-
+        Measure: stated willingness to contribute Rs. 100 to a matched fund
+        (stated preference), by respondent gender. In the WPS PDF, water is
+        only part of a composite ("water, schools, health, and sanitation"),
+        so the PDF cannot give water its own code. The bib-cited NCAER 2012
+        version breaks out drinking water. There, men are more willing than
+        women. Table 4 shares willing to contribute to drinking water: men
+        0.674 (reserved) / 0.726 (unreserved); women 0.575 / 0.585. The text
+        says "higher male contributions to roads, drinking water, and social
+        issues." No formal gender test is reported, but the gap is 10-14 pp
+        on roughly 8,000 respondents per gender. Propose M. If only the WPS is
+        used, leave the cell blank, because the WPS cannot separate water from
+        the bundle.
+    educ:
+      value: F
+      status: confirmed
+      source: |-
+        WPS 5708 p. 18, Table 5 (p. 24), Table 9 (p. 28); NCAER 2012 Table 4 (p. 10)
+      note: |-
+        Measure: stated willingness to contribute (stated preference); not
+        provision. WPS, bundled composite: "females are the only ones who even
+        in the reserved period contribute to water, schools, health, and
+        sanitation. This is consistent with gendered differences in the
+        preference for different types of public goods" (p. 18). Table 9:
+        reserved lag1 x female = 0.0513*** (Model 1). The NCAER version
+        breaks out education, and there women are higher: women 0.408 / 0.370
+        (reserved / unreserved) vs men 0.364 / 0.335. The gender gap is not
+        formally tested. F holds, but in the WPS it is shared with the other
+        three goods in the composite.
+    sanitation:
+      value: F
+      status: confirmed
+      source: |-
+        WPS 5708 p. 18, Table 9 (p. 28); NCAER 2012 Table 4 and text, p. 10
+      note: |-
+        Measure: stated willingness to contribute (stated preference). In the
+        WPS, sanitation is in the same composite as educ (see that note). NCAER
+        Table 4 breaks it out: women 0.510 / 0.510 vs men 0.416 / 0.392. The
+        text says women "are more likely to contribute to sanitation,
+        education, health". No formal gender test.
+    health_child_care:
+      value: F
+      status: confirmed
+      source: |-
+        WPS 5708 p. 18, Table 9 (p. 28); NCAER 2012 Table 4 and text, p. 10
+      note: |-
+        Measure: stated willingness to contribute to "health" (stated
+        preference). Nothing in either version is specific to child care. In
+        the WPS, health is in the same composite as educ. NCAER Table 4:
+        women 0.515 / 0.480 vs men 0.479 / 0.455, a gap of only 2.5-3.5 pp,
+        not formally tested. F follows the authors' reading, but the evidence
+        is thinner than for sanitation.

@@ -1,0 +1,184 @@
+key: nilekani2010
+versions:
+  - id: essay2010
+    file: nilekani_2010_yale_senior_essay.pdf
+    citation: "Janhavi Nilekani, 'Reservation for Women in Karnataka Gram Panchayats: The Implications of Non-Random Reservation and the Effect of Women Leaders', Economics Senior Essay, Yale College, 2010"
+    year: 2010
+    page_offset: "printed = pdf (pdf p. 3 = printed 3)"
+meta:
+  year_first: 2010
+  year_published: null
+  setting: "Karnataka: 1,810 GPs at the margin of reservation (887 reserved, 923 unreserved) out of 5,626; outcomes April 2005-March 2007"
+  design: "random/rotational reservation: lottery at the margin. Within taluk x caste category, GPs tied on the number of women's seats were reserved by lottery; pooled two-sample t-tests of reserved vs unreserved GPs"
+
+mechanism:
+  - version: essay2010
+    claim: "Women presidents may be dominated by male council members, vice-presidents or family members, so men's preferences are implemented regardless of who holds the seat."
+    type: proxy_husband
+    status: speculated
+    direction: explains_null
+    quote: "In one theory, reserved female presidents are dominated by male council members or male family members. If this is true, we would not expect to see group differences on performance indicators. Irrespective of the official leader, male preferences would be implemented."
+    page: "38"
+    note: "Explicitly untested: 'The lack of group differences is consistent with many theories, none of which are empirically tested in this paper' (p. 38). Conclusion repeats it with vice-presidents (p. 39) and cites Ban & Rao's 20% spouse figure against widespread family control."
+  - version: essay2010
+    claim: "Male elites may pick weak women to run, though Ban & Rao find evidence against this."
+    type: selection_who_runs
+    status: speculated
+    direction: explains_null
+    quote: "It maybe that that male elite elect weak women presidents. It is noteworthy that Ban and Rao found some evidence to the contrary (2008)."
+    page: "38"
+    note: "Quote keeps the essay's typo ('maybe that that'). Conclusion (p. 40): 'it seems unlikely that male elite are electing weak token presidents'."
+  - version: essay2010
+    claim: "GP bureaucrats may control most of what the panchayat does, leaving the president, of either sex, little real power."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "Alternatively, gram panchayat bureaucrats may have control over most aspects of panchayat functioning, and it is possible that the panchayat leader has little real power."
+    page: "38"
+    note: "Discounted in the next sentence: 'Of course, a vast literature body suggests that the gram panchayat president is powerful.'"
+  - version: essay2010
+    claim: "Bureaucrats may take more power under women presidents, because those women are less educated and experienced or because bureaucrats are biased, offsetting any gains from women's preferences."
+    type: patriarchy_backlash
+    status: speculated
+    direction: explains_null
+    quote: "However, it is possible that bureaucrats assume greater power under women presidents, either because women presidents are less educated and less experienced, or because bureaucrats are biased. The enhanced power of the bureaucrats under female presidents could offset any gains to women because of the female president's preferences. This could explain my null results."
+    page: "40"
+    note: "The essay's favoured explanation in the conclusion; mixes bureaucratic bias (coded here) with women's lower education/experience (knowledge_capacity). Untested; cites Dunning & Nilekani (2009) on bureaucrats under lower-caste presidents."
+  - version: essay2010
+    claim: "Positive findings come mostly from West Bengal and may not carry over to South India."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "However, the published literature is heavily biased towards West Bengal, and the results perhaps cannot be extrapolated to South India. Interestingly, Ban and Rao (2008)'s study in South India also found null effects of reservation for women."
+    page: "38"
+    note: "Regional context. Same page also allows that effects 'were not captured in the outcomes indicators I used' (a measurement explanation, not coded as a mechanism)."
+
+normative:
+  - version: essay2010
+    claim: "Reservation does no harm to governance and political representation for women is crucial to gender equality; the essay welcomes the expansion of quotas."
+    stance: pro_quota
+    quote: "Research showing that women leaders perform as well as unreserved leaders is reducing some of the protests against reservation. A Constitutional Amendment Bill to reserve 50% of gram panchayat seats and presidencies for women has been introduced. In March 2010, the upper house of Parliament passed the Women's Reservation Bill"
+    page: "40"
+    note: "Ends: 'Ensuring adequate political representation for women is crucial to providing gender equality, and I hope this paper contributes to the body of research on the topic' (p. 40). p. 39: 'It is increasingly evident that reservation for disadvantaged groups has no negative effect on government functioning.' Footnote markers 25-26 removed from the quote."
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: constant
+    tested_gap: not_applicable
+    quote: "As women are strongly concerned with drinking water infrastructure (Chattopadhyay and Duflo 2004), I include variables about water infrastructure, expenditure on water infrastructure, and latrine construction."
+    page: "35"
+    note: "No data on what women or men want; the women-prefer-water premise is taken from Chattopadhyay & Duflo (West Bengal/Rajasthan) and applied to Karnataka. Used only to choose outcomes."
+  outcomes:
+    source: admin_mis
+    units: "GP-level administrative indicators: RDPR half-yearly reports (meetings, decisions, water infrastructure, latrines, taxes; unaudited, self-reported) and Gram Swaraj Project fiscal accounts (revenues, grants, scheme expenditures; audited)"
+    n_units: 1810
+    assignment_unit: gp
+    quote: "These data are supplied to the Karnataka Government by the gram panchayats, and are not audited. Although there may be significant measurement errors, there is no reason to expect these errors to be correlated with reservation."
+    page: "30"
+    note: "Gram Swaraj data 'have been extensively audited at the panchayat level' (p. 30). 116 distinct variables, 286 t-tests (108 RDPR, 178 Gram Swaraj); 6 significant at 5%, none after Bonferroni (pp. 36-38). Comparisons pool across lottery cells rather than conditioning on taluk x category x seat-count (see audit file). Author says the seat data will be updated (fn 22, p. 32)."
+
+estimates:
+  - version: essay2010
+    estimand: provision
+    outcome: "grand total of GP expenditure, FY 2006-07 (Rs)"
+    outcome_family: total_spending
+    diff: -66995.73
+    se: 73130.65
+    se_source: reported
+    p_or_stars: "n.s. (p = 0.3597)"
+    control_mean: 2334511.049
+    control_sd: null
+    n_units: 1810
+    n_obs: 1784
+    adjusted: false
+    table: "Appendix C"
+    page: "58"
+    preferred: true
+    note: "Two-sample t-test; parentheses under group means are SEs, not SDs (control-group SE 52,856.611). FY 2006-07 chosen as the later of the two years (women ~2 years in office). FY 2005-06: -79,790.04* (36,562.85), p = 0.0292, one of the 6 significant tests (p. 54)."
+  - version: essay2010
+    estimand: provision
+    outcome: "grand total of GP expenditure, FY 2005-06 (Rs)"
+    outcome_family: total_spending
+    diff: -79790.04
+    se: 36562.85
+    se_source: reported
+    p_or_stars: "* (p = 0.0292)"
+    control_mean: 1473709.99
+    control_sd: null
+    n_units: 1810
+    n_obs: 1784
+    adjusted: false
+    table: "Appendix C"
+    page: "54"
+    preferred: false
+    note: "Significant at 5% but not after Bonferroni; author: 'the practical significance as measured by Cohen's d is low' (d = 0.05, p. 37)."
+  - version: essay2010
+    estimand: provision
+    outcome: "GP expenditure on Rural Water Supply scheme, FY 2006-07 (Rs)"
+    outcome_family: drinking_water
+    diff: -4996.497
+    se: 8214.711
+    se_source: reported
+    p_or_stars: "n.s. (p = 0.5431)"
+    control_mean: 86894.256
+    control_sd: null
+    n_units: 1810
+    n_obs: 1784
+    adjusted: false
+    table: "Appendix C"
+    page: "57"
+    preferred: true
+    note: "RDPR water-supply total expenditure Oct '06-Mar '07: +536.732 (4,811.027), p = 0.9112 (p. 50); borewells with handpumps -0.694 (0.975) (p. 49)."
+  - version: essay2010
+    estimand: provision
+    outcome: "individual latrines built, Oct 2006-Mar 2007 (count)"
+    outcome_family: sanitation
+    diff: -1.658
+    se: 8.169
+    se_source: reported
+    p_or_stars: "n.s. (p = 0.8392)"
+    control_mean: 70.674
+    control_sd: null
+    n_units: 1810
+    n_obs: 1771
+    adjusted: false
+    table: "Appendix B"
+    page: "50"
+    preferred: true
+    note: "RDPR self-reported. Spending alternative: Total Sanitation Campaign expenditure FY 2006-07 -8,757.855 (14,436.51), p = 0.5444 (p. 58). N for Appendix B 'N=1771, as low as 1473 in some cases'."
+  - version: essay2010
+    estimand: provision
+    outcome: "number of gram sabha meetings held, Oct 2006-Mar 2007"
+    outcome_family: participation
+    diff: 0.074
+    se: 0.199
+    se_source: reported
+    p_or_stars: "n.s. (p = 0.7105)"
+    control_mean: 1.9975
+    control_sd: null
+    n_units: 1810
+    n_obs: 1771
+    adjusted: false
+    table: "Appendix B"
+    page: "49"
+    preferred: true
+    note: "Meetings held, not attendance; no data on women's participation."
+  - version: essay2010
+    estimand: provision
+    outcome: "total tax collection, Oct 2006-Mar 2007 (Rs)"
+    outcome_family: other
+    diff: -13541.71
+    se: 16991.57
+    se_source: reported
+    p_or_stars: "n.s. (p = 0.4256)"
+    control_mean: 251746.0453
+    control_sd: null
+    n_units: 1810
+    n_obs: 1771
+    adjusted: false
+    table: "Appendix B"
+    page: "50"
+    preferred: true
+    note: "Tests whether women presidents can enforce tax compliance (p. 35)."

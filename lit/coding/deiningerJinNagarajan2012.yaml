@@ -1,0 +1,323 @@
+key: deiningerJinNagarajan2012
+versions:
+  - id: wps2011
+    file: deininger_jin_nagarajan_xia_2011_wb_wps5708.pdf
+    citation: "World Bank Policy Research Working Paper 5708, June 2011 (Deininger, Jin, Nagarajan, Xia), 'Does Female Reservation Affect Long-Term Political Outcomes? Evidence from Rural India'"
+    year: 2011
+    page_offset: "printed = pdf - 2 (printed page 1 is pdf p. 3; page numbers are at the foot of each page)"
+  - id: ncaer2012
+    file: deininger_jin_nagarajan_2012_ncaer_wp1.pdf
+    citation: "NCAER Working Papers on Decentralisation and Rural Governance in India No. 1, January 2012 (Deininger, Jin, Nagarajan), 'Can Political Reservation Improve Female Empowerment? Evidence from Local Panchayat Elections in Rural India'"
+    year: 2012
+    page_offset: "printed = pdf - 5 (printed p. 1 is pdf p. 6; front matter uses roman numerals)"
+meta:
+  year_first: 2011
+  year_published: 2015
+  setting: "NCAER/ARIS-REDS national panel, 2007/08 round; WPS: 233 villages in 17 states (Table 1 regions); NCAER: 'some 240 villages', 186 in the balance table; individual respondents aged 16+"
+  design: "random/rotational reservation, cross-section (current, lag-1 and lag-2 reservation dummies with state FE; NCAER uses village FE where several panchayat periods are stacked)"
+  note: >-
+    The JDS 2015 published version (cited as Deininger, Jin, Nagarajan & Xia 2015 in WPS 9350 and JDS 2022) is not held, so
+    year_published is taken from that citation and nothing here is coded from it. The NCAER paper is dated later
+    (Jan 2012) but reads like an earlier draft: it contains authors' drafting notes left in the text ("we should tweak the
+    definition of social to get at least 10% there", p. 14; "*** Interaction with state to increase credibility", p. 13),
+    has one lag only, and its tables differ from the WPS. The two versions are coded separately in date order.
+    Outcomes are perceived (subjective) quality, not counts of goods provided.
+
+mechanism:
+  - version: wps2011
+    claim: "Reserved leaders are less qualified and experienced, so service quality falls while they are in office."
+    type: selection_who_runs
+    status: tested
+    direction: explains_negative
+    quote: "As they put less experienced and qualified individuals into positions of leadership, it should not come as a surprise that the immediate effect of reservations on the quality of public service provision is negative."
+    page: "18"
+    note: >-
+      Only the first link is estimated: Table 3 (p. 22) shows reserved pradhans are less educated and less experienced
+      (illiterate 24.72% vs 5.74%***). The link from qualifications to perceived quality is not estimated (no mediation or
+      interaction with pradhan education).
+  - version: wps2011
+    claim: "Reserved women may be fronts for husbands or relatives, which respondents read as lower honesty."
+    type: proxy_husband
+    status: speculated
+    direction: explains_negative
+    quote: "possibly pointing to the fact that in some cases reservation results in females being put up as a front for husbands or relatives who continue to draw the strings behind the scene."
+    page: "13"
+    note: "Offered to interpret descriptive Table 4 ratings of honesty; not tested."
+  - version: wps2011
+    claim: "Lower perceived quality under women may partly reflect respondents' bias against women leaders."
+    type: patriarchy_backlash
+    status: speculated
+    direction: explains_negative
+    quote: "While filtered perceptions and cultural bias against acknowledging good performance by women may play a role (Beaman et al. 2009), this suggests that immediate improvements in the quality of service provision are unlikely to be a main benefit of female reservations."
+    page: "15"
+    note: "Respondent (evaluator) bias rather than backlash against the leader's actions; no type fits exactly."
+  - version: wps2011
+    claim: "Effects on women show up with a lag because women new to politics must learn how to hold officials to account."
+    type: experience_learning
+    status: speculated
+    direction: explains_effect
+    quote: "One reason for lagged impacts could be that using information on officials' performance to hold them accountable through political processes requires skills which women who had not participated in political processes before might still need to acquire."
+    page: "16"
+    note: "Learning by citizens (voters), not by the leader. The lag pattern is estimated (Tables 6-9); learning itself is not measured."
+  - version: wps2011
+    claim: "Reservation works through greater participation and voice, which raise women's willingness to contribute to and monitor public goods they value."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Taken together, these findings suggest that positive impacts of reservations on certain public good outcomes as reported in the literature may have materialized not because of higher quality of officials but because this policy empowered women to more actively contribute to public goods and monitor in specific areas of particular interest to them."
+    page: "18"
+    note: >-
+      Participation (Table 8, p. 27) and willingness to contribute (Table 9, p. 28) are estimated; the step from these to
+      better public goods is not. Intro states the same claim: "political participation being a key channel through which
+      these benefits materialize" (p. 4).
+  - version: ncaer2012
+    claim: "A 'leader quality effect': less qualified reserved leaders with little budget discretion produce little change in service quality."
+    type: selection_who_runs
+    status: tested
+    direction: explains_null
+    quote: "First, a leader quality effect whereby reserved leaders' lower observable characteristics - together with limited discretion over budgets in the short term - imply that there is little impact on the quality with which public goods are provided during the period when reservation is in effect"
+    page: "2"
+    note: "Qualifications compared in Table 2 (p. 8); budgets shown equal in Table 2. Note the direction shift: the WPS reads the same leader-quality gap as producing a negative effect; the NCAER draft reads it as producing a null."
+  - version: ncaer2012
+    claim: "Budgets are mostly central transfers and do not differ, so the pradhan has little discretion to change provision."
+    type: discretion_institutions
+    status: asserted
+    direction: explains_null
+    quote: "As one would expect, total budgets are not significantly different between reserved and unreserved seats; in both cases, some 90% of local budget is based on central transfers"
+    page: "8"
+    note: "Budget equality is shown descriptively (Table 2); the discretion argument itself is not tested. The WPS has the same budget fact (p. 13) without calling it a mechanism."
+  - version: ncaer2012
+    claim: "A 'participation effect': reservation improves meetings and political articulation, which raises willingness to contribute."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "there is a participation effect whereby reservation improves quality of local political processes and the opportunities for political articulation by previously disadvantaged groups provided. This increases political participation, and possibly as a result of greater voice by those who had previously been excluded from the decision-making process, their willingness to contribute to public goods."
+    page: "2"
+    note: "Participation (Table 7, p. 13) and willingness to contribute (Table 8, p. 14) are estimated; the causal link between them is not."
+  - version: ncaer2012
+    claim: "Teacher effort improves at schools serving SC/ST pupils, possibly because these groups can voice concerns."
+    type: voice_demand
+    status: speculated
+    direction: explains_effect
+    quote: "somewhat better monitoring of teacher effort at specific schools serving marginal groups that could be a result of these groups being able to voice their concerns politically."
+    page: "12"
+    note: "Heterogeneous effects are estimated (Table 6 interactions); voice is not measured."
+  - version: ncaer2012
+    claim: "Subjective ratings may be biased against women leaders, so objective indicators are needed."
+    type: patriarchy_backlash
+    status: speculated
+    direction: explains_null
+    quote: "As perceptions may be affected by deep-rooted socio-cultural norms with a bias against acknowledging any positive outcomes from females leadership (Beaman et al. 2009 and Duflo 2005), it is important to compare them to more objective indicators."
+    page: "12"
+    note: "Evaluator bias, as in the WPS (p. 15)."
+  - version: ncaer2012
+    claim: "Attributing outcomes to the pradhan's gender assumes she dominates decisions, which may not hold."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "drawing a link between the gender of the Pradhan (or whether the office was reserved) implicitly assumes that the Pradhan dominates local decisions (Rajaraman and Gupta 2008a)."
+    page: "9"
+    note: "Footnote 9, a caveat on the outcome measure. The WPS makes the related husbands-pull-strings point in the literature review (p. 8) and as speculation (p. 13)."
+
+normative:
+  - version: wps2011
+    claim: "Reservation has a short-term cost but long-term benefits may outweigh it in some cases."
+    stance: conditional
+    quote: "Our analysis thus allows a more judicious portrayal of the trade-offs which imposition of reservations, like most other policy measures, is likely to involve, suggesting that in some cases long-term benefits may more than outweigh the short-term cost for female reservation."
+    page: "19"
+    note: "Intro: 'although it may impose a short-term cost, female reservation can yield overall social benefits' (p. 4)."
+  - version: ncaer2012
+    claim: "Reservation can pay off overall, and measures to enhance participation would help realise its potential."
+    stance: conditional
+    quote: "If they change participation or behaviour by previously excluded groups, even measures that impose short-term costs may yield positive social benefits overall. ... suggests that measures to enhance effective participation may help to more fully realise the potential impact of a policy of gender-based reservations for political office."
+    page: "2"
+    note: "Also: 'the cost of reserving Pradhan positions for females is low, despite their much lower educational qualifications' (p. 9), and the 7% share of women pradhans in unreserved villages 'might be interpreted as a justification for this policy' (p. 8)."
+
+measurement:
+  preferences:
+    method: wtp_game
+    unit_of_gap: individual
+    gap_assumption: constant
+    tested_gap: "no"
+    quote: "Imagine the Government decides to contribute an additional Rs. 1 lakh (100,000) to solve a local problem but only if the majority of village households contribute Rs. 100 each. Imagine that almost enough people are willing to contribute and your decision to contribute or not will decide the outcome. Would you be willing to contribute Rs. 100 if the issue was ...?"
+    page: "12"
+    note: >-
+      Stated willingness to contribute Rs. 100 to a matched fund (hypothetical, not an incentivised game; wtp_game is the
+      closest code). Quote from WPS fn 13 (p. 12); NCAER fn 5 (p. 5) is the same question. Gaps are reported only as
+      pooled national means by gender (WPS Table 5 composite; NCAER Table 4 good by good) and never formally tested
+      between men and women. The authors read the composite pattern as "consistent with gendered differences in the
+      preference for different types of public goods found in the literature" (WPS p. 18).
+  outcomes:
+    source: villager_survey
+    units: "Individual ratings of whether each of 14 public goods is 'better' or 'much better' than under the previous panchayat, grouped into 3 normalised composites (0-1); plus accountability ratings, gram sabha attendance and willingness to contribute. NCAER adds teacher absence/effort reported by schoolchildren."
+    n_units: 233
+    assignment_unit: gp
+    quote: "Data on the quality of public good delivery are constructed from the response to the question of whether the situation pertaining to certain issues was 'better' or 'much better' than in the previous panchayat. We group responses for 14 types of goods in the questionnaire into 3 broad categories"
+    page: "11"
+    note: "n_units = 233 sample villages (WPS Table 1); assignment is at the GP and the number of GPs is not reported. WPS SEs are clustered at the household level (fn 10), not the village. NCAER reports 186 villages in its balance table."
+
+estimates:
+  - version: wps2011
+    estimand: provision
+    outcome: "perceived improvement in water, schools, health, sanitation (normalised share of items better than last panchayat), effect of current reservation on male respondents"
+    outcome_family: other
+    diff: -0.0419
+    se: 0.00735
+    se_source: from_t
+    p_or_stars: "***"
+    control_mean: 0.567
+    control_sd: null
+    n_units: 233
+    n_obs: 23479
+    adjusted: true
+    table: "Table 6, Model 1, col. 2"
+    page: "25"
+    preferred: true
+    note: >-
+      Composite of drinking water, schools, health and sanitation; cannot be split. t = -5.702 printed; se = |diff/t|.
+      Coefficient is for men (the model interacts reservation with a female dummy); reserved now x female = -0.00196
+      (t -0.334), so the women's effect is about -0.044. control_mean is the male never-reserved mean from Table 4
+      (p. 23), not currently-unreserved. Lag-1 coefficient 0.00355 (n.s.).
+  - version: wps2011
+    estimand: pref_gap
+    outcome: "willingness to contribute to water, schools, health, sanitation (Rs. 100 units), women minus men, never-reserved villages"
+    outcome_family: other
+    diff: 0.0
+    se: null
+    se_source: null
+    p_or_stars: null
+    control_mean: 1.531
+    control_sd: null
+    n_units: 233
+    n_obs: null
+    adjusted: false
+    table: "Table 5"
+    page: "24"
+    preferred: true
+    note: >-
+      Women 1.531 vs men 1.531 in never-reserved villages; full sample women 1.582 vs men 1.552 (diff 0.030). No SD or
+      test of the gender gap is reported, so no SE can be computed (se_source left null; no code fits). Composite of
+      four goods. control_mean here is the men's value.
+  - version: ncaer2012
+    estimand: provision
+    outcome: "perceived improvement in social goods (sanitation, drinking water, education, health; stacked 0/1), current reservation, men"
+    outcome_family: other
+    diff: 0.006
+    se: 0.0158
+    se_source: from_t
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 65001
+    adjusted: true
+    table: "Table 5, Model 1, col. 2"
+    page: "11"
+    preferred: true
+    note: "Printed t (absolute) 0.38; sign taken from the coefficient. Reserved x female -0.003 (t 0.57). Village-level n not reported (~186-240 villages)."
+  - version: ncaer2012
+    estimand: provision
+    outcome: "teacher days absent per month, reported by schoolchildren, current reservation (reference group)"
+    outcome_family: schools
+    diff: 0.221
+    se: 0.113
+    se_source: from_t
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 6501
+    adjusted: true
+    table: "Table 6, col. 1"
+    page: "12"
+    preferred: true
+    note: "t = 1.95 printed. Absence falls for girls (female x reserved -0.401***) and SC/ST pupils (-0.632***). Higher = worse."
+  - version: ncaer2012
+    estimand: pref_gap
+    outcome: "share willing to contribute Rs. 100 to drinking water, women minus men, unreserved panchayats"
+    outcome_family: drinking_water
+    diff: -0.141
+    se: 0.0089
+    se_source: computed
+    p_or_stars: null
+    control_mean: 0.726
+    control_sd: null
+    n_units: null
+    n_obs: 11237
+    adjusted: false
+    table: "Table 4"
+    page: "10"
+    preferred: true
+    note: >-
+      Women 0.585 (n 5,580) vs men 0.726 (n 5,657), unreserved columns. SE computed as sqrt(p1(1-p1)/n1 + p2(1-p2)/n2),
+      treating respondents as independent; ignores village clustering and household pairing, so it is too small. Reserved
+      panchayats: 0.575 vs 0.674. Not tested in the paper; the text says "higher male contributions to roads, drinking
+      water, and social issues". control_mean = men's share.
+  - version: ncaer2012
+    estimand: pref_gap
+    outcome: "share willing to contribute Rs. 100 to sanitation and sewage, women minus men, unreserved panchayats"
+    outcome_family: sanitation
+    diff: 0.118
+    se: 0.0093
+    se_source: computed
+    p_or_stars: null
+    control_mean: 0.392
+    control_sd: null
+    n_units: null
+    n_obs: 11237
+    adjusted: false
+    table: "Table 4"
+    page: "10"
+    preferred: true
+    note: "Women 0.510 vs men 0.392. Reserved: 0.510 vs 0.416. SE computed as above, ignoring clustering."
+  - version: ncaer2012
+    estimand: pref_gap
+    outcome: "share willing to contribute Rs. 100 to education, women minus men, unreserved panchayats"
+    outcome_family: schools
+    diff: 0.035
+    se: 0.0090
+    se_source: computed
+    p_or_stars: null
+    control_mean: 0.335
+    control_sd: null
+    n_units: null
+    n_obs: 11237
+    adjusted: false
+    table: "Table 4"
+    page: "10"
+    preferred: true
+    note: "Women 0.370 vs men 0.335. Reserved: 0.408 vs 0.364. SE computed as above, ignoring clustering."
+  - version: ncaer2012
+    estimand: pref_gap
+    outcome: "share willing to contribute Rs. 100 to health, women minus men, unreserved panchayats"
+    outcome_family: health
+    diff: 0.025
+    se: 0.0094
+    se_source: computed
+    p_or_stars: null
+    control_mean: 0.455
+    control_sd: null
+    n_units: null
+    n_obs: 11237
+    adjusted: false
+    table: "Table 4"
+    page: "10"
+    preferred: true
+    note: "Women 0.480 vs men 0.455. Reserved: 0.515 vs 0.479. SE computed as above, ignoring clustering."
+  - version: ncaer2012
+    estimand: pref_gap
+    outcome: "share willing to contribute Rs. 100 to roads and transport, women minus men, unreserved panchayats"
+    outcome_family: roads
+    diff: -0.072
+    se: 0.0094
+    se_source: computed
+    p_or_stars: null
+    control_mean: 0.519
+    control_sd: null
+    n_units: null
+    n_obs: 11237
+    adjusted: false
+    table: "Table 4"
+    page: "10"
+    preferred: true
+    note: "Women 0.447 vs men 0.519. Reserved: 0.465 vs 0.540. SE computed as above, ignoring clustering."

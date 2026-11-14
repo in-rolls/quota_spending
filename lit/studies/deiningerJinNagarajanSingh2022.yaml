@@ -1,0 +1,107 @@
+key: deiningerJinNagarajanSingh2022
+label: Deininger et al. (2022)
+pdf: deininger_jin_nagarajan_singh_2022_jds.pdf
+pdf_version: Journal of Development Studies 58(9) 2022, pp. 1772-1790 (scan; printed page = pdf page + 1771)
+notes: null
+audit_notes: |-
+  This row was split out of the old mixed "Deininger et al. (2020)" row (author approved, 2026-10-24). The old row's bib entry, sample and location were the JCE 2020 paper (now deiningerNagarajanSingh2020), but its pdf, outcomes, number_of_outcomes and results came from World Bank WPS 9350 (Aug 2020), "Political Reservation and Female Labor Force Participation in Rural India". WPS 9350 was published as this article: Deininger, Jin, Nagarajan and Singh, "Addressing Declining Female Labor Force Participation in India: Does Political Empowerment Make a Difference?", J. Development Studies 58(9): 1772-1790, 2022, doi 10.1080/00220388.2022.2043278 (pdf p. 1). The JDS PDF is an image scan; text was read from OCR and every number used below was checked on the rendered page.
+
+  The author's WPS-derived cells are carried over unchanged in value. Table numbers differ: WPS Tables 5, 6, 7, 8 are JDS Tables 2, 3, 4, 5, and the WPS appendix tables (A4-A6, sector regressions) are only in the JDS online supplement, which I did not open.
+
+  The published numbers are not the WPS numbers. JDS has female LFP effect 8.9 pp (WPS 8.2), income "some 76 percentage points" (WPS "some 78%"), decisions on food/health/education 18/14/8 pp (WPS 16/14/7). The quotes in results are therefore not verbatim in JDS; published wording is in results.proposed. JDS table notes also drop the WPS statement that multiple hypotheses are Bonferroni-adjusted (see multiple_testing).
+
+  Referee points carried over from the WPS audit, re-checked in JDS. (a) State count is inconsistent: p. 1774 "India's 12 main states", p. 1777 "190 villages in 13 states", note 9 (p. 1787) lists 12 states revisited in 2014/15 without Gujarat, yet the Table 1 and Table 5 notes (pp. 1778, 1786) list Gujarat among the decision-module states. (b) The analysis keeps only job-card households (23,350 of 91,984, p. 1777), so effects are conditional on having a job card. JDS justifies this by citing the JCE paper: "access to job cards was not affected by a village's current or past reservation status (Deininger et al., 2020)" (p. 1777).
+summary:
+  sample:
+    value: 190 villages. The number of GPs is unspecified.
+    status: corrected
+    source: p. 1777 (Section 3.1); Table 2 (p. 1781)
+    note: |-
+      "a complete enumeration of all adult residents in 190 villages in 13 states implemented in 2014/15 as part of the long-running ARIS-REDS panel. Information was collected on 275,677 individuals in 91,984 households of which 23,350 ... had a job card ... our analysis focuses on these households" (p. 1777). Regressions use N = 66,362 individuals (Table 2, p. 1781); NREGS governance regressions 6,712 participants (Table 4); decision regressions 22,571 (Table 5, five states). "163 villages" is the JCE paper's sample and "242 villages" appears nowhere in JDS.
+    previous: 163 villages (242 villages in another analysis). The number of GPs is unspecified.
+    comment: "2026-10-24, split Deininger row (author approved): value '163 villages (242 villages in another analysis)...' -> '190 villages...' from JDS p. 1777 (the old proposed, written against WPS 9350, is now the value; the 66,362/23,350 detail moved to note)"
+  location:
+    value: 13 states
+    status: corrected
+    source: p. 1777; p. 1774; note 9 (p. 1787); Table 1 note (p. 1778); Table 5 note (p. 1786)
+    note: |-
+      Analysis-sample statement used: "190 villages in 13 states" (p. 1777). The paper is inconsistent: p. 1774 says "household data for India's 12 main states", and note 9 (p. 1787) lists 12 states revisited in 2014/15 (AP, Bihar, Chhattisgarh, Haryana, Jharkhand, MP, Rajasthan, TN, UP, Maharashtra, Orissa, WB). The Table 1 and Table 5 notes add Gujarat (decision module in Gujarat, UP, Maharashtra, Orissa, WB), which would make 13. "16 states" is the 1971 base survey ("252 villages in 16 states", note 9), not an analysis sample. Flag: "12-13 states" is the honest reading if the author prefers.
+    previous: 12 states (16 states)
+    comment: "2026-10-24, split Deininger row (author approved): value '12 states (16 states)' -> '13 states' (JDS p. 1777; paper also says 12, see note)"
+  years:
+    value: 2014–2015
+    status: corrected
+    source: p. 1777; Table 1 note (p. 1778); note 12 (p. 1788)
+    note: |-
+      All outcomes come from the "2014/15 REDS follow-up survey" (Table 1 note, p. 1778). 2006 appears only as an earlier REDS round (note 9, p. 1787) and as an election year used to code reservation history (note 12; elections "in 1995/96, 2000/01 and 2005/06", p. 1777). No 2006 outcome data are analysed.
+    previous: 2014–2015 (2006)
+    comment: "2026-10-24, split Deininger row (author approved): value '2014–2015 (2006)' -> '2014–2015' (the earlier en-dash presentation fix of 2026-10-23 is kept)"
+  kind_of_data_for_outcomes:
+    value: REDS survey
+    status: confirmed
+    source: p. 1777; Table 1 note (p. 1778); Table 5 note (p. 1786)
+    note: |-
+      ARIS-REDS 2014/15 enumeration of all adults in sample villages plus a village questionnaire on leaders elected from 2005 (p. 1777). The decision-making module was fielded in 5 states only: Gujarat, UP, Maharashtra, Orissa, WB (Table 1 and Table 5 notes). Value unchanged.
+    comment: '2026-10-24, split Deininger row (author approved): source/note re-cited to JDS pages (WPS p. 8, Table 4 note p. 19 -> JDS p. 1777, Table 1 note p. 1778); value unchanged'
+  number_of_outcomes:
+    value: '17'
+    status: confirmed
+    source: Tables 2, 4, 5 (pp. 1781, 1785, 1786); Table 3 (p. 1783)
+    note: |-
+      The count 17 still holds in the published tables. Rule: distinct dependent variables regressed on women's reservation in main-text tables. Table 2 has 6 (participation total, non-NREGS, NREGS; days total, non-NREGS, NREGS); Table 4 has 5 (dated receipt, payment to account, payment less than assessed, if less did complain, complaint addressed); Table 5 has 6 (individual income, wants to work more, decisions on food, nonfood, health, education). 6+5+6 = 17. Table 3 re-runs Table 2 by marital status and adds nothing new. Sector regressions and wages are only in the online appendix (note 15, p. 1788), not in the article. The outcomes cell still lists 22 items (see outcomes).
+    comment: '2026-10-24, split Deininger row (author approved): source re-cited WPS Tables 5, 7, 8 -> JDS Tables 2, 4, 5 (pp. 1781, 1785, 1786); count re-checked, value unchanged'
+  outcomes:
+    value: |-
+      Employment / labor supply: labor-force participation, non-NREGS participation, NREGS participation, total days worked, non-NREGS days worked, NREGS days worked.
+      Income / labor demand: individual income, would like to work more.
+      Program access / implementation quality: dated receipt, direct payment to bank account, underpayment, complaint if underpaid, complaint addressed.
+      Household agency / bargaining: decisions on food, nonfood, health, education.
+    status: corrected
+    source: Tables 2, 4, 5 (pp. 1781, 1785, 1786); Table 1 (p. 1778)
+    note: |-
+      Every item in the first, third, fourth and fifth lines is a dependent variable in JDS Tables 2, 4 or 5 (Table 4 labels: "Get dated receipt", "Payment to account", "Payment less than assessed", "If less, did complain", "Complaint addressed"). The "Sectoral composition" line appears in the printed article only as descriptive means in Table 1 (p. 1778); its regressions (WPS Tables A5/A6) are in the online supplement only. With it the list has 22 items and does not match number_of_outcomes = 17. Either drop that line, as proposed, or change the count to 22.
+    comment: |-
+      2026-10-24, split Deininger row (author approved): source re-cited to JDS tables; note updated; value and proposed unchanged
+      2026-10-24, author approved: adopted published-version value.
+    previous: |-
+      Employment / labor supply: labor-force participation, non-NREGS participation, NREGS participation, total days worked, non-NREGS days worked, NREGS days worked.
+      Sectoral composition of work: self-employment in agriculture, self-employment in non-agriculture, casual labor in agriculture, casual labor in non-agriculture, regular salaried work.
+      Income / labor demand: individual income, would like to work more.
+      Program access / implementation quality: dated receipt, direct payment to bank account, underpayment, complaint if underpaid, complaint addressed.
+      Household agency / bargaining: decisions on food, nonfood, health, education.
+  results:
+    value: |-
+      “We find that contemporaneous reservation of leadership for women affected local governance as measured by the quality of NREGS implementation but had no measurable impact on female labour supply. At the same time, female leadership reservation affected female labour supply to public workfare and private sector labour markets in the following period… Past reservation also increased women’s income, their demand for work, and – presumably due to increased access to resources – their participation in household decisions relating to spending on food items, health, and education.” (pg. 1774)
+
+      “Past reservation is estimated to have led to an 8.9 percentage point increase in the likelihood of female labour force participation” (pg. 1782)
+
+      Lagged reservation increased women’s individual income by some 76 log points, women’s demand for work by some 16 percentage points, and women’s participation in household decisions by 18 percentage points for food, 14 for health, and 8 for education. (see pg. 1784; Table 5)
+    status: corrected
+    source: pp. 1774, 1782, 1784; Tables 2 (p. 1781), 5 (p. 1786)
+    note: |-
+      None of the three WPS passages is verbatim in JDS, so the value (WPS wording, WPS pages 3, 12, 15) is left as the author coded it and the published wording is proposed. (1) WPS p. 3 "Three findings stand out: First, ..." is rewritten on JDS p. 1774 without the numbering; the ellipsis in the proposal drops "Effects were quantitatively large (half a standard deviation) and most pronounced for married women." (2) WPS "8.2 percentage point ... labor force participation" is "8.9 percentage point ... labour force participation equivalent to a 11.8% increase at the mean" on p. 1782; Table 2B: -0.029 + 0.118 = 0.089. (3) p. 1784 says income rose "by some 76 percentage points (8.4%)" (it is a log outcome, so log points), demand for work "by some 16 percentage points", and decisions on "food, health, and education ... by 18, 14, and 8 percentage points". Table 5 (checked on the rendered page): income -0.221 + 0.983 = 0.762; wants to work more 0.005 + 0.163 = 0.168; food -0.029 + 0.204 = 0.175; health 0.085 + 0.057 = 0.142; education 0.044 + 0.040 = 0.084 (F-test p = 0.014). The text again omits nonfood: 0.143 - 0.009 = 0.134, p = 0.016.
+    comment: |-
+      2026-10-24, split Deininger row (author approved): status confirmed -> mismatch; WPS quotes (pp. 3, 12, 15) not verbatim in JDS, published wording with pp. 1774, 1782, 1784 in proposed; value unchanged
+      2026-10-24, author approved: adopted published-version value.
+    previous: |-
+      “Three findings stand out: First, contemporaneous reservation affected local governance as measured by the quality of NREGS implementation but had no measurable impact on female labor supply. Second, beyond the reserved period, female leadership reservation had sustained effects on female labor supply to public workfare and to private sector labor markets… Third, past reservation also increased women’s income, their demand for work, and their participation in household decisions relating to spending on food items, health, and education.” (pg. 3)
+
+      “Past reservation is estimated to have led to an 8.2 percentage point increase in
+      the likelihood of female labor force participation.” (pg. 12)
+
+      Lagged reservation increased women’s individual income by about 78%, increased women’s desire to work by about 16 percentage points, and raised women’s participation in household decisions by about 16 percentage points for food, 14 percentage points for health, and 7 percentage points for education. (see pg. 15)
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: none
+    source: Tables 2-5 (pp. 1781-1786); see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (the published table notes drop the WPS 9350 Bonferroni statement; the F-tests are linear combinations of coefficients within one outcome)
+    source: Notes to Tables 2-5 (pp. 1781, 1783, 1785, 1786)
+    note: |-
+      WPS 9350 table notes said "multiple hypotheses tests are adjusted using the Bonferroni method". The JDS table notes (Tables 2-5, read on the rendered pages for 2, 4, 5 and OCR for 3) contain no such sentence, and the word Bonferroni does not appear in the article. The F-test rows test linear combinations such as beta2 + beta4 = 0 within one outcome; they are not joint tests across outcomes. There is no summary index. Previous proposal (written against WPS 9350): "corrected p-values (Bonferroni, per table notes; the family of tests and what exactly is adjusted are not stated)".
+    comment: "2026-10-24, split Deininger row (author approved): proposed changed from WPS Bonferroni reading to 'none' because the JDS table notes have no adjustment; value unchanged ('')"

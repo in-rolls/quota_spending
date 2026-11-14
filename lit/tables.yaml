@@ -1,0 +1,92 @@
+what_women_want:
+  caption: What Women Want
+  label: tab:what-women-want
+  columns:
+  - key: drinking_water
+    header: Drinking Water
+  - key: roads
+    header: Roads
+  - key: infra
+    header: Infra.
+  - key: transport
+    header: Transport
+  - key: housing
+    header: Housing
+  - key: electricity
+    header: Electricity
+  - key: irrigation
+    header: Irrigation
+  - key: educ
+    header: Educ.
+  - key: adult_educ
+    header: Adult Educ.
+  - key: sanitation
+    header: Sanitation
+  - key: child_mortality
+    header: Child Mortality
+  - key: health_child_care
+    header: Health / Child Care
+  - key: other
+    header: Other*
+  sections:
+  - heading: null
+    studies:
+    - chattopadhyayDuflo2004
+    - banRao2008
+    - das2015TownHall
+    - beamanEtAl2011
+    - cassanVandewalle2021
+    - gajwaniZhang2015
+    - pakhtigianPattanayak2024
+    - raabeSekherBirner2009
+  - heading: Supporting studies used to classify policy domains
+    studies:
+    - boseDas2018
+    - chaturvediDasMahajan2025
+    - bhalotraClotsFigueras2014
+    - deiningerJinNagarajan2012
+    - rajaramanGupta2008
+  notes:
+  - '\item Notes: \texttt{F} = women express relatively stronger preference or issue salience. \texttt{M} = men express relatively stronger preference or issue salience. \texttt{NS} = not statistically significant or not clearly gendered in the source notes. Blank cells indicate that the source review did not provide a usable classification for that domain.'
+  - \item[*] In Chattopadhyay and Duflo (2004), the ``Other'' category includes sanitation and ponds.
+  - \item Das (2015) uses REDS 2006 top-three public-good preferences. Ban \& Rao (2008) distinguish PRA-based preference elicitation from the household-survey specification.
+literature_summary:
+  caption: Summary of Studies on Reservation and Outcomes
+  label: tab:quota-lit-summary
+  columns:
+  - key: sample
+    header: Sample
+  - key: location
+    header: Location
+  - key: years
+    header: Year(s)
+  - key: kind_of_data_for_outcomes
+    header: Kind of Data for Outcomes
+  - key: number_of_outcomes
+    header: Number of Outcomes
+  - key: outcomes
+    header: Outcomes
+  - key: results
+    header: Results
+  studies:
+  - chattopadhyayDuflo2004
+  - dufloTopolova2004
+  - bardhanMookherjeeParra2005
+  - banRao2008
+  - rajaramanGupta2008
+  - bardhanMookherjeeParra2010
+  - raabeSekherBirner2009
+  - beamanEtAl2011
+  - nilekani2010
+  - satheEtAl2013
+  - gajwaniZhang2015
+  - priebe2017
+  - pathakMacours2017
+  - boseDas2018
+  - deiningerNagarajanSingh2020
+  - deiningerJinNagarajanSingh2022
+  - cassanVandewalle2021
+  - chaturvediDasMahajan2025
+  - brownMitraSingh2025
+  notes:
+  - 'Notes: Some studies are only partially coded (for example, Sathe et al. (2013)).'

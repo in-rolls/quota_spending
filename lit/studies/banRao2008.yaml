@@ -1,0 +1,188 @@
+key: banRao2008
+label: Ban & Rao (2008)
+pdf: ban_rao_2008_edcc.pdf
+pdf_version: Economic Development and Cultural Change 56(3) 2008, pp. 501-530 (scan; printed page = pdf page + 500)
+notes: null
+preferences:
+- row: PRA
+  codes:
+    drinking_water:
+      value: F
+      status: confirmed
+      source: p. 514, Table 5; p. 513
+      note: |-
+        Stated problems/priorities "2 years ago" from group PRAs. Women's preferences come from a separate women's PRA; men's come from the general PRA, which was "mainly men" (p. 6; Table 5 note 1). The outcome is the fraction of villages whose group names the item; the women-men gap is estimated by LPM with village FE and clustered SEs. Water: .466 vs .392, gap .075 (.033)**, so F follows from a significant positive gap. Text: "the large differences are in water and sanitation, which women are more likely to see as a problem" (p. 11).
+    roads:
+      value: M
+      status: confirmed
+      source: p. 514, Table 5; p. 513
+      note: |-
+        Roads: .094 women vs .177 men, gap -.081 (.024)***. Negative and significant, so M. Text: "roads, which men are more likely to see as a problem" (p. 11).
+    transport:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 5
+      note: |-
+        Transport: .042 vs .029, gap .013 (.010), not significant, so NS.
+    electricity:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 5
+      note: |-
+        Electricity: .026 vs .035, gap -.010 (.013), not significant, so NS.
+    educ:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 5
+      note: |-
+        Education: .036 vs .035, gap .000 (.013), not significant, so NS.
+    sanitation:
+      value: F
+      status: confirmed
+      source: p. 514, Table 5; p. 513
+      note: |-
+        Sanitation: .101 vs .048, gap .052 (.019)***. Positive and significant, so F.
+    health_child_care:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 5
+      note: |-
+        Health: .055 vs .055, gap .003 (.016), not significant, so NS. There is no child-care item.
+- row: HH Survey
+  codes:
+    drinking_water:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 6; p. 513
+      note: |-
+        Individual ranking of village problems "2 years ago" in the household questionnaire. LPM of the preference indicator on female, with village FE and clustered SEs; sample is literate adults 21 and over (Table 6 note 4), n = 2,113. Water gap -.010 (.020), so NS. Text: without FE women lean toward water, but "Controlling for village fixed effects, however, no differences remain" (p. 11).
+    infra:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 6
+      note: |-
+        "Infrastructure" gap -.003 (.021), not significant, so NS. The category is undefined in the paper and may include roads (there is no separate roads item in Table 6).
+    transport:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 6
+      note: |-
+        Transport gap .003 (.008), so NS.
+    housing:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 6
+      note: |-
+        Housing gap -.001 (.005), so NS.
+    electricity:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 6
+      note: |-
+        Electricity gap .013 (.009), not significant with village FE, so NS. (The raw means lean toward women, .058 vs .044.)
+    educ:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 6
+      note: |-
+        Education gap .003 (.007), so NS.
+    health_child_care:
+      value: NS
+      status: confirmed
+      source: p. 514, Table 6
+      note: |-
+        Health gap -.005 (.009), so NS. There is no child-care item.
+summary:
+  sample:
+    value: "106 GPs across 9 districts across 4 states. \n\nNotes: 1. Matched sampling of districts (near boundary), 2. In Kerala the population per GP is roughly double that in the other three states. For this reason in Kerala 3 GPs sampled per block. For the rest, it is 6 GPs per block, 3. Omitted\nGPs that have multiple reservations for women and scheduled castes, keeping only GPs reserved for women and the unreserved GP."
+    status: confirmed
+    source: pp. 505-506
+    note: |-
+      "Thus our sample consists of 106 GPs containing 310 villages in the four states" (p. 506). There are 9 districts: Medak and Chithoor (AP); Bidar, Kolar and Dakshin Kanada (KA); Kasargod and Palakkad (KE); Dharmapuri and Coimbatore (TN) (p. 505). Kerala has 3 GPs per block and the others 6 (p. 505), and the omission rule is quoted closely (p. 506; the published text ends "the unreserved GPs"). "near boundary" is a paraphrase. The paper matches districts that "had belonged to the same administrative unit during colonial rule but had been transferred to different units when the states were reorganized in 1956", with language-matched block pairs in the "matching district of the neighboring state" (p. 505). The 106 GPs were drawn from 201 originally sampled (p. 505). Pages are printed pages of the EDCC 2008 article; facts unchanged from the 2007 working paper.
+  location:
+    value: Andhra Pradesh, Karnataka, Tamil Nadu, and Kerala
+    status: confirmed
+    source: p. 504
+    note: |-
+      "the southern states of Andhra Pradesh, Karnataka, Kerala, and Tamil Nadu" (p. 504).
+  years:
+    value: '2002'
+    status: confirmed
+    source: p. 504
+    note: |-
+      "a survey conducted between November and December 2002" (p. 504).
+  kind_of_data_for_outcomes:
+    value: |-
+      Participatory Rapid Appraisal + Survey + Sarpanch interview
+
+      2,100 HH (20 HH per village, 4 always SC/ST)
+    status: mismatch
+    source: pp. 506-507, 511; p. 512, Table 4
+    note: |-
+      The reservation-effect outcomes (Table 4) come from three sources: the village PRA ("participatory rapid appraisal (PRA)", p. 507; "Data on the activities of panchayats come from the PRA", p. 511); a facilities assessment "conducted by an investigator" (p. 507), which the paper calls "the facility survey" (p. 511); and the president survey (meetings with higher officials, p. 512). The household survey of about 2,100 households (20 per village, 4 SC/ST; p. 506) supplies no outcome in Table 4. It is used for the Table 6 preferences and the president-selection comparisons. Listing "Survey" plus the HH count implies the outcomes come from households.
+    proposed: |-
+      Village PRA (activity counts) + investigator facilities assessment (improvements since last election) + president survey
+
+      Household survey (~2,100 HH; 20 per village, 4 always SC/ST) used for preferences and president selection, not for outcomes
+    previous: |-
+      Participatory Rural Appraisal + Survey + Sarpanch interview
+
+      2,100 HH (20 HH per village, 4 always SC/ST)
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'Participatory Rural Appraisal' -> 'Participatory Rapid Appraisal'
+  number_of_outcomes:
+    value: '11'
+    status: confirmed
+    source: p. 512, Table 4
+    note: |-
+      Table 4 has 7 PRA activity outcomes (water, health, education, sanitation, roads, transport, electricity) plus 4 facilities outcomes (drinking water, schools, anganwadi, roads), so 11 public-goods outcomes. The current '11' does not count joint tests. The former value "11 variables and 2 joint significant tests" counted the two "Joint significance test p-value" rows in Table 4: PRA block p = 0.392 and facilities block p = 0.876. Not counted: the president-survey outcome "Met higher Panchayat" (Table 4) and the 3 participation outcomes in Table 3 (women's share of Gram Sabha participants, women's NGOs, women's CBOs). Counting those gives 12 (Table 4) or 15 (with Table 3).
+  outcomes:
+    value: Public goods (plus political behavior outcomes)
+    status: confirmed
+    source: p. 510, Table 3; p. 512, Table 4
+    note: |-
+      Public-goods activity/improvement outcomes (Table 4), plus women's Gram Sabha participation and women's organizations (Table 3) and president meetings with higher officials (Table 4).
+  results:
+    value: |-
+      “From the seven activities we examine, we see a significant difference only for activities in education. Relative to unreserved panchayats, panchayats reserved for women had significantly more education-related activities.” (pg. 511; see also Table 4)
+
+      On the four outcomes measured using the survey and the joint significance test, “reserved presidents do no differently than unreserved ones.” (pg. 511; see also Table 4)
+
+      “The results in table 3 indicate that there is not a significant effect of women’s reservation either on women’s participation in the gram sabha or in the presence of women’s organizations.” (pg. 510)
+
+      “The results show that women presidents are significantly less likely to meet with higher-level officials than unreserved presidents.” (pg. 512-513)
+    status: corrected
+    source: pp. 510-513; p. 510, Table 3; p. 512, Table 4
+    note: |-
+      Checked against the EDCC 2008 article (scan). Quotes 1, 2 and 4 are verbatim in the published text; their pages are now printed journal pages: quote 1 p. 511, quote 2 p. 511, quote 4 runs from the last line of p. 512 ("The") onto p. 513. Quote 3 is the working-paper wording and is NOT verbatim in the published version, which reads "The results in table 3 indicate that there is not a significant effect of women's reservation either on women's participation in the gram sabha or in the presence of women's organizations" (p. 510). The meaning is the same; the value keeps the working-paper wording and page (pg. 9) for quote 3 pending author decision, and `proposed` swaps in the published wording with pg. 510. Table 4 (p. 512) backs the quotes: PRA education .184 (.089)**, other six not significant, joint p = .392; facilities joint p = .876; Met higher panchayat -.202 (.078)**. Table 3 (p. 510) gaps are all not significant. Minor point: "the survey" in quote 2 is the investigator-run facility survey (p. 511), not the household survey.
+    previous: |-
+      “From the seven activities we examine, we see a significant difference only for activities in education. Relative to unreserved panchayats, panchayats reserved for women had significantly more education-related activities.” (pg. 9; see also Table 4)
+
+      On the four outcomes measured using the survey and the joint significance test, “reserved presidents do no differently than unreserved ones.” (pg. 10; see also Table 4)
+
+      “The results in Table 3 indicate that there is neither a significant effect of women’s reservation on women’s participation in the Gram Sabha, nor in the presence of women’s organizations.” (pg. 9)
+
+      “The results show that women presidents are significantly less likely to meet with higher-level officials than unreserved presidents.” (pg. 10)
+    comment: |-
+      2026-10-24, switched to published version (EDCC 2008): quote pages pg. 9 -> pg. 511 (quote 1), pg. 10 -> pg. 511 (quote 2), pg. 10 -> pg. 512-513 (quote 4); quote 3 not verbatim in published text, published wording + pg. 510 in proposed
+      2026-10-24, adopted published wording of the quote (copyedits only) with printed page.
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      Tests that reserved-unreserved differences are jointly zero (Table 4): 7 PRA activity outcomes, p = .392; 4 facilities outcomes, p = .876.
+    source: Table 4, p. 512; text p. 511
+    note: |-
+      Split out of multiple_testing. The text says the differences "in these six categories are not jointly significant" (p. 511), but seven PRA outcomes are tested.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: summary index (mean of standardized PRA counts, used for the heterogeneity analyses in Tables 10, 12, 14); no corrected p-values
+    source: p. 512, Table 4; p. 511; p. 519; Tables 10, 12, 14 (pp. 521, 523, 525)
+    note: |-
+      Table 4 reports "Joint significance test p-value" 0.392 over the 7 PRA activity outcomes and 0.876 over the 4 facilities outcomes. Text: "the differences between reserved and unreserved panchayats in these six categories are not jointly significant" (p. 511; it says six, though seven are tested). For the interaction analyses, the paper collapses goods into one index, "constructed as the mean of the standardized counts of activities across all public-goods categories" (p. 519; "Overall GP activity is an average of standardized measures from the PRA", notes to Tables 10, 12, 14, pp. 521, 523, 525). No multiplicity correction is applied to the single significant education effect among the 7 PRA goods, or to the per-item preference gaps in Tables 5 and 6.
+audit_notes: |-
+  Label and version: switched 2026-10-24 to the published article, Radu Ban and Vijayendra Rao, "Tokenism or Agency? The Impact of Women's Reservations on Village Democracies in South India", Economic Development and Cultural Change 56(3), 2008, pp. 501-530 (ban_rao_2008_edcc.pdf, an image-only scan; printed page = pdf page + 500). Summary-table pages and the preferences `source` fields now cite printed journal pages. The earlier coding used the May 2007 working paper (ban_rao_2007_wp.pdf). Version-dependent facts (106 GPs / 310 villages / ~2,100 HH, 9 districts in 4 states, Nov-Dec 2002, 11 public-goods outcomes in Table 4, Table 3 participation outcomes) are the same in both versions, and table numbers (3, 4, 5, 6, 10, 12, 14) are unchanged. The preferences `note` fields were left as coded and still carry working-paper page cites (p. 6 -> p. 507; pp. 10-11 / p. 11 -> p. 513) and two working-paper phrasings: "the large differences are in water and sanitation" (published: "the large differences occur in water and sanitation", p. 513) and "Controlling for village fixed effects, however, no differences remain" (published: "When we control for village fixed effects, however, no differences remain", p. 513). The published Table 5 note (p. 514) says men's preferences come from "the general PRA" and does not itself say "mainly men"; that phrase is in the text (p. 507).
+  What Table 1 rests on: stated preferences about village problems "2 years ago" (a retrospective question), not complaints or provision. The PRA row compares a women-only group PRA with a general PRA of "mainly men" (p. 507), so it is not a clean men-only comparison. The unit is the village group, not the individual. The HH row compares individual literate adults 21 and over with village FE. The coding rule (sign of a significant LPM gap, else NS) reproduces every coded cell exactly; Table 5 and Table 6 numbers (p. 514) match the working paper. The paper also warns that its preference data are "not exactly comparable" with C&D's complaint data (p. 513).
+  Blank domains: the PRA row leaves infra and housing blank, which is correct, since Table 5 has no such items. The HH row leaves roads and sanitation blank, also correct, since Table 6 has no such items. No reported domain was left blank.
+  Referee points: (i) text p. 513 says in the HH data "men have a greater preference for health and infrastructure, whereas women are more likely to consider water and electricity", but that refers to raw means; with village FE nothing survives, which is what the table codes. (ii) The working paper's Table 6 column-header typo (both columns "Fraction women") is fixed in the published Table 6 (p. 514: "Fraction Women" / "Fraction Men"). (iii) The single education effect among 7 PRA outcomes, with joint p = .392, is weak evidence.

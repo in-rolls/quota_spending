@@ -1,0 +1,238 @@
+key: chattopadhyayDuflo2004
+label: Chattopadhyay & Duflo (2004)
+pdf: chattopadhyay_duflo_2004_ecta.pdf
+pdf_version: Econometrica 72(5) 2004
+notes: null
+preferences:
+- row: West Bengal
+  codes:
+    drinking_water:
+      value: F
+      status: confirmed
+      source: p. 1430, Table IV (col. 6); p. 1411
+      note: |-
+        Measures complaints/requests brought to the GP in the prior 6 months: each gender's share of public-works issues by type. Col. 6 = women's share minus men's share = +.13 (.31 vs .17). No per-good significance test; only a chi-square over the whole distribution (71.72, p = .00). F follows from the sign and size of the gap. Text agrees: "In West Bengal, women complain more often than men about drinking water and roads" (p. 1411).
+    roads:
+      value: F
+      status: confirmed
+      source: p. 1430, Table IV (col. 6); p. 1411
+      note: |-
+        Complaint-share gap for "Road Improvement" = +.06 (.31 women vs .25 men). No per-good test. The text states women complain more about roads in West Bengal (p. 1411), so F follows.
+    infra:
+      value: NS
+      status: unverifiable
+      source: p. 1430, Table IV
+      note: |-
+        Table IV has no "infrastructure" category. The closest rows: "Public Works" share of all issues, gap = -.01 (.84 women vs .85 men), which would read NS. The paper's "infrastructure" (Si, col. 5) is an average across genders, not a gender gap: "we report the average across men and women of the fraction of complaints related to infrastructure (Si in the model)" (p. 1429). The code depends on how the table maps "Infra." onto this paper.
+    housing:
+      value: F
+      status: confirmed
+      source: p. 1430, Table IV (col. 6)
+      note: |-
+        Complaint-share gap for "Housing" = +.05 (.11 women vs .05 men). No per-good test. Text lists housing among women's next most frequent issues (p. 1429). F follows from the sign; it is at the smallest gap the table codes as gendered.
+    electricity:
+      value: M
+      status: mismatch
+      source: p. 1430, Table IV (col. 6)
+      note: |-
+        Complaint-share gap for "Electricity" = -.01 (.08 women vs .10 men in Table IV, cols. 3 and 4). No per-good test, and a one-point gap is not "clearly gendered". The table codes gaps of .00 to .02 as NS elsewhere (adult educ .00, health .02), so M here applies a different threshold. The text lists electricity among women's issues: "The next most important issue was welfare programs, followed by housing and electricity" (p. 1429).
+      proposed: NS
+    irrigation:
+      value: M
+      status: confirmed
+      source: p. 1430, Table IV (col. 6); p. 1429
+      note: |-
+        Complaint-share gap for "Irrigation and Ponds" = -.17 (.04 women vs .20 men). No per-good test, but it is the largest gap in the table. Text: "The issues most frequently raised by men in West Bengal were roads, irrigation, drinking water, and education" (p. 1429). Note the row bundles ponds with irrigation.
+    educ:
+      value: M
+      status: confirmed
+      source: p. 1430, Table IV (col. 6); p. 1429
+      note: |-
+        Complaint-share gap for "Education" = -.06 (.06 women vs .12 men). No per-good test. Education is among men's most frequent issues (p. 1429), so M follows.
+    adult_educ:
+      value: NS
+      status: confirmed
+      source: p. 1430, Table IV (col. 6)
+      note: |-
+        "Adult Education" gap = .00 (.00 women vs .01 men). Almost no complaints either way, so NS in the sense of not gendered (there is no significance test).
+    health_child_care:
+      value: NS
+      status: confirmed
+      source: p. 1430, Table IV (col. 6)
+      note: |-
+        These rows are in the "Other Programs" panel (share of all issues, not of public-works issues). Health gap = +.02 (.04 vs .02), Child Care gap = .00 (.01 vs .01). No test. Both are small, so NS (not clearly gendered) is consistent.
+    other:
+      value: F
+      status: mismatch
+      source: p. 1430, Table IV (col. 6)
+      note: |-
+        Table IV "Other" row gap = +.01 (.10 women vs .09 men), with no test; that is not clearly gendered. Also, the table footnote defines C&D "Other" as sanitation and ponds, which is the Table V (provision) definition. In Table IV, ponds sit in "Irrigation and Ponds" (a large M gap, -.17) and the "Other" row is not defined.
+      proposed: NS
+- row: Rajasthan
+  codes:
+    drinking_water:
+      value: F
+      status: confirmed
+      source: p. 1430, Table IV (col. 12); p. 1411
+      note: |-
+        Complaint-share gap, col. 12, = +.09 (.54 women vs .43 men). Only a joint chi-square (16.38, p = .09) is reported. Text: "In Rajasthan, women complain more often than men about drinking water" (p. 1411). F follows.
+    roads:
+      value: M
+      status: confirmed
+      source: p. 1430, Table IV (col. 12); p. 1411
+      note: |-
+        Complaint-share gap for roads = -.11 (.13 women vs .23 men). Text: women complain "less often about roads" in Rajasthan (p. 1411). M follows.
+    infra:
+      value: NS
+      status: unverifiable
+      source: p. 1430, Table IV
+      note: |-
+        There is no "infrastructure" gender gap in Table IV (col. 11 is the gender-average Si). If "Infra." means the "Public Works" row, the gap is -.26 (.62 women vs .87 men), the largest in the Rajasthan panel, which would code M, not NS. Women's complaints shift toward welfare programs (+.16). The mapping must be fixed before this cell can be settled.
+    housing:
+      value: M
+      status: mismatch
+      source: p. 1430, Table IV (col. 12)
+      note: |-
+        Housing gap = -.01 (.03 women vs .04 men), with no test. A one-point gap is not clearly gendered; the West Bengal adult-educ and health cells with similar gaps are coded NS.
+      proposed: NS
+    electricity:
+      value: F
+      status: mismatch
+      source: p. 1430, Table IV (col. 12)
+      note: |-
+        Electricity gap = +.01 (.03 women vs .02 men), with no test. Not clearly gendered.
+      proposed: NS
+    irrigation:
+      value: F
+      status: mismatch
+      source: p. 1430, Table IV (col. 12); p. 1429
+      note: |-
+        "Irrigation and Ponds" gap = -.02 (.02 women vs .04 men). The sign is negative, so F is wrong in direction; the magnitude is negligible. The text notes that men's priorities in Rajasthan match West Bengal "With the exception of irrigation" (p. 1429), meaning irrigation is not a big men's issue there either. The coding rule cannot produce F.
+      proposed: NS
+    educ:
+      value: M
+      status: confirmed
+      source: p. 1430, Table IV (col. 12)
+      note: |-
+        Education gap = -.09 (.05 women vs .13 men). No per-good test. M follows from the gap.
+    adult_educ:
+      value: NS
+      status: confirmed
+      source: p. 1430, Table IV (col. 12)
+      note: |-
+        Adult Education gap = .00 (0 and .00 for both). No complaints, so NS (not gendered).
+    health_child_care:
+      value: NS
+      status: mismatch
+      source: p. 1430, Table IV (col. 12)
+      note: |-
+        "Other Programs" panel: Child Care gap = +.06 (.07 women vs .01 men), Health gap = +.03 (.07 vs .04). Both lean toward women, and the child-care gap is larger than gaps the table codes F elsewhere (West Bengal housing +.05, Rajasthan other +.05). No per-good test, so F rests on magnitude only, the same basis as the other F/M cells.
+      proposed: F
+    other:
+      value: F
+      status: confirmed
+      source: p. 1430, Table IV (col. 12)
+      note: |-
+        "Other" gap = +.05 (.20 women vs .12 men), with no test. F follows from the gap. (Table IV prints the average for this row as .28, which cannot be an average of .20 and .12; it is a typo in the paper.) The "Other" contents are not defined in Table IV; see the West Bengal other note.
+summary:
+  sample:
+    value: |-
+      161 GPs (Birbhum) and 100 hamlets (Udaipur) from 2 districts
+
+      Notes: 3 villages per GP with 2 randomly selected and the village of the Sarpanch
+    status: mismatch
+    source: p. 1424 (Sec. 4.1), p. 1425, fn. 17-18
+    note: |-
+      Only 161 are GPs. West Bengal: "There are 166 GPs in Birbhum, of which five were reserved for pre-testing, leaving 161 GPs in our study" (p. 1424). Rajasthan: "100 hamlets in Udaipur", sampled as "100 villages ... and then one hamlet per village" (p. 1425, fn. 17). The authors "could not obtain the data necessary to match villages to Panchayat" in Udaipur (fn. 18), so the Rajasthan units are not GPs. The 3-villages-per-GP design applies to West Bengal only, and village-level regressions use just the 2 random villages (322 obs., Table V note). The abstract says "265 Village Councils".
+    proposed: |-
+      161 GPs in Birbhum (West Bengal) and 100 hamlets in Udaipur (Rajasthan)
+
+      Notes: In West Bengal, 3 villages per GP (2 randomly selected and the Pradhan's village; regressions use the 2 random villages). In Rajasthan, 100 villages sampled with probability proportional to size, then one hamlet per village.
+    previous: |-
+      261 GPs from 2 districts
+
+      Notes: 3 villages per GP with 2 randomly selected and the village of the Sarpanch
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): '261 GPs from 2 districts' -> '161 GPs (Birbhum) and 100 hamlets (Udaipur) from 2 districts'
+  location:
+    value: West Bengal and Rajasthan
+    status: confirmed
+    source: p. 1424
+    note: |-
+      "We collected data in two locations: Birbhum in West Bengal and Udaipur in Rajasthan."
+  years:
+    value: 2000 for WB and 2002 for Rajasthan
+    status: confirmed
+    source: pp. 1424-1425
+    note: |-
+      West Bengal survey "In the summer of 2000"; Rajasthan "Between August 2002 and December 2002". Investment reference periods are May 1998 to 2000 (WB) and 2000 to 2002 (Rajasthan).
+  kind_of_data_for_outcomes:
+    value: Participatory Rural Appraisal (PRA) per village
+    status: mismatch
+    source: pp. 1424-1425
+    note: |-
+      The paper never uses the term PRA. The village outcomes come from a participatory resource map: "we drew a resource map of the village with a group of 10 to 20 villagers ... and we asked whether each of the available equipment items had been built or repaired since May 1998", plus "an additional interview with the most active participants" (pp. 1424-1425). The GP-level outcomes (Table V, panel B, which the outcomes cell lists) come from the Pradhan interview "with support from written records" (p. 1424). Complaints come from village-meeting minutes and questions. The cell omits the Pradhan interview.
+    proposed: |-
+      Village resource-mapping exercise (PRA-style) with 10-20 villagers plus follow-up interview; GP-level outcomes (WB only) from Pradhan interview with written records
+  number_of_outcomes:
+    value: '9'
+    status: confirmed
+    source: p. 1432, Table V
+    note: |-
+      Table V has 5 village-level goods (drinking water, road condition, Panchayat-run education centres, irrigation, other public goods; education is WB only, so Rajasthan has 4) plus 4 GP-level WB goods (tubewell, metal road, informal education centre, irrigation pump), so 9 distinct outcomes. The current value '9' does not count joint tests. The former value "9 and 3 joint significance tests" counted the three "Test Statistics: Difference Jointly Significant" rows in Table V: WB village level 4.15 (p = .001), Rajasthan village level 2.88 (p = .02), and WB GP level 4.73 (p = .001). Excluded from the count: the 3 participation outcomes in Table III (share of women among Gram Samsad participants, women filed complaint, men filed complaint).
+  outcomes:
+    value: |-
+      Village level: number of drinking water facilities, condition of roads, education centers, irrigation facilities, other public goods (including sanitation, ponds, etc.)
+
+      GP level (WB only): Tubewell built or not, metal road built or repaired, informal education center, irrigation pump built
+    status: confirmed
+    source: p. 1432, Table V
+    note: |-
+      Matches the Table V rows. Precision points: the village "education centers" are "Panchayat Run Education Centers" and are WB only; "other public goods" are listed as "(ponds, biogas, sanitation, community buildings)".
+  results:
+    value: |-
+      West Bengal: Significantly more drinking-water facilities, better condition of roads, more tubewells, and more metal roads, but fewer informal education centers, similar number of other public goods (ponds, biogas, sanitation, community buildings) which have all been combined into one category, irrigation facilities, panchayat run education centers (see Table 5).
+
+      Rajasthan: Significantly more drinking-water facilities, worse condition of roads, but similar number of irrigation facilities, and other public goods (see Table 5).
+
+      More women participate in Gram Samsads and file complaints in reserved GPs than in unreserved GPs in WB but not in Rajasthan (see Table 3).
+    status: mismatch
+    source: p. 1428, Table III; p. 1431; p. 1432, Table V
+    note: |-
+      Mostly right. Checks against Table V: WB water +9.09 (4.02), roads +.18 (.06), tubewell +.07 (.03), metal road +.19 (.08), GP informal education centre -.16 (.07); Rajasthan water +2.62 (.95), roads -.08 (.04), irrigation -.02 (.06), other +.05 (.09). Table III: WB women's share of Gram Samsad participants +2.92 (1.44), women filed complaint +.09 (.05); Rajasthan -4.08 (4.03) and +.02 (.10). Three problems. (1) Calling village-level Panchayat-run education centres "similar" (-.06, se .04) contradicts the text, which counts it as a 10% effect of the same good: "GPs are less likely to have set up informal schools (in the village, this is significant only at the 10% level)" (p. 1431). (2) "combined into an index" is not in the paper; Table V reports a count, "Other Public Goods (ponds, biogas, sanitation, community buildings)". (3) The GP-level irrigation pump result (+.07, se .05, not significant) is not mentioned. The paper numbers its tables in Roman numerals (Table V, Table III).
+    proposed: |-
+      West Bengal: Significantly more drinking-water facilities, better condition of roads, more tubewells, and more metal roads, but fewer informal education centers (significant at 5% at the GP level, 10% at the village level); similar number of irrigation facilities, irrigation pumps, and other public goods (ponds, biogas, sanitation, community buildings) (see Table V).
+
+      Rajasthan: Significantly more drinking-water facilities, worse condition of roads, but similar number of irrigation facilities, and other public goods (see Table V).
+
+      More women participate in Gram Samsads and file complaints in reserved GPs than in unreserved GPs in WB but not in Rajasthan (see Table III).
+    previous: |-
+      West Bengal: Significantly more drinking-water facilities, better condition of roads, more tubewells, and more metal roads, but fewer informal education centers, similar number of other public goods (ponds, biogas, sanitation, community buildings) which have all been combined into an index, irrigation facilities, panchayat run education centers (see Table 5).
+
+      Rajasthan: Significantly more drinking-water facilities, worse condition of roads, but similar number of irrigation facilities, and other public goods (see Table 5).
+
+      More women participate in Gram Samsads and file complaints in reserved GPs than in unreserved GPs in WB but not in Rajasthan (see Table 3).
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'combined into an index' -> 'combined into one category'
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      F-tests that reserved-unreserved differences in provision are jointly zero (Table V): WB village level, 5 goods, F = 4.15, p = .001; Rajasthan, 4 goods, F = 2.88, p = .02; WB GP level, 4 goods, F = 4.73, p = .001. Chi-square tests that men's and women's complaint distributions are the same (Table IV): WB chi-square = 71.72, p = .00; Rajasthan 16.38, p = .09.
+    source: p. 1430 Table IV; p. 1431 Table V
+    note: |-
+      Split out of multiple_testing. Table IV numbers checked against the rendered page (pdf p. 22). The Table IV chi-squares test whole distributions, not individual goods, so they cannot support per-good F/M codes in Table 1.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (per-good differences use plain standard errors; no index or corrected p-values)
+    source: p. 1432, Table V; p. 1430, Table IV; p. 1431
+    note: |-
+      Table V reports "Test Statistics: Difference Jointly Significant" for each panel: WB village level 4.15 (p = .001) over the 5 village goods, Rajasthan 2.88 (p = .02) over its 4 goods, WB GP level 4.73 (p = .001) over the 4 GP goods. Text: "The differences between investments in reserved and unreserved GP are jointly significant" (p. 1431). Per-good results are reported with plain standard errors and no multiplicity adjustment. For preferences, Table IV gives only a chi-square test of equal complaint distributions, men vs women: 71.72 (p = .00) WB and 16.38 (p = .09) Rajasthan. There is no test for any single good. Table VI pools goods into one regression of provision on the women-men complaint gap (Di), which acts as a single summary test of alignment with women's preferences.
+audit_notes: |-
+  Label and version: the label Chattopadhyay & Duflo (2004) matches the PDF, Econometrica 72(5), Sept 2004, pp. 1409-1443. Page cites use printed journal pages (printed = PDF page + 1408).
+  What Table 1 actually rests on: the only gender-preference evidence is Table IV, the share of each gender's formal requests/complaints to the GP in the prior 6 months that fall in each category (p. 1429). No per-good significance test exists. The only tests are a chi-square that the whole men's and women's distributions are equal (WB p = .00, Rajasthan p = .09). So in this row, "NS" cannot mean "not statistically significant", and F/M can only mean the sign of an untested gap. The coded cells use inconsistent thresholds: gaps of +/-.01 are coded F or M (WB electricity, WB other, Rajasthan housing, Rajasthan electricity), while .00 and +.02 are coded NS. Rajasthan irrigation is coded F on a negative gap. The men's WB data come from "a random subset of 48 villages" (fn. 24; Table IV note 2), so men's shares are noisier.
+  Complaints vs provision: Table V effects on provision (e.g. WB more water and better roads, fewer informal schools) are reservation effects, not preferences, and must not be used to fill Table 1. The coded cells are consistent with Table IV rather than Table V, apart from the issues above.
+  Blank domains: Table IV reports "Welfare Programs" (WB +.06, Rajasthan +.16, the largest female-leaning gaps in both states) and "Credit or Employment" (WB -.08, Rajasthan +.01). Table 1 has no column for either, so the table omits the paper's strongest women's issue in Rajasthan. The paper itself highlights welfare as a women's issue (p. 1429). Transport and sanitation are blank, correctly: there are no such rows in Table IV (sanitation appears only in Table V's "Other public goods").
+  Footnote problem: the tables.yaml footnote defines C&D "Other" as "sanitation and ponds". That is the Table V provision category. In Table IV, ponds are in "Irrigation and Ponds", and "Other" is undefined.
+  Summary table: the Rajasthan sample is 100 hamlets, not GPs, and Rajasthan has no GP-level or education outcomes (fn. 26: "There are no Panchayat-run schools in Rajasthan").

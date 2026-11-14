@@ -1,0 +1,321 @@
+key: boseDas2018
+label: Bose & Das (2018)
+table2_label: Bose and Das (2018)
+pdf: bose_das_2018_rde.pdf
+pdf_version: Review of Development Economics 22(1) 2018, pp. 203-219 (printed page = pdf page + 202)
+notes: PDF is the published 2018 RDE article; before 2026-10-24 this file used the Sep 2014 draft (bose_das_2014_draft.pdf)
+audit_notes: |-
+  2026-10-24, switched to published version (RDE 2018). The PDF is now
+  the article itself (Rev Dev Econ 22(1): 203-219, DOI 10.1111/rode.12336;
+  printed page = pdf page + 202, checked on every page header). The article
+  is a substantial rewrite of the draft, not a copy-edit:
+  - Sample: 5850 matched panchayats (p. 208, n. 16 on p. 217), not 5987;
+    "approximately 6000 panchayats in nine districts" (p. 205).
+  - Outcomes: Table 4 (p. 212) job cards, demand, male and female
+    person-days; Table 5 (p. 214) log works in seven categories (rural
+    connectivity, land development, flood control, drought-proofing, water
+    control and harvesting, irrigation canals, irrigation canals for SC/ST);
+    Table 6 (p. 215) the works-to-expenditure ratio for the same seven.
+    Sanitation works and "water works" are no longer estimated.
+  - Findings: job cards +3.9%*** and demand +2.8%* in Phase I (p. 211), no
+    effect on person-days for men or women (p. 212), water control and
+    harvesting +7% in Phase I GPs reserved only in 2010 (p. 213; Table 5
+    col. 2, 0.069*), flood control +8.6% in twice-reserved GPs (p. 213).
+  - None of the four draft quotes in the results cell appears in the
+    article. The value is left as coded; a page-cited re-quote from the
+    article is in summary.results.proposed.
+  - The draft's "thought to be of direct benefit to women (such as rural
+    drinking water, sanitation and water bodies)" and its p. 20 sentence on
+    women's policy preferences are gone. The framing is now p. 204 (whether
+    works "reflect the preferences of the median female population"; Chattopadhyay
+    and Duflo on drinking water) and n. 2 (p. 216, the 36% water-fetching
+    statistic).
+  The audit text below was written against the Sep 2014 draft; its page and
+  table numbers are draft pages.
+
+  Label is right for the bib (Bose and Das, Review of Development Economics
+  22(1): 203-219, 2018, "Political reservation for women and delivery of
+  public works program"). The PDF is a different, earlier version: the
+  September 17, 2014 draft "Women's Reservation and India's National Rural
+  Employment Guarantee Scheme", marked "(Preliminary Draft. Please do not
+  cite)". Every page cite below refers to this draft.
+
+  Could the numbers differ across versions? Yes, and the published abstract
+  shows that they do on substance. I checked the published abstract on
+  EconPapers (RePEc:bla:rdevec:v:22:y:2018:i:1:p:203-219), not the article
+  itself. It says: "we find female Panchayat leaders significantly increase
+  the demand for work under NREGA. We also find that women leaders take up
+  projects that directly benefit women, such as water control and harvesting.
+  Finally, we find no difference between male and female leaders in
+  generating employment or efficiently implementing public works under
+  NREGA." Two of the four findings quoted in the results cell, taken from the
+  draft, point the other way. The draft finds no effect on water works, where
+  the article finds women leaders take up water control and harvesting
+  projects. The draft finds about a 6% increase in women's person-days, where
+  the article finds no difference in generating employment. The sample (9 UP
+  districts) matches in both. The results cell should be re-sourced from the
+  article.
+
+  What is used to code Table 1 domains F. Nothing in the paper measures
+  preferences. The F codes can only come from the authors' framing: works
+  "that are thought to be of direct benefit to women (such as rural drinking
+  water, sanitation and water bodies)" (p. 2), and "In rural India 36 % of
+  women who are mainly engaged in domestic activity bring water from outside
+  the house. So, public works that reduce the time and effort of bringing
+  water from outside is especially beneficial for women" (p. 4). Also:
+  "Policy preferences of women have been documented to be different in
+  various studies (Duflo and Chattopadhyay (2004), Topalova and Duflo
+  (2004))" (p. 20). That is an assumption backed by citations to other
+  papers. The paper's own estimates are reservation effects on NREGA works
+  completed, and in the draft those are null for sanitation and water. Coding
+  F here counts Chattopadhyay-Duflo a second time, through a paper that
+  assumes their result.
+
+  Other referee points. (1) Tables 4A, 5A and 6A label the regressor
+  "Panchayat reserved in 2005", while Eq. (2) and Table 3A use reservation in
+  2010. The columns also split the sample by 2005 status. Which term's
+  reservation is being estimated is unclear in the draft. (2) The 6%
+  women's person-days effect is 0.061 (0.032), significant only at 10%. (3)
+  The p. 4 statement of "no evidence of improvements in ... irrigation works"
+  sits beside p. 19, which reports a 14% irrigation gain (0.140**, Table 5A
+  col. 12). That gain is only in the subsample reserved in 2005 (N = 515);
+  the full sample gives 0.062 (0.044). Land development shows a similar
+  pattern in Phase II. (4) No correction for testing ten outcomes across two
+  phases and three subsamples.
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: F
+      status: mismatch
+      proposed: ''
+      source: p. 204; p. 205 and n. 2 (p. 216); p. 213; Tables 5-6 (pp. 214-215)
+      note: |-
+        The paper measures no preference for drinking water, by women or
+        anyone else. It asserts that water works are "thought to be of direct
+        benefit to women (such as rural drinking water, sanitation and water
+        bodies)" (p. 2) and cites the 36% water-fetching statistic (p. 4). The
+        only estimate is a reservation effect on provision (NREGA water works
+        completed), and it is null: Table 6A full sample -0.010 (0.019); Table
+        6B 0.018 (0.024). A reservation effect on provision would not be a
+        preference measure even if it were significant. Propose blank. If the
+        cell stays, it needs a table note saying the authors assumed the
+        classification rather than measured it.
+        2026-10-24, published version (RDE 2018): pages above are draft pages.
+        The p. 2 "thought to be of direct benefit" phrase is absent from the
+        article. The framing is p. 204 ("more investment in public goods that
+        directly benefit women, such as drinking water supply (Chattopadhyay &
+        Duflo, 2004)") and n. 2 on p. 216 (36% statistic). There is no separate
+        drinking-water outcome; the nearest is water control and harvesting,
+        which the authors tie to drinking water via ponds (p. 213): Table 5
+        (p. 214) full sample 0.027 (0.028), reserved-only-in-2010 0.069* (0.039);
+        Table 6 (p. 215) Phase II twice-reserved ratio 27.330** (11.560).
+    sanitation:
+      value: F
+      status: mismatch
+      proposed: ''
+      source: n. 8 (p. 216); Appendix A (p. 219)
+      note: |-
+        Same basis as drinking_water: sanitation is named on p. 2 as
+        "thought to be of direct benefit to women" and is not measured as a
+        preference. The only estimate is a null provision effect on sanitation
+        works: 0.067 (0.179) in Table 6A and 0.057 (0.239) in Table 6B, on
+        only 272 and 128 observations. The text says "In terms of sanitation
+        and water bodies we find no effect of reservation" (p. 20). Propose
+        blank.
+        2026-10-24, published version (RDE 2018): pages above are draft pages.
+        The article does not estimate sanitation at all. Sanitation appears only
+        as a permissible work category: n. 8 (p. 216) and Appendix A item 9
+        "Rural sanitation" (p. 219). The p. 2 framing sentence is gone.
+    other:
+      value: F
+      status: mismatch
+      proposed: ''
+      source: p. 213; Appendix A (pp. 218-219)
+      note: |-
+        "Other" here can only mean "water bodies", from "rural drinking
+        water, sanitation and water bodies" (p. 2), the analogue of ponds in
+        Chattopadhyay-Duflo's "Other". Same problem as the other two cells:
+        an assumption, not a measured preference. The p. 20 text also
+        promises water-bodies results that Tables 6A/6B do not report; those
+        tables cover only sanitation works and water works. Propose blank.
+        2026-10-24, published version (RDE 2018): pages above are draft pages.
+        Water bodies ("Renovation of traditional water bodies", Appendix A item
+        7, p. 218) are not estimated. The nearest outcome is water control and
+        harvesting, which includes "constructing ponds" (p. 213).
+summary:
+  sample:
+    value: 5,850 GPs from 9 districts
+    status: corrected
+    source: Abstract (p. 203); p. 205; p. 208 and n. 16 (p. 217)
+    note: |-
+      2026-10-24, published version (RDE 2018): the 5,987 figure is from the
+      Sep 2014 draft and is not in the article. The article says "After merging
+      the two datasets we are able to successfully match 5850 panchayats" (p.
+      208), with n. 16 (p. 217): "We drop the 218 panchayats which have missing
+      data." The introduction says "approximately 6000 panchayats in nine
+      districts" (p. 205), and the abstract "nine districts in Uttar Pradesh"
+      (p. 203). Same nine districts as the draft (p. 208). Value left as coded;
+      proposed gives the published count. Regression N: Table 4 (p. 212) 9,797
+      (Phase I) and 6,598 (Phase II) panchayat-years.
+      Draft note: Abstract: "for 5987 Panchayats in 9 districts in the state of
+      Uttar Pradesh". p. 16: "our final dataset only looks at 9 districts and
+      5987 Panchayats". Table 1 N = 13,283 (Phase I) and 8,866 (Phase II).
+    previous: 5,987 GPs from 9 districts
+    comment: '2026-10-24, author approved: adopted published-version value.'
+  location:
+    value: Uttar Pradesh
+    status: confirmed
+    source: Abstract (p. 203); pp. 205, 208
+    note: |-
+      Uttar Pradesh only: nine districts, five Phase I (Barabanki,
+      Chitrakoot, Fatehpur, Hardoi, Kheri) and four Phase II (Ambedkar Nagar,
+      Basti, Etah, Jhansi) (p. 208). Unchanged in the published version.
+  years:
+    value: 2010-2013
+    status: confirmed
+    source: p. 205; p. 208
+    note: |-
+      Published version (RDE 2018): "we use panchayat-level information from
+      2010 to 2013" (p. 205). p. 208 is more precise: "Our employment data are
+      from FY 2010-11 to FY 2012-13. The website does not provide data on
+      expenditure or works for FY 2010-11, and so we use data from FY 2011-12 to
+      FY 2013-14." So works data run to March 2014; the value follows the p.
+      205 wording. Reservation status comes from the 2005 and 2010 elections
+      (p. 208).
+  kind_of_data_for_outcomes:
+    value: Administrative data
+    status: confirmed
+    source: pp. 205, 208
+    note: |-
+      Published version (RDE 2018): outcomes come from "the Ministry of
+      Rural Development's NREGA website (MIS)" (p. 208): job cards, demand,
+      person-days by sex, works by category and their expenditure. Reservation
+      status from Dunning and Nilekani (2013), demographics from Census 2001
+      (p. 208). All administrative.
+  number_of_outcomes:
+    value: '18'
+    status: corrected
+    source: Tables 4-6 (pp. 212, 214, 215)
+    note: |-
+      2026-10-24, published version (RDE 2018): the outcome set changed.
+      Table 4 (p. 212) has 4 (log job cards issued, log NREGA demand, log
+      person-days male, log person-days female). Table 5 (p. 214) has 7 log
+      works counts: rural connectivity, land development, flood control,
+      drought-proofing, water control and harvesting, irrigation canals,
+      irrigation canals for SC/ST. Table 6 (p. 215) has the works-to-expenditure
+      ratio for the same 7 categories. 4 + 7 + 7 = 18 distinct dependent
+      variables, each for Phase I and II and 3 samples. If the Table 6 ratios
+      are not counted as separate outcomes, the count is 11. Sanitation and
+      water works (draft Table 6) are gone. Value left as coded (10, the
+      draft count: 2+2+4+2 over draft Tables 3-6).
+    previous: '10'
+    comment: '2026-10-24, author approved: adopted published-version value.'
+  outcomes:
+    value: Job cards issued, NREGA demand, person-days worked by women, person-days worked by men, Rural connectivity works, Land development works, Flood control works, Drought-proofing works, Water control and harvesting works, Irrigation canals, and Irrigation canals for SC/ST (works as log counts and as works per lakh rupees spent)
+    status: corrected
+    source: Tables 4-6 (pp. 212, 214, 215)
+    note: |-
+      2026-10-24, published version (RDE 2018): the value lists the draft's
+      outcomes. The article drops sanitation works and water works and adds
+      flood control, water control and harvesting, and irrigation canals for
+      SC/ST; it also reports each works category as a works-to-expenditure
+      ratio (Table 6, p. 215). Proposed lists the published outcomes in the
+      order of Tables 4-5. Value left as coded.
+      Draft note: these matched the column headers of draft Tables 3-6; works
+      outcomes were counts of completed works.
+    previous: Job cards issued, NREGA demand, person-days worked by women, person-days worked by men, Rural connectivity works, Drought works, Land development works, Irrigation works, Sanitation works, and Water works
+    comment: '2026-10-24, author approved: adopted published-version value.'
+  results:
+    value: |-
+      “In twice-reserved panchayats, having a woman leader resulted in 5.8% more job cards being issued and 4.3% more demand for work being officially recorded under NREGA than under male leaders, a result we find only in Phase I districts. ... However, we find no significant differences between reserved and unreserved panchayats with respect to female labor force participation under NREGA. Thus, we find no evidence of a role-model effect from having a female leader in government. In terms of projects taken up, we find that women leaders, relative to their male counterparts, increased the number of water conservation and harvesting works by 7%, improving access to sources of drinking water in villages.” (pg. 205)
+
+      “On average, reserved panchayats in Phase I districts issued 3.9% more job cards (significant at the 1% level) and registered 2.8% more NREGA work demand (significant at the 10% level) than panchayats that were not reserved.” (pg. 211)
+
+      “The results show that women leaders are not statistically significantly different from their male counterparts in providing work for men and women under NREGA. This hold true for both Phase I and Phase II districts.” (pg. 212)
+
+      “For the other categories of works, we find no difference in public good provision between reserved and unreserved panchayats (similar to Bardhan et al., 2010).” (pg. 213)
+    status: corrected
+    source: "Published: pp. 205, 211, 212, 213; Tables 4 (p. 212), 5 (p. 214). Value's (pg. N) cites are Sep 2014 draft pages 4, 18, 19, 20"
+    note: |-
+      2026-10-24, switched to published version (RDE 2018): none of the four
+      quoted passages is in the article, verbatim or close, so the value is left
+      as coded (its page cites are draft pages) and status stays mismatch.
+      Published counterparts, one per draft quote, are in proposed:
+      - draft p. 4 summary -> intro summary on p. 205. The article reports a
+        water control and harvesting gain (+7%) and no female person-days
+        effect, the reverse of the draft on both.
+      - draft p. 18 (2.2% demand, 3.5% job cards) -> p. 211 (3.9% job cards,
+        2.8% demand; Table 4 col. 1: 0.039*** (0.013), 0.028* (0.013)).
+      - draft p. 19 (~6% women's person-days) -> p. 212, no significant
+        difference (Table 4 col. 1 female 0.048 (0.034)).
+      - draft p. 20 (sanitation and water bodies, no effect) -> no counterpart;
+        sanitation is not estimated. Nearest is p. 213 on "the other categories
+        of works". The same page reports water control and harvesting +7%
+        (Table 5 col. 2, 0.069* (0.039)) and flood control +8.6% in
+        twice-reserved GPs (Table 5 col. 3, 0.086* (0.048)).
+      This replaces the earlier interim proposal (the published abstract, p.
+      203), which was written before the article was in lit/papers.
+
+      Earlier note (Sep 2014 draft):
+      All four quotes are verbatim from the 2014 draft: p. 4, p. 18, p. 20
+      and p. 19 in that order. The numbers match the tables. Table 3A: log
+      demand 0.022* (0.012), log job cards 0.035*** (0.011). Table 4A:
+      log female person-days 0.061* (0.032).
+      Why mismatch: the cell cites the 2018 article, and its abstract
+      contradicts two of the quoted findings. It says "women leaders take up
+      projects that directly benefit women, such as water control and
+      harvesting", against the draft's "no evidence of improvements in water
+      works" and "In terms of sanitation and water bodies we find no effect".
+      It also says "no difference between male and female leaders in
+      generating employment", against the draft's roughly 6% increase in
+      women's person-days.
+      Even within the draft, the cell omits the positive subsample results
+      on p. 19. Irrigation is +14%, 0.140** (Table 5A col. 12, reserved in
+      2005, N = 515), and Phase II land development is +12%. p. 4's "no
+      evidence of improvements in ... irrigation works" holds only for the
+      full sample.
+
+      Proposal restated as a literal value: the published abstract, since the 2018 article itself is not in lit/papers. The current quotes are from the Sep 2014 draft, which the abstract contradicts on water projects and employment. A fuller re-quote with page cites needs the article.
+      Auditor's original proposal: Re-quote from the 2018 RDE article, with page cites. Interim text, from
+      the published abstract: "we find female Panchayat leaders significantly
+      increase the demand for work under NREGA. We also find that women
+      leaders take up projects that directly benefit women, such as water
+      control and harvesting. Finally, we find no difference between male and
+      female leaders in generating employment or efficiently implementing
+      public works under NREGA." (Bose and Das 2018, abstract)
+    previous: |-
+      “We find evidence of increased demand for work, job cards issued and number of work days that women take up. However, our analysis finds no evidence of improvements in water works, irrigation works, rural connectivity or drought proofing works.” 
+
+      “Our data shows that under female leadership, there is a 2.2 % increase in registered cases of households demanding work under the program. Also, in terms of job card provision, female leaders issue more job cards than their male counterparts. 3.5 percent more job cards were issued in Panchayats that were reserved versus Panchayats that were not reserved for women candidates.”
+
+      “In terms of sanitation and water bodies we find no effect of reservation.”
+
+      “... female leadership increases the number of person days worked by women by approximately 6% in Panchayats in Phase I districts while for Panchayats in Phase 2, there is no effect.”
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'rural connectivity or drought proofing works.”' -> 'rural connectivity or drought proofing works.” (pg. 4)'; 'not reserved for women candidates.”' -> 'not reserved for women candidates.” (pg. 18)'; 'we find no effect of reservation.”' -> 'we find no effect of reservation.” (pg. 20)'; 'in Phase 2, there is no effect.”' -> 'in Phase 2, there is no effect.” (pg. 19)'
+      2026-10-24, author approved: adopted published-version value.
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance
+      test in the paper. Rechecked in the published version (RDE 2018): none.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (each outcome tested separately at conventional levels; no joint test, index or p-value adjustment)
+    source: Tables 4-6 (pp. 212, 214, 215); pp. 211-215
+    note: |-
+      Published version (RDE 2018), checked 2026-10-24: no joint test,
+      summary index or p-value correction. A text search for "Bonferroni",
+      "joint", "index" and "multiple" finds nothing relevant ("index" hits only
+      the Human Development and backwardness indexes). The article reports 18
+      outcomes x 2 phases x 3 samples, i.e. 108 reservation coefficients
+      (Tables 4-6), each starred separately (table notes: "***, **, * denote
+      significance at 1%, 5% and 10% respectively"). Headline results include
+      10%-level estimates: demand 0.028* (Table 4), water control and
+      harvesting 0.069* and flood control 0.086* (Table 5).
+      Draft (Sep 2014): same, over 10 outcomes and 60 coefficients.

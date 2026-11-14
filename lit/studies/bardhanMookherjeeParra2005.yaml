@@ -1,0 +1,169 @@
+key: bardhanMookherjeeParra2005
+label: Bardhan et al. (2005)
+pdf: bardhan_mookherjee_parra_2005_wp.pdf
+pdf_version: working paper Nov 2005
+notes: no bib entry; check whether this is the 2010 published bardhanMookherjeeParra2010
+audit_notes: |-
+  The PDF is Pranab Bardhan, Dilip Mookherjee and Monica Parra Torrado, "Impact
+  of Reservations of Panchayat Pradhans on Targeting in West Bengal", working
+  paper dated November 29, 2005 (Boston University / UC Berkeley). The label
+  "Bardhan et al. (2005)" is correct for it. It needs a bib entry as a working
+  paper.
+  It is NOT the same study as Bardhan, Mookherjee & Parra Torrado (2010),
+  "Impact of Political Reservations in West Bengal Local Governments on
+  Anti-Poverty Targeting", J. Globalization and Development 1(1), art. 5, doi
+  10.2202/1948-1837.1025. I checked the corrected published version on the
+  authors' site (people.bu.edu/dilipm/publications/jgdrevised version.pdf),
+  p. 2. It calls the 2005 paper "an earlier paper of ours (Bardhan, Mookherjee
+  and Parra Torrado (2005))" and says "This paper focuses on the state of West
+  Bengal, using the same set of villages as in our earlier study. ... We use a
+  household survey rather than data provided by local governments". p. 3 adds
+  "Another major weakness of our previous study is that it was based on
+  government records for 1998, the very first year of the Pradhan
+  reservations. ... This paper is based on a household survey carried out in
+  2003-04 ... pooling the data from 1998-2004".
+  So the two Table 2 rows share the same 89 villages / 57 GPs but have different
+  data sources (government records vs a household survey), periods (1978-98
+  panel with women's reservation only in 1998, vs 1998-2004) and outcomes.
+  Keeping both rows is defensible, but the text should say it is the same
+  sample and the same authors, so they are not two independent confirmations.
+  The 2005 WP appears never to have been published in its own right; the
+  JGD paper replaced it. A referee may ask why a superseded WP is listed.
+  Separately, the other row's label "Bardhan et al. (2009)" does not match
+  the 2010 JGD publication year (not edited here).
+  Referee points: the women's-reservation effects come only from the 1998
+  term, i.e. the first year of women Pradhans (the paper's own admission, p. 5).
+  Standard errors are clustered by district with 15 clusters. Significance
+  stars go down to 20% ("?"), so "significant" in the text often means 10-20%.
+summary:
+  sample:
+    value: 89 villages across 57 GPs in 15 districts excluding Calcutta and Darjeeling
+    status: confirmed
+    source: p. 3; p. 6
+    note: |-
+      p. 3 says "Our sample consists of 89 villages in 57 GPs spread throughout
+      15 districts in West Bengal (only Calcutta and Darjeeling are
+      excluded)." The villages are a subsample of the state Agriculture
+      Department's cost-of-cultivation sample (p. 6). Only 14 reserved vs about
+      30 unreserved GPs/villages enter the 1998 cross-section comparisons
+      (Table 2A).
+  location:
+    value: West Bengal
+    status: confirmed
+    source: p. 1 (abstract); p. 3
+    note: null
+  years:
+    value: 1993–1998
+    status: mismatch
+    source: p. 3; pp. 6-7; Tables 2A-8A
+    note: |-
+      p. 3 does say "our data is restricted to years between 1993 and 1998",
+      but that sentence contradicts the data section and every table. p. 6
+      says "The data concerning IRDP, minikits, employment programs and roads was
+      collected for each village and budgets of each GP for an average of four
+      selected years between 1978 and 1998 ... (so for 1978, 1983, 1988, 1993
+      and 1998)". Tables 2A-8A report "FE Regression, 1978-98" and "Difference,
+      1998". Women's Pradhan reservation began in 1998 (p. 2), so the
+      women's-reservation effect comes from the 1998 term only.
+    proposed: |-
+      1978–1998 (one year per GP term: 1978/79, 1983, 1988, 1993, 1998); women's-reservation effects identified from 1998, the first reserved term
+  kind_of_data_for_outcomes:
+    value: Administrative data
+    status: confirmed
+    source: p. 6
+    note: |-
+      The outcomes come from records. IRDP loans come from the lead bank,
+      minikits from the block Agriculture office, and employment, roads and
+      budgets from GP accounts (p. 6). Controls come from indirect household
+      listings reconstructed from voter lists (pp. 6-7), which are not outcome
+      data. Farm wages (Table 9) come from cost-of-cultivation surveys but are
+      used only for SC/ST reservation.
+  number_of_outcomes:
+    value: '108'
+    status: mismatch
+    source: Tables 2A, 3A, 4A, 5A, 6A, 7A, 8A (pdf pp. 17-23)
+    note: |-
+      108 is the number of women's-reservation COEFFICIENTS, not outcomes. Each
+      outcome is estimated twice, once as FE 1978-98 and once as the 1998
+      difference in means. Outcome variables per women's table are 2A 6, 3A 2,
+      4A 7, 5A 8, 6A 12, 7A 15, 8A 4, for a total of 54. 54 x 2 = 108, which
+      reproduces the cell. Interaction tables 10A/11A and the SC/ST (B) tables
+      are excluded. Many of the 54 are nested sub-components (e.g. water =
+      drinking water + tubewell). If the column means dependent variables, as
+      in the other rows (e.g. Duflo & Topalova counts 23 variables, not
+      coefficients), the value should be 54.
+    proposed: '54'
+  outcomes:
+    value: Credit availability, % Credit subsidy going to SC/ST, landless,  agricultural minikits, Tax revenue per household, etc.
+    status: confirmed
+    source: Tables 2A-8A
+    note: |-
+      These are accurate examples (Table 2A credit subsidy per household and %
+      to SC/ST and landless, Table 3A minikits, Table 8A tax revenue per
+      household). The "etc." hides the employment programs (4A), the
+      allocation of employment funds by sector (5A), roads spending (6A) and GP
+      budget shares (7A). Two of the four 5%-significant results are roads
+      (6A), which the list omits. Suggest adding "employment programs, roads
+      spending, GP budget shares". Minor; also fix the double space.
+  results:
+    value: |-
+      4 out of 108 coefficients significant at 5% or lower.
+
+      “The total volume of credit subsidy in reserved villages increased from Rs 13 per household to Rs 19 (at 1980 prices).” (pg. 9, see also Table 2A)
+
+      “Here the effects of reservations on inter-GP targeting were negligible, with a mild but statistically insignificant adverse effect (of less than 2%) on intra-village targeting towards those owning less than 5 acres of land.” (pg. 10)
+    status: mismatch
+    source: p. 9; p. 10; Tables 2A, 3A, 6A
+    note: |-
+      Part 1 reproduces. Counting ** or *** in the FE and 1998-difference
+      columns of Tables 2A-8A gives 4 of 108. They are 2A credit subsidy per
+      household, diff 5.57** (2.11); 2A credit to landless per landless hh, diff
+      15.56** (6.78); 6A pucca roads Rs/hh, diff -17.350** (6.93); and 6A new
+      pucca roads Rs/hh, diff -13.184*** (4.33). All four are cross-sectional,
+      and none of the FE coefficients is significant at 5%. Part 2 is verbatim
+      from p. 9. Part 3 is verbatim from p. 10, but has no page cite and is
+      misattributed. The sentence pools both reservation types, and the
+      "adverse effect" is the SC/ST reservation. In Table 3B, minikits to upto
+      small are FE -1.19 (1.38) and diff -1.80* (1.03). For WOMEN's reservation
+      (Table 3A) the same outcome is positive, FE 1.03 (2.30) and diff 0.82?
+      (0.53). As a women's-reservation result it has the wrong sign. The cell
+      also omits the significant negative roads effect.
+    proposed: |-
+      4 of 108 women's-reservation coefficients (54 outcomes × FE and 1998-difference estimates) significant at 5% or lower, all in the 1998 cross-section: more IRDP credit subsidy per household and per landless household (Table 2A); less spending on pucca and new pucca roads (Table 6A).
+
+      “The total volume of credit subsidy in reserved villages increased from Rs 13 per household to Rs 19 (at 1980 prices).” (pg. 9, see also Table 2A)
+
+      “Villages with reserved women Pradhans invested significantly less on construction of new pucca roads.” (pg. 11, see also Table 6A)
+
+      Minikits: no effect of women's reservation on inter- or intra-village targeting (Table 3A; the “mild adverse effect” on p. 10 refers to SC/ST reservation, Table 3B).
+    previous: |-
+      4 out of 108 coefficients significant at 5% or lower.
+
+      “The total volume of credit subsidy in reserved villages increased from Rs 13 per household to Rs 19 (at 1980 prices).” (pg. 9, see also Table 2A)
+
+      “Here the effects of reservations on inter-GP targeting were negligible, with a mild but statistically insignificant adverse effect (of less than 2%) on intra-village targeting towards those owning less than 5 acres of land.”
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'less than 5 acres of land.”' -> 'less than 5 acres of land.” (pg. 10)'
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (54 outcomes × 2 estimators tested one at a time; no index, joint test or correction)
+    source: pp. 7-8; Tables 2A-8A (pdf pp. 17-23)
+    note: |-
+      Each outcome is tested separately with district-clustered SEs ("all
+      standard errors are clustered at the district level", p. 7 fn 5). The
+      tables flag significance down to 20% ("***, **, *, ?: denotes
+      significance at the 1, 5, 10 and 20%"). A text search of the PDF finds no
+      joint, Wald, F or corrected test. Table 1 balance is also checked variable
+      by variable ("The differences are statistically insignificant for most
+      variables", p. 8). The 4-of-108 count in the results cell is the
+      author's own tally, which is about what chance alone would give at 5%
+      (expected 5.4 if all nulls were true, ignoring correlation).

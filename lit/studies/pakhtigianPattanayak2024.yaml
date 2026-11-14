@@ -1,0 +1,58 @@
+key: pakhtigianPattanayak2024
+label: Pakhtigian & Pattanayak (2024)
+pdf: pakhtigian_pattanayak_2024_wd_page_capture.pdf
+pdf_version: 'ScienceDirect page capture: highlights, abstract, introduction and section snippets only (no data, results or tables)'
+notes: null
+audit_notes: |-
+  The capture shows Emily L. Pakhtigian and Subhrendu K. Pattanayak, "Social
+  setting, gender, and preferences for improved sanitation: Evidence from
+  experimental games in rural India", World Development 177 (May 2024),
+  106556, doi 10.1016/j.worlddev.2024.106556. The label "Pakhtigian &
+  Pattanayak (2024)" is correct in authors, spelling and year.
+  Only the highlights, abstract, introduction and truncated section snippets
+  are readable. No results table, coefficient, standard error or sample split
+  is visible, so no magnitude or significance can be checked from this file.
+  Referee points.
+  (1) This is not a reservation or local-government study. It is a
+  lab-in-the-field sanitation-themed threshold public goods game with over
+  1500 participants in 69 villages of Bihar and Odisha. Group gender
+  composition was randomized at the village level (abstract; intro). It
+  belongs in Table 1 only as evidence on stated sanitation preferences by
+  gender.
+  (2) A contribution in a public goods game mixes how much a player values the
+  good with how cooperative they are, and how much they expect others to
+  contribute. The intro stresses the second channel ("expectations of group
+  contributions matter").
+  (3) The authors' own validation cuts against reading women's contributions
+  as a sanitation preference. The abstract says "game behavior and sanitation
+  practices are positively correlated for men and negatively correlated for
+  women".
+  (4) The gender gap depends on the setting. Women contribute more in
+  women-only groups than men in men-only groups. But "In mixed gender groups,
+  contributions increase with the share of male participants" (abstract).
+  That is the setting closest to a mixed-gender Gram Sabha.
+  To finalize the F code, the full text is needed (the regression of
+  contributions on gender, pooled and by group type).
+preferences:
+- row: null
+  codes:
+    sanitation:
+      value: F
+      status: unverifiable
+      source: pdf p. 1 (ScienceDirect capture), Highlights, Abstract, Introduction
+      note: |-
+        What is measured is stated preference. Players contribute to "varying
+        levels of sanitation and hygiene investments" in an incentivized public
+        goods game (abstract). The capture supports F only conditionally. The
+        highlights say "Women make larger hygiene and sanitation investments in
+        experimental games settings when making choices among only other
+        women". The intro says women "made larger contributions when playing
+        among only other women than did men playing among only other men".
+        Against F, the abstract says "In mixed gender groups, contributions
+        increase with the share of male participants", and women's game
+        contributions are "negatively correlated" with their actual sanitation
+        practices. The capture shows no pooled women-vs-men estimate, no
+        coefficients and no significance levels, so an unconditional F cannot be
+        verified. A cautious code from what is visible would be "F in
+        single-gender groups only". The comparison needs the results tables,
+        which the capture lacks.

@@ -1,0 +1,154 @@
+key: beamanEtAl2011
+label: Beaman et al. (2010)
+pdf: beaman_duflo_pande_topalova_2011_ipf.pdf
+pdf_version: published, India Policy Forum 2010-11, vol. 7, pp. 159-201 (NCAER typeset PDF; printed page = pdf page + 158)
+notes: null
+audit_notes: |-
+  PDF and version. The PDF is the typeset India Policy Forum chapter hosted by NCAER (www.ncaer.org/wp-content/uploads/2022/09/4_Lori-Beaman_Esther-Duflo_Rohini-Pande_Petia-Topalova.pdf, fetched through the Wayback Machine because ncaer.org refused the TLS handshake). The title page (p. 159) reads "Political Reservation and Substantive Representation: Evidence from Indian Village Councils" by Lori Beaman, Esther Duflo, Rohini Pande and Petia Topalova. It runs pp. 159-201: the paper is pp. 159-185, appendix tables pp. 186-191, then comments by Devesh Kapur and Hari Nagarajan and the general discussion (pp. 192-199), and references (pp. 200-201). The bib's pages 159--201 therefore include the comments. The cited pages 162, 165 and 176 match this pagination. All page cites here are printed journal pages. The notes field still says "MISSING PDF"; that is now stale.
+
+  Label year. The running head is "INDIA POLICY FORUM, 2010–11". The chapter cannot have appeared before May 2011: it cites web pages "accessed May 7, 2011" and "accessed on 29 April 2011" (p. 200). The bib entry (beamanEtAl2011) has year 2011. So the label "Beaman et al. (2010)" disagrees with the bib and with the publication date. It should read "Beaman et al. (2011)" unless the table deliberately cites the volume's nominal 2010-11 year, in which case the bib should say so.
+
+  Three datasets, not two. The paper uses (1) a meeting sample of 197 Gram Sabha meetings recorded in 2003-04 in eight districts of five states (Rajasthan, West Bengal, Andhra Pradesh, Kerala, Karnataka; p. 163 and fn. 2), which supplies Tables 1 col. 1, 2, 3, A-4 and the female-friendliness measure in Table 7; (2) the Public Affairs Centre's "Millennial Survey" of 2000 (Tables 4, 5); and (3) the Birbhum sample, a 2005 PRA village survey of 495 villages in all 165 GPs plus household and Pradhan surveys (Tables 1 cols. 2-7, 6, 7, A-5). The sample, location, kind-of-data and outcomes cells describe only (2) and (3), although the first results quote comes from (1).
+
+  Name of the survey. The paper calls it the "Millennial Survey" / "Millennial survey" throughout (heading on p. 164, pp. 162, 165, 173, 176). Table A-2's title misspells it "Milennial Survey" (p. 187). The sample cell's "Millennium Survey" and the location cell's "Millenium Survey" both differ from the paper's name, and the second is also misspelled. The kind-of-data and outcomes cells correctly say "Millennial".
+
+  Preferences row. The only measure of what women want is issue salience in the meeting transcripts: for each issue, the fraction of villagers' words on it that were spoken by women, averaged across transcripts (p. 171; Table A-4, p. 189). It is not a stated preference, and there is no test of a gender difference for any issue. Because women speak far less than men overall, every share is low (0.000 to 0.225). "Relatively stronger" can only be read against the other issues. Table A-4 values: Water .163, Public works .163, Financial help .225, Rents and taxes .139, School .122, Health .151, Agriculture .067, Miscellaneous .000, Government .082. The mean of the eight non-miscellaneous issues is .139. The codes below read each issue against that mean and against the authors' own statements. The paper's other evidence on public goods (Tables 4, 6) is about what women leaders do, not about what female villagers want. Not audited: the blank irrigation cell. Agriculture (.067, the lowest share) and the p. 182 remark that irrigation and schools are "more 'male issues'" would support M there.
+
+  Significance wording. The paper calls the pooled quantity effect "positive and significant" at 0.078 (SE 0.041), a t-ratio of 1.90, so it is significant only at the 10% level.
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: F
+      status: confirmed
+      source: Table A-4 (p. 189); p. 171
+      note: |-
+        Measure: share of villagers' words on the issue spoken by women in the 197 Gram Sabha meetings, averaged across transcripts (p. 171). There is no men-vs-women test. Water = .163, tied second behind financial help (.225) and above the .139 mean of the non-miscellaneous issues. Text: "Women speak the most on financial transfers followed by public works and water." (p. 171). F follows from the ranking, not from a test.
+    infra:
+      value: F
+      status: confirmed
+      source: Table A-4 (p. 189); p. 171; fn. 17 (p. 183)
+      note: |-
+        The paper has no "infrastructure" issue. The closest is "Public works", defined in fn. 17 as "public works (sanitation, roads, transportation)" (p. 183). Its women's word share is .163, tied with water, second only to financial help, and above the .139 mean. Text: women speak most on financial transfers "followed by public works and water" (p. 171). F holds if Infra. means public works; that mapping is the auditor's assumption. There is no test.
+    educ:
+      value: F
+      status: mismatch
+      source: Table A-4 (p. 189); p. 182
+      note: |-
+        School has a women's word share of .122, below the .139 mean and below water (.163), public works (.163), health (.151), financial help (.225) and rents and taxes (.139). Only agriculture (.067), government (.082) and miscellaneous (.000) are lower. The authors themselves class schools as a men's issue. On the Birbhum results they write: "we now find that there is more investment in irrigation and schools, issues that are more “male issues.”" (p. 182). Nothing in the paper supports F. There is no test, so M rests on the below-average share plus the authors' description. NS ("not clearly gendered") is the conservative alternative, given that the gap from the mean is small (-.017).
+      proposed: M
+    health_child_care:
+      value: F
+      status: confirmed
+      source: Table A-4 (p. 189)
+      note: |-
+        Health has a women's word share of .151, above the .139 mean but below water and public works (.163). F follows from the sign. It is weak: the gap from the mean (+.012) is about half that for water, and there is no test. There is no child-care issue in Table A-4 (the NGO crèche in Table 6 is an investment outcome, not a preference). If small untested gaps are coded NS elsewhere, NS would be defensible here.
+    other:
+      value: Mixed
+      status: confirmed
+      source: Table A-4 (p. 189); p. 171
+      note: |-
+        The remaining Table A-4 issues point both ways. Financial help .225 is the highest share of all ("Women speak the most on financial transfers", p. 171). Rents and taxes (.139) is at the mean, while government (.082) and agriculture (.067) are well below it. So "Mixed" describes the paper. However, "Mixed" is not one of the F/M/NS codes in the table legend, and the "Other*" footnote defines the column only for Chattopadhyay and Duflo (2004). The legend or a footnote should say what Mixed means for this row, e.g. "financial help F; agriculture, government M".
+summary:
+  sample:
+    value: |-
+      Millennial Survey: “Our sample thus consists of approximately 810 villages when analyzing household satisfaction and availability of public services, and 680 villages when analyzing the quality of public services.” (pg. 165)
+
+      Birbhum Sample: All 165 GPs from Birbhum in West Bengal
+    status: mismatch
+    source: pp. 161, 163-165 (fn. 2, fn. 9); Tables 2, 4, 6
+    note: |-
+      The quote is verbatim and correctly cited: fn. 9, p. 165. "All 165 GPs" is also right: "This dataset covers all 165 GPs in the district." (p. 165).
+      The only factual error is the survey's name. The paper calls it the "Millennial Survey" (heading on p. 164; also pp. 162, 165, 173, 176), not "Millennium". The proposal changes only that word.
+      Not errors, but worth knowing:
+      (a) A third sample, used for the first results quote (Table 2), is not listed: "During 2003 and 2004 we recorded 197 villager meetings across five Indian States." (p. 161), drawn from eight districts (p. 163, fn. 2).
+      (b) The Birbhum survey covers "495 villages" (p. 165), and Table 6 has N = 495.
+      (c) fn. 9 follows a statement that end-2000 reservation data exist for only eight states, so it is unclear whether the 810/680 villages cover 11 states or eight.
+      (d) The full survey has 36,542 households in 2,304 villages in 24 states (p. 164).
+    proposed: |-
+      Millennial Survey: “Our sample thus consists of approximately 810 villages when analyzing household satisfaction and availability of public services, and 680 villages when analyzing the quality of public services.” (pg. 165)
+
+      Birbhum Sample: All 165 GPs from Birbhum in West Bengal
+    previous: |-
+      Millennium Survey: “Our sample thus consists of approximately 810 villages when analyzing household satisfaction and availability of public services, and 680 villages when analyzing the quality of public services.” (pg. 165)
+
+      Birbhum Sample: All 165 GPs from Birbhum in West Bengal
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'Millennium Survey:' -> 'Millennial Survey:'
+  location:
+    value: 'Millennial Survey: Andhra Pradesh, Himachal Pradesh, Karnataka, Kerala, Maharashtra, Orissa, Punjab, Rajasthan, Tamil Nadu, Uttar Pradesh, and West Bengal'
+    status: mismatch
+    source: p. 164 fn. 5; p. 163 fn. 2; p. 165
+    note: |-
+      The 11-state list matches fn. 5 (p. 164) exactly, in the same order. The only error is the name: "Millenium" is misspelled, and the paper calls it the "Millennial Survey" (p. 164). The proposal fixes only that word.
+      Not errors, but worth knowing:
+      (a) The other two samples are not listed. The meeting sample covers Rajasthan and West Bengal (one district each) and Andhra Pradesh, Kerala and Karnataka (two districts each) (p. 163, fn. 2). Birbhum is a district of West Bengal (p. 165).
+      (b) Current-term reservation data exist for only eight of the 11 states (fn. 9, p. 165).
+      (c) Water-quantity data are missing for Himachal Pradesh, Kerala and Punjab (fn. 8, p. 165).
+    proposed: 'Millennial Survey: Andhra Pradesh, Himachal Pradesh, Karnataka, Kerala, Maharashtra, Orissa, Punjab, Rajasthan, Tamil Nadu, Uttar Pradesh, and West Bengal'
+    previous: 'Millenium Survey: Andhra Pradesh, Himachal Pradesh, Karnataka, Kerala, Maharashtra, Orissa, Punjab, Rajasthan, Tamil Nadu, Uttar Pradesh, and West Bengal'
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'Millenium Survey:' -> 'Millennial Survey:'
+  years:
+    value: 2000–2005
+    status: confirmed
+    source: pp. 161, 164, 165
+    note: |-
+      The outcome data span 2000-2005: the Millennial Survey was fielded "in the year 2000" (p. 164), the meetings were recorded in "2003 and 2004" (p. 161), and the Birbhum village survey was conducted "in 2005" (p. 165). The reservation exposure starts earlier: the Millennial analysis uses 1995-2000 reservation status (p. 165), and Birbhum uses the 1998 and 2003 reservation cycles (Table 6). The paper does not date the Birbhum household surveys used for bribes (Table 6, Panel B, which controls for "Survey year"). They are described in Beaman et al. (2009) and may fall after 2005; this was not checked.
+  kind_of_data_for_outcomes:
+    value: "HH Millennial Survey, independent site visits. \n\nFor Birbhum, HH survey for bribes and public goods via PRA and survey of Pradhan households"
+    status: confirmed
+    source: pp. 163-165, 168
+    note: |-
+      Everything the cell says is in the paper, and the survey name is spelled as the paper spells it ("Millennial"). The Millennial household survey and "independent site visits" are on p. 164. For Birbhum, "The public goods data was collected through a Participatory Resource Appraisal (PRA) survey while the data on bribes comes from a household survey" (p. 165), and "detailed household surveys administered to Pradhans" (p. 168, Table 1).
+      Omission (a note, not an error): the third data source is not listed. Gram Sabha meeting data were collected "via an observer in attendance, and a tape recording of the proceedings", then transcribed, translated and hand-coded (p. 163). They are the outcome data for Tables 2 and 3 and for the women's word shares in Tables 7 and A-4. The authors may want to add it. The 1991 Census is used only for the balance tables (A-1, A-2).
+  number_of_outcomes:
+    value: '63'
+    status: confirmed
+    source: Tables 1-7 (pp. 167, 169, 172, 174-175, 179, 180-181, 183); Table A-5 (p. 190)
+    note: |-
+      Two reasonable rules both give exactly 63. The paper does not say which one the author used.
+
+      Rule A: every outcome × respondent group in the Millennial and Birbhum public-goods tables. This is the scope of the outcomes cell, which lists only those two samples.
+      - Table 4: quantity 6 (5 goods + weighted average), plus quality 6, plus satisfaction 6 rows × 3 groups (All, Men, Women) = 18. Subtotal 30.
+      - Table 5: 5 bribe rows (4 goods + weighted average) × 3 groups (All, Male, Female; no-controls columns) = 15.
+      - Table 6: 16 Panel A investment rows + Panel B average bribes = 17.
+      - Table 7: average quantity of provision = 1.
+      Total 30 + 15 + 17 + 1 = 63.
+
+      Rule B: distinct dependent variables in main-text Tables 1-7, plus each outcome column of appendix Table A-5.
+      - Table 1: 6 distinct variables ("Pradhan is Muslim" is run in two samples).
+      - Table 2: 7 ("fraction of issues with female participation" is run for All and for West Bengal).
+      - Table 3: 2.
+      - Table 4: 18 (5 goods × 3 dimensions + 3 weighted averages).
+      - Table 5: 5.
+      - Table 6: 17.
+      - Table 7: 1.
+      Main-text subtotal 56, plus 7 Table A-5 columns (SHG accounts; SHG savings and SHG index by male/female; mobility index by male/female) = 63.
+
+      For reference, the stricter rule used elsewhere in the table counts distinct dependent variables in main-text tables only, with composites counted. That gives 56 here: the 3 respondent groups in Tables 4-5 are subsamples, and Table A-5 is in the appendix. Counting columns in Tables 1-2 gives 58. If the table should use one rule across studies, the authors may want to say which rule produced 63.
+  outcomes:
+    value: |-
+      Millennial survey: quantity, quality, and satisfaction for water, education, transportation, fair price shops, public health, and an overall index; plus overall and service-specific bribe outcomes.
+
+      Birbhum panel: village-level infrastructure creation/repair, service provision, health/education capacity, and average bribes.
+    status: confirmed
+    source: Tables 4-6 (pp. 174-175, 179, 180-181)
+    note: |-
+      Both lines match the paper. The Millennial line matches Table 4 (quantity, quality and satisfaction for the five goods plus weighted averages) and Table 5 (bribes for the public tap, ration card, police and medical services, plus the weighted average). The Birbhum line matches Table 6 (tube wells, sanitation, irrigation, roads, transport, education and health facilities built or repaired, crèche, dais/doctors; Panel B average bribes).
+      Notes, not errors:
+      (a) Birbhum is a single 2005 cross-section in which GPs differ in reservation history (1998, 2003, both, or neither; p. 165, Table 6). "Birbhum panel" could be misread as repeated observations; "Birbhum sample" is the paper's term.
+      (b) The meeting-sample outcomes (Tables 2-3: attendance, women speaking, Pradhan chairing, leader response) and the Table 1 selection outcomes are not listed, although the first results quote comes from Table 2.
+  results:
+    value: |-
+      “Villager attendance at meetings (for either gender) is unaffected by reservation. However, female villagers are significantly more likely to speak at meetings when the village council leader is a woman.” (pg. 162; see also Table 2)
+
+      “The average effect of reservation on the availability of public goods in a village is positive and significant (the coefficient is 0.078 standard deviations, with a standard error of 0.041). The average effect of the reservation on the quality of public goods is positive as well, but not significant (the coefficient is 0.016 standard deviations, with a standard error of 0.011).” (pg. 176)
+
+      “Female Pradhans, however, receive systematically less favorable evaluation from villagers (including female villagers) than male Pradhans.” (pg. 176)
+    status: confirmed
+    source: pp. 162, 176; Table 2 (p. 169); Table 4 (pp. 174-175)
+    note: |-
+      Quotes 2 and 3 are verbatim on p. 176. Quote 1 is on p. 162, but it is trimmed without an ellipsis. The paper's sentence ends "...when the village council leader is a woman (Ban and Rao, 2008a report similar findings)." The trim does not change the meaning. Table 2 col. 3 gives 0.129 (SE 0.064) on a base of 0.519, which is about the 25% increase stated on p. 170.
+      On quote 2: 0.078/0.041 is a t-ratio of 1.90, so "significant" holds only at the 10% level.
+      The cell omits the paper's most emphasized result. One option is to add the sentence that follows quote 2 on p. 176: "To summarize, women leaders do a better job at delivering drinking water infrastructure, and at least as good a job at delivering the other public goods." Another is the bribe finding: "Women leaders are less corrupt than men, suggesting that the higher quantity infrastructure does not come at a higher price." (p. 178).

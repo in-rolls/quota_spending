@@ -1,0 +1,201 @@
+key: raabeSekherBirner2009
+versions:
+  - id: dp2009
+    file: raabe_sekher_birner_2009_ifpri_dp878.pdf
+    citation: "IFPRI Discussion Paper 00878, July 2009, 'The Effects of Political Reservations for Women on Local Governance and Rural Service Provision: Survey Evidence from Karnataka'"
+    year: 2009
+    page_offset: "printed = pdf - 8 for the arabic-numbered body (pdf p. 9 = printed 1; pdf p. 8 is blank). Abstract = p. vii = pdf p. 7. The audit file lit/studies/raabeSekherBirner2009.yaml says pdf - 7; running folios say pdf - 8."
+meta:
+  year_first: 2009
+  year_published: null
+  setting: "Karnataka: 80 GPs in 12 districts, 966 households, 272 GP members; survey 2006. Comparison is 23 women-headed reserved GPs vs 48 male-headed (reserved or unreserved) GPs"
+  design: "rotational reservation treated as exogenous, cross-section; logit / heteroskedastic ordered logit with district FE, run separately with a female-headed and a male-headed dummy"
+
+mechanism:
+  - version: dp2009
+    claim: "Most GP money is tied to specific schemes, so women and men presidents have little room to spend differently."
+    type: discretion_institutions
+    status: asserted
+    direction: explains_null
+    quote: "The similarity of activities pursued in female- and male-headed GPs can be attributed to the conditionality of the respective devolved funds. Because devolved funds are conditional and tied to particular programs, female and male GP presidents are deprived of the opportunity to use them for anything other than their designated purpose."
+    page: "24"
+    note: "Asserted from the structure of funds; not estimated. Related: 'Because fiscal decentralization is incomplete, there is only limited scope for priority- and demand-driven budget allocation decisions of local governments' (p. 31). Where SGRY funds allow some discretion, a few spending differences appear (Kruskal-Wallis, statistics 'available on request', p. 30)."
+  - version: dp2009
+    claim: "Service delivery and governance are driven mainly by household and GP characteristics (literacy, political linkages, location, community involvement, fiscal devolution), not by the president's gender."
+    type: other
+    status: tested
+    direction: explains_null
+    quote: "The local governance and service delivery outcomes are predominantly determined by social, economic, and institutional factors that are unrelated to women's reservation requirements."
+    page: "vii"
+    note: "Tested in the sense that these covariates are estimated alongside the gender dummy (Tables 24-32); the gender dummy is mostly n.s. The authors call the models weak ('the results are tentative at best', p. 60; 'Due to poor model performance, the results are at most tentative', p. 64)."
+  - version: dp2009
+    claim: "Women presidents may simply carry out the budget plans of their male predecessors, because reservation rotates and male-led GPs dominate."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "If past budget allocations matter, then female GP presidents are most likely to implement the budget allocation decisions of their male predecessors."
+    page: "31"
+    note: "Path dependence in budgets; offered as a caveat, not tested. Related timing point (p. 69): the term began February 2005, so 'spending decisions in earlier years are unlikely to represent the gender effects of reservation policies.'"
+  - version: dp2009
+    claim: "De facto power may rest with the vice president rather than a weak or inexperienced president, so the president's gender may not govern outcomes."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "Especially in GPs with weak or inexperienced GP presidents, the de facto power may rest with the GP vice president. Unfortunately, the survey data do not allow for conclusions regarding differences between the de jure and de facto role of GP presidents and GP vice presidents."
+    page: "11"
+    note: "A proxy-type concern, but about vice presidents, not husbands; untested."
+  - version: dp2009
+    claim: "Women attend gram sabhas less and may be unable to raise their voice there, so their demands do not reach the GP even under a woman president."
+    type: voice_demand
+    status: speculated
+    direction: explains_null
+    quote: "The degree of dissatisfaction is more pronounced for female household respondents, which could reflect the inability of women to raise their voice during Gram Sabha meetings and/or echo the unwillingness of the Gram Sabha attendees to listen to and take notice of gender-specific concerns."
+    page: "45"
+    note: "The attendance gap is estimated: female respondents are less likely to attend (Table 30, -0.827***), and the gap is larger in female-headed GPs (Table 31, IT w/ female HH respondent -0.993***, p. 67). The link from voice to the null on services is the coder's reading of the paper's framing; the paper does not state it as the reason for the null."
+
+normative:
+  - version: dp2009
+    claim: "Reservation is a goal in its own right but not sufficient for gender-equitable services; it must be complemented by gender targeting, budgeting, monitoring and capacity building."
+    stance: conditional
+    quote: "There can be no doubt that the reservation of seats for women in local councils is a goal in its own right and an important strategy for increasing the participation of women in local policymaking. However, the evidence from (non-)linear probability models suggest that this strategy does not guarantee more gender-equitable outcomes in rural service provision"
+    page: "71"
+    note: "Abstract (p. vii): 'women's reservation policies per se are insufficient means for making rural service provision and local governance more inclusive and gender equitable. In addition, it appears that gender-integrated policy approaches that are targeted at both women and men are needed.' p. 46: reservation is 'a desirable strategy in itself, but not an a priori mechanism'. Coded conditional: supportive of reservation, with outcome gains conditional on complementary policies."
+
+measurement:
+  preferences:
+    method: hh_survey_rank
+    unit_of_gap: individual
+    gap_assumption: constant
+    tested_gap: "yes"
+    quote: "In order to gain insights into the extent to which services are needed, households are asked to rank individual services as being most important, less important, and least important."
+    page: "39"
+    note: "Male and female household respondents' rankings shown only in Figure 3 (p. 40); 'Male and female household respondents do not significantly differ in the importance assigned to almost all sampled services', except health (women rank it more important) (p. 41). Independence-test statistics are not reported (fn 47 'available on request'), so no pref_gap estimates can be extracted. GP members' problem perceptions (Tables 17-18) compare female- vs male-headed GPs, not men vs women."
+  outcomes:
+    source: villager_survey
+    units: "Household satisfaction (3-point ordered) with drinking water quantity/quality and drainage; household gram sabha attendance; GP members' yes/no problem reports; GP-level gram sabha frequency and fiscal resource utilization (expenditure/income)"
+    n_units: 71
+    assignment_unit: gp
+    quote: "In addition to the village-level data, household interviews were conducted that collect information on the socioeconomic status of households, household structure, political and institutional memberships, the use of and satisfaction with public services, the access to public benefit schemes, and the attendance of and satisfaction with Gram Sabha meetings."
+    page: "10"
+    note: "Perception data; the authors note 'Because perception data have their shortcomings' (p. 35) and did not use the facility data because of missing values (p. 10). GP-member problem reports (gp_staff_or_records) and GP fiscal records (Tables 12-13, 32) are secondary sources. n_units = 23 women-headed reserved + 48 male-headed GPs (Table 1, p. 12: 6 unreserved women dropped; Table 1 accounts for 77 of the 80 GPs)."
+
+estimates:
+  - version: dp2009
+    estimand: provision
+    outcome: "household satisfaction with quantity of drinking water (ordered: 1-3)"
+    outcome_family: drinking_water
+    diff: -0.584
+    se: 0.504
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 71
+    n_obs: 869
+    adjusted: true
+    table: "Table 24, col 1 (Res. Female)"
+    page: "56"
+    preferred: true
+    note: "Heteroskedastic ordered logit coefficient on the women-headed reserved GP dummy, not in outcome units. District FE; SEs clustered by village. Controls incl. water source and maintenance (plausibly downstream of GP performance). The male-dummy column (0.455, 0.481) mirrors it."
+  - version: dp2009
+    estimand: provision
+    outcome: "household satisfaction with quality of drinking water (ordered: 1-3)"
+    outcome_family: drinking_water
+    diff: -0.088
+    se: 0.517
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 71
+    n_obs: 870
+    adjusted: true
+    table: "Table 25, col 1 (Res. Female)"
+    page: "57"
+    preferred: false
+    note: "Ordered-logit coefficient. Second drinking-water outcome."
+  - version: dp2009
+    estimand: provision
+    outcome: "household satisfaction with drainage facilities (ordered: 1-3)"
+    outcome_family: sanitation
+    diff: -0.902
+    se: 0.415
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 71
+    n_obs: 434
+    adjusted: true
+    table: "Table 26, col 1 (Res. Female)"
+    page: "59"
+    preferred: true
+    note: "Ordered-logit coefficient. Significant in this column only; other specifications 0.088, -0.465, -0.521*."
+  - version: dp2009
+    estimand: provision
+    outcome: "GP member reports insufficient drinking water (binary)"
+    outcome_family: drinking_water
+    diff: 6.372
+    se: 3.181
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 71
+    n_obs: 241
+    adjusted: true
+    table: "Table 27, col 1 (Res. Female)"
+    page: "61"
+    preferred: false
+    note: "Logit coefficient; positive = more likely to report a problem (worse). It is the main effect in a model with three interactions, i.e. evaluated where the interacted variables (incl. own expenditure/income ratio) are zero, so it is not an average effect. The authors read it as support for 'a gender effect' (p. 61)."
+  - version: dp2009
+    estimand: provision
+    outcome: "household attended a gram sabha meeting (binary)"
+    outcome_family: participation
+    diff: 0.104
+    se: 0.264
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 71
+    n_obs: 903
+    adjusted: true
+    table: "Table 30, col 1 (Res. Female)"
+    page: "66"
+    preferred: true
+    note: "Logit coefficient; table title says logit though text (p. 64) calls them linear probability specifications. All respondents, not only women. With interactions (Table 31) the dummy is 1.295** but female respondents in women-headed GPs attend less (-0.993***)."
+  - version: dp2009
+    estimand: provision
+    outcome: "GP held more than two gram sabha meetings in the past year (binary)"
+    outcome_family: other
+    diff: -0.606
+    se: 0.883
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 70
+    n_obs: 70
+    adjusted: true
+    table: "Table 29 (Female Reserved GP President)"
+    page: "64"
+    preferred: true
+    note: "Logit coefficient; GP-level, N = 70."
+  - version: dp2009
+    estimand: provision
+    outcome: "utilization of own fiscal resources 2005/06 (expenditure / income)"
+    outcome_family: total_spending
+    diff: 0.036
+    se: 0.049
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 72
+    n_obs: 72
+    adjusted: true
+    table: "Table 32, col 2 (Res. Female)"
+    page: "70"
+    preferred: true
+    note: "OLS, in outcome units (ratio). 12th Finance Commission grant 0.089 (0.169); statutory development grant -0.047 (0.041). Descriptive mean ratios (Table 12, p. 28) are close in both groups."

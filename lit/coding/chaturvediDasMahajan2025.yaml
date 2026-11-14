@@ -1,0 +1,259 @@
+key: chaturvediDasMahajan2025
+versions:
+  - id: wp2023
+    file: chaturvedi_das_mahajan_2023_wp.pdf
+    citation: "When Do Gender Quotas Change Policy? Evidence from Household Toilet Provision in India, SSRN WP 3962068, Sep 2023"
+    year: 2023
+    page_offset: "main text printed = pdf (pp. 1-41); appendix restarts at 1 on pdf p. 43, so appendix p. = pdf - 42"
+  - id: edcc2025
+    file: chaturvedi_das_mahajan_2025_edcc.pdf
+    citation: "Economic Development and Cultural Change 73(2): 749-779, Jan 2025"
+    year: 2025
+    page_offset: "printed = pdf + 748; online appendix (Tables C1-C22) not in the PDF, cited from wp2023"
+meta:
+  year_first: 2023
+  year_published: 2025
+  setting: "Rural Uttar Pradesh, 2015 sarpanch elections (~59,000 GPs), SBM household toilet receipt 2016-17 (~25M households); preference evidence from SQUAT 2014 (5 north Indian states) and REDS 2006"
+  design: "RD (fuzzy RD on UP's rule-based female-quota assignment; heterogeneity by Muslim share via difference-in-discontinuities)"
+
+mechanism:
+  - version: wp2023
+    claim: "The quota effect is larger where women's preference for toilets relative to men's is stronger, which varies with the Muslim share because the gender gap is larger among Muslims."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "We exploit the larger gender gap in preference for toilets among Muslims than Hindus, due to cultural differences across religions, to show that variation in women's intensity of preference (relative to men's) drives the heterogeneity."
+    page: "1"
+    note: "Abstract. Same analysis as edcc2025 (version diff: tables identical). Also explains the null average: no effect at zero Muslim share (WP p. 24, Table 3)."
+  - version: wp2023
+    claim: "Women with stronger preferences voice more demand to a female leader, and that demand explains the results."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Further, we find that women with stronger preferences are more likely to demand their preferred policy under female leadership, which explains our results. These results provide suggestive evidence for a less explored channel"
+    page: "1"
+    note: "The WP abstract says 'which explains our results'; the body (WP p. 33) and the published version call the evidence 'suggestive'. The published PDF prints no abstract."
+  - version: edcc2025
+    claim: "Women's relative intensity of preference for toilets varies by religion, and this preference heterogeneity drives the heterogeneous quota effect."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "We show that cultural and social factors shape the gender gap in preference for toilets across Hindus and Muslims in India. This results in heterogeneity in women's relative intensity of preference for toilets across villages with different religious composition. We show that this preference heterogeneity in fact drives the heterogeneous treatment effects on toilet provision."
+    page: "775"
+    note: "Tested by Female reservation x Muslim share: .292** (.139) to .539*** (.200) (Table 3, p. 767), with the Muslim share-gender gap link shown in SQUAT (Table 2, p. 766). Main effect at zero Muslim share is negative and insignificant, so the same mechanism explains the null average. Authors concede Muslim share may change GP political dynamics: 'We are unable to rule out this possibility completely' (p. 769)."
+  - version: edcc2025
+    claim: "Under a female sarpanch, women in households where they have more say (female-headed) voice their demand more, and toilets follow that demand among Muslims but not Hindus."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "We additionally find that women from female-headed households who complain more about sewage- and water-related issues to female leaders are also more likely to receive toilets from them. This suggests that the demand effect can be important in shaping the effect of gender quotas."
+    page: "775"
+    note: "Tests: REDS complaints, Female reservation x female-headed household .242** for Muslims, -.0473 n.s. for Hindus (Table 4, p. 772); toilet allocation, same interaction .305*** Muslim vs .0591 n.s. Hindu (Table 5, p. 773). Authors: 'appropriate to treat our results as suggestive in nature' (p. 775)."
+  - version: edcc2025
+    claim: "Male sarpanches discount demand from female-headed households, which is why a female sarpanch changes allocation to them."
+    type: patriarchy_backlash
+    status: speculated
+    direction: explains_effect
+    quote: "This suggests that male sarpanches discount demand expressed by female-headed households, which rationalizes their change in behavior under female sarpanches."
+    page: "773-774"
+    note: "Inferred from the sign flip of the female-headed main effect between Tables 4 and 5. Coded patriarchy_backlash as the closest type (male leaders' bias against women's demands)."
+  - version: edcc2025
+    claim: "Supply side ruled out: quotas do not differentially elect Muslim leaders in high-Muslim GPs."
+    type: selection_who_runs
+    status: tested
+    direction: explains_effect
+    quote: "We therefore do not find evidence of a significant difference in this supply-side characteristic of GPs to be driving the observed heterogeneity."
+    page: "768"
+    note: "Rejected alternative. Table C13 (online; WP appendix) Muslim sarpanch as outcome, interaction positive but small and insignificant."
+  - version: edcc2025
+    claim: "Leaders' own (Muslim women's) preferences are not the only driver: close Hindu-Muslim elections show null effects."
+    type: identity_caste
+    status: tested
+    direction: explains_effect
+    quote: "the result suggests that the difference in preferences between Muslim and Hindu female leaders is unlikely to be the only factor driving our main results."
+    page: "769"
+    note: "Rejected alternative (appendix B.4, close-election difference-in-discontinuities). Religion identity of the leader."
+  - version: edcc2025
+    claim: "Higher-ability women selected in high-Muslim GPs do not explain the result: no heterogeneity in NREGS implementation."
+    type: knowledge_capacity
+    status: tested
+    direction: explains_effect
+    quote: "We use implementation of the National Rural Employment Guarantee Scheme—a large public workfare program—as our outcome variable and find no statistically significant heterogeneous treatment effects (table C15). This indicates that ability is unlikely to be the primary explanation of our results."
+    page: "769"
+    note: "Rejected alternative (leader ability). Placebo Table C15 (WP appendix p. 30)."
+  - version: edcc2025
+    claim: "Muslim share may change GP political dynamics in ways that make quotas more effective; cannot be ruled out."
+    type: other
+    status: speculated
+    direction: explains_effect
+    quote: "However, increase in Muslim population share, even if exogenous, may cause unobservable changes in the GP's political dynamics, which could potentially make gender quotas more effective. We are unable to rule out this possibility completely."
+    page: "769"
+    note: "Acknowledged confound for the preference-heterogeneity interpretation."
+
+normative:
+  - version: wp2023
+    claim: "Policies that empower women voters to participate and express preferences would make gender quotas more effective."
+    stance: conditional
+    quote: "Our findings suggest that policies that empower women voters and encourage them to participate in political processes and express their preferences and beliefs more freely can make gender quotas more effective."
+    page: "34"
+  - version: edcc2025
+    claim: "Policies that empower women voters to participate and express preferences would make gender quotas more effective."
+    stance: conditional
+    quote: "Our findings suggest that policies that empower women voters and encourage them to participate in political processes and express their preferences and beliefs more freely can make gender quotas more effective."
+    page: "775-776"
+
+measurement:
+  preferences:
+    method: usage_behavior
+    unit_of_gap: individual
+    gap_assumption: varies_by_group
+    tested_gap: yes
+    quote: "We find that women are 9 percentage points more likely to use a toilet, conditional on the household owning one, even within the same household (table C1, panel A, cols. 1, 2; tables C1–C22 are available online)."
+    page: "755"
+    note: "Two measures from the SQUAT 2014 survey (Bihar, UP, Haryana, MP, Rajasthan), not from the study GPs: (1) revealed preference = individual toilet use in toilet-owning households; (2) stated rank (hh_survey_rank) = toilet named as top / top-2 / top-3 item a non-owning household would buy 'if there is no lack of money' (n. 6, p. 756). The gap is estimated by religion (Muslim x Female, WP Table C1 Panel B) and by village Muslim share (Female x Muslim share, Table 2, p. 766). In the UP analysis the GP's Muslim share stands in for the local gender gap; the gap itself is never measured in the 9,179 study GPs. Key gap_assumption case: the paper's whole argument is that the gap is not constant."
+  outcomes:
+    source: admin_mis
+    units: "Household-level dummy: eligible household without a toilet at end of 2015-16 received an SBM toilet in 2016-17"
+    n_units: 9179
+    assignment_unit: gp
+    quote: "We compile household-level toilet construction data using detailed information available on the official website of the SBM maintained by the Ministry of Drinking Water and Sanitation of India."
+    page: "757-758"
+    note: "9,179 GPs within bandwidth 0.100 (7,234 at 0.075; 5,277 at 0.050) out of ~59,000; 2,470,191 households (Table 1, p. 764). Assignment is rule-based, not random; identification is local to the RD threshold. Mechanism outcomes: REDS 2006 complaints (survey), NREGS expenditure per capita (admin)."
+
+estimates:
+  - version: edcc2025
+    estimand: provision
+    outcome: "household received an SBM toilet in 2016-17 (eligible households without a toilet)"
+    outcome_family: sanitation
+    diff: 0.0133
+    se: 0.0156
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.107
+    control_sd: null
+    n_units: 9179
+    n_obs: 2470191
+    adjusted: false
+    table: "Table 1 (col 1)"
+    page: "764"
+    preferred: true
+    note: "Fuzzy RD (LATE), linear control function, bandwidth 0.100; no covariates. No preferred bandwidth is named; widest chosen. Col 2 (bw .075) .0200 (.0186); col 3 (bw .050) .0285 (.0235), control mean .100. Identical in wp2023 Table 1 (p. 20). Private household good, coded sanitation."
+  - version: edcc2025
+    estimand: provision
+    outcome: "toilet receipt 2016-17: Female reservation x GP Muslim share (heterogeneity)"
+    outcome_family: sanitation
+    diff: 0.292
+    se: 0.139
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 0.107
+    control_sd: null
+    n_units: 9179
+    n_obs: 2470191
+    adjusted: false
+    table: "Table 3 (col 1)"
+    page: "767"
+    preferred: false
+    note: "Interaction coefficient (difference-in-discontinuities), not an average effect: change in the quota effect per unit (0 to 1) of Muslim share. Main effect at zero Muslim share -.0204 (.0205). Cols 2-3: .403** (.164), .539*** (.200). This is the paper's headline result. Identical in wp2023 (p. 24)."
+  - version: edcc2025
+    estimand: provision
+    outcome: "toilet receipt 2016-17, Muslim households: Female reservation x female-headed household"
+    outcome_family: sanitation
+    diff: 0.305
+    se: 0.107
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: 0.15
+    control_sd: null
+    n_units: 7878
+    n_obs: 188489
+    adjusted: false
+    table: "Table 5 (col 4)"
+    page: "773"
+    preferred: false
+    note: "Interaction (mechanism test), APL households only. Hindu counterpart .0591 (.0482), col 1, n.s."
+  - version: edcc2025
+    estimand: provision
+    outcome: "woman approached sarpanch about water/sewage problem (REDS 2006), Muslim women: Female reservation x female-headed household"
+    outcome_family: participation
+    diff: 0.242
+    se: 0.116
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 440
+    adjusted: true
+    table: "Table 4 (col 2)"
+    page: "772"
+    preferred: false
+    note: "Interaction; women respondents only, conditional on facing a water/sewage problem; reservation status as of 2006, all-India, district FE plus controls. Sample mean of outcome .29 (not a control-group mean). Main effect of reservation for Muslim women -.0837*** (.0286). Hindu interaction -.0473 (.0554). Village count not reported."
+  - version: edcc2025
+    estimand: provision
+    outcome: "NREGS expenditure per capita 2016-17 (thousand rupees), placebo"
+    outcome_family: other
+    diff: 0.00648
+    se: 0.0240
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.297
+    control_sd: null
+    n_units: 8648
+    n_obs: 8648
+    adjusted: false
+    table: "Table C15 (col 1)"
+    page: "WP appendix p. 30 (pdf p. 72)"
+    preferred: true
+    note: "Online appendix, not in the published PDF; values from wp2023 appendix. Observations are GPs. Heterogeneity by Muslim share .139 (.155), n.s. (col 4). Used as an ability placebo."
+  - version: wp2023
+    estimand: pref_gap
+    outcome: "uses toilet for defecation (toilet-owning households), women minus men"
+    outcome_family: sanitation
+    diff: 0.0933
+    se: 0.00792
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 7731
+    adjusted: true
+    table: "Table C1 Panel A (col 1)"
+    page: "appendix p. 19 (pdf p. 61)"
+    preferred: true
+    note: "SQUAT 2014, village FE plus household asset and income-source controls; outcome mean .80. Household FE: 0.0940*** (0.00620), col 2. Muslim x Female (Panel B col 1): 0.0549** (0.0234). Published text cites the same table (p. 755) as online appendix."
+  - version: wp2023
+    estimand: pref_gap
+    outcome: "names a toilet as top priority if money were no constraint (non-owning households), women minus men"
+    outcome_family: sanitation
+    diff: 0.0507
+    se: 0.0300
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 1472
+    adjusted: true
+    table: "Table C1 Panel A (col 3)"
+    page: "appendix p. 19 (pdf p. 61)"
+    preferred: true
+    note: "Top-2: 0.0114 (0.0282); top-3: 0.0215 (0.0252), both n.s. Muslim x Female top-2 0.238* (0.124) (Panel B col 4)."
+  - version: edcc2025
+    estimand: pref_gap
+    outcome: "uses toilet: Female x village Muslim share (how the gender gap scales with Muslim share)"
+    outcome_family: sanitation
+    diff: 0.125
+    se: 0.0434
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 7752
+    adjusted: true
+    table: "Table 2 (col 1)"
+    page: "766"
+    preferred: false
+    note: "Interaction, not a gap level. Female main effect in this spec .083*** (.00882). Stated-rank analogues: top .336 (.220), top-2 .434** (.200), top-3 .378** (.184). This is the evidence that the gap varies by group/place."

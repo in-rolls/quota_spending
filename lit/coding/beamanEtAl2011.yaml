@@ -1,0 +1,284 @@
+key: beamanEtAl2011
+versions:
+  - id: ipf2011
+    file: beaman_duflo_pande_topalova_2011_ipf.pdf
+    citation: "India Policy Forum 2010-11, vol. 7, pp. 159-201 (paper pp. 159-185)"
+    year: 2011
+    page_offset: "printed = pdf + 158"
+meta:
+  year_first: 2011
+  year_published: 2011
+  setting: "Three datasets: 197 Gram Sabha meetings in 8 districts of 5 states (2003-04); PAC Millennial Survey 2000 (~810 villages, 11 states); Birbhum (WB) 2005 PRA survey, 495 villages in all 165 GPs"
+  design: "random/rotational reservation, cross-section (Birbhum: by reservation history across two cycles)"
+  note: >-
+    lit/papers also holds beaman_duflo_pande_topalova_2012_science_pmc.pdf and
+    _science_som.pdf. They are a different paper ('Female Leadership Raises
+    Aspirations and Educational Attainment for Girls', Science 2012), not a
+    version of this one, and were not coded. The Millennial results (Tables 4-5)
+    reproduce Duflo & Topalova (2004).
+
+mechanism:
+  - version: ipf2011
+    claim: "Women leaders invest in what women care about because they implement their own priorities and because women speak up more when the leader is a woman."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "We have emphasized two channels through which having female leaders may lead to greater investments in goods women care about: through the fact that a woman leader has the opportunity to do what she feels is important, and also because women are more likely to express their opinion in GPs that are led by women."
+    page: "183-184"
+    note: >-
+      Table 7 col. 1 (p. 183): Ever reserved * female-friendliness of issue =
+      2.098 (1.335), t ≈ 1.6, NOT significant, although the text says 'As
+      before, we find that women invest more in goods preferred by women'. The
+      authors note the two channels cannot be separated: 'to the extent that
+      female villagers and female leaders share the same preferences, we cannot
+      completely disentangle the policy impact of greater female villager
+      participation from the direct role of female leadership' (p. 163).
+  - version: ipf2011
+    claim: "Women leaders respond more to the needs voiced by women in their own GP."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Despite this, there is clear evidence that, controlling for women’s taste in general, women leaders are particularly responsive to the needs of women in their GP."
+    page: "184"
+    note: >-
+      Table 7 col. 2: Ever reserved * GP-specific women's word share = 0.560
+      (0.195), N = 390. This CONTRADICTS Chattopadhyay & Duflo (2004), who test
+      the same idea with village complaints and reject it. The paper does not
+      note the contrast. The authors' caveat: 'what women want in a GP also
+      happens to be what the women leader wants (since she lives there as
+      well)' (p. 184).
+  - version: ipf2011
+    claim: "Female leadership raises women's speaking in village meetings, and that participation, not differential treatment by leaders, gets women's concerns addressed."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "This suggests that encouraging women to participate may be the most important obstacle to getting women’s policy concerns addressed (at least in these meetings). Our results suggest reservation can play a key role here."
+    page: "172"
+    note: "Table 2: women speak at the meeting +0.129 (0.064). Table 3: there are no significant differences in leader responses to women's issues or to women speakers by reservation (e.g., Reserved*Woman spoke -0.019 (0.097))."
+  - version: ipf2011
+    claim: "Concern, tested and rejected: women leaders are proxies for husbands. Spousal help does not preclude agency."
+    type: proxy_husband
+    status: tested
+    direction: explains_null
+    quote: "However, help from a spouse does not necessarily preclude agency on the part of female leaders. If women have different opinions from their husbands, formal authority may still give them the power to take different policy decisions."
+    page: "161"
+    note: "Table 1 (Birbhum): spouse suggested running +0.116 (0.048); spouse helps +0.172 (0.083). The authors argue proxy rule would imply no policy shift toward women, which is not what Tables 4, 6 and 7 show. Direction explains_null because proxy rule would predict a null; the paper rejects it."
+  - version: ipf2011
+    claim: "Women differ from men in networks and reliance on family, but that does not determine their policy activism."
+    type: contact_networks
+    status: tested
+    direction: explains_effect
+    quote: "First, our results on selection suggest that women and men differ in the political and social networks they have access to and the extent to which they rely on family support. However, this per se does not determine the nature of their policy activism."
+    page: "184-185"
+    note: "Selection evidence in Table 1 (also: no Muslim crowd-out). Its effect on policy is not estimated directly; it is inferred from the policy results."
+  - version: ipf2011
+    claim: "Women mature as leaders across cycles and broaden their investments; effects persist after reservation ends."
+    type: experience_learning
+    status: tested
+    direction: explains_effect
+    quote: "We find evidence of women maturing as leaders over time and expanding the scope of their investments (while continuing to emphasize drinking water)."
+    page: "162"
+    note: "Table 6 (Birbhum, second cycle). Effects are significant for sanitation, roads, irrigation, school and health repair, which were null in the first cycle (C&D 2004). The pattern is driven by newly reserved GPs (p. 182), so 'maturing' rests on comparing cohorts of leaders, not the same women over time."
+  - version: ipf2011
+    claim: "Within-village before/after designs (Bardhan et al.) may find no effect because reservation's effects persist after it ends."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "In addition, there is some evidence that the influence of reservation on public good provision persists even after reservation ends—this may explain why comparing outcomes within a village during and after reservation (as Bardhan et al., 2010 do) may understate the reservation impact."
+    page: "162"
+    note: "Type other: persistence, which biases other studies' comparisons. Supporting evidence is Table 6 col. 'Only reserved 1998' (e.g., tube well repaired +0.130 (0.064))."
+  - version: ipf2011
+    claim: "Higher provision under women does not come at a higher price: women are less corrupt."
+    type: corruption_rents
+    status: tested
+    direction: explains_effect
+    quote: "Women leaders are less corrupt than men, suggesting that the higher quantity infrastructure does not come at a higher price."
+    page: "178"
+    note: "Millennial Table 5: weighted average -0.015 (0.010), not significant at 5%. Birbhum Table 6 panel B: -0.072 (0.027)."
+  - version: ipf2011
+    claim: "Villagers are less satisfied with women leaders because of incorrect priors about women's effectiveness."
+    type: patriarchy_backlash
+    status: asserted
+    direction: explains_negative
+    quote: "This is consistent with Beaman et al. (2009) where we present evidence which suggests that this dissatisfaction reflects incorrect priors regarding the effectiveness of women as leaders."
+    page: "178"
+    note: "Explains the negative satisfaction result (Table 4 col. 6, -0.020 (0.010)). The evidence is in another paper (Beaman et al. 2009 QJE)."
+
+normative:
+  - version: ipf2011
+    claim: "Village evidence suggests reservation in state and national legislatures could empower women and rebalance policymaking."
+    stance: pro_quota
+    quote: "This suggests that women’s reservation at the state and national legislatures has the potential to empower women and improve the gender balance in policymaking."
+    page: "163"
+    note: "Written for the Women's Reservation Bill debate (p. 159)."
+  - version: ipf2011
+    claim: "Random reservation of seats, as in village councils, may be a good design that limits parties' manipulation of quotas."
+    stance: pro_quota
+    quote: "In that sense, use of the Indian village council method of random reservation of political positions may be a good way of limiting bias."
+    page: "185"
+    note: "A claim about how to design quotas: random assignment, in contrast with parties placing women in uncompetitive seats (France, Spain)."
+
+measurement:
+  preferences:
+    method: meeting_talk_share
+    unit_of_gap: national
+    gap_assumption: constant
+    tested_gap: "no"
+    quote: "Next, we create a measure of female friendliness of an issue. To do so, we average the fraction of words spoken by a woman on the issue across all transcripts."
+    page: "171"
+    note: >-
+      Table A-4 (p. 189): women's share of villagers' words per issue (water
+      .163, public works .163, financial help .225, school .122, health .151,
+      agriculture .067). The measure is pooled over 197 meetings in 8 districts
+      of 5 states. No option fits exactly; 'national' is the nearest (a single
+      multi-state pool). For Table 7 it is averaged over unreserved GPs only
+      (fn. 17) and applied as one score per issue to all Birbhum GPs (constant).
+      Table 7 col. 2 adds a GP-specific share. It is a women's share of talk,
+      not a women-minus-men difference, and there is no significance test of a
+      gender gap.
+  outcomes:
+    source: own_audit_or_pra
+    units: "Birbhum: village indicators/counts of goods built or repaired since 2003; Millennial: village quantity/quality in SD units; meetings: speaking indicators"
+    n_units: 165
+    assignment_unit: gp
+    quote: "The public goods data was collected through a Participatory Resource Appraisal (PRA) survey while the data on bribes comes from a household survey which was designed to be identical to the Millennial survey"
+    page: "165"
+    note: "n_units = 165 Birbhum GPs (495 villages). The Millennial data are a PAC third-party facility audit plus household survey (~810 villages; GP count not reported). The meeting sample is 197 meetings (172 readable transcripts)."
+
+estimates:
+  - version: ipf2011
+    estimand: provision
+    outcome: "Number of public drinking water taps and handpumps, Millennial survey (SD units)"
+    outcome_family: drinking_water
+    diff: 0.191
+    se: 0.098
+    se_source: reported
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 633
+    adjusted: true
+    table: "Table 4, col. 2"
+    page: "174"
+    preferred: true
+    note: "Same estimate as Duflo & Topalova (2004) Table 2; do not double-count. The water QUALITY coefficient prints 0.020 (0.014) here vs 0.016 (0.014) in D&T 2004."
+  - version: ipf2011
+    estimand: provision
+    outcome: "At least one new tube well built, Birbhum 2005 (currently reserved vs not)"
+    outcome_family: drinking_water
+    diff: 0.131
+    se: 0.052
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.365
+    control_sd: 0.482
+    n_units: 165
+    n_obs: 495
+    adjusted: false
+    table: "Table 6, panel A, last col."
+    page: "180"
+    preferred: false
+    note: "Block FE only. control_mean is the never-reserved mean; the comparison group (not reserved 2003) also includes GPs reserved only in 1998. Checked on the rendered page (the table is rotated)."
+  - version: ipf2011
+    estimand: provision
+    outcome: "Number of metal roads built or repaired since 2003, Birbhum"
+    outcome_family: roads
+    diff: 0.189
+    se: 0.084
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.118
+    control_sd: 0.448
+    n_units: 165
+    n_obs: 495
+    adjusted: false
+    table: "Table 6, panel A, last col."
+    page: "180"
+    preferred: true
+    note: "Currently reserved vs not reserved in 2003; block FE."
+  - version: ipf2011
+    estimand: provision
+    outcome: "At least one drainage/sanitation facility built, Birbhum"
+    outcome_family: sanitation
+    diff: 0.089
+    se: 0.054
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.428
+    control_sd: 0.496
+    n_units: 165
+    n_obs: 495
+    adjusted: false
+    table: "Table 6, panel A, last col."
+    page: "180"
+    preferred: true
+    note: "'Repaired' row: 0.110 (0.048), N = 396."
+  - version: ipf2011
+    estimand: provision
+    outcome: "At least one irrigation pump built, Birbhum"
+    outcome_family: irrigation
+    diff: 0.081
+    se: 0.040
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.180
+    control_sd: 0.385
+    n_units: 165
+    n_obs: 495
+    adjusted: false
+    table: "Table 6, panel A, last col."
+    page: "180"
+    preferred: true
+    note: "Positive, unlike the first cycle; the authors call irrigation and schools 'more male issues' (p. 182)."
+  - version: ipf2011
+    estimand: provision
+    outcome: "At least one educational facility repaired, Birbhum"
+    outcome_family: schools
+    diff: 0.094
+    se: 0.057
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.296
+    control_sd: 0.458
+    n_units: 165
+    n_obs: 465
+    adjusted: false
+    table: "Table 6, panel A, last col."
+    page: "180"
+    preferred: true
+    note: "Built: 0.053 (0.032). Community education centre: -0.015 (0.008)."
+  - version: ipf2011
+    estimand: provision
+    outcome: "At least one health facility repaired, Birbhum"
+    outcome_family: health
+    diff: 0.051
+    se: 0.018
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.009
+    control_sd: 0.095
+    n_units: 165
+    n_obs: 495
+    adjusted: false
+    table: "Table 6, panel A, last col."
+    page: "181"
+    preferred: true
+    note: "Tiny base rate (0.9%)."
+  - version: ipf2011
+    estimand: provision
+    outcome: "Women villagers speak at the Gram Sabha meeting"
+    outcome_family: participation
+    diff: 0.129
+    se: 0.064
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.519
+    control_sd: 0.502
+    n_units: null
+    n_obs: 172
+    adjusted: false
+    table: "Table 2, col. 3"
+    page: "169"
+    preferred: true
+    note: "District FE. Meeting sample. The number of GPs is not reported separately from meetings. Attendance is unaffected (cols. 1-2)."

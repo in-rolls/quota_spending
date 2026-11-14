@@ -1,0 +1,311 @@
+key: deiningerJinNagarajanSingh2022
+versions:
+  - id: wps2020
+    file: deininger_jin_nagarajan_singh_2020_wb_wps9350.pdf
+    citation: "World Bank Policy Research Working Paper 9350, August 2020, 'Political Reservation and Female Labor Force Participation in Rural India'"
+    year: 2020
+    page_offset: "printed = pdf - 2"
+  - id: ms2021
+    file: deininger_jin_nagarajan_singh_2022_jds_manuscript.pdf
+    citation: "Author manuscript (World Bank OKR), JDS title 'Addressing declining female labour force participation in India: Does political empowerment make a difference?', 23 pp."
+    year: 2021
+    page_offset: "printed = pdf (pages as numbered in the manuscript)"
+  - id: jds2022
+    file: deininger_jin_nagarajan_singh_2022_jds.pdf
+    citation: "Journal of Development Studies 58(9): 1772-1790, 2022"
+    year: 2022
+    page_offset: "printed = pdf + 1771 (image scan; text from OCR in scratchpad/ocr/deininger_jin_nagarajan_singh_2022_jds/)"
+meta:
+  year_first: 2020
+  year_published: 2022
+  setting: "ARIS-REDS 2014/15 census, 190 villages in '13 states' (paper also says 12), 66,362 working-age members of 23,350 job-card households; decision module in 5 states (N = 22,571)"
+  design: "random/rotational reservation, cross-section (current and previous-term reservation x female, district FE)"
+  note: >-
+    ms2021 year is inferred (JDS final version accepted January 2022; original submitted December 2020). Per
+    lit/version_diffs/deininger2022.md the manuscript's prose and tables match the JDS apart from copyedits, so mechanism
+    and normative entries are coded for wps2020 and jds2022 only; every jds2022 quote also appears in the manuscript.
+    JDS numbers were read from OCR and checked against the manuscript's text layer; the OCR prints Table 5 'wants to
+    work more' beta4 as "—0.163**", but the rendered JDS page and the manuscript both show +0.163**.
+
+mechanism:
+  - version: wps2020
+    claim: "Reservation could raise women's work directly by providing public goods women want and by opening workfare jobs."
+    type: preferences
+    status: asserted
+    direction: explains_effect
+    quote: "Reservation of village leadership positions for women is an intervention with the potential to affect female labor force participation directly, by providing public goods desired by women (Chattopadhyay and Duflo 2004) and by expanding their ability to access workfare job opportunities (Deininger et al. 2019)."
+    page: "2"
+    note: "Motivating channel from the literature; no public-goods outcome is estimated. Dropped from the JDS introduction, where public goods appear only in the literature review (p. 1775)."
+  - version: wps2020
+    claim: "Women leaders act as role models and change norms, which raises women's demand for paid work."
+    type: other
+    status: asserted
+    direction: explains_effect
+    quote: "This is consistent with the notion of the program having performed a catalytic role, affecting social norms by having female leaders act as role models and changing level and quality of women's political participation (Deininger et al. 2015)."
+    page: "13"
+    note: "Role model / social norms; no listed type fits. Norms and role-model exposure are not measured. Also p. 15: 'A possible interpretation of the above evidence is that the role model effect provided by past female leaders enhanced women's ability to take advantage of changes in the availability of jobs'."
+  - version: wps2020
+    claim: "Higher labour-force participation in turn raised women's income, demand for work and bargaining power."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "Greater labor force participation in turn seems to have triggered improvements in women's income, demand for work, and intra-household bargaining power."
+    page: "12"
+    note: "Economic-empowerment / bargaining channel. Income, desire to work and decision-making are each regressed on reservation (Table 8, p. 23); the step from participation to these outcomes is not estimated."
+  - version: wps2020
+    claim: "Leaders improved NREGS implementation (dated receipts, direct payment, complaints), easing women's access to jobs."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "While reservation has undeniably improved program governance and thus enhanced females' ability to access jobs under NREGS, none of these effects are gender-specific; to the contrary, for some, mainly lodging and response to complaints, women are estimated to lag men."
+    page: "14"
+    note: "Programme-implementation (job supply) channel, Table 7 (p. 22)."
+  - version: wps2020
+    claim: "Effects are larger for married women, either through resources and connections or through husbands' changed attitudes."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "reservation-induced effects may be more pronounced for this group, either by providing them with economic resources and social connections that they would not otherwise have access to or by helping to change their husbands' attitude to general gender roles and particularly female labor force participation (Bernhardt et al. 2018)."
+    page: "13"
+    note: "Tested only as a married/unmarried split (Table 6, p. 21); the two sub-channels are not separated."
+  - version: wps2020
+    claim: "Inexperience and male backlash may keep pre-existing gaps from closing, though effects can still be positive in the medium term."
+    type: patriarchy_backlash
+    status: speculated
+    direction: explains_null
+    quote: "even if women leaders may lack experience or have to contend with male backlash (Gangadharan et al. 2016) so that pre-exiting gaps cannot be fully closed (Iyer and Mani 2019), politically empowering women can have positive effects in the medium term"
+    page: "3"
+    note: "Cited from the literature; offered alongside the short-run null. Also mentions inexperience (experience_learning)."
+  - version: jds2022
+    claim: "A role-model effect is now named as the avenue through which reservation changes norms, work, resources and bargaining."
+    type: other
+    status: asserted
+    direction: explains_effect
+    quote: "It points towards a role model effect as the avenue through which political reservation affects behavioral norms, women's economic participation, their control over resources, and their bargaining power."
+    page: "1774"
+    note: >-
+      Version change: the WPS contribution paragraph led with gender-quota evidence and said "one of the avenues for
+      political reservation to affect behavioral norms is by improving women's economic participation" (p. 3); the JDS
+      puts the role model first and makes it the avenue. Results section restates it: "via a role model effect and
+      associated increased female labor demand" (p. 1780). Role models are not measured.
+  - version: jds2022
+    claim: "The role-model effect lasts and lets women respond to any labour demand, not only NREGS."
+    type: other
+    status: speculated
+    direction: explains_effect
+    quote: "A plausible interpretation of this evidence is that the role model effect provided by female leaders had an enduring effect that enhanced women's ability to take advantage of changed labor demand, irrespectively of whether such demand came from Government programs with preferential treatment for females or not."
+    page: "1784"
+    note: "WPS p. 15 had 'A possible interpretation'; JDS says 'A plausible interpretation' and adds the non-NREGS clause."
+  - version: jds2022
+    claim: "Timing suggests governance effects came first and income then reinforced the role-model effect, not the reverse."
+    type: other
+    status: asserted
+    direction: explains_effect
+    quote: "reservation-induced impacts on NREGS governance preceded effects on program participation and income that, based on our results, materialized with a lag only. Resources from increased labor market participation in the second period thus appear to reinforce the role model effect rather than the reverse."
+    page: "1788"
+    note: "Endnote 16, new in the JDS/manuscript. The ordering argument rests on comparing current vs past reservation coefficients; it is not a test of causal order."
+  - version: jds2022
+    claim: "An income-induced empowerment effect from NREGS work could also explain the pattern."
+    type: other
+    status: speculated
+    direction: explains_effect
+    quote: "While a cumulative income-induced empowerment effect of participation in NREGS could be consistent with these facts, we will below discuss evidence on changes in levels and quality of women's political participation in line with what was suggested by Deininger et al. (2015)."
+    page: "1782"
+    note: "Alternative channel named but not separated from the role-model effect."
+  - version: jds2022
+    claim: "Improved NREGS governance eased women's access to jobs; women still lag on complaints because norms change slowly."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "While reservation undeniably improved program governance and enhanced females' ability to access jobs under NREGS, none of these effects are gender-specific; to the contrary, for some, mainly lodging and response to complaints, regression results suggest that women still lag behind men, consistent with the notion that changes in social norms are not instantaneous."
+    page: "1784"
+    note: "Programme-implementation channel, Table 4 (p. 1785). The clause on slow norms is new relative to WPS p. 14."
+  - version: jds2022
+    claim: "Effects are larger for married women, through resources and connections or husbands' attitudes."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "reservation-induced effects may be more pronounced for this group, either by providing them with economic resources and social connections that they would not otherwise have access to or by helping to change their husbands' attitude to general gender roles and particularly female labour force participation (Bernhardt et al., 2018)."
+    page: "1782"
+    note: "Table 3 (p. 1783) split by marital status. The WPS claim of a marginally significant current effect for married women (p. 13) is dropped."
+  - version: jds2022
+    claim: "Inexperienced leaders, male backlash, or proxy husbands may hurt in the short run but are sorted out in the medium term."
+    type: experience_learning
+    status: speculated
+    direction: explains_null
+    quote: "Concerns have been raised that reserving leadership positions for females who lack relevant experience and connections may in the short term reduce quality of program implementation (Afridi et al., 2017), trigger male backlash (Gangadharan et al., 2016), or lead to females only standing in for their husbands. Yet, studies show that in the medium term such issues may be sorted out"
+    page: "1775"
+    note: "New paragraph in the JDS literature review that also names proxy_husband and patriarchy_backlash; all cited from others, none tested. The WPS p. 3 backlash sentence is kept verbatim on p. 1774."
+
+normative:
+  - version: wps2020
+    claim: "Politically empowering women through quotas can have positive medium-term effects despite inexperience and backlash."
+    stance: pro_quota
+    quote: "we add to the evidence regarding the impact of gender quotas by showing that, even if women leaders may lack experience or have to contend with male backlash (Gangadharan et al. 2016) so that pre-exiting gaps cannot be fully closed (Iyer and Mani 2019), politically empowering women can have positive effects in the medium term"
+    page: "3"
+    note: "Framed as an evidential contribution rather than a recommendation. The conclusion's 'Avenues to enhance these effects by combining them with targeted provision of information and training ... are a priority area for further research' (p. 15) is a research agenda, not a policy claim."
+  - version: jds2022
+    claim: "Same claim, now framed as evidence on 'gender preferences including quotas'."
+    stance: pro_quota
+    quote: "We also add to the evidence regarding the impact of gender preferences including quotas by showing that, even if women leaders may lack experience or have to contend with male backlash (Gangadharan, Jain, Maitra, & Vecci, 2016) so that pre-exiting gaps cannot be fully closed (Iyer & Mani, 2019), politically empowering women can have positive effects in the medium term"
+    page: "1774"
+    note: "Conclusion (pp. 1785-86) keeps the WPS research-agenda sentence on information and training."
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: constant
+    tested_gap: not_applicable
+    quote: "by providing public goods desired by women (Chattopadhyay and Duflo 2004)"
+    page: "2"
+    note: "WPS p. 2. No measure of men's or women's public-goods preferences in any version; 'would like to work more' is a labour-supply outcome, not a preference over goods. JDS cites C&D for goods 'preferred by women' only in the literature review (p. 1775)."
+  outcomes:
+    source: villager_survey
+    units: "Individual labour-force participation and days worked (total, NREGS, non-NREGS), income, desire to work more, NREGS implementation (dated receipt, payment to account, underpayment, complaints), participation in household decisions"
+    n_units: 190
+    assignment_unit: gp
+    quote: "we use individual data from a complete enumeration of all adult residents in 190 villages in 13 states implemented in 2014/15 as part of the long-running ARIS-REDS panel"
+    page: "1777"
+    note: "Same sentence in WPS p. 8. n_units = villages; reservation assigned at GP, SEs clustered at village panchayat, number of GPs not reported. Sample limited to job-card households."
+
+estimates:
+  - version: jds2022
+    estimand: provision
+    outcome: "labour-force participation (any work), past reservation, pooled"
+    outcome_family: other
+    diff: 0.027
+    se: 0.010
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: 190
+    n_obs: 66362
+    adjusted: true
+    table: "Table 2, Panel A, col. 1"
+    page: "1781"
+    preferred: false
+    note: "Current reservation 0.001 (0.008). Dep. var. mean 0.75 (all), 0.62 for women. WPS: 0.027*** (0.010) past, 0.000 current."
+  - version: jds2022
+    estimand: provision
+    outcome: "women's labour-force participation, past reservation (beta2 + beta4)"
+    outcome_family: other
+    diff: 0.089
+    se: 0.027
+    se_source: from_t
+    p_or_stars: "p=0.001 (F-test)"
+    control_mean: null
+    control_sd: null
+    n_units: 190
+    n_obs: 66362
+    adjusted: true
+    table: "Table 2, Panel B, col. 1"
+    page: "1781"
+    preferred: true
+    note: >-
+      Headline (text p. 1782: "8.9 percentage point ... equivalent to a 11.8% increase at the mean"). -0.029 + 0.118.
+      Only the F-test p-value is printed; t = 3.29 back-solved from p = 0.001 (normal), so se is approximate because p is
+      rounded. Women's current effect -0.016 + 0.035 = 0.019 (p 0.480).
+  - version: wps2020
+    estimand: provision
+    outcome: "women's labour-force participation, past reservation (alpha2 + beta2)"
+    outcome_family: other
+    diff: 0.082
+    se: 0.027
+    se_source: from_t
+    p_or_stars: "p=0.002 (F-test)"
+    control_mean: null
+    control_sd: null
+    n_units: 190
+    n_obs: 66362
+    adjusted: true
+    table: "Table 5, Panel B, col. 1"
+    page: "20"
+    preferred: false
+    note: "Working-paper value for comparison: -0.035 + 0.117. t = 3.09 back-solved from p = 0.002. Every regression was re-estimated between WPS and manuscript (see version_diffs)."
+  - version: jds2022
+    estimand: provision
+    outcome: "participated in NREGS work, past reservation, pooled"
+    outcome_family: other
+    diff: 0.063
+    se: 0.019
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: 190
+    n_obs: 66362
+    adjusted: true
+    table: "Table 2, Panel A, col. 3"
+    page: "1781"
+    preferred: true
+    note: "Current 0.035 (0.022). Women's past effect -0.019 + 0.169 = 0.150 (p 0.000). Dep. var. mean 0.25."
+  - version: jds2022
+    estimand: provision
+    outcome: "women's NREGS days worked (log-type scale as printed), past reservation (beta2 + beta4)"
+    outcome_family: mnrega_women_days
+    diff: 0.538
+    se: 0.164
+    se_source: from_t
+    p_or_stars: "p=0.001 (F-test)"
+    control_mean: null
+    control_sd: null
+    n_units: 190
+    n_obs: 66362
+    adjusted: true
+    table: "Table 2, Panel B, col. 6"
+    page: "1781"
+    preferred: true
+    note: "-0.110 + 0.648. Text calls it '54 percentage points (37%)' (p. 1782); the outcome appears to be log days. t back-solved from p = 0.001. Women's mean 0.92."
+  - version: jds2022
+    estimand: provision
+    outcome: "NREGS worker got dated receipt, current reservation, pooled"
+    outcome_family: other
+    diff: 0.268
+    se: 0.039
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: 190
+    n_obs: 6712
+    adjusted: true
+    table: "Table 4, Panel A, col. 1"
+    page: "1785"
+    preferred: true
+    note: "Programme governance. Past 0.496*** (0.041). Identical to WPS Table 7. Dep. var. mean 0.712. NREGS participants only."
+  - version: jds2022
+    estimand: provision
+    outcome: "women's individual income (log), past reservation (beta2 + beta4)"
+    outcome_family: other
+    diff: 0.762
+    se: 0.257
+    se_source: from_t
+    p_or_stars: "p=0.003 (F-test)"
+    control_mean: null
+    control_sd: null
+    n_units: 190
+    n_obs: 66362
+    adjusted: true
+    table: "Table 5, col. 1"
+    page: "1786"
+    preferred: true
+    note: "-0.221 + 0.983. Text: 'some 76 percentage points (8.4%)' (p. 1784). t = 2.97 back-solved from p = 0.003. WPS: -0.195 + 0.982."
+  - version: jds2022
+    estimand: provision
+    outcome: "woman participates in household food decisions, past reservation (beta2 + beta4)"
+    outcome_family: other
+    diff: 0.175
+    se: null
+    se_source: stars_only
+    p_or_stars: "p=0.000 (F-test)"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 22571
+    adjusted: true
+    table: "Table 5, col. 3"
+    page: "1786"
+    preferred: true
+    note: "-0.029 + 0.204. Printed p = 0.000 cannot be inverted to an SE; beta4 alone is 0.204*** (0.048). Five-state decision module only; village count not reported."

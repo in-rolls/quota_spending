@@ -1,0 +1,257 @@
+key: dufloTopolova2004
+versions:
+  - id: wp2004
+    file: duflo_topalova_2004_wp.pdf
+    citation: "Duflo & Topalova, 'Unappreciated Service: Performance, Perceptions, and Women Leaders in India', working paper, Oct 2004"
+    year: 2004
+    page_offset: "printed = pdf (text pp. 1-18); tables pdf pp. 19-22 carry no folio"
+meta:
+  year_first: 2004
+  year_published: null
+  setting: "PAC Millennial Survey 2000; ~810 villages (quantity/satisfaction), ~680 (quality), 11 states"
+  design: "random/rotational reservation, cross-section"
+  note: "The key misspells the second author (Topalova). Never published as a journal article as far as the files we hold show. Beaman et al. (2011, IPF) reproduces the Table 2/3 results."
+
+mechanism:
+  - version: wp2004
+    claim: "Women leaders deliver as many or more public goods at lower bribe incidence because they are less corrupt."
+    type: corruption_rents
+    status: tested
+    direction: explains_effect
+    quote: "Overall, both men and women are significantly less likely to have to pay a bribe to obtain a service if they live in a GP where the position of Pradhan is reserved for a woman. Women do appear to be less corrupt than men."
+    page: "12"
+    note: >-
+      Table 3 (pdf p. 21). The weighted-average bribe effect is -0.015 (0.010),
+      men -0.026 (0.016), women -0.025 (0.016): none is significant at 5%, so
+      "significantly" overstates the table. Men's police-bribe (+0.010) and
+      women's medical-bribe (+0.005) coefficients are positive, which
+      contradicts "for all types of bribes".
+  - version: wp2004
+    claim: "Villagers rate women worse for reasons unrelated to performance: women get less credit for investment and start from a lower base."
+    type: patriarchy_backlash
+    status: tested
+    direction: explains_negative
+    quote: "Two factors appear to contribute to the lower reported satisfaction with drinking water in reserved GPs. First, women are not credited for the investment they are making as much as men are. Second, the base level of satisfaction with women leaders (irrespective of quality or quantity) is lower to start with."
+    page: "15"
+    note: "Table 4 interacts quality and quantity with reservation: both interactions are negative, so women get less credit. Coded patriarchy_backlash for voter bias against women leaders; the paper's word is 'discrimination' (p. 13)."
+  - version: wp2004
+    claim: "Possible explanation: villagers expect women to be worse leaders and update slowly."
+    type: patriarchy_backlash
+    status: speculated
+    direction: explains_negative
+    quote: "Finally, it could be that villagers generally expect women to be less effective leaders, and these priors are slow to adjust, even in the face of facts."
+    page: "15"
+    note: "One of four explanations listed. 'The data do not allow us to distinguish among these different hypotheses' (p. 15)."
+  - version: wp2004
+    claim: "Possible explanation: women perform worse on dimensions the data do not observe. The authors judge this the least likely."
+    type: knowledge_capacity
+    status: speculated
+    direction: explains_negative
+    quote: "the fact that even public goods beyond the jurisdiction of the Panchayat leader are judged to be worse in woman-headed Panchayats implies that the first explanation is the least likely."
+    page: "15-16"
+    note: "First explanation, p. 15: 'It could be that women’s performance is worse in important unobservable dimensions.' Evidence against: satisfaction with public health, which the Panchayat does not control, is -0.063 (0.033)."
+  - version: wp2004
+    claim: "Possible explanation: new leaders are judged less favorably than incumbents."
+    type: experience_learning
+    status: speculated
+    direction: explains_negative
+    quote: "It could be that new leaders are judged less favorably than established leaders."
+    page: "15"
+    note: "Cites Linden (2004) on incumbency disadvantage (fn. 13)."
+  - version: wp2004
+    claim: "Possible explanation: reserved women have worse observable characteristics (poorer, less educated), which voters penalize."
+    type: selection_who_runs
+    status: speculated
+    direction: explains_negative
+    quote: "It could be that women have worse characteristics than men."
+    page: "15"
+    note: "Draws on Chattopadhyay & Duflo (2004): reserved Pradhans are poorer, less experienced, less educated, less literate."
+  - version: wp2004
+    claim: "Men may be dissatisfied because women invest in goods women prefer, but this cannot explain women's dissatisfaction."
+    type: preferences
+    status: asserted
+    direction: explains_negative
+    quote: "Chattopadhyay and Duflo (2004) show that women and men care about different public goods and that female Pradhans tend to invest in goods preferred by women. This could explain a general dissatisfaction among men with leadership when the Pradhan is a woman. However, it does not explain why women are also less satisfied."
+    page: "13"
+    note: "Preference differences are taken from C&D, not measured here. The authors reject this as a full explanation because women respondents are as dissatisfied as men (Table 2 cols. 7-8)."
+  - version: wp2004
+    claim: "Rival explanation: women invest in the wrong kinds of repairs, so villagers' needs go unmet."
+    type: other
+    status: tested
+    direction: explains_negative
+    quote: "one possibility is that women invest in the wrong kinds of repairs."
+    page: "13"
+    note: "Type other (misallocation relative to need). Tested in Table 4 by controlling for quality and quantity: the reservation coefficient grows to -0.028, which the authors read as women being given less credit rather than doing the wrong repairs."
+
+normative:
+  - version: wp2004
+    claim: "If voters' priors about women are slow to adjust, reservation would have to stay in place a long time before equal representation is reached."
+    stance: conditional
+    quote: "On the other hand, women may indeed be less effective (at least initially) or voters may require time to adjust their priors. This would mean that reservations would have to remain in place for a long time before equality in political representation was achieved."
+    page: "2"
+    note: >-
+      Motivating claim in the introduction. The preceding sentence gives the
+      other branch: 'political reservation may allow voters to learn about the
+      efficacy of women as policy makers' (p. 2). The conclusion's policy
+      caution is about citizen report cards, not quotas (p. 16), and its quota
+      remark is descriptive ('women face an uphill battle in politics', p. 16).
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: not_applicable
+    tested_gap: not_applicable
+    quote: "Chattopadhyay and Duflo (2004) show that women and men care about different public goods and that female Pradhans tend to invest in goods preferred by women."
+    page: "13"
+    note: "The paper measures satisfaction by respondent gender (Table 2 cols. 7-8), not preferences. It has no measure of what women or men want."
+  outcomes:
+    source: own_audit_or_pra
+    units: "Village-level counts/indicators (quantity) and 0-1 facility-audit indices (quality), in SD units of the unreserved distribution; respondent-level satisfaction and bribe dummies"
+    n_units: null
+    assignment_unit: gp
+    quote: "The household survey was complemented by independent site visits, which included assessments of select public facilities such as water sources, primary schools, clinics etc."
+    page: "8"
+    note: >-
+      The audits are third-party (Public Affairs Centre), not the authors' own;
+      satisfaction and bribes come from the PAC household survey
+      (villager_survey). The number of GPs is not reported. Villages: ~810
+      (quantity, satisfaction) and ~680 (quality) (p. 10).
+
+estimates:
+  - version: wp2004
+    estimand: provision
+    outcome: "Number of public drinking water taps and handpumps (SD units)"
+    outcome_family: drinking_water
+    diff: 0.191
+    se: 0.098
+    se_source: reported
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 633
+    adjusted: true
+    table: "Table 2, col. 2"
+    page: "pdf p. 20"
+    preferred: true
+    note: "Controls: state FE and village-size class dummies. t ≈ 1.95, although the text says 'significantly more' (p. 11). Col. 1 'Mean' 20.11 (SD 33.46) is not labelled as the unreserved mean, so control_mean is left null. Checked on the rendered page."
+  - version: wp2004
+    estimand: provision
+    outcome: "Any education facility in the village (SD units)"
+    outcome_family: schools
+    diff: 0.130
+    se: 0.064
+    se_source: reported
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 810
+    adjusted: true
+    table: "Table 2, col. 2"
+    page: "pdf p. 20"
+    preferred: true
+    note: "t ≈ 2.03, significant at 5%, yet the text says 'there are no significant coefficients for the other public goods' (p. 12)."
+  - version: wp2004
+    estimand: provision
+    outcome: "Number of public transportation facilities (SD units)"
+    outcome_family: transport
+    diff: -0.020
+    se: 0.082
+    se_source: reported
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 635
+    adjusted: true
+    table: "Table 2, col. 2"
+    page: "pdf p. 20"
+    preferred: true
+    note: ""
+  - version: wp2004
+    estimand: provision
+    outcome: "Public health centre in the village (SD units)"
+    outcome_family: health
+    diff: 0.066
+    se: 0.072
+    se_source: reported
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 809
+    adjusted: true
+    table: "Table 2, col. 2"
+    page: "pdf p. 20"
+    preferred: true
+    note: "Health is not under Panchayat control in this period (p. 13)."
+  - version: wp2004
+    estimand: provision
+    outcome: "Fair price shop in the village (SD units)"
+    outcome_family: other
+    diff: 0.028
+    se: 0.069
+    se_source: reported
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 805
+    adjusted: true
+    table: "Table 2, col. 2"
+    page: "pdf p. 20"
+    preferred: true
+    note: "Public distribution system."
+  - version: wp2004
+    estimand: provision
+    outcome: "N-weighted average of the five quantity effects (SD units)"
+    outcome_family: other
+    diff: 0.078
+    se: 0.041
+    se_source: reported
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: null
+    adjusted: true
+    table: "Table 2, col. 2, panel A"
+    page: "pdf p. 20"
+    preferred: true
+    note: "SUR-based SE. Called 'positive and significant' (p. 12) at t = 1.90, i.e. 10% only. The quality average is 0.016 (0.011)."
+  - version: wp2004
+    estimand: provision
+    outcome: "Respondent satisfied with public goods, weighted average over five goods"
+    outcome_family: other
+    diff: -0.020
+    se: 0.010
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.818
+    control_sd: null
+    n_units: null
+    n_obs: null
+    adjusted: true
+    table: "Table 2, col. 6, panel A"
+    page: "pdf p. 20"
+    preferred: true
+    note: "The paper's headline finding. Men -0.020 (0.010), women -0.017 (0.013). The mean .818 is the overall mean, not necessarily the unreserved one."
+  - version: wp2004
+    estimand: provision
+    outcome: "Respondent paid a bribe, weighted average over four services"
+    outcome_family: other
+    diff: -0.015
+    se: 0.010
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.102
+    control_sd: null
+    n_units: null
+    n_obs: null
+    adjusted: true
+    table: "Table 3, col. 2"
+    page: "pdf p. 21"
+    preferred: true
+    note: "Not significant at 5% (t = 1.5), despite the text. With household controls (col. 5): -0.016 (0.010)."

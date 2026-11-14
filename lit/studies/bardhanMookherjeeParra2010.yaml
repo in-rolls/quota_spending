@@ -1,0 +1,167 @@
+key: bardhanMookherjeeParra2010
+label: Bardhan et al. (2010)
+pdf: bardhan_mookherjee_parra_2010_jgd.pdf
+pdf_version: "JGD 1(1) 2010, corrected version from the authors' site"
+notes: null
+audit_notes: |-
+  The PDF is Pranab K. Bardhan, Dilip Mookherjee and Monica Parra Torrado,
+  "Impact of Political Reservations in West Bengal Local Governments on
+  Anti-Poverty Targeting", Journal of Globalization and Development 1(1),
+  2010, Article 5, doi 10.2202/1948-1837.1025, "[CORRECTED VERSION]". The
+  label "Bardhan et al. (2009)" has the wrong year for this version. It should
+  be "Bardhan et al. (2010)", matching the key, the JGD volume and the bib. If
+  2009 refers to an earlier working-paper draft, that is not the PDF audited
+  here. The label is not edited here. Page numbers above are the journal's
+  printed numbers, which equal the pdf page minus 2.
+  Relation to bardhanMookherjeeParra2005. It uses the same 89 villages / 57
+  GPs and the same authors, but a household survey instead of GP records (pp.
+  2-3). The two rows are not independent evidence.
+  Referee points.
+  (1) Identification of women's Pradhan reservation rests on few treated
+  units. Table 1 (p. 12) shows 22 GPs reserved for women in 1998 and 16 in
+  2003, and 1993 Pradhan posts were not reserved. SEs are clustered by GP,
+  with 57 clusters.
+  (2) The outcomes are retrospective recall back to 1978 from a 2003-05
+  survey. The authors flag the recall trend (Figure 1, p. 8).
+  (3) Many highlighted effects are significant only at 10%. About 140
+  women's-reservation coefficients are tested with no multiplicity
+  adjustment.
+  (4) There are internal inconsistencies. There are 15 vs 16 districts (p. 7 vs
+  p. 3). The text on p. 28 says housing and roads are negative in 1978-04,
+  while Table 8 shows BPL and roads. Table 9 (p. 30) has the "Number of mouza"
+  and "R-squared" rows swapped. The Table 8 IRDP 1998-2004 coefficient of
+  3.430 on a share (43 villages, R-squared 0.83) with an interaction of -6.119
+  looks fragile.
+  (5) The paper's women headline is a worsening of SC/ST targeting. It is not
+  about women's preferences or goods women favor. The FHH share effect is
+  negative and insignificant.
+summary:
+  sample:
+    value: 57 GPs (89 villages) across 15 agricultural districts. Distance paired sampling for villages.
+    status: confirmed
+    source: p. 7 (section 3.1); p. 3
+    note: |-
+      p. 7 says "89 villages that belong to 57 GPs spread throughout 15
+      districts in West Bengal". Villages come from a Department of Agriculture
+      sample "where each village is paired with another one from the same block
+      within an 8-mile radius". The paper is internally inconsistent on districts.
+      p. 3 says "Our study covers all the 16 agricultural districts in the state".
+      The estimation samples are 87-89 villages (Table 2, p. 16).
+  location:
+    value: West Bengal
+    status: confirmed
+    source: Title; abstract; p. 7
+    note: null
+  years:
+    value: 1998–2004
+    status: mismatch
+    proposed: 1998–2004 (main panel; 1978–2004 longer panel also reported; retrospective household survey fielded 2003–05)
+    source: p. 3; p. 7; p. 8; p. 13; Tables 2-9
+    note: |-
+      1998-2004 is the "main" panel (p. 8, "we focus mainly on the most recent
+      period 1998-2004"). But every results table also reports "the longer panel
+      1978-2004 which spans six elected administrations" (p. 13). The cell's own
+      results text relies on the longer panel for BPL and roads. The data are
+      retrospective recall from a single survey, described as "conducted between
+      2003 and 2005" (p. 7) and as "carried out in 2003-04" (p. 3).
+    previous: 1998-2004
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): '1998-2004' -> '1998–2004'
+  kind_of_data_for_outcomes:
+    value: HH survey (20 HH per village gotten via stratified sampling with stratification by land ownership)
+    status: confirmed
+    source: p. 7 (section 3.1 and fn 18)
+    note: |-
+      p. 7 says "The survey collected information from a stratified random
+      sample of 20 households per village", and fn 18 says "Stratification was done
+      by land ownership". Benefits are self-reported and retrospective, going back
+      to 1978 (p. 7; p. 8).
+  number_of_outcomes:
+    value: '19'
+    status: mismatch
+    proposed: '11'
+    source: Tables 2 (p. 16), 5 (p. 22), 6 (p. 23), 8 (p. 26), 9 (p. 30)
+    note: |-
+      19 does not match any count I can reproduce.
+      (a) Distinct dependent variables for women's reservation number 11. These
+      are the inter-village average benefits per household; the FHH, landless and
+      SC/ST shares of all benefits (Tables 2, 6); and the SC/ST share in 7 specific
+      programs (water, housing/toilet, employment, BPL, roads, IRDP, minikits;
+      Table 8). Adding Table 5, which is joint SC/ST-women reservation only, brings
+      in per-program inter-village averages and FHH/landless shares for 5
+      programs, for 26 in total.
+      (b) Women's-reservation coefficients tested number 140. Table 2 has 32
+      (Panel A 8, Panel B 16 incl. reserved x Pradhan village, Panel C seat share 8).
+      Table 6 has 28 (direct and interactions). Table 8 has 48 (16 columns x
+      direct, x land, x landless). Table 9 has 32. Table 5 would add another 48.
+      The direct Pradhan-reserved coefficients alone number 24 (Table 2A 8 +
+      Table 8 16).
+  outcomes:
+    value: Inter-village average benefits per household, Intra-village share going to female-headed households, share going to landless households, share going to SC/ST households and split by program categories such as drinking water, housing/toilets, employment, BPL, roads, IRDP, and minikits
+    status: confirmed
+    source: p. 12-13 (section 3.2); Tables 2, 8
+    note: |-
+      The dependent variables are exactly as described (p. 12, "inter-village
+      targeting (benefits disbursed in the village as a whole), or intra-village
+      targeting (shares of different disadvantaged groups ...)"). One caveat. For
+      women's reservation, the program split exists only for the SC/ST share (Table
+      8, 8 programs). The program split for averages and FHH/landless shares
+      (Table 5) is for joint SC/ST-women reservation.
+  results:
+    value: |-
+      “There are no statistically significant effects, except on the effect of the Pradhan reservation on intra-village targeting share of SC/STs. The effect on targeting share of female headed households has a negative sign but is statistically insignificant. On the other hand, the effect on SC/ST targeting share during 1998-2004 is significantly negative: the share drops from an average of 45% to 33%.” (pg. 15; see also Table 2)
+
+      Women’s reservation is associated with less SC/ST targeting overall, and less SC/ST targeting in BPL and roads in the longer panel, but more SC/ST targeting in IRDP credit and minikits. In villages with more landlessness, women’s reservation is associated with a less negative / more positive effect for water, but a much weaker or more negative effect for IRDP and minikits (see Table 8).
+    status: mismatch
+    proposed: |-
+      “There are no statistically significant effects, except on the effect of the Pradhan reservation on intra-village targeting share of SC/STs. The effect on targeting share of female headed households has a negative sign but is statistically insignificant. On the other hand, the effect on SC/ST targeting share during 1998-2004 is significantly negative: the share drops from an average of 45% to 33%.” (p. 15; see also Table 2, p. 16)
+
+      Women’s reservation is associated with less SC/ST targeting overall, and less SC/ST targeting in BPL and roads in the longer panel (10% level only), but more SC/ST targeting in IRDP credit (1998–2004) and minikits. In villages with more landlessness, women’s reservation is associated with a less negative / more positive effect for water (10% level), but a much weaker or more negative effect for IRDP and minikits (see Table 8, p. 26).
+    source: p. 15 (text); Table 2 (p. 16); Table 8 (p. 26)
+    note: |-
+      Para 1 is misquoted and mis-cited. The paper reads "The effect on
+      targeting share of female headed households" (not "targeting the share")
+      and "On the other hand" (not "In the other hand"). The passage is on printed
+      p. 15 (pdf p. 17), not p. 20. Table 2 gives -0.109** (0.043) on a constant of
+      0.449 for SC/ST share 1998-2004.
+      Para 2 matches Table 8 but hides the significance levels. BPL 1978-2004 is
+      -0.255* and roads 1978-2004 is -0.337*, both significant only at 10%. IRDP is
+      +3.430*** only in 1998-2004 (53 obs, 43 villages; a coefficient above 1 on a
+      share). Minikits are +0.544*** and +0.527***. The interactions with % HH
+      landless are water 1998-2004 +0.506* (10%), IRDP -6.119***, and minikits
+      -0.633** and -0.979***. The paper's text (p. 28) instead says "housing and
+      road benefits" are negative in 1978-04. Table 8 shows housing +0.105 (n.s.),
+      so the cell follows the table, correctly.
+
+    previous: |-
+      “There are no statistically significant effects, except on the effect of the Pradhan reservation on intra-village targeting share of SC/STs. The effect on targeting the share of female headed households has a negative sign but is statistically insignificant. In the other hand, the effect on SC/ST targeting
+      share during 1998-2004 is significantly negative: the share drops from an average of 45% to 33%.” (pg. 20; see also Table 2)
+
+      Women’s reservation is associated with less SC/ST targeting overall, and less SC/ST targeting in BPL and roads in the longer panel, but more SC/ST targeting in IRDP credit and minikits. In villages with more landlessness, women’s reservation is associated with a less negative / more positive effect for water, but a much weaker or more negative effect for IRDP and minikits (see Table 8).
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'targeting the share of female' -> 'targeting share of female'; 'In the other hand' -> 'On the other hand'; 'SC/ST targeting\nshare during' -> 'SC/ST targeting share during'; '(pg. 20; see also Table 2)' -> '(pg. 15; see also Table 2)'
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: none
+    source: pp. 12-30; Tables 2-9
+    note: |-
+      Every coefficient is tested alone with GP-clustered SEs ("Errors are
+      clustered at the GP level", p. 13). No joint F or Wald test is reported.
+      That covers outcomes, the two panels, and a reservation main effect
+      together with its interactions in Tables 2B, 6, 8 and 9. The heterogeneity
+      claim on p. 25 ("The total impact ... was nearly zero") is a
+      back-of-envelope combination with no SE. A text search for joint, Wald,
+      F-test or p-value finds only "jointly reserved" (p. 21).
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (about 140 women's-reservation coefficients tested one at a time; no index or correction)
+    source: Tables 2-9 notes; p. 15
+    note: |-
+      Tables flag significance down to 10% ("***, **, *: denotes significance at
+      the 1, 5 and 10% level respectively"). There is no summary index,
+      Bonferroni, FDR or similar adjustment. The headline women's result
+      (-0.109**, Table 2, 1998-2004 SC/ST share) is one of 8 Panel A
+      coefficients. The program-level results in Table 8 are 48 coefficients, of
+      which several are significant only at 10%.

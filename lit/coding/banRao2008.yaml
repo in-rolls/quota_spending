@@ -1,0 +1,404 @@
+key: banRao2008
+versions:
+  - id: wp2007
+    file: ban_rao_2007_wp.pdf
+    citation: "Ban & Rao, 'Tokenism or Agency? The Impact of Women's Reservations on Village Democracies in South India', World Bank working paper, May 2007"
+    year: 2007
+    page_offset: "printed = pdf (pdf p. 1 = printed 1). Text layer renders the fi/ff/fl ligatures as '…', '¤', '‡'; quotes below restore the letters."
+  - id: edcc2008
+    file: ban_rao_2008_edcc.pdf
+    citation: "Economic Development and Cultural Change 56(3): 501-530, 2008"
+    year: 2008
+    page_offset: "printed = pdf + 500 (image scan; quotes taken from OCR text in scratchpad/ocr/ban_rao_2008_edcc/p-NN.txt, with obvious OCR misreads such as 'mote' for 'more' corrected)"
+meta:
+  year_first: 2007
+  year_published: 2008
+  setting: "Andhra Pradesh, Karnataka, Kerala, Tamil Nadu: 9 districts, analysis sample of 106 GPs (27 women-reserved, 79 unreserved), 310 villages; survey Nov-Dec 2002"
+  design: "rotational reservation (ordered by female population share, treated as exogenous), cross-section; block FE, block-pair FE for state interactions; balance probits on 1991 census"
+
+mechanism:
+  # ---------------- 2007 working paper ----------------
+  - version: wp2007
+    claim: "Women presidents are not weak tokens: they come from the top of the distribution of eligible women in land, wealth and knowledge, so they perform no worse than men."
+    type: selection_who_runs
+    status: tested
+    direction: explains_null
+    quote: "Women presidents are not weak. They are from the upper end of the distribution of women and tend to be more knowledgeable about political activities, more politically experienced, and wealthier than the average woman."
+    page: "16-17"
+    note: "Tested: Table 8 summary statistics and Table 9 regressions comparing women presidents with eligible women (block FE). Same in EDCC."
+  - version: wp2007
+    claim: "Women are not proxies for husbands: fewer than 20 percent were persuaded to run by their spouse."
+    type: proxy_husband
+    status: tested
+    direction: explains_null
+    quote: "Second, tokenism does not appear to be working through the spouse's influence. Less than 20 percent of women presidents are persuaded to run by their spouse."
+    page: "4"
+    note: "Proxy channel tested and rejected. Evidence is a cross-tab (Table 7, p. 28: spouse 5 of 27 = 18.52% vs 1.27% unreserved). Measures only who persuaded the candidate to run, not influence in office (a point Gajwani & Zhang 2008 p. 19 make against it)."
+  - version: wp2007
+    claim: "Inexperienced women presidents underperform men, but women gain more from political experience and catch up."
+    type: experience_learning
+    status: tested
+    direction: explains_negative
+    quote: "The most important result is that political experience matters in panchayats reserved for women. In fact, women presidents without previous political experience perform worse relative to their male counterparts."
+    page: "14"
+    note: "Table 10 (p. 31): reservation x experience .268** (.111), reservation main effect -.358* (.181). Table 11 meeting higher officials: reservation x experience .533***."
+  - version: wp2007
+    claim: "Where upper castes own more of the land, patriarchy is stronger and women presidents are less effective."
+    type: patriarchy_backlash
+    status: tested
+    direction: explains_negative
+    quote: "these results should not be interpreted as high castes blocking the efforts of low castes, but of patriarchy being more pronounced in villages dominated by upper castes which stifles women's ability to lead."
+    page: "15"
+    note: "Interaction tested (Table 12: reservation x upper-caste land proportion -.367**); the patriarchy reading is the authors' interpretation, not measured. Not replicated for meeting higher officials (Table 13)."
+  - version: wp2007
+    claim: "Women do worst in Andhra Pradesh, where the reservation system is least mature; maturity of the panchayat system helps women more than men."
+    type: discretion_institutions
+    status: asserted
+    direction: explains_negative
+    quote: "We also see that women presidents in reserved GPs in AP perform the worst, while those in Kerala and Karnataka tend to perform better. This again indicates the salience of the maturity of the reservations system since it has been in place much longer in Kerala and Karnataka than in AP."
+    page: "17"
+    note: "State interaction tested (Table 14: reservation x AP -1.074***), but 'maturity' is not measured; only 3 women presidents in AP. The maturity sentence is DROPPED in EDCC, which says only 'some evidence' (p. 527). Abstract: 'institutional factors matter much more for women than for men' (p. 1)."
+  - version: wp2007
+    claim: "Panchayats outside Kerala have little discretionary money, which may limit what any president, male or female, can change."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "This lack of budgetary discretion could impede the ability of GPs, both reserved and unreserved, to have much of an impact."
+    page: "10"
+    note: "Motivates using meetings with higher officials as a resource-free activity measure."
+  - version: wp2007
+    claim: "Women presidents meet higher officials less, either because of weaker networks and communication skills or because officials are reluctant to meet them."
+    type: contact_networks
+    status: speculated
+    direction: explains_negative
+    quote: "We are unable to distinguish between whether this stems from poorer networks and communication skills among women presidents, or from an increased reluctance among higher officials to meet with women presidents."
+    page: "10"
+    note: "The meeting gap itself is estimated (Table 4: -.202**); its cause is not. Treated as an outcome, not as the reason for other results."
+  - version: wp2007
+    claim: "Unlike Chattopadhyay and Duflo, women leaders do not follow women's preferences, perhaps because South India has much smaller gender differentials than Rajasthan and West Bengal."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "The contrast with Chattopadhyay and Duflo may reflect the fact that their evidence is from Rajasthan and West Bengal, an area of India with much higher gender differentials than South India where our survey was conducted."
+    page: "16"
+    note: "Context (regional gender inequality) offered for the null on preference-congruent provision; not tested."
+  - version: wp2007
+    claim: "Reservation does not raise women's gram sabha participation because it is already high in these states (ceiling)."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "One reason for this divergence from CD is that in our sample women's participation in the Gram Sabha is already at a much higher level relative to West Bengal (33 percent vs 7 percent) so there is less room for growth."
+    page: "9"
+    note: ""
+
+  # ---------------- 2008 EDCC ----------------
+  - version: edcc2008
+    claim: "Women presidents are not weak tokens: they come from the top of the distribution of eligible women in land, wealth and knowledge, so they perform no worse than men."
+    type: selection_who_runs
+    status: tested
+    direction: explains_null
+    quote: "Women presidents are not weak. They are from the upper end of the distribution of women and tend to be more knowledgeable about political activities, more politically experienced, and wealthier than the average woman."
+    page: "527"
+    note: "Tables 8-9 (pp. 516, 518). Unchanged from WP."
+  - version: edcc2008
+    claim: "Women are not proxies for husbands: fewer than 20 percent were persuaded to run by their spouse."
+    type: proxy_husband
+    status: tested
+    direction: explains_null
+    quote: "However, even with this large difference, less than 20% of women presidents were persuaded to run by their spouses; but the persuasion results should be interpreted with caution since the cell sizes are small."
+    page: "515-516"
+    note: "Proxy channel tested and rejected; EDCC adds the small-cell caveat (not in WP). Table 7 p. 515."
+  - version: edcc2008
+    claim: "Inexperienced women presidents underperform men, but women gain more from political experience and catch up."
+    type: experience_learning
+    status: tested
+    direction: explains_negative
+    quote: "The most important result is that political experience matters in panchayats reserved for women. In fact, women presidents without previous political experience perform worse relative to their male counterparts."
+    page: "520"
+    note: "Table 10 (p. 521): reservation x experience .268**, reservation -.358*."
+  - version: edcc2008
+    claim: "Where upper castes own more of the land, patriarchy is stronger and women presidents are less effective."
+    type: patriarchy_backlash
+    status: tested
+    direction: explains_negative
+    quote: "these results should not be interpreted as high castes blocking the efforts of low castes, but of patriarchy being more pronounced in villages dominated by upper castes, which stifles women's ability to lead."
+    page: "523-524"
+    note: "Table 12 (p. 523): reservation x upper-caste land proportion -.367**. EDCC fn 22 (p. 523) adds a referee's alternative (upper castes dominate the PRA) and rejects it."
+  - version: edcc2008
+    claim: "Women in reserved GPs do worst in Andhra Pradesh, possibly because its reservation and electoral system is immature."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_negative
+    quote: "Only in Andhra Pradesh do we see a significant difference between the performance in reserved and unreserved constituencies, with reserved constituencies underperforming. This result may be due to a politically immature reservation and electoral system in Andhra Pradesh."
+    page: "525"
+    note: "Softened relative to WP: conclusion now says 'There is also some evidence to suggest that women presidents in reserved GPs in Andhra Pradesh perform the worst' and drops the maturity sentence (p. 527). Only 3 women presidents in AP."
+  - version: edcc2008
+    claim: "Panchayats outside Kerala have little discretionary money, which may limit what any president, male or female, can change."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "The lack of budgetary discretion in the three other states could impede the ability of GPs, both reserved and unreserved, to have much of an impact."
+    page: "511-512"
+    note: ""
+  - version: edcc2008
+    claim: "Women presidents meet higher officials less, either because of weaker networks and communication skills or because officials are reluctant to meet them."
+    type: contact_networks
+    status: speculated
+    direction: explains_negative
+    quote: "We are unable to distinguish whether this stems from poorer networks and communication skills among women presidents or from an increased reluctance among higher officials to meet with women presidents."
+    page: "513"
+    note: "Gap estimated (Table 4 p. 512: -.202**); cause not tested."
+  - version: edcc2008
+    claim: "Unlike Chattopadhyay and Duflo, women leaders do not follow women's preferences, perhaps because South India has much smaller gender differentials than Rajasthan and West Bengal."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "The contrast with their work may reflect the fact that their evidence is from Rajasthan and West Bengal, an area of India with much higher gender differentials than South India, where our survey was conducted."
+    page: "526"
+    note: "Fn 14 (p. 515) adds an untabulated CD-style test interacting reservation with women's preferences: 'also do not demonstrate any relationship between preferences and panchayat activities.'"
+  - version: edcc2008
+    claim: "Reservation does not raise women's gram sabha participation because it is already high in these states (ceiling)."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "One reason for this divergence from the results of Chattopadhyay and Duflo is that in our sample women's participation in the gram sabha is already at a much higher level relative to West Bengal (33% vs. 7%), so there is less room for growth."
+    page: "511"
+    note: ""
+
+normative:
+  - version: wp2007
+    claim: "Results favour the optimists about reservation; women gain with experience, and reserved presidents need a more supportive environment in upper-caste-dominated villages and less mature states."
+    stance: pro_quota
+    quote: "Thus, our results are far more supportive of the \"optimists\" than the \"pessimists.\" In particular, women presidents become more effective when they acquire more political experience. The results also suggest that women reserved presidents would benefit from a more supportive environment in upper caste dominated villages, and in states where the reservations system is less mature."
+    page: "17"
+    note: "Also p. 14: experience result 'provides an empirical basis for encouraging women to take leadership positions'. Support is not made conditional on the supportive environment, so coded pro_quota rather than conditional."
+  - version: edcc2008
+    claim: "Results favour the optimists about reservation; women presidents may benefit from facilitation and training where institutions are less supportive."
+    stance: pro_quota
+    quote: "As women acquire more experience via the reservations system and as the system continues to mature, women will become more effective leaders. Thus, our results are far more supportive of the \"optimists\" than the \"pessimists\" but suggest that women presidents may benefit from facilitation and training in less supportive institutional environments."
+    page: "527"
+    note: "The caste/state-specific policy sentence of the WP becomes a generic call for 'facilitation and training'. Borderline conditional; coded pro_quota because training is an add-on, not a condition for support."
+
+measurement:
+  preferences:
+    method: pra_focus_group
+    unit_of_gap: village
+    gap_assumption: constant
+    tested_gap: "yes"
+    quote: "The PRA techniques were also employed on a group of selected women to get measures of women's preferences on problems faced by the village."
+    page: "507 (edcc2008)"
+    note: "Women's group PRA vs the general PRA, which was 'mainly men' (p. 507). Outcome: whether the group names an item as a problem '2 years ago'; gap = LPM on a female indicator with village FE, SEs clustered by village (Table 5, p. 514), i.e. one pooled within-village gap. A second source is the household questionnaire, where one adult per household rank-orders village problems (hh_survey_rank, individual level, n = 2,113 literate adults 21+; Table 6, p. 514); with village FE no gaps remain. The authors note the two sources disagree."
+  outcomes:
+    source: own_audit_or_pra
+    units: "Village-level standardized counts of panchayat activities since the last election by sector (from PRA); binary facility-improvement indicators from an investigator's facility survey; GP-level indicator that the president met higher panchayat officials"
+    n_units: 106
+    assignment_unit: gp
+    quote: "In the PRA, respondents were asked to assess the number of activities of the panchayats after the last election on a variety of public-good investments. In order to have comparable measures across the public-goods categories, we standardize the actual counts by subtracting from each count its mean and then dividing by its standard deviation."
+    page: "511 (edcc2008)"
+    note: "310 villages in 106 GPs. Facility outcomes: 'In the survey we asked whether there were any improvements in different categories of public goods since the last GP election' (p. 511). The PRA is mostly men, which the authors flag as a possible male bias."
+
+estimates:
+  - version: edcc2008
+    estimand: provision
+    outcome: "PRA activities: water (standardized count)"
+    outcome_family: drinking_water
+    diff: -0.067
+    se: 0.098
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.020
+    control_sd: null
+    n_units: 106
+    n_obs: 310
+    adjusted: false
+    table: "Table 4"
+    page: "512"
+    preferred: true
+    note: "Block FE, SEs clustered at GP. Outcome standardized over the sample (SD = 1 overall). Facilities alternative: drinking water improvement -0.014 (0.044). Identical in WP Table 4 p. 25."
+  - version: edcc2008
+    estimand: provision
+    outcome: "PRA activities: roads (standardized count)"
+    outcome_family: roads
+    diff: -0.029
+    se: 0.077
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.009
+    control_sd: null
+    n_units: 106
+    n_obs: 310
+    adjusted: false
+    table: "Table 4"
+    page: "512"
+    preferred: true
+    note: "Facilities alternative: roads improvement -0.034 (0.040)."
+  - version: edcc2008
+    estimand: provision
+    outcome: "PRA activities: education (standardized count)"
+    outcome_family: schools
+    diff: 0.184
+    se: 0.089
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: -0.055
+    control_sd: null
+    n_units: 106
+    n_obs: 310
+    adjusted: false
+    table: "Table 4"
+    page: "512"
+    preferred: true
+    note: "The only significant PRA outcome; PRA joint test p = .392. Facilities alternative: schools improvement -0.036 (0.066)."
+  - version: edcc2008
+    estimand: provision
+    outcome: "PRA activities: sanitation (standardized count)"
+    outcome_family: sanitation
+    diff: 0.017
+    se: 0.115
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: -0.005
+    control_sd: null
+    n_units: 106
+    n_obs: 310
+    adjusted: false
+    table: "Table 4"
+    page: "512"
+    preferred: true
+    note: ""
+  - version: edcc2008
+    estimand: provision
+    outcome: "PRA activities: health (standardized count)"
+    outcome_family: health
+    diff: 0.080
+    se: 0.096
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: -0.024
+    control_sd: null
+    n_units: 106
+    n_obs: 310
+    adjusted: false
+    table: "Table 4"
+    page: "512"
+    preferred: true
+    note: "Facilities alternative: anganwadi improvement -0.004 (0.034)."
+  - version: edcc2008
+    estimand: provision
+    outcome: "PRA activities: transport (standardized count)"
+    outcome_family: transport
+    diff: -0.039
+    se: 0.103
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.012
+    control_sd: null
+    n_units: 106
+    n_obs: 310
+    adjusted: false
+    table: "Table 4"
+    page: "512"
+    preferred: true
+    note: ""
+  - version: edcc2008
+    estimand: provision
+    outcome: "PRA activities: electricity (standardized count)"
+    outcome_family: electricity
+    diff: -0.108
+    se: 0.119
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.032
+    control_sd: null
+    n_units: 106
+    n_obs: 310
+    adjusted: false
+    table: "Table 4"
+    page: "512"
+    preferred: true
+    note: ""
+  - version: edcc2008
+    estimand: provision
+    outcome: "fraction women among gram sabha participants"
+    outcome_family: participation
+    diff: 0.0270
+    se: 0.0180
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.3350
+    control_sd: null
+    n_units: 106
+    n_obs: 211
+    adjusted: false
+    table: "Table 3"
+    page: "510"
+    preferred: true
+    note: "Block FE, SEs clustered at GP. Unreserved mean's parenthetical (.0107) is an SE, not an SD. 99 of 310 villages did not answer (fn 10)."
+  - version: edcc2008
+    estimand: provision
+    outcome: "president met higher panchayat officials (indicator)"
+    outcome_family: other
+    diff: -0.202
+    se: 0.078
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 0.580
+    control_sd: null
+    n_units: 106
+    n_obs: 106
+    adjusted: false
+    table: "Table 4"
+    page: "512"
+    preferred: true
+    note: "The only outcome where women do worse; Table 15 shows it is driven by Kerala."
+  - version: edcc2008
+    estimand: pref_gap
+    outcome: "village PRA names water as a problem (women's PRA vs general PRA)"
+    outcome_family: drinking_water
+    diff: 0.075
+    se: 0.033
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 0.392
+    control_sd: null
+    n_units: 310
+    n_obs: 617
+    adjusted: true
+    table: "Table 5"
+    page: "514"
+    preferred: true
+    note: "Women - men as printed. Village FE, SEs clustered by village. n_units = villages (307 with a women's PRA); n_obs = 307 + 310 group responses. adjusted = village FE. HH-survey water gap -0.010 (0.020) n.s. (Table 6)."
+  - version: edcc2008
+    estimand: pref_gap
+    outcome: "village PRA names sanitation as a problem"
+    outcome_family: sanitation
+    diff: 0.052
+    se: 0.019
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: 0.048
+    control_sd: null
+    n_units: 310
+    n_obs: 617
+    adjusted: true
+    table: "Table 5"
+    page: "514"
+    preferred: true
+    note: "OCR renders women's share as '-101'; WP Table 5 (p. 26) prints 0.101."
+  - version: edcc2008
+    estimand: pref_gap
+    outcome: "village PRA names roads as a problem"
+    outcome_family: roads
+    diff: -0.081
+    se: 0.024
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: 0.177
+    control_sd: null
+    n_units: 310
+    n_obs: 617
+    adjusted: true
+    table: "Table 5"
+    page: "514"
+    preferred: true
+    note: "Education gap .000 (.013), health .003 (.016), transport .013 (.010), electricity -.010 (.013), all n.s."

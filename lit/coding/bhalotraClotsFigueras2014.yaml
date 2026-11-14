@@ -1,0 +1,293 @@
+key: bhalotraClotsFigueras2014
+versions:
+  - id: dp2013
+    file: bhalotra_clots_figueras_2013_essex_dp739.pdf
+    citation: "University of Essex Economics DP 739, Nov 2013 (labelled 'revised version forthcoming in AEJ: Policy')"
+    year: 2013
+    page_offset: "printed = pdf - 1 (text); tables at the end have no folio, cited by pdf page"
+  - id: aej2014
+    file: bhalotra_clots_figueras_2014_aejpol.pdf
+    citation: "American Economic Journal: Economic Policy 6(2), May 2014, pp. 164-197 (JSTOR copy)"
+    year: 2014
+    page_offset: "printed = pdf + 162"
+meta:
+  year_first: 2011
+  year_published: 2014
+  setting: "16 Indian states, state-assembly (MLA) elections 1967-1998 matched to NFHS-2 (1998-99) birth histories; >70,000 births to ~18,000 mothers in 246 districts"
+  design: "other: close mixed-gender elections as instrument for the share of district seats held by women (2SLS) with mother fixed effects; no reservation"
+  note: >-
+    year_first: the study's audit notes record an IZA DP 6216 of December 2011,
+    which we do not hold, and Beaman et al. (2011) cites a 'Bhalotra and
+    Clots-Figueras, 2010' version. The earliest version we hold is 2013.
+    lit/version_diffs/bhalotra.md: every number in Tables 1A-8 is the same in
+    both versions. The changes are framing and AEA copyedits; the one
+    mechanism-relevant edit is that the published intro drops 'by comparing
+    first with further births within mother' (DP p. 5 -> p. 166). Estimates are
+    coded once, from aej2014. SCOPE: this is about state legislators elected
+    competitively, not village-council reservation, so 'provision' means the
+    effect of a higher share of seats held by women (0 to 1), not of a reserved
+    seat.
+
+mechanism:
+  - version: dp2013
+    claim: "Women legislators favour public health because the costs of poor reproductive and child health services fall on women."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "However our finding that women favour health over financial infrastructure suggests that preferences do play a role."
+    page: "34"
+    note: "Test: Table 8 (pdf p. 58). More health facilities (PHC 2.2365 (1.120)) and fewer banks (-2.4616 (1.494), 10% only). The premise is argued, not measured: 'arguing that the costs of poor services in this domain fall disproportionately upon women' (abstract, p. 1)."
+  - version: aej2014
+    claim: "Same claim as in dp2013."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "However our finding that women favor health over financial infrastructure suggests that preferences do play a role."
+    page: "192"
+    note: "Table 8, p. 193."
+  - version: dp2013
+    claim: "Part of the effect may come from women who beat men in close races being positively selected, since politician characteristics are not controlled."
+    type: selection_who_runs
+    status: speculated
+    direction: explains_effect
+    quote: "Therefore some part of the relationships that we identify may flow from women who win in close [political] races against men being positively selected."
+    page: "34"
+    note: "Also offered as one reason the IV exceeds OLS (p. 19)."
+  - version: aej2014
+    claim: "Same claim as in dp2013."
+    type: selection_who_runs
+    status: speculated
+    direction: explains_effect
+    quote: "Therefore, some part of the relationships that we identify may flow from women who win in close [political] races against men being positively selected."
+    page: "192"
+    note: ""
+  - version: dp2013
+    claim: "Women politicians run information campaigns that raise take-up of care and private health behaviours such as early breastfeeding."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "Since breastfeeding does not require public infrastructure, the identified impact of women’s representation on breastfeeding directly indicates a role for information campaigns."
+    page: "35"
+    note: "Type other (politician-led information). Evidence: Table 7 breastfeeding 1.3406 (0.535); larger effects on first births (Table 5). The DP intro also cites the within-mother first- vs later-birth comparison (pp. 5-6)."
+  - version: aej2014
+    claim: "Same claim as in dp2013; the intro no longer cites the within-mother birth-order comparison."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "Since breastfeeding does not require public infrastructure, the identified impact of women's representation on breastfeeding directly indicates a role for information campaigns."
+    page: "194"
+    note: "The intro (p. 166) drops 'by comparing first with further births within mother', but the first-birth result stays (p. 166, p. 184)."
+  - version: dp2013
+    claim: "Rival concern, tested and rejected: women legislators are elites detached from poor women's interests."
+    type: identity_caste
+    status: tested
+    direction: explains_effect
+    quote: "There are no significant differences in the impact of women politicians who belong to lower vs higher castes."
+    page: "4"
+    note: "Also: 'We find limited evidence of “elitism” amongst women elected to state legislatures' (p. 4). Effects are larger for low-caste children and the middle of the wealth distribution (Table 5)."
+  - version: aej2014
+    claim: "Same claim as in dp2013."
+    type: identity_caste
+    status: tested
+    direction: explains_effect
+    quote: "There are no significant differences in the impact of women politicians who belong to lower vs higher castes."
+    page: "166"
+    note: ""
+  - version: dp2013
+    claim: "Women legislators have more influence when the chief minister is a woman; sharing the chief minister's party does not help."
+    type: discretion_institutions
+    status: tested
+    direction: explains_effect
+    quote: "The relative influence of women in state legislatures is greater when the chief minister is a woman."
+    page: "5"
+    note: "Table 6: female CM interaction -0.8425 (0.205). The same-party result supports reading this as gender, not party."
+  - version: aej2014
+    claim: "Same claim as in dp2013."
+    type: discretion_institutions
+    status: tested
+    direction: explains_effect
+    quote: "The relative influence of women in state legislatures is greater when the chief minister is a woman."
+    page: "166"
+    note: "Table 6 panel A, p. 186."
+
+normative:
+  - version: dp2013
+    claim: "The mortality results show women legislators are progressive, against the argument used to block state-level quotas."
+    stance: pro_quota
+    quote: "Since child mortality is concentrated amongst the poor, our finding of impacts of politician gender on mortality establish the progressiveness of women in state assemblies, in contradiction with debates that currently block the institution of quotas for women at this level"
+    page: "25"
+    note: "Also: 'Women’s political representation may be an under-utilised tool for addressing health in developing countries' (abstract, pp. 1-2); and fn. 31: raising women's representation is 'a cost-effective way of improving public health' (p. 34)."
+  - version: aej2014
+    claim: "Same claim as in dp2013."
+    stance: pro_quota
+    quote: "Since child mortality is concentrated amongst the poor, our finding of impacts of politician gender on mortality establish the progressiveness of women in state assemblies, in contradiction of debates that currently block the institution of quotas for women at this level"
+    page: "184"
+    note: "'with' -> 'of'. Abstract (p. 164): 'may be an underutilized tool'."
+  - version: dp2013
+    claim: "The case for more women in politics must rest on balancing women's interests against men's, since a man's replacement shifts the policy mix."
+    stance: conditional
+    quote: "The premise for favouring an increase in women’s political participation must be that this balances the representation of women’s interests against those of men."
+    page: "36"
+    note: "Follows the trade-off between more health infrastructure and fewer rural banks."
+  - version: aej2014
+    claim: "Same claim as in dp2013."
+    stance: conditional
+    quote: "The premise for favoring an increase in women's political participation must be that this balances the representation of women's interests against those of men."
+    page: "194"
+    note: ""
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: constant
+    tested_gap: not_applicable
+    quote: "We have identified public health as a domain over which we expect women have stronger preferences."
+    page: "167 (aej2014); 6 (dp2013)"
+    note: "No data on citizens' or legislators' preferences by gender. The stronger concern of women for health is argued from cost incidence and from literature (Miller 2008; British Election Survey 2001, p. 165), then inferred from what women legislators do. It is assumed to hold everywhere (constant)."
+  outcomes:
+    source: villager_survey
+    units: "Birth-level neonatal/infant death (NFHS-2 birth histories); mother-level antenatal care, delivery, breastfeeding; village facility indicators (NFHS village survey)"
+    n_units: 246
+    assignment_unit: district
+    quote: "Individual data on child survival are obtained from retrospective fertility histories reported in the second round of the Indian National Family Health Survey (NFHS) by a representative sample of ever-married women aged 15-49 in 1998-99."
+    page: "10 (dp2013)"
+    note: "Category villager_survey = a national household survey (NFHS-2). Treatment varies at district-year (share of the district's assembly seats won by women). SEs clustered by district. No reservation."
+
+estimates:
+  - version: aej2014
+    estimand: provision
+    outcome: "Neonatal mortality (per unit share of district seats held by women)"
+    outcome_family: child_outcomes
+    diff: -0.2061
+    se: 0.078
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: 246
+    n_obs: 71498
+    adjusted: true
+    table: "Table 2, panel A, col. 6"
+    page: "178"
+    preferred: true
+    note: "2SLS with mother FE and controls; 18,754 mothers. Sample mean 6.3% (p. 177). A 10 pp rise in women's seat share means -2.1 pp. Identical in dp2013 (pdf p. 52)."
+  - version: aej2014
+    estimand: provision
+    outcome: "Infant mortality (per unit share of seats held by women)"
+    outcome_family: child_outcomes
+    diff: -0.1916
+    se: 0.104
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: 246
+    n_obs: 68665
+    adjusted: true
+    table: "Table 2, panel B, col. 6"
+    page: "178"
+    preferred: true
+    note: "Sample mean 9.8%."
+  - version: aej2014
+    estimand: provision
+    outcome: "Number of antenatal visits"
+    outcome_family: health
+    diff: 2.7745
+    se: 1.662
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: 246
+    n_obs: 7448
+    adjusted: true
+    table: "Table 7, panel A, col. 2"
+    page: "190"
+    preferred: true
+    note: "Mother-group FE specification, the 'richer specification' the text discusses (DP p. 31). Without it: 3.6524 (1.783)."
+  - version: aej2014
+    estimand: provision
+    outcome: "Took iron and folic supplements in pregnancy"
+    outcome_family: health
+    diff: 0.9518
+    se: 0.429
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 246
+    n_obs: 8429
+    adjusted: true
+    table: "Table 7, panel A, col. 4"
+    page: "190"
+    preferred: true
+    note: "Sample mean 57%."
+  - version: aej2014
+    estimand: provision
+    outcome: "Delivery in a government institution"
+    outcome_family: health
+    diff: 1.0904
+    se: 0.394
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: 246
+    n_obs: 8408
+    adjusted: true
+    table: "Table 7, panel B, col. 4"
+    page: "190"
+    preferred: true
+    note: "Private institution: -0.2136 (0.350), not significant."
+  - version: aej2014
+    estimand: provision
+    outcome: "Breastfed within first 24 hours"
+    outcome_family: child_outcomes
+    diff: 1.3406
+    se: 0.535
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 246
+    n_obs: 8062
+    adjusted: true
+    table: "Table 7, panel A, col. 8"
+    page: "190"
+    preferred: true
+    note: "Sample mean 48%. Used as evidence for information campaigns."
+  - version: aej2014
+    estimand: provision
+    outcome: "Village has a primary health centre"
+    outcome_family: health
+    diff: 2.2365
+    se: 1.120
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 246
+    n_obs: 1558
+    adjusted: true
+    table: "Table 8, panel A, col. 2"
+    page: "193"
+    preferred: true
+    note: "Text gives N = 1,591 villages (p. 192); the table prints 1,558. Women measured the year before. First-stage F = 45.973."
+  - version: aej2014
+    estimand: provision
+    outcome: "Village has a bank"
+    outcome_family: other
+    diff: -2.4616
+    se: 1.494
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: 246
+    n_obs: 1558
+    adjusted: true
+    table: "Table 8, panel B, col. 2"
+    page: "193"
+    preferred: true
+    note: "The text says 'significantly lowers' (p. 192); significant at 10% only."

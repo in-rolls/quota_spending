@@ -1,0 +1,81 @@
+key: pathakMacours2017
+label: Pathak & Macours (2017)
+table2_label: Pathak and Macours (2017)
+pdf: pathak_macours_2017_edcc.pdf
+pdf_version: Economic Development and Cultural Change 65(4) 2017, pp. 741-766 (printed page = pdf page + 740)
+notes: null
+audit_notes: |-
+  PDF version. The PDF is now the published article, Economic Development and Cultural Change 65(4), 2017, pp. 741-766 (doi 10.1086/692114). Printed page = pdf page + 740 (pdf p. 2 carries running head 742). All page, table and footnote numbers in this file refer to the printed journal pages. Footnotes are renumbered relative to the 2016 HAL manuscript (e.g., the district list is fn. 2, not fn. 3); table numbers 1-10 are unchanged. The published article has no abstract.
+
+  Design, which matters for how the table reads. All sampled GPs are eventually reserved; the rotation reserves each GP once across 1995, 2001 and 2006 (p. 746). The main estimate compares children whose GP was reserved in 1995-2001 (exposure in utero and very early in life) with children whose GP was reserved in 2006-2011 (exposure after age 5). So it measures the TIMING of exposure, reserved versus later-reserved, not reserved versus never-reserved. Assignment is by rank of the female-population ratio, rotated (p. 747), and the 1995 GPs have slightly higher female ratios (.501 vs .493, significant at 1%, p. 749).
+
+  The paper cannot name a mechanism: "We do not aim to attribute these results to specific policy choices by female leaders" (p. 744). For the younger cohort, aged 6-11 months in 2002, there are no effects (Table 8, p. 760).
+
+  Election data could be merged for only 59 of 82 villages (p. 749).
+
+  No number_of_outcomes key exists for this study. If one is added, Tables 4-6 give 8 + 8 + 4 = 20 outcomes for the main cohort.
+summary:
+  sample:
+    value: 59 GPs from 20 mandals in 6 rural districts
+    status: mismatch
+    source: pp. 745, 749, 752; Table 2 (p. 751); fn. 13 (p. 752)
+    note: |-
+      Several pieces are merged together here. The Young Lives rural sample covers "20 mandals in six rural districts" (p. 745). Reservation data could be merged for only "59 out of 82 villages" (p. 749), and each village is a different GP (fn. 9, p. 749). The main estimates, however, use only the 1995 vs 2006 GPs: "In the sample of 59, 20 were reserved in 1995, only 12 in 2001, and 27 in 2006" (p. 752), and "GPs with 1995 and 2006 reservation status cover 16 mandals" (p. 752). So the analysis sample is 47 GPs in 16 mandals, not 59 in 20. The unit of analysis is children: 225 + 301 = 526 children aged 12-17 months in 2002 (Table 2, p. 751), with about 500 observations per regression (Table 4, p. 756).
+    proposed: 47 GPs (20 reserved 1995, 27 reserved 2006) in 16 mandals of 6 rural districts; ~500 children aged 12–17 months in 2002 (Young Lives rural sample; reservation data for 59 of 82 GPs)
+  location:
+    value: Andhra Pradesh
+    status: confirmed
+    source: pp. 744-745; fn. 2 (p. 745)
+    note: |-
+      Rural Andhra Pradesh (p. 744: "children's learning and nutritional outcomes in rural Andhra Pradesh"): Srikakulam, West Godavari, Anantapur, Cuddapah, Mahbubnagar, Karimnagar (fn. 2, p. 745; the published text spells them "Mahboobnager and Karimnaga"). The Telangana districts are now in Telangana state. The published article has no abstract, so the earlier "abstract" source no longer applies.
+  years:
+    value: 2002–2009
+    status: confirmed
+    source: p. 745; p. 746
+    note: |-
+      Young Lives rounds are 2002, 2007 and 2009 (p. 745). The treatment windows are the reservation terms 1995-2001 and 2006-2011 (p. 746). The long-run outcomes are measured in 2009.
+  kind_of_data_for_outcomes:
+    value: Young Lives Survey data
+    status: confirmed
+    source: p. 745; pp. 748-749
+    note: |-
+      All outcomes come from the Young Lives child, household and community questionnaires (p. 745). Reservation status comes from Andhra Pradesh State Election Commission data (p. 748) merged in by the YLS team (fn. 7, p. 749). The 1991 census is used only for the balance checks.
+  number_of_outcomes:
+    value: '20'
+    status: corrected
+    previous: ''
+    source: Tables 4-6 (pp. 756-758)
+    note: |-
+      Cell was missing. Counting rule as elsewhere: distinct dependent variables regressed on reservation. Table 4 has 8 (word recognition, reading fluency, listening comprehension, math, receptive vocabulary, average z-score of the tests, 2009 height-for-age, 2009 stunting); Table 5 has 8 (2007 height-for-age and stunting, 2002 height-for-age and stunting, BCG, measles, polio, number of vaccinations out of 3); Table 6 has 4 (midday meal, ever dropped out, grade in 2009, subjective status ladder). Composites are counted as their own columns (the average z-score and the vaccination count), as in Duflo & Topalova's weighted averages; without them the count is 18. Not counted: Table 7, bivariate correlations that do not involve reservation, and the younger-cohort table, which repeats the same variables.
+  outcomes:
+    value: "Learning / cognition: word recognition, reading fluency, listening comprehension, math, receptive vocabulary, average standardized test score. \nNutrition / physical development: height-for-age z-score, stunting. \nEarly-child health / preventive care: 2007 height-for-age, 2007 stunting, 2002 height-for-age, 2002 stunting, BCG vaccination, measles vaccination, polio vaccination, total vaccinations out of 3.\nSchooling / school access / child status: receives midday meal at school, ever dropped out, grade attained in 2009, child’s subjective status ladder."
+    status: confirmed
+    source: Tables 4-6 (pp. 756-758)
+    note: |-
+      Matches the columns of Table 4 (8), Table 5 (8) and Table 6 (4) exactly: 20 outcomes. Placing 2007 height-for-age and stunting (age 5-6) under "early-child health" follows the paper's Table 5 grouping.
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: summary index (average z-score of the 5 tests, for the learning outcomes only. Nutrition, vaccination and schooling outcomes are tested separately with no correction)
+    source: p. 754; Table 4 (p. 756); Table 5 (p. 757)
+    note: |-
+      p. 754: "The z-scores of these tests were calculated ... We also calculate the average of these tests to account for multiple inferences." That average is the headline learning result: 0.188** (SE 0.085), Table 4 (p. 756). The component tests are uneven: word recognition 0.191***, reading 0.250**, listening 0.248*, receptive vocabulary 0.222*, math 0.026 (not significant). The paper's line "The differences are positive for all tests" (p. 755) is true of signs only. The number of vaccinations (out of 3) is a sum of BCG, measles and polio (0.182**, Table 5, p. 757). No family-wise or FDR correction is applied to the 20 outcomes in Tables 4-6. Table 2 (p. 751) reports joint-significance p-values (0.49, 0.32), but those are for covariate balance, not outcomes.
+  results:
+    value: |-
+      “The results show that 8-year-old children born in 2001 in GPs that have been randomly exposed to reservation in the 1995-2001 period have significantly better test outcomes than 8-year-olds who had reached the age of 5 before their GPs were exposed to reservation.” (pg. 755)
+    status: corrected
+    source: p. 755; Table 4 (p. 756)
+    note: |-
+      The value quotes the 2016 HAL manuscript (its p. 12). The published EDCC text (p. 755) was copyedited and is not verbatim: "8 year olds children" -> "8-year-old children", "1995-01 period" -> "1995-2001 period", "8 year olds" -> "8-year-olds", "the age of five" -> "the age of 5". Meaning is unchanged. Value left as is; proposed gives the published wording with the printed page. Supporting numbers: average test z-score +0.188** SD, height-for-age +0.258** (Table 4, p. 756). In 2002, stunting -0.118** and vaccinations out of 3 +0.182** (Table 5, p. 757). The quote correctly frames the comparison as early versus late exposure. It does not mention that there is no effect for the younger cohort (Table 8, p. 760, average test score -0.008) or that the math score is not significant (0.026).
+    previous: “The results show that 8 year olds children born in 2001 in GPs that have been randomly exposed to reservation in the 1995-01 period have significantly better test outcomes than 8 year olds who had reached the age of five before their GPs were exposed to reservation.”
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'exposed to reservation.”' -> 'exposed to reservation.” (pg. 12)'
+      2026-10-24, adopted published wording of the quote (copyedits only) with printed page.

@@ -1,0 +1,179 @@
+key: raabeSekherBirner2009
+label: Raabe et al. (2009)
+pdf: raabe_sekher_birner_2009_ifpri_dp878.pdf
+pdf_version: IFPRI DP 00878 July 2009
+notes: null
+audit_notes: |-
+  PDF and pagination. Downloaded from the CGSpace record behind the bib URL (https://hdl.handle.net/10568/161987; bitstream c85053d0-fd33-400a-b7bb-05a04874175f). The cover reads "IFPRI Discussion Paper 00878 / July 2009 / The Effects of Political Reservations for Women on Local Governance and Rural Service Provision / Survey Evidence from Karnataka / Katharina Raabe, Madhushree Sekher, Regina Birner" (pdf p. 1). All page cites here are the paper's printed pages; printed page = pdf page - 7. The `notes: MISSING PDF` line is now stale.
+
+  Label and bib. "Raabe et al. (2009)" is right: three authors, Raabe first, cover dated July 2009. The bib entry (raabeSekherBirner2009) matches the cover on authors, title, series and number (00878). The only oddity is that the copyright line reads "Copyright 2008 International Food Policy Research Institute" (pdf p. 2); 2009 is the right year to cite. A `month = jul` could be added; nothing needs correcting.
+
+  Design. This is a cross-section with no experiment. It compares 23 GPs with a woman president in a seat reserved for women against 48 GPs with a male president, whether he won an open seat or one reserved by caste (Tables 4, 9, 10). The 6 women who won open seats are dropped from the comparison (Table 1). Identification rests on the rotation of reserved seats. The balance check (Table 2, 17 logits with district fixed effects, N = 63) finds the SC population share significant at 5% and three facility shares at 10%: 4 of 17 tests, where about 1.7 would be expected by chance at 10%. Every regression is run twice, once with a dummy for female-headed GPs and once with a dummy for male-headed GPs (p. 51). The two columns mirror each other and are not independent evidence. Many of the descriptive gender tests are only "available on request" (fns. 15, 26, 29, 35, 41, 47). The authors call their own models weak: "the results are tentative at best, because the empirical specifications do not perform particularly well" (p. 60), and "Due to poor model performance, the results are at most tentative" (p. 64).
+
+  Timing. The current GP term began in February 2005, and the authors say that "spending decisions in earlier years are unlikely to represent the gender effects of reservation policies" (p. 69). So the 2003/04 and 2004/05 spending in Table 13, which the first Results quote draws on, mostly reflects the previous councils.
+
+  Internal inconsistencies a referee may notice. The strata counts on p. 10 (3 + 18 + 14 + 11 + 14) add to 60, not the stated 80 GPs. Table 1 accounts for 77 GPs (53 reserved + 24 unreserved). The paper describes its ordered models as "generalized ordered logit" (p. 51), but Tables 24-26 are titled "heteroskedastic ordered logistic regression". The continuation of Table 25 is headed "quantity of drinking water" although Table 25 is about quality (p. 58).
+
+  Contrary evidence that the table's cells leave out. In GP members' reports, female-headed GPs are more likely to report insufficient drinking water (6.372**, Table 27) and poor drainage maintenance (9.024***, Table 28), and the authors read the first as supporting "a gender effect" (p. 61). In household drainage satisfaction, the female-headed dummy is -0.902** in one of four specifications (Table 26). In Gram Sabha attendance, the female-headed dummy is positive and significant (1.295**, 1.110**, 1.270**) once interaction terms are added (Table 31). Against these, the paper's headline is weak or null effects of reservation: "the empirical evidence from (non-)linear probability models lends weak support to the existence of gender effects of reservation policies on local governance and rural service provision" (abstract, p. vii).
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: NS
+      status: confirmed
+      source: pp. 39-41 (Section 5.5.2), Figure 3 (p. 40), fns. 46-47
+      note: |-
+        What is measured: stated priority. Households rank each service as "most important, less important, and least important" (p. 39). Figure 3 plots the shares for male and female respondents in female- and male-headed GPs. On the gender gap: "Male and female household respondents do not significantly differ in the importance assigned to almost all sampled services" (p. 41). The only exception is health. Drinking water is ranked of "primary importance" by both men and women (p. 39). The Kruskal-Wallis statistics are not reported ("available on request", fn. 47). Only 25% of respondents are women (p. 17).
+    roads:
+      value: NS
+      status: confirmed
+      source: pp. 39-41, Figure 3 (p. 40), fn. 47
+      note: |-
+        Same ranking question (Figure 3, "Roads"; the text says "Intervillage road connectivity", p. 40). There is no significant difference between male and female respondents (p. 41). The one significant road result compares GP types, not respondent genders: "(male) household respondents in male-headed GPs consider road infrastructure investment to be significantly more important than (male) household respondents in female-headed GPs" (pp. 40-41). That is a reservation contrast, not a gender-of-respondent gap, so NS holds.
+    transport:
+      value: NS
+      status: confirmed
+      source: pp. 39-41, Figure 3 (p. 40), fn. 47
+      note: |-
+        The ranking item is "Public bus transport" (Figure 3). "Intervillage road connectivity, bus transportation, and electricity supply are equally likely to be most, less, and least important" (p. 40). No gender gap other than health is reported (p. 41). Untabulated test.
+    electricity:
+      value: NS
+      status: confirmed
+      source: pp. 39-41, Figure 3 (p. 40), fn. 47
+      note: |-
+        The ranking item is "Electricity" (Figure 3), with the same p. 40 sentence as for transport. No significant gap between men and women (p. 41). Untabulated test.
+    sanitation:
+      value: NS
+      status: confirmed
+      source: pp. 39-41, Figure 3 (p. 40), fn. 47
+      note: |-
+        The ranking item is "Drainage facility" (Figure 3); toilets are not ranked. Both genders rank "drinking water supply and drainage to be of primary importance" (p. 39), and no gender gap is reported (p. 41). Sanitation here means drainage only.
+    health_child_care:
+      value: F
+      status: confirmed
+      source: p. 41, Figure 3 (p. 40), fns. 46-47
+      note: |-
+        "The exception concerns health facilities, and independence test statistics suggest that male household respondents consider health service delivery to be less important than female household respondents. This result originates with the sample of households in (un-)reserved male-headed GPs" (p. 41). F is supported, but the support is thin: the test statistic is not reported (fn. 47), and the gap appears only among households in male-headed GPs. Child care is not covered: anganwadi was dropped from the ranking analysis because it had fewer than 50 responses (fn. 46). The item is "Health facility".
+summary:
+  sample:
+    value: |-
+      80 GPs from 12 districts.
+
+      Notes: 1. 1 village per GP, 2. stratified sample with selection probability proportional to population.
+    status: mismatch
+    source: p. 10 (Section 4); Table 1 (p. 12); Tables 4, 9, 10
+    note: |-
+      The headline is right. The districts are "selected from 12 districts of Karnataka's four administrative divisions ... each division being the source of 3 districts", and "The final GP sample consists of 80 units" (p. 10).
+
+      Note 1 is right only for the household survey. "From every GP, up to 3 villages were randomly chosen, resulting in a total sample of 225 villages. Within every sampled GP ... we randomly selected a village and conducted interviews with a random draw of approximately 5 percent of the total number of households in that village" (p. 10).
+
+      Note 2 overstates what the paper says. Taluks were sorted into five CCDI development strata, and "From every development category, we randomly sampled GPs according to the population in the respective development category" (p. 10). That is an allocation of GPs across strata in proportion to stratum population. The paper never says each GP's selection probability is proportional to its population.
+
+      Missing pieces. The cell gives no household or GP-member counts (966 households, 272 GP members). It also omits the comparison actually analysed: 23 reserved female-headed GPs against 48 (un-)reserved male-headed GPs (Tables 4, 9, 10). The 6 unreserved women are excluded (Table 1).
+
+      Smaller points: the stratum counts on p. 10 sum to 60, not 80, and Table 1 lists 77 GPs. Regression samples are 869-942 households (Tables 24, 25, 30, 31), 434 for drainage (Table 26), 175-241 GP members (Tables 27-28), and 55-72 GPs (Tables 29, 32).
+    proposed: |-
+      80 GPs from 12 districts (3 per administrative division); 966 households and 272 GP members. Gender comparison: 23 reserved female-headed vs 48 (un-)reserved male-headed GPs.
+
+      Notes: 1. households drawn from 1 randomly chosen village per GP (~5% of households); up to 3 villages per GP (225) for the village module. 2. GPs stratified by Taluk development level (CCDI), allocated across strata in proportion to population.
+  location:
+    value: Karnataka
+    status: confirmed
+    source: abstract (p. vii); p. 10
+    note: |-
+      "Our empirical sample consists of 80 Gram Panchayats (GP) and 966 households in 12 districts in Karnataka in 2006" (p. vii). The 12 districts are drawn 3 from each of Karnataka's four administrative divisions (p. 10). The districts are not named.
+  years:
+    value: '2006'
+    status: confirmed
+    source: abstract (p. vii); p. 10; p. 23; p. 69
+    note: |-
+      The survey was fielded in 2006 (p. vii; p. 10). The fiscal data that the first Results quote relies on cover the "fiscal years 2003/04, 2004/05, and 2005/06" (p. 23). The current GP term began in February 2005 (p. 69). '2006' is right as the survey year. "2006 (fiscal data 2003/04-2005/06)" would be more complete.
+  kind_of_data_for_outcomes:
+    value: 'Data collection combined three components: (1) a household survey (N=966 households); (2) a local-elite survey of Gram Panchayat representatives (N=272 GP members, roughly three per GP); and (3) a GP-officeholder module answered by GP presidents or vice presidents for GP-level finance, activities, and institutions. A village-level focus-group module (N=225 villages) was also fielded but is not used in the analysis (p. 10).'
+    status: corrected
+    previous: 'Data collection combined three components: (1) a village-level PRA-style focus-group module in the sampled villages (N=225 villages), covering socioeconomic village conditions, local facilities, and the availability and accessibility of rural services; (2) a household survey (N=966 households); and (3) a local-elite survey of Gram Panchayat representatives (N=272 GP members, roughly three per GP). The paper also had a separate GP-officeholder module answered by GP presidents or vice presidents for GP-level finance, activities, and institutions.'
+    comment: |-
+      2026-10-23, author decision: drop the village module as an outcome source (p. 10: "employs the
+      information from all survey modules except the village-level survey"). Author's wording otherwise kept.
+    source: p. 10 (Section 4)
+    note: |-
+      The counts are right (225 villages, 966 households, 272 GP members), and so is the description of the officeholder module: "GP presidents or vice presidents answered questions on GP activities, finances, budget allocation decisions, institutions, and processes" (p. 10).
+
+      Two problems. (1) The village module produced no outcome data. "the present study employs the information from all survey modules except the village-level survey. We do not employ the information on village facilities because missing values for the years of the present GP election term preclude assessments" (p. 10). Listing it first, as a source for outcomes, misleads. (2) "PRA-style" and "local-elite survey" are not the paper's words. The paper says "village focus groups" (p. 10) and "a sample of GP members" (p. 10). The GP-member sample is built as one president or vice president, one SC/ST member and one woman member per chosen village (p. 10), so "roughly three per GP" is approximately right.
+
+      The outcomes come from three sources: household perceptions (satisfaction, service ranking, Gram Sabha attendance), GP members' perceived problems, and fiscal records reported by the officeholders. GP covariates come from the 2001 Census (p. 10).
+    proposed: 'Household survey (N=966; satisfaction with services, ranking of service importance, Gram Sabha attendance), GP-member survey (N=272, about three per GP: president/vice president, SC/ST member, woman member; perceived service problems), and a GP-officeholder module answered by presidents or vice presidents (income, expenditure and devolved activities for 2003/04-2005/06; number of meetings). 2001 Census data for GP characteristics. A village focus-group module (225 villages) was collected but not used in the analysis (p. 10).'
+  number_of_outcomes:
+    value: '202'
+    status: mismatch
+    source: Tables 24-32 (pp. 56-70)
+    note: |-
+      I could not reproduce 202. Counting rule used across the table: distinct dependent variables regressed on women's reservation in main-text tables; composites and indices count as their own variables; political-participation outcomes count only if the Outcomes cell lists them (here it lists Gram Sabha occurrence and attendance).
+
+      Every regression includes the female-headed (or male-headed) GP dummy. The dependent variables are:
+      - Table 24: household satisfaction with drinking-water quantity (1)
+      - Table 25: household satisfaction with drinking-water quality (1)
+      - Table 26: household satisfaction with drainage (1)
+      - Table 27: GP members report insufficient drinking water, insufficient water quality, multiple water problems (3)
+      - Table 28: no/insufficient public toilets, no/insufficient drainage, poor drainage maintenance, multiple sanitation problems (4)
+      - Table 29: more than two Gram Sabha meetings (1)
+      - Tables 30-31: household Gram Sabha attendance, the same variable with and without interactions (1)
+      - Table 32: utilization of own funds, of the 12th Finance Commission grant and of the statutory development grant (3)
+      Total: 1+1+1+3+4+1+1+3 = 15, which matches the 15 items in the Outcomes cell exactly. The "multiple ... problems" variables are the composites; dropping them gives 13. The paired female/male columns are one comparison mirrored and are not counted twice.
+
+      Not counted: Tables 22-23 (political selection; the dependent variable is being a GP member or president, and the Outcomes cell does not list it). Also not counted: the descriptive Kruskal-Wallis comparisons in Section 5, which test female- against male-headed GPs item by item. Among them are 19 satisfaction items (Table 21), 25 problem items (Table 17), 9 sectors x 2 dates of problem rankings (Table 18), 14 SGRY spending lines x 3 years (Table 13), about 37 devolved schemes (Table 10), and meeting counts and attendance (Tables 15-16). Counting those yields roughly 150-200 tests, depending on what is included, and many of their statistics are unreported. 202 may come from a count of that kind, but I could not match it.
+    proposed: '15'
+  outcomes:
+    value: |-
+      Quantity, Quality, and Satisfaction: drinking water quantity, drinking water quality, drainage facilities
+
+      Problem Reports: insufficient drinking water, insufficient water quality, multiple water problems, no/insufficient public toilets, no/insufficient drainage, poor drainage maintenance, multiple sanitation problems
+
+      Participation: Gram Sabha occurrence, Gram Sabha attendance
+
+      Fiscal Utilization: own funds, 12th Finance Commission grant, statutory development grant
+    status: confirmed
+    source: Tables 24-32 (pp. 56-70); pp. 47-50 (Section 6)
+    note: |-
+      Matches the 15 dependent variables of the main regression tables one for one. The first group is household satisfaction, ordered 3/2/1: drinking-water quantity (Table 24), quality (Table 25) and drainage (Table 26). The second is GP members' binary problem reports: three for water (Table 27) and four for sanitation (Table 28). The participation outcomes are a dummy for "more than two Gram Sabha meetings" in the past year (Table 29; eq. 3, p. 49) and household attendance (Tables 30-31). Fiscal utilization is the ratio of expenditure to income in 2005/06 (Table 32; eq. 5, p. 50).
+
+      Two clarifications would help a reader. "Problem Reports" are perceptions of GP members, not households. "Quantity, Quality, and Satisfaction" are all satisfaction ratings, not measured quantity or quality. Not listed: the descriptive spending comparison by SGRY activity (Table 13), which is what the first Results quote is about.
+  results:
+    value: |-
+      “The evidence from Kruskal-Wallis tests suggests that the fiscal expenditures on structural development programs per household are largely insensitive to the gender of the GP president…Few exceptions exist…Compared with male-headed GPs, female-headed GPs spend less on roads and bridges and on drainage and drinking water, but comparatively more on public toilets.” (pg. 30, see also Table 13)
+
+      “The results of the present analysis do not point to the existence of differences in the degree of satisfaction between households in female- and male-headed GPs. That is, reservation effects do not appear to exist.” (pg. 55; see also Tables 24 and 25)
+
+      “Similar to the determinants of drinking water satisfaction, the satisfaction with sanitation services does not systematically depend on the gender of the GP president.” (pg. 62; see also Tables 27 and 28)
+
+      “Finally, the evidence suggests that GP members in female-headed GPs with a large number of activities to which devolution has been undertaken are more likely to perceive problems in the adequacy of public toilets and the drainage system.” (pg. 62; see also Table 28).
+
+      “The probability of attendance is not influenced by the gender or reservation status of the GP president.” (pg. 65; see also Table 30)
+    status: mismatch
+    source: p. 30 and Table 13 (p. 29); p. 55 and Tables 24-25 (pp. 56-58); p. 61 and Table 27; p. 62 and Table 28 (p. 63); p. 65 and Tables 30-31 (pp. 66-68)
+    note: |-
+      I checked all five quotes against the PDF text. They are verbatim and their page and table cites are correct, so the case for changing the cell rests on what it leaves out.
+
+      Quote 1 (p. 30) is verbatim. The first ellipsis covers only footnote marker 35. The second drops the sentence naming the exceptions: "Significant gender differences in spending prevail for SGRY works on roads and drainage in 2003/04; for SGRY works on drinking water and on pickups in 2004/05; for SGRY works on public toilets and on roads and bridges in the SC/ST colony in 2005/06." Each exception is significant in a single year. Only the 2005/06 ones fall in the current council term (p. 69), and the test statistics are unreported (fn. 35).
+
+      Quote 2 (p. 55) is verbatim and concerns drinking water only. Tables 24-25 back it: the GP-president coefficient is insignificant in all 16 columns.
+
+      Quote 3 (p. 62) is verbatim, but its premise, "Similar to the determinants of drinking water satisfaction", conflicts with p. 61. There the GP-member drinking-water models show a gender effect: "Considering the results, GP members in female-headed, reserved GPs are more likely to be dissatisfied with the quantity and/or quality of drinking water supply. This finding supports the hypothesis that the quality of service provision is influenced by a gender effect" (p. 61; Table 27: 6.372** insufficient water, 10.358* quality). The cell omits that finding, which is the clearest reservation effect in the main regressions. Table 28 also has 9.024*** for poor drainage maintenance in female-headed GPs.
+
+      Quote 4 (p. 62) is verbatim. The next sentences say opposite relationships hold for male-headed GPs and the difference is significant.
+
+      Quote 5 (p. 65) is verbatim and true of Table 30. In Table 31, with interactions, the female-headed GP dummy is positive and significant in 3 of 4 columns (1.295**, 1.110**, 1.270**). The paper itself says the interaction terms "bring to the fore the statistical significance of the effects associated with ... the gender of the GP presidents" (p. 65).
+
+      Proposed: add the p. 61 passage so that the cell reports the paper's one positive gender effect alongside its nulls.
+    proposed: |-
+      “The evidence from Kruskal-Wallis tests suggests that the fiscal expenditures on structural development programs per household are largely insensitive to the gender of the GP president…Few exceptions exist…Compared with male-headed GPs, female-headed GPs spend less on roads and bridges and on drainage and drinking water, but comparatively more on public toilets.” (pg. 30, see also Table 13)
+
+      “The results of the present analysis do not point to the existence of differences in the degree of satisfaction between households in female- and male-headed GPs. That is, reservation effects do not appear to exist.” (pg. 55; see also Tables 24 and 25)
+
+      “Considering the results, GP members in female-headed, reserved GPs are more likely to be dissatisfied with the quantity and/or quality of drinking water supply. This finding supports the hypothesis that the quality of service provision is influenced by a gender effect.” (pg. 61; see also Table 27)
+
+      “Similar to the determinants of drinking water satisfaction, the satisfaction with sanitation services does not systematically depend on the gender of the GP president.” (pg. 62; see also Tables 27 and 28)
+
+      “Finally, the evidence suggests that GP members in female-headed GPs with a large number of activities to which devolution has been undertaken are more likely to perceive problems in the adequacy of public toilets and the drainage system.” (pg. 62; see also Table 28).
+
+      “The probability of attendance is not influenced by the gender or reservation status of the GP president.” (pg. 65; see also Tables 30 and 31)

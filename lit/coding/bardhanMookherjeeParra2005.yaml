@@ -1,0 +1,235 @@
+key: bardhanMookherjeeParra2005
+versions:
+  - id: wp2005
+    file: bardhan_mookherjee_parra_2005_wp.pdf
+    citation: "Bardhan, Mookherjee & Parra Torrado, 'Impact of Reservations of Panchayat Pradhans on Targeting in West Bengal', working paper, 29 Nov 2005"
+    year: 2005
+    page_offset: "printed = pdf (text pp. 1-15); table pages 16-26 carry no printed number, cited as pdf p."
+meta:
+  year_first: 2005
+  year_published: null   # never published in its own right; JGD 2010 (bardhanMookherjeeParra2010) uses new household data on the same villages
+  setting: "West Bengal, 89 villages in 57 GPs across 15 districts; GP/lead-bank/block records for one year per GP term 1978-1998"
+  design: "random reservation; 1998 cross-section difference in means (reserved vs unreserved) plus village/GP fixed-effects panel 1978-98; women's Pradhan reservation only in 1998"
+
+mechanism:
+  - version: wp2005
+    claim: "Women Pradhans in villages with a strong landed elite are less effective, so reservation worsens targeting to SC/ST households where land inequality and SC/ST poverty are high."
+    type: other
+    status: tested
+    direction: explains_negative
+    quote: "Women Pradhans elected via reservation may be less effective in villages with a stronger landed elite, in which case the interaction effect with land inequality would be negative."
+    page: "13"
+    note: "Elite capture; no enum type fits (closest are patriarchy_backlash or discretion_institutions). Tested by interacting reservation with land inequality and SC/ST poverty in the panel (Tables 10A, 11A, pdf pp. 25-26). The paper reports support on p. 13: 'the adverse impact of women's reservation on intra-village targeting to SC/ST households is indeed significantly accentuated in villages with higher land inequality, and greater poverty among the SC/ST group.' The 2010 JGD paper finds the opposite sign with survey data and rejects this mechanism."
+  - version: wp2005
+    claim: "Interactions with SC/ST poverty show whether need or the political power of SC/ST groups drives targeting; greater SC/ST poverty lowers their share, so relative power dominates."
+    type: other
+    status: tested
+    direction: explains_negative
+    quote: "These measures of poverty represent greater need and vulnerability of SC/ST groups. Hence whether these interactions are positive or negative will indicate the extent whether considerations of need or relative political power of these groups predominate."
+    page: "13"
+    note: "Political power of the target group (need versus power). Result on pp. 13-14: 'greater poverty among the target group of the IRDP program caused their actual share to fall significantly.'"
+  - version: wp2005
+    claim: "The IRDP gain comes from women-led GPs pulling more credit into their villages from outside, not from better targeting within villages."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "So there was a significant improvement in targeting of IRDP following reservation for women, mainly through the ability of GPs with women Pradhans to secure more credit for villages under their jurisdiction."
+    page: "9"
+    note: "This locates the effect (between-village flow versus within-village share, Table 2A) more than it explains it. The paper does not say why women Pradhans secure more credit. It is coded so the 2010 change is visible: the 2010 paper does not find the IRDP gain (JGD p. 32)."
+  - version: wp2005
+    claim: "The data cover only the first year of women Pradhans; longer-run effects may differ and matter more."
+    type: experience_learning
+    status: speculated
+    direction: explains_null
+    quote: "Our study looks at the effect of women's reservation in the very first year itself since the election of the women Pradhans, while the other studies have examined their impact within the first two to four years. Their long-run impact on allocation outcomes, deliberative and participative processes within local governance, and on the aspirations of poor minorities may well be more important"
+    page: "5"
+    note: "The 2010 JGD paper uses this as its reason for collecting new data (JGD p. 3)."
+  - version: wp2005
+    claim: "Welfare gains from better representation of women residents' preferences may exist but are not measured."
+    type: preferences
+    status: speculated
+    direction: explains_effect
+    quote: "They also exclude possible benefits from better representation of preferences of women residents."
+    page: "5"
+    note: "The paper says it has no preference data (p. 3): 'our data does not include indicators of preferences of different groups ... So we are not able to evaluate impact of reservations on shifting spending allocations towards those preferred by those groups.'"
+
+normative:
+  - version: wp2005
+    claim: "On the targeting dimensions measured, women's (and SC/ST) reservations made targeting to the poor worse on net, though the authors stop short of a full welfare verdict."
+    stance: skeptical
+    quote: "Nevertheless, our results indicate that reservations may be accompanied by significant deterioration of targeting towards the poor on a number of relevant dimensions."
+    page: "4"
+    note: "A hedged, evidence-based skepticism, not a policy recommendation. See also p. 5: 'it therefore seems that the net effect of women's reservation for SC/ST households was significantly negative', and p. 15: 'on average the shortcomings in employment targeting outweighed the benefits of improved targeting of IRDP.' The authors also say these calculations 'fall short of a comprehensive welfare evaluation' (p. 5). Coding it none_stated would also be defensible."
+
+measurement:
+  preferences:
+    method: none
+    unit_of_gap: null
+    gap_assumption: not_applicable
+    tested_gap: not_applicable
+    quote: "Moreover, unlike Chattopadhyay and Duflo's study, our data does not include indicators of preferences of different groups (women, SC/ST members, landless or marginal landowners) for alternative public spending areas."
+    page: "3"
+    note: "p. 11 cites Foster and Rosenzweig (2001) for landed-versus-landless preferences over roads and irrigation. That is about class, not gender."
+  outcomes:
+    source: gp_staff_or_records
+    units: "Village/GP-level program benefits per household (IRDP credit subsidy, minikits, employment mandays, road spending, Rs at 1980 prices), intra-village beneficiary shares, and GP budget shares and revenues"
+    n_units: 57
+    assignment_unit: gp
+    quote: "employment programs administered by the GP (by nature of project, and composition of beneficiaries by caste and gender status), from the accounts of the GP;"
+    page: "6"
+    note: "Sources by program (p. 6): IRDP from the lead bank, minikits from the block Agriculture office, employment, roads and budgets from GP accounts. Only 19 reserved and 38 unreserved GPs in 1998 (Table 1, pdf p. 16). 1998 comparisons use about 14 reserved and 30-32 unreserved units."
+
+estimates:
+  - version: wp2005
+    estimand: provision
+    outcome: "IRDP credit subsidy per household, 1980 Rs/hh (1998 difference)"
+    outcome_family: other
+    diff: 5.57
+    se: 2.11
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 13.34
+    control_sd: null
+    n_units: null
+    n_obs: 44
+    adjusted: false
+    table: "Table 2A"
+    page: "pdf p. 17"
+    preferred: true
+    note: "Cross-section 1998, reserved mean 18.91 (n=14) vs unreserved 13.34 (n=30). The paper says it focuses on the cross-section for average effects 'since they happen to be more precise' (p. 8). FE 1978-98 estimate 5.57 (5.19), n.s. SEs clustered by district (15 clusters). Whether the 44 units are villages or GPs is not stated."
+  - version: wp2005
+    estimand: provision
+    outcome: "Employment program budgetary grants per household, 1980 Rs/hh (inter-GP, 1998 difference)"
+    outcome_family: public_works_other
+    diff: -47.91
+    se: 80.40
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 186.38
+    control_sd: null
+    n_units: 46
+    n_obs: 46
+    adjusted: false
+    table: "Table 4A"
+    page: "pdf p. 20"
+    preferred: true
+    note: "Pre-MGNREGA employment programs (JRY etc.). Reserved n=14 GPs, unreserved n=32. FE 1978-98 estimate +69.15 (57.38); the two estimators disagree in sign."
+  - version: wp2005
+    estimand: provision
+    outcome: "Employment mandays going to SC/ST per SC/ST-headed household (1998 difference)"
+    outcome_family: public_works_other
+    diff: -6.75
+    se: 4.83
+    se_source: reported
+    p_or_stars: "? (20%)"
+    control_mean: 8.93
+    control_sd: null
+    n_units: null
+    n_obs: 69
+    adjusted: false
+    table: "Table 4A"
+    page: "pdf p. 20"
+    preferred: false
+    note: "This is the number behind the paper's welfare comparison (p. 5, 'statistically significant reduction of six days work'). p. 11 says it is 'statistically significant at the 20% level'. Reserved n=25, unreserved n=44. FE estimate +6.25 (9.01)."
+  - version: wp2005
+    estimand: provision
+    outcome: "Spending on new pucca roads, 1980 Rs per household (village level, 1998 difference)"
+    outcome_family: roads
+    diff: -13.184
+    se: 4.33
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: 13.230
+    control_sd: null
+    n_units: null
+    n_obs: 77
+    adjusted: false
+    table: "Table 6A"
+    page: "pdf p. 21"
+    preferred: true
+    note: "Text p. 11: 'Villages with reserved women Pradhans invested significantly less on construction of new pucca roads.' Total pucca road spending is -17.350** (6.93), control 23.043. FE 1978-98 new pucca is +7.59 (7.55). Reserved n=24, unreserved n=53 villages."
+  - version: wp2005
+    estimand: provision
+    outcome: "Water (drinking water + tubewell/dugwell + well schemes), % of GP total expenditure (1998 difference)"
+    outcome_family: drinking_water
+    diff: 2.405
+    se: 2.445
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.609
+    control_sd: null
+    n_units: 46
+    n_obs: 46
+    adjusted: false
+    table: "Table 7A"
+    page: "pdf p. 22"
+    preferred: true
+    note: "Mostly well schemes. The drinking-water sub-line is 0.000 (0.005). p. 11: 'they allocated more to water and irrigation programs, but these effects were statistically insignificant.' FE estimate 2.88 (2.74)."
+  - version: wp2005
+    estimand: provision
+    outcome: "Irrigation, % of GP total expenditure (1998 difference)"
+    outcome_family: irrigation
+    diff: 3.635
+    se: 2.848
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 1.684
+    control_sd: null
+    n_units: 46
+    n_obs: 46
+    adjusted: false
+    table: "Table 7A"
+    page: "pdf p. 22"
+    preferred: true
+    note: "FE estimate 3.43 (4.13)."
+  - version: wp2005
+    estimand: provision
+    outcome: "Education (schools + literacy/library), % of GP total expenditure (1998 difference)"
+    outcome_family: schools
+    diff: -1.010
+    se: 0.549
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: 1.489
+    control_sd: null
+    n_units: 46
+    n_obs: 46
+    adjusted: false
+    table: "Table 7A"
+    page: "pdf p. 22"
+    preferred: true
+    note: "The schools-only sub-line is -0.272 (0.43), n.s. FE education is -0.86 (0.66) '?'."
+  - version: wp2005
+    estimand: provision
+    outcome: "Health, % of GP total expenditure (1998 difference)"
+    outcome_family: health
+    diff: -0.116
+    se: 0.137
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.234
+    control_sd: null
+    n_units: 46
+    n_obs: 46
+    adjusted: false
+    table: "Table 7A"
+    page: "pdf p. 22"
+    preferred: true
+    note: "FE estimate -0.08 (0.13)."
+  - version: wp2005
+    estimand: provision
+    outcome: "GP non-tax own revenue per household, 1980 Rs/hh (1998 difference)"
+    outcome_family: other
+    diff: -40.91
+    se: 27.58
+    se_source: reported
+    p_or_stars: "? (20%)"
+    control_mean: 71.57
+    control_sd: null
+    n_units: 46
+    n_obs: 46
+    adjusted: false
+    table: "Table 8A"
+    page: "pdf p. 23"
+    preferred: false
+    note: "Revenue, not spending. The intro (p. 4) calls this 'significantly less local revenues from non-tax sources (by over 100%)', but the table marks it significant only at 20%. Total own revenue is -40.18 (35.25). Employment share of the GP budget (Table 7A) is -10.651* (5.583), control 44.528; not recorded separately."

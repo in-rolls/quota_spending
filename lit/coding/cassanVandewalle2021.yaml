@@ -1,0 +1,243 @@
+key: cassanVandewalle2021
+versions:
+  - id: wd2021
+    file: cassan_vandewalle_2021_wd.pdf
+    citation: "Cassan & Vandewalle, 'Identities and public policies: Unexpected effects of political reservations for women in India', World Development 143 (2021) 105408"
+    year: 2021
+    page_offset: "printed = pdf"
+meta:
+  year_first: 2021   # only the published version is held; no earlier draft documented here
+  year_published: 2021
+  setting: "REDS 2005-06 (NCAER), nationally representative rural sample; 270 GP election terms in 168 villages (65 reserved for women, 97 for low castes); two completed terms before the survey"
+  design: "random/rotational reservation; panel of election terms with village, term and good fixed effects (within-village change in reservation), six public goods stacked, interacted with district-level men-minus-women (and HC-minus-LC) preference gaps"
+
+mechanism:
+  - version: wd2021
+    claim: "Women presidents implement women's preferences: without reservation, provision tilts toward goods men prefer more than women; under reservation the tilt reverses."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "Presidents elected under general seats align policies more with the preferences of men if b3 is positive, and gender quotas shift policies towards the preferences of women if b5 is negative. Table 4 shows this is indeed the case: Policies are more aligned with the preferences of men, but this tendency is reversed when the seat of president is reserved for women."
+    page: "7"
+    note: "Tested by the reserved x (men - women preference gap) interaction (Table 4, p. 8). The gap is measured district by district, so 'goods women prefer' differ by place."
+  - version: wd2021
+    claim: "Women's quotas replace high-caste men with low-caste women as presidents, so policy also moves toward low-caste preferences."
+    type: identity_caste
+    status: tested
+    direction: explains_effect
+    quote: "During unreserved electoral terms, the construction of new public goods is more aligned with the preferences of HCs. However, the bias in favor of HCs is canceled out when there is a reservation for women."
+    page: "7"
+    note: "The paper's headline contribution. Table 2 (p. 4): a woman's reservation lowers P(president is HC) by 20 pp. Table 5 (p. 8): HC-LC gap x reserved for women -0.20**. Table 6 shows the gender and caste channels hold jointly."
+  - version: wd2021
+    claim: "Under a women's quota, high-caste women run much less than low-caste women, which changes who holds office."
+    type: selection_who_runs
+    status: tested
+    direction: explains_effect
+    quote: "The results confirm our hypothesis: reservations for women differently impact the likelihood that HC women run for election than LC women. As a result, it reduces the probability of having an HC president."
+    page: "4"
+    note: "Table 2: any HC candidate -0.31***, number of HC candidates -0.84***, president is HC -0.20**."
+  - version: wd2021
+    claim: "High castes restrict women's mobility outside the home more strictly, and running for office requires mobility, so fewer high-caste women run."
+    type: patriarchy_backlash
+    status: tested
+    direction: explains_effect
+    quote: "In India, high castes tend to impose stricter restrictions on the mobility of women outside the house. This may explain the marked decline in the likelihood that high castes run for elections and are elected, when there is a political reservation for women."
+    page: "7-8"
+    note: "Gender norms by caste. The abstract says 'We propose differences in gender norms across caste groups as a mechanism.' Evidence is descriptive HC-LC gaps in women's mobility (IHDS 2011-12, Table 9) and attitudes to women in politics (NES 2004, Table 11), Appendix A pp. 10-12. These estimate the norm gap but do not link it to reservation, so 'tested' is generous. p. 3 adds that 'economic needs may play a role as well'."
+  - version: wd2021
+    claim: "The caste result is not class in disguise: wealth and education preference gaps do not explain provision or change the gender and caste results."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "The additional dimensions do not significantly impact public goods provision, and do not alter our main results. Therefore, we feel comfortable in concluding that our results are linked to gender and caste, and not to class identity."
+    page: "7"
+    note: "Rival mechanism (class identity) tested and rejected, Table 8 (p. 10)."
+  - version: wd2021
+    claim: "Maintenance does not respond to the president's caste, possibly to avoid antagonizing other caste groups."
+    type: other
+    status: speculated
+    direction: explains_null
+    quote: "First, the maintenance of public goods is not affected, which suggests that the caste of the president does not influence maintenance once public goods are constructed. This may be a strategy to reduce the risk of antagonizing other caste groups."
+    page: "7"
+    note: "Strategic restraint; offered without a test."
+
+normative:
+  - version: wd2021
+    claim: "Policy design (including gender quotas) should account for several identity dimensions at once, because a quota on one dimension shifts benefits along another."
+    stance: none_stated
+    quote: "and suggests that policy design needs to consider the different salient identity dimensions and the potential heterogeneity in behavior they entail."
+    page: "2"
+    note: "A design point, not a case for or against quotas, so stance on quotas is coded none_stated. Abstract p. 1: 'neglecting it may lead policymakers to overlook important, unexpected effects of economic policies.' The results are presented as quotas delivering substantive representation for women and low castes (p. 2), but the authors do not turn this into a pro-quota recommendation."
+
+measurement:
+  preferences:
+    method: allocation_question
+    unit_of_gap: district
+    gap_assumption: varies_by_place
+    tested_gap: no
+    quote: "As in Chattopadhyay & Duflo (2004), we calculate preferences at the district level, which is two administrative levels above the GP. The preference Prefgdp of a group g for a public good p in district d is calculated as the share of group members in a district who want the GP to allocate part of the budget to that particular good"
+    page: "4"
+    note: "Question (fn 16, p. 4): 'If Govt. wishes to spend Rs. 1 lakh on local development ... how would you advise the panchayat to allocate this amount on these issues?' Asked of the household head and spouse (REDS 2006 household survey), about 142 respondents per district. The gap is computed separately for each district and good, and the paper stresses that it varies: 'preference differences for a particular public good are not systematically the same across India' (p. 4). Also computed by caste (HC - LC), so it varies by group too. No significance test of any men-women gap. Measured once (2006) and applied to earlier terms; a leave-own-village-out version is in Table 7. Appendix B.2 uses budget-share intensity instead of the dummy."
+  outcomes:
+    source: other
+    units: "Per election term x good (6 goods): share of village streets where the good was constructed / maintained, and dummies for any construction / maintenance"
+    n_units: 270
+    assignment_unit: gp_election_term
+    quote: "For each street in the village, it indicates whether a public good has been constructed or maintained during each of the election terms."
+    page: "4"
+    note: "REDS 2006 village questionnaire, local governance module (respondent not specified; not a GP records extract). Goods: water, sanitation, public lighting, communication, roads, electricity (p. 4). Reservation varies by GP and term, within 168 villages. Only 65 terms were reserved for women; 19 joint women+LC terms were dropped. SEs clustered by district (2-6 villages per district)."
+
+estimates:
+  - version: wd2021
+    estimand: pref_gap
+    outcome: "Share wanting a positive allocation to the good, women minus men (district level, pooled over 6 goods and 1,620 term-good observations)"
+    outcome_family: other
+    diff: -0.02
+    se: null
+    se_source: null
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 1620
+    adjusted: false
+    table: "Table 3"
+    page: "6"
+    preferred: true
+    note: "Table 3 prints 'Pref dif: men - women' mean 0.02, SD 0.10, min -0.56, max 0.59. Sign flipped here to women - men per the schema. No SE or test is reported, so se_source is left null (no enum value fits). The mean pools districts and goods, which the paper says are heterogeneous. Per-good gaps appear only as district scatter plots (Figs. 1-2; p. 4: 'Men have a more pronounced preference for water and roads than women')."
+  - version: wd2021
+    estimand: provision
+    outcome: "Share of streets with construction, main effect of reservation for women (all 6 goods stacked)"
+    outcome_family: public_works_other
+    diff: 0.01
+    se: 0.02
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 270
+    n_obs: 1620
+    adjusted: true
+    table: "Table 4 col 1"
+    page: "8"
+    preferred: false
+    note: "Level effect when the men-women preference gap is zero, with village, term and good FE. Mean dependent (whole sample) 0.27. Not the paper's estimand; recorded for pooling with level-effect studies."
+  - version: wd2021
+    estimand: provision_by_pref_gap
+    outcome: "Share of streets with construction: (men - women preference gap) x reserved for women"
+    outcome_family: public_works_other
+    diff: -0.48
+    se: 0.19
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 270
+    n_obs: 1620
+    adjusted: true
+    table: "Table 4 col 1"
+    page: "8"
+    preferred: true
+    note: "NON-ENUM estimand: an interaction, not provision or pref_gap. Negative means reservation moves provision toward goods women prefer more than men in that district. Gap main effect is +0.23** (0.11). Total effect under reservation is -0.24* (0.14), i.e. 2.4 pp per SD (0.10) of the gap (p. 7). Mean dependent 0.27."
+  - version: wd2021
+    estimand: provision_by_pref_gap
+    outcome: "Share of streets with maintenance: (men - women gap) x reserved for women"
+    outcome_family: public_works_other
+    diff: -0.33
+    se: 0.18
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: 270
+    n_obs: 1620
+    adjusted: true
+    table: "Table 4 col 2"
+    page: "8"
+    preferred: true
+    note: "NON-ENUM estimand (interaction). Total effect under reservation -0.02 (0.13): the male tilt is removed but there is no female tilt. Mean dependent 0.31."
+  - version: wd2021
+    estimand: provision_by_pref_gap
+    outcome: "Any construction in at least one street: (men - women gap) x reserved for women"
+    outcome_family: public_works_other
+    diff: -0.46
+    se: 0.22
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 270
+    n_obs: 1620
+    adjusted: true
+    table: "Table 4 col 3"
+    page: "8"
+    preferred: true
+    note: "NON-ENUM estimand (interaction). Total effect under reservation -0.29* (0.16). Mean dependent 0.48."
+  - version: wd2021
+    estimand: provision_by_pref_gap
+    outcome: "Any maintenance in at least one street: (men - women gap) x reserved for women"
+    outcome_family: public_works_other
+    diff: -0.46
+    se: 0.20
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 270
+    n_obs: 1620
+    adjusted: true
+    table: "Table 4 col 4"
+    page: "8"
+    preferred: true
+    note: "NON-ENUM estimand (interaction). Total effect under reservation -0.03 (0.17). Mean dependent 0.52."
+  - version: wd2021
+    estimand: provision_by_pref_gap
+    outcome: "Share of streets with construction: (men - women gap, leaving own village out) x reserved for women"
+    outcome_family: public_works_other
+    diff: -0.27
+    se: 0.22
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 231
+    n_obs: 1386
+    adjusted: true
+    table: "Table 7 col 1"
+    page: "9"
+    preferred: false
+    note: "Robustness check for reverse causality: preferences measured outside the village. The gender interaction loses significance here; p. 7 calls the results 'qualitatively and quantitatively similar'. 141 villages. Caste interaction stays significant (-0.26***)."
+  - version: wd2021
+    estimand: provision_by_caste_pref_gap
+    outcome: "Share of streets with construction: (HC - LC preference gap) x reserved for women"
+    outcome_family: public_works_other
+    diff: -0.20
+    se: 0.09
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 270
+    n_obs: 1620
+    adjusted: true
+    table: "Table 5 col 1"
+    page: "8"
+    preferred: true
+    note: "NON-ENUM estimand: the paper's headline caste channel. HC-LC gap main effect +0.14** (0.06). Total under women's reservation -0.06 (0.07). Mean dependent 0.27."
+  - version: wd2021
+    estimand: provision
+    outcome: "President is high caste (dummy)"
+    outcome_family: other
+    diff: -0.20
+    se: 0.09
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 270
+    n_obs: 270
+    adjusted: false
+    table: "Table 2 col 4"
+    page: "4"
+    preferred: true
+    note: "Descriptive representation, not provision of goods. District and term FE. Mean dependent 0.30 (whole sample). Signs read from the rendered page; the text layer drops minus signs."

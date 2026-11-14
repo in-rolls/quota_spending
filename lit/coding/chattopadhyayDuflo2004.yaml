@@ -1,0 +1,377 @@
+key: chattopadhyayDuflo2004
+versions:
+  - id: ecta2004
+    file: chattopadhyay_duflo_2004_ecta.pdf
+    citation: "Econometrica 72(5), Sept 2004, pp. 1409-1443"
+    year: 2004
+    page_offset: "printed = pdf + 1408"
+meta:
+  year_first: 2004
+  year_published: 2004
+  setting: "Birbhum (West Bengal), 161 GPs, village survey summer 2000 (322 random villages); Udaipur (Rajasthan), 100 hamlets, 2002"
+  design: "random/rotational reservation, cross-section"
+  note: >-
+    We hold only the published version. The article prints "Manuscript received
+    October, 2001; final revision received November, 2003" (p. 1440) and says the
+    Rajasthan data were collected "after a first draft of this paper was
+    completed" (p. 1425), so earlier drafts existed, but we hold none, so
+    year_first is the published year.
+
+mechanism:
+  - version: ecta2004
+    claim: "Women leaders invest more in goods women want because their own preferences match women's, not because they respond more to women's complaints."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "Individual women are thus not particularly more responsive to the needs of women and men in their communities. Rather, it is because their own preferences are more aligned to the preferences of women that they end up serving them better."
+    page: "1434"
+    note: >-
+      This is the paper's headline mechanism. The test is Table VI (p. 1433). Col.
+      1/6: Reserved*Di = 1.63 (.501) WB, 4.40 (1.454) RJ, so provision in reserved
+      GPs tracks the district-level women-minus-men complaint gap. Cols. 3/8 add
+      village-specific gaps; the paper reads those as null (next entry). Model:
+      citizen-candidate, so the leader implements her own ideal point (pp.
+      1415-1416).
+  - version: ecta2004
+    claim: "Rival mechanism, tested and rejected: women Pradhans respond more to the complaints women make in their own village."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Controlling for the average preference of women in the district (Di and Di ∗ Rj ) , there are not more investments in goods about which women have complained more often in a specific village in GPs reserved to women (the coefficient of Dij ∗ Rj is not significant)."
+    page: "1434"
+    note: >-
+      The paper offers this as the alternative to own preferences and rejects
+      it. The model it rules out is one where women are "more responsive to
+      women's complaints, more altruistic ... less corrupt ... on their best
+      behavior ... or simply more susceptible to lobbying" (p. 1423). PROBLEM:
+      Table VI (p. 1433) prints Reserved*D{ij} = .03 (.047) for WB but -.37 (.169)
+      for Rajasthan. The RJ coefficient has t ≈ 2.2, so it is significant at 5%,
+      with a NEGATIVE sign. The text's "not significant" holds for WB only. In WB,
+      D{ij} exists only for the 48-village men's subsample (fn. 29). Checked on the
+      rendered page (pdf p. 25).
+  - version: ecta2004
+    claim: "Women leaders raise women's participation and complaints, which lowers women's cost of speaking and may shift the lobbying default toward women."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Women in villages with a reserved Pradhan are twice as likely to have addressed a request or a complaint to the GP Pradhan in the last 6 months, and this difference is significant."
+    page: "1428"
+    note: >-
+      Table III, WB: women's share of Gram Samsad participants +2.92 (1.44);
+      women filed a complaint +.09 (.05). RJ shows no effect (-4.08 (4.03); +.02
+      (.10)). The model names this as a secondary channel: "because of the
+      selection of women candidates and potentially because of the reduction in
+      the cost of speaking for women (which moves µ to the left)" (pp.
+      1422-1423). The paper estimates the effect on participation but not this
+      channel's contribution to allocations.
+  - version: ecta2004
+    claim: "Without reservation, women's higher cost of running keeps them out of office; reservation changes who runs, and so which preferences are implemented."
+    type: selection_who_runs
+    status: asserted
+    direction: explains_effect
+    quote: "These higher costs can prevent the participation of women in the political process in the absence of reservation; consequently, reservations can have a real effect on the decisions taken if women and men have different preferences over which public goods to provide."
+    page: "1415"
+    note: "Model premise (Propositions 1-3). Not estimated, beyond the fact that almost no women win unreserved seats (Table I: 6.5% WB, 1.7% RJ)."
+  - version: ecta2004
+    claim: "A male-biased elite or village meeting pulls policy toward men; women leaders counteract that lobbying."
+    type: discretion_institutions
+    status: asserted
+    direction: explains_effect
+    quote: "A key insight here is that the existence of unbalanced ex post lobbying, over a range, increases the value of reserving seats for women. The reason is that the reservation gives the voters a chance to elect citizens (women) who were not running previously, and whose preferences counteract the pressure of the lobbies."
+    page: "1419"
+    note: >-
+      Theory only. The implemented policy is xj = α·wj + (1-α)µ, with µ the
+      elite/lobby default (p. 1416). If women will not run even under reservation,
+      the paper notes the opposite: "Reservation replaces representative
+      democracy with lobbying" (p. 1418, Proposition 2). Coded
+      discretion_institutions because the channel is the weight α of the
+      leader's choice against elite capture; elite capture has no exact type.
+  - version: ecta2004
+    claim: "Rival explanation, tested and rejected: reserved women are proxies for their husbands, or are weaker on class or experience."
+    type: proxy_husband
+    status: tested
+    direction: explains_null
+    quote: "The worry that women may be their husband’s proxy is thus not without foundation."
+    page: "1436"
+    note: >-
+      Table VII: "Spouse Helps" 43% vs 13%; spouse ever elected 17% vs 2%. The
+      test is Table VI col. 4: all Pradhan characteristics (including spouse
+      helps and spouse elected), interacted with Di. Reserved*Di stays at 1.56
+      (.629), and none of the control interactions is significant (F = .93, p =
+      .53; fn. 33). The paper's reading: "This is prima facie evidence that the
+      results are not driven by Pradhan’s characteristics other than gender"
+      (p. 1436). Direction explains_null because a proxy would predict no
+      gender effect; the paper rejects it.
+  - version: ecta2004
+    claim: "Rival explanation, tested and rejected: the effects come from women being new to office."
+    type: experience_learning
+    status: tested
+    direction: explains_effect
+    quote: "This suggests that the effect that reservation for women has on policy cannot entirely be attributed to the fact that these women are new Pradhans."
+    page: "1437"
+    note: "Table VIII col. 2 compares GPs where the previous Pradhan was barred from running; Reserved*Di stays 1.63 (.469). Table VI col. 5: Pradhan is New*Di = -.10 (.323). Rejected as the driver."
+  - version: ecta2004
+    claim: "Rival explanation, tested and rejected: women act differently as lame ducks with poor re-election prospects."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "With all the caveats mentioned above, this still suggests that the results are not driven by women’s low reelection prospects."
+    page: "1439"
+    note: "Type other: re-election/dynamic incentives. Table VIII col. 3 compares GPs that will be reserved in 2003. Table VI col. 5: Reservation in 2003*Di = -.19 (.326)."
+  - version: ecta2004
+    claim: "Rival explanation, tested and rejected: the effects reflect women Pradhans' poorer social and economic background."
+    type: identity_caste
+    status: tested
+    direction: explains_effect
+    quote: "The fact that most results remain unchanged suggests that the difference in public good investments was a consequence of the Pradhan’s gender."
+    page: "1439"
+    note: "Table VIII col. 4 is the SC/ST-reserved subsample, where male and female Pradhans have similar backgrounds. Reserved*Di = 1.54 (.595)."
+
+normative:
+  - version: ecta2004
+    claim: "In theory, reservation raises welfare when women would not otherwise run and when lobbying is male-biased, but it can lower welfare if women still do not run."
+    stance: conditional
+    quote: "A key insight here is that the existence of unbalanced ex post lobbying, over a range, increases the value of reserving seats for women."
+    page: "1419"
+    note: >-
+      The only case for quotas in the paper is the model's, and it is
+      conditional: Proposition 3 (pro) vs Proposition 2 ("Reservation replaces
+      representative democracy with lobbying", p. 1418). The empirical
+      conclusion makes no recommendation. It says only that "direct manipulation
+      of the identity of the policymaker can have important effects on policy"
+      (p. 1440) and that the findings matter because quotas are spreading.
+
+measurement:
+  preferences:
+    method: complaints_requests
+    unit_of_gap: district
+    gap_assumption: varies_by_place
+    tested_gap: "no"
+    quote: "The approach we use here is to use the data on formal requests and complaints that are brought to the Pradhan. Since complaining is costly (the individual has to come to the GP office), the complaints are a reasonable measure of the preferences of the individuals, if the individuals assume that complaining will have an effect."
+    page: "1421"
+    note: >-
+      Table IV (p. 1430): each gender's share of issues raised in the prior 6
+      months, by category; the gap is Di = women's share minus men's. There is
+      one Di per good per district (WB, RJ), and the main regressions apply it to
+      every GP in the district. So the gap varies between the two districts
+      (roads flip sign) but is constant within each. Village-specific gaps (Dij)
+      are used only as a test (Table VI cols. 3/8). tested_gap = no because
+      there is no per-good test: the only tests are chi-squares that the whole
+      men's and women's distributions are equal (WB 71.72, p = .00; RJ 16.38, p
+      = .09). The men's WB data come from a 48-village resurvey (fn. 24).
+      Complaints are classified ex post into categories (fn. 24).
+  outcomes:
+    source: own_audit_or_pra
+    units: "Village counts/indicators of public goods built or repaired since May 1998 (WB) or over 2000-2002 (RJ); WB GP-level indicators from the Pradhan interview"
+    n_units: 261
+    assignment_unit: gp
+    quote: "During the village interview, we drew a resource map of the village with a group of 10 to 20 villagers. The map featured all the available infrastructure in the village, and we asked whether each of the available equipment items had been built or repaired since May 1998."
+    page: "1424-1425"
+    note: >-
+      The village resource-map exercise is PRA-style, though the paper never
+      says "PRA". WB GP-level outcomes come from the Pradhan interview "with
+      support from written records" (p. 1424), i.e. gp_staff_or_records. n_units
+      = 161 WB GPs + 100 RJ hamlets. RJ hamlets could not be matched to GPs (fn.
+      18), so the number of independently assigned RJ GPs is unknown, and the RJ
+      SEs are not clustered.
+
+estimates:
+  - version: ecta2004
+    estimand: provision
+    outcome: "Number of drinking water facilities newly built or repaired (West Bengal, village level)"
+    outcome_family: drinking_water
+    diff: 9.09
+    se: 4.02
+    se_source: reported
+    p_or_stars: null
+    control_mean: 14.74
+    control_sd: null
+    n_units: 161
+    n_obs: 322
+    adjusted: false
+    table: "Table V"
+    page: "1432"
+    preferred: true
+    note: "Raw reserved-unreserved difference; Moulton-corrected SEs. Checked on the rendered page. No stars are printed; t ≈ 2.26."
+  - version: ecta2004
+    estimand: provision
+    outcome: "Condition of roads, 1 if good (West Bengal, village level)"
+    outcome_family: roads
+    diff: 0.18
+    se: 0.06
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.23
+    control_sd: null
+    n_units: 161
+    n_obs: 322
+    adjusted: false
+    table: "Table V"
+    page: "1432"
+    preferred: true
+    note: "GP-level analogue: metal road built or repaired +.19 (.08), control .48."
+  - version: ecta2004
+    estimand: provision
+    outcome: "Number of drinking water facilities newly built or repaired (Rajasthan)"
+    outcome_family: drinking_water
+    diff: 2.62
+    se: 0.95
+    se_source: reported
+    p_or_stars: null
+    control_mean: 4.69
+    control_sd: null
+    n_units: 100
+    n_obs: 100
+    adjusted: false
+    table: "Table V"
+    page: "1432"
+    preferred: true
+    note: "Units are hamlets (n_units = hamlets, not GPs; see the measurement note)."
+  - version: ecta2004
+    estimand: provision
+    outcome: "Condition of roads, 1 if good (Rajasthan)"
+    outcome_family: roads
+    diff: -0.08
+    se: 0.04
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.98
+    control_sd: null
+    n_units: 100
+    n_obs: 100
+    adjusted: false
+    table: "Table V"
+    page: "1432"
+    preferred: true
+    note: "Negative, as predicted by women's lower complaint share on roads in Rajasthan. t = 2.0."
+  - version: ecta2004
+    estimand: provision
+    outcome: "1 if there is an informal education centre in the GP (West Bengal, GP level)"
+    outcome_family: schools
+    diff: -0.16
+    se: 0.07
+    se_source: reported
+    p_or_stars: null
+    control_mean: 0.82
+    control_sd: null
+    n_units: 161
+    n_obs: 161
+    adjusted: false
+    table: "Table V"
+    page: "1432"
+    preferred: true
+    note: "The village-level analogue (Panchayat-run education centres) is -.06 (.04), control .12. The text calls it significant at 10% (p. 1431). Chosen GP level because the text says the effect is significant at 5% there."
+  - version: ecta2004
+    estimand: provision
+    outcome: "Number of irrigation facilities newly built or repaired (West Bengal, village level)"
+    outcome_family: irrigation
+    diff: -0.38
+    se: 1.26
+    se_source: reported
+    p_or_stars: null
+    control_mean: 3.39
+    control_sd: null
+    n_units: 161
+    n_obs: 322
+    adjusted: false
+    table: "Table V"
+    page: "1432"
+    preferred: true
+    note: "The paper's 'only unexpected result' (p. 1431): men complain far more about irrigation (gap -.17), yet there is no significant provision effect."
+  - version: ecta2004
+    estimand: provision
+    outcome: "Fraction of women among Gram Samsad participants, percent (West Bengal)"
+    outcome_family: participation
+    diff: 2.92
+    se: 1.44
+    se_source: reported
+    p_or_stars: null
+    control_mean: 6.88
+    control_sd: null
+    n_units: 161
+    n_obs: 161
+    adjusted: false
+    table: "Table III"
+    page: "1428"
+    preferred: true
+    note: "Rajasthan: -4.08 (4.03), control 24.49, not significant."
+  - version: ecta2004
+    estimand: pref_gap
+    outcome: "Share of public-works issues raised that concern drinking water (West Bengal)"
+    outcome_family: drinking_water
+    diff: 0.13
+    se: 0.0386
+    se_source: computed
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 500
+    adjusted: false
+    table: "Table IV"
+    page: "1430"
+    preferred: true
+    note: >-
+      Women .31 (n = 334 public-works issues) vs men .17 (n = 166, 48-village
+      subsample). diff is Table IV col. 6 as printed; the rounded shares imply
+      .14. The SE is OUR calculation, sqrt(p1(1-p1)/n1 + p2(1-p2)/n2). It treats
+      issues as independent draws and ignores clustering of issues within
+      villages, so it understates the true SE. The paper reports no per-good
+      test. n_obs = number of issues; the number of villages behind women's
+      issues is not reported.
+  - version: ecta2004
+    estimand: pref_gap
+    outcome: "Share of public-works issues raised that concern road improvement (West Bengal)"
+    outcome_family: roads
+    diff: 0.06
+    se: 0.0421
+    se_source: computed
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 500
+    adjusted: false
+    table: "Table IV"
+    page: "1430"
+    preferred: true
+    note: "Women .31 vs men .25. SE is ours, computed as for drinking water (no clustering); on that basis the gap is not significant (t ≈ 1.4). No per-good test in the paper."
+  - version: ecta2004
+    estimand: pref_gap
+    outcome: "Share of public-works issues raised that concern drinking water (Rajasthan)"
+    outcome_family: drinking_water
+    diff: 0.09
+    se: 0.0658
+    se_source: computed
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 234
+    adjusted: false
+    table: "Table IV"
+    page: "1430"
+    preferred: true
+    note: >-
+      PROBLEM: col. 12 prints .09, but the printed shares (women .54, n = 99;
+      men .43, n = 135) give .11, a gap rounding cannot explain. The average
+      col. 11 = .49 is consistent with the shares. diff is recorded as printed.
+      The SE is ours (no clustering) and uses the shares. Checked on the
+      rendered page (pdf p. 22).
+  - version: ecta2004
+    estimand: pref_gap
+    outcome: "Share of public-works issues raised that concern road improvement (Rajasthan)"
+    outcome_family: roads
+    diff: -0.11
+    se: 0.0495
+    se_source: computed
+    p_or_stars: null
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 234
+    adjusted: false
+    table: "Table IV"
+    page: "1430"
+    preferred: true
+    note: "Women .13 vs men .23 (rounded shares give -.10). SE is ours (no clustering)."

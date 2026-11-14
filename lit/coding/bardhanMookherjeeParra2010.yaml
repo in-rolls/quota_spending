@@ -1,0 +1,226 @@
+key: bardhanMookherjeeParra2010
+versions:
+  - id: jgd2010
+    file: bardhan_mookherjee_parra_2010_jgd.pdf
+    citation: "Bardhan, Mookherjee & Parra Torrado, 'Impact of Political Reservations in West Bengal Local Governments on Anti-Poverty Targeting', J. Globalization and Development 1(1) 2010, Art. 5 [corrected version]"
+    year: 2010
+    page_offset: "printed = pdf - 2"
+meta:
+  year_first: 2008   # Rajaraman & Gupta 2009 WP fn 18 cites it as Bardhan et al. (2008b); the JGD footnote says it is based on Parra Torrado's 2008 BU dissertation. We hold only the 2010 version.
+  year_published: 2010
+  setting: "West Bengal, same 89 villages / 57 GPs / 15 districts as the 2005 WP; household survey (20 HH per village) fielded 2003-05 with retrospective recall of GP benefits back to 1978"
+  design: "random/rotational reservation; village fixed-effects panel over GP terms (main 1998-2004, also 1978-2004)"
+
+mechanism:
+  - version: jgd2010
+    claim: "Women leaders acting on their own group's preferences (citizen-candidate) would raise benefits to female-headed households; they did not, so this mechanism does not fit."
+    type: preferences
+    status: tested
+    direction: explains_null
+    quote: "This evidence is not consistent with simple citizen candidate models of electoral politics in which reservations in favor of a particular group result in greater allocation of publicly provided goods to that group."
+    page: "4"
+    note: "Tested via the female-headed household share (Table 2, p. 16): -0.016 (0.014), n.s."
+  - version: jgd2010
+    claim: "Local landed elites overpowering women elected to reserved posts would make the harm worse in more unequal villages; the harm is instead smaller there, so simple elite capture is rejected."
+    type: other
+    status: tested
+    direction: explains_negative
+    quote: "Overall, the results do not provide support to explanations of the inferior targeting to SC/STs resulting from women Pradhan reservations owing to the power of local landed elites."
+    page: "25"
+    note: "Elite capture, the mechanism the 2005 WP supported, now rejected. Tested by interactions in Table 6 (p. 23): reserved x % land medium & big +0.603*** and reserved x SC/ST poverty +1.768*** on the SC/ST share, 1998-2004."
+  - version: jgd2010
+    claim: "Elites run patronage machines that give SC/ST clients goods the elites do not value; a politically inexperienced woman Pradhan disrupts these machines, cutting clientelist goods to SC/STs and cutting elite capture of minikits and credit."
+    type: experience_learning
+    status: tested
+    direction: explains_negative
+    quote: "It is plausible in this context that election of a politically inexperienced woman to a reserved Pradhan position in the GP will result in some frictions in the operation of such `patronage machines', resulting from lack of personal knowledge of relevant characteristics and behavior of specific households in the village."
+    page: "27"
+    note: "Capture-cum-clientelism. The channel is the newcomer's lack of networks and local knowledge, so it could also be typed contact_networks. Tested by program-level SC/ST shares (Table 8, p. 26) and a reservation x 'Pradhan is a new GP member' interaction (Table 9, p. 30). p. 29: 'The evidence thus indicates some support for our hypothesis of capture-cum-clientelism which tends to be undermined by reservations of Pradhan positions for politically inexperienced women.' p. 5 adds that the effects 'may be temporary in nature' if the women 'eventually succumb'."
+  - version: jgd2010
+    claim: "In highly unequal villages, elites make sure the women nominated for reserved posts come from elite families, which dampens the disruption."
+    type: selection_who_runs
+    status: asserted
+    direction: explains_null
+    quote: "there they ensure that the women nominated for Pradhan positions are from elite families themselves and represent the interests of the elites more closely."
+    page: "28"
+    note: "Offered to explain the positive interactions with land inequality. The paper has no data on Pradhans' family background, so the selection step itself is not tested, only its implied interaction signs."
+  - version: jgd2010
+    claim: "A newly installed Pradhan needs time to learn the job, so first-year data (as in the 2005 WP) may miss real effects."
+    type: experience_learning
+    status: asserted
+    direction: explains_null
+    quote: "A newly installed chief executive is likely to take some time to learn the job and settle into the task of administration. Even if they have a distinct impact their effects may not be discernible in the first year or two."
+    page: "3"
+    note: "Given as the reason for the new 1998-2004 data. It is not itself tested."
+  - version: jgd2010
+    claim: "Reservation may have produced empowerment effects not visible in targeting, or early terms may build women's confidence and voter acceptance, giving positive impacts later."
+    type: experience_learning
+    status: speculated
+    direction: explains_null
+    quote: "Alternatively, the first few years of reservations may have been periods in which women gained self-confidence and the general voting population became more receptive towards women leaders, an issue explored by Beaman et al (2008). This may lead to positive targeting impacts in the longer run."
+    page: "33"
+    note: "Also mentions 'pure empowerment effects' on the same page. The voter-receptiveness part is closer to patriarchy_backlash (voter bias)."
+
+normative:
+  - version: jgd2010
+    claim: null
+    stance: none_stated
+    quote: null
+    page: null
+    note: "No statement for or against quotas. The authors decline a welfare verdict (p. 5): 'The welfare effects of this are complex to assess, as SC/ST groups have lost some clientelism benefits while gaining other benefits owing to reduced capture.' p. 2 calls the question 'of considerable policy significance' without taking a side."
+
+measurement:
+  preferences:
+    method: none
+    unit_of_gap: null
+    gap_assumption: not_applicable
+    tested_gap: not_applicable
+    quote: "The survey did not ask respondents to evaluate their respective panchayat chairpersons, and focuses instead on factual questions concerning their demographics, assets, living standards, government benefits received and participation in local politics."
+    page: "8"
+    note: "No gender preference measure. The clientelism argument assumes which goods elites versus non-elites value (p. 27: elites 'value only some of the goods ... such as minikits and subsidized credit'). That is an assumption about class, not gender, and is not measured."
+  outcomes:
+    source: villager_survey
+    units: "Village-timeblock average number of GP benefits per household (inter-village), and shares of female-headed, landless and SC/ST households in benefits received (intra-village), overall and by program"
+    n_units: 57
+    assignment_unit: gp
+    quote: "The survey collected information from a stratified random sample of 20 households per village. It included current and retrospective information on family composition and characteristics, land and assets holdings, income, credit, political awareness and participation."
+    page: "7"
+    note: "89 villages in 57 GPs; SEs clustered by GP. Women-reserved Pradhan GPs: 22 in 1998, 16 in 2003 (Table 1, p. 12). Recall trend flagged on p. 8."
+
+estimates:
+  - version: jgd2010
+    estimand: provision
+    outcome: "Inter-village average number of GP benefits per household, 1998-2004"
+    outcome_family: other
+    diff: 0.043
+    se: 0.046
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 57
+    n_obs: 178
+    adjusted: false
+    table: "Table 2 Panel A"
+    page: "16"
+    preferred: true
+    note: "Village and timeblock FE; 89 villages. Regression constant 0.331. 1978-2004: 0.040 (0.035)."
+  - version: jgd2010
+    estimand: provision
+    outcome: "Intra-village share of female-headed households in benefits, 1998-2004"
+    outcome_family: other
+    diff: -0.016
+    se: 0.014
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 57
+    n_obs: 164
+    adjusted: false
+    table: "Table 2 Panel A"
+    page: "16"
+    preferred: true
+    note: "Constant 0.086. 1978-2004: -0.016 (0.015). This is the paper's test of whether women leaders favor women."
+  - version: jgd2010
+    estimand: provision
+    outcome: "Intra-village share of landless households in benefits, 1998-2004"
+    outcome_family: other
+    diff: -0.012
+    se: 0.032
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 57
+    n_obs: 164
+    adjusted: false
+    table: "Table 2 Panel A"
+    page: "16"
+    preferred: true
+    note: "Constant 0.398. 1978-2004: 0.002 (0.026)."
+  - version: jgd2010
+    estimand: provision
+    outcome: "Intra-village share of SC/ST households in benefits, 1998-2004"
+    outcome_family: other
+    diff: -0.109
+    se: 0.043
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 57
+    n_obs: 164
+    adjusted: false
+    table: "Table 2 Panel A"
+    page: "16"
+    preferred: true
+    note: "Headline women's result. Text p. 15: 'the share drops from an average of 45% to 33%' (the 45% is the regression constant 0.449, which the authors treat as the average). 1978-2004: -0.033 (0.034)."
+  - version: jgd2010
+    estimand: provision
+    outcome: "SC/ST share of drinking-water benefits, 1998-2004 (main effect in model with land-inequality interactions)"
+    outcome_family: drinking_water
+    diff: -0.351
+    se: 0.228
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 118
+    adjusted: true
+    table: "Table 8"
+    page: "26"
+    preferred: false
+    note: "CAUTION: this coefficient is the effect at zero % land in medium/big holdings and zero % landless households. It is not an average effect. The model includes reserved x % land medium & big (0.368) and reserved x % HH landless (0.506*). 75 villages. The paper reports no program-level average effect of women's reservation. p. 31 says there was no significant effect on 'village-level benefits from drinking water or roads'."
+  - version: jgd2010
+    estimand: provision
+    outcome: "SC/ST share of housing and toilet benefits, 1998-2004 (main effect in model with interactions)"
+    outcome_family: housing
+    diff: 0.136
+    se: 0.295
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 75
+    adjusted: true
+    table: "Table 8"
+    page: "26"
+    preferred: false
+    note: "Effect at zero land inequality and landlessness (see drinking-water note). 51 villages. 1978-2004: 0.105 (0.266). The text on p. 28 says housing is 'significantly negative in the 1978-04 panel', which the table does not show."
+  - version: jgd2010
+    estimand: provision
+    outcome: "SC/ST share of road benefits, 1998-2004 (main effect in model with interactions)"
+    outcome_family: roads
+    diff: -0.172
+    se: 0.185
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 132
+    adjusted: true
+    table: "Table 8"
+    page: "26"
+    preferred: false
+    note: "Effect at zero land inequality and landlessness. 78 villages. The 1978-2004 value the text highlights is -0.337* (0.185)."
+  - version: jgd2010
+    estimand: provision
+    outcome: "SC/ST share of employment (public works) benefits, 1998-2004 (main effect in model with interactions)"
+    outcome_family: public_works_other
+    diff: -0.029
+    se: 0.208
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 95
+    adjusted: true
+    table: "Table 8"
+    page: "26"
+    preferred: false
+    note: "Effect at zero land inequality and landlessness. 66 villages. 1978-2004: 0.196 (0.251)."

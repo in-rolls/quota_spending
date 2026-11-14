@@ -1,0 +1,91 @@
+key: priebe2017
+label: Priebe (2017)
+pdf: priebe_2017_ods.pdf
+pdf_version: Oxford Development Studies 2017
+notes: null
+audit_notes: |-
+  Label and version are correct. The PDF is the published article: Oxford Development Studies 45(4): 499-521, 2017, DOI 10.1080/13600818.2017.1298740 (pdf p. 1). Printed page = pdf page + 497.
+
+  Double counting, which a referee will catch. This paper and satheEtAl2013 use the SAME survey: 32 villages in Sangli district, 640 women, 16 female and 16 male sarpanches, Oct-Nov 2008. Footnote 5 (p. 517) says: "Please see Sathe, Klasen, Priebe, and Biniwale (2013) for more details on the data-set." If both appear in Table 2 without a note, they look like two independent confirmations when they are one sample.
+
+  The two papers also describe the sampling differently. Priebe (p. 505) says 16 male sarpanches "were randomly selected" from the 498 male-headed GPs. Sathe et al. (pp. 4-5) say each male-sarpanch village was chosen to match a female one on "geographical closeness" and an open-category sarpanch. That second description is matched sampling, not random sampling. p. 505 also contains a typo, "166 female sarpanches were randomly selected", which should be 16.
+
+  Treatment is having a female sarpanch, not reservation strictly. Footnote 6 (p. 517): 15 of the 16 female-sarpanch GPs were reserved, and one woman won an unreserved seat.
+
+  The paper's main outcome is women's political participation (15 indicators). Public service delivery is presented as an "Extension" (Section 4.3).
+summary:
+  sample:
+    value: 32 GPs from 1 District
+    status: confirmed
+    source: p. 505
+    note: |-
+      p. 505: "an individual survey covering 32 sarpanches" (16 male, 16 female) from the 705 GPs of Sangli district, plus "a household survey of 640 women ... In each of the 32 GPs, 20 women were randomly chosen." Correct as stated. The unit of analysis for every outcome is the 640 women (N = 640 in Tables 4 and 6), which the cell could add.
+  location:
+    value: Maharashtra
+    status: confirmed
+    source: p. 505
+    note: Sangli district, Maharashtra.
+  years:
+    value: '2008'
+    status: confirmed
+    source: p. 505
+    note: |-
+      "Our data come from two surveys collected between October and November 2008 in Sangli district" (p. 505). The survey is a single cross-section.
+  kind_of_data_for_outcomes:
+    value: Survey of sarpanches + HH survey of women in the same GPs
+    status: confirmed
+    source: p. 505
+    note: |-
+      Matches p. 505. Every outcome comes from the women's household survey. Even the "objective" service indicators in Table 5 are respondent-level (N = 640). The sarpanch survey supplies controls and descriptives (Table 2).
+  number_of_outcomes:
+    value: '27'
+    status: mismatch
+    source: Tables 3A/4 (pp. 508, 512); Table 5 (p. 514); Table 6 (p. 515)
+    note: |-
+      27 is the number of service rows in Table 5 only: 5 objective indicators + 11 satisfaction ratings + 11 improvement-perception items = 27. It leaves out the paper's primary outcomes, the 15 political participation and empowerment indicators (Tables 3A and 4; "the 15 different outcome variables", p. 511). The outcomes cell does list those. Total = 15 + 27 = 42. For reproducibility, the regressions in Table 6 cover only 12 of the 27 service indicators.
+    proposed: 42 (15 political participation/empowerment indicators, Tables 3A–4; 27 service-delivery indicators, Table 5, of which 12 are in regressions, Table 6)
+  outcomes:
+    value: |-
+      Political participation / empowerment: formal participation, informal participation, political information, confidence/voice, and ratings of village institutions.
+
+      Public service delivery: objective infrastructure/service availability, satisfaction with services, and perceived service improvement over time.
+    status: confirmed
+    source: Table 3A (p. 508); Table 4 (p. 512); Table 5 (p. 514)
+    note: |-
+      The five participation groups match the Table 3A/4 panel headings: "Formal political participation", "Informal political participation", "Information on political issues", "Self-rated confidence on political involvement", "Rating of village institutions". The three service groups match the Table 5 panels: "Objective indicators", "Respondent's satisfaction with", "Respondent's perception of improvement over last 3 years".
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (15 participation indicators and 27 or 12 service indicators, each tested separately. The 15 are combined into a political participation index, but only as a regressor in Table 6, not as the outcome for the female-sarpanch effect)
+    source: pp. 511-515; Tables 4 and 6 (pp. 512, 515)
+    note: |-
+      The headline result is a count of separately tested indicators: "for 6 of the 15 indicators having a female sarpanch tends to improve political participation and empowerment" (baseline, p. 511). The introduction and conclusion say "7 of the 15". None of the 15 effects is adjusted for multiplicity. With 15 tests at the 10% level, about 1.5 false positives are expected by chance, and 4 of the 6 baseline hits are only significant at 10% (Table 4). The paper builds two "political participation indices (PPIs)", a normalized sum and a PCA index, "to avoid multi-collinearity issues" (p. 513). Those indices enter Table 6 only as controls. They are never regressed on the female-sarpanch dummy. The service regressions (12 outcomes) are likewise uncorrected.
+  results:
+    value: |-
+      “For the majority of indicators we do not find any statistically significant effect that having a female sarpanch leads to better or worse service delivery.” (pg. 513)
+
+      “...no differences in any of the indicators, except for the number of bus stops” (pg. 513; see Table 5)
+    status: mismatch
+    source: p. 513; Table 5 (p. 514); Table 4 (p. 512); p. 515
+    note: |-
+      Both quotes are verbatim from p. 513, but the cell has two problems. (1) It leaves out the paper's main finding, although the outcomes cell lists participation first. Abstract and p. 515: "having a female sarpanch has a positive effect on 7 of the 15 indicators of political participation and empowerment, with the remaining indicators showing no significant difference between villages with a male or a female sarpanch". The effect is driven entirely by SC/ST and poorer women (p. 513). (2) "number of bus stops" is the paper's wording, but Table 5 has no count of bus stops. The one significant row is satisfaction with the bus stop: female 0.63 vs male 0.85, p = 0 (Table 5, p. 514), so women in female-sarpanch villages are LESS satisfied. The regressions are not uniformly null either (Table 6). Female sarpanch has odds ratios of 0.011*** for ration shop, 0.653** for satisfaction with welfare programmes, 0.521** and 0.545** for perceived improvement in roads and ration shops, and 1.827** for employment programmes. The paper itself calls these "very mixed effects" (p. 513).
+    proposed: |-
+      “we find that having a female sarpanch has a positive effect on 7 of the 15 indicators of political participation and empowerment, with the remaining indicators showing no significant difference between villages with a male or a female sarpanch.” (pg. 515; Table 4) The effect is concentrated among SC/ST and poorer women (pg. 513).
+
+      “For the majority of indicators we do not find any statistically significant effect that having a female sarpanch leads to better or worse service delivery.” (pg. 513; Table 6 shows “very mixed effects”)
+
+      Only difference in means: lower satisfaction with bus stops in female-sarpanch villages (0.63 vs 0.85; Table 5)
+    previous: |-
+      “For the majority of indicators we do not find any statistically significant effect that having a female sarpanch leads to better or worse service delivery.” (pg. 513)
+
+      “...no differences in any of the indicators, except for the number of bus stops” (see Table 5)
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'number of bus stops” (see Table 5)' -> 'number of bus stops” (pg. 513; see Table 5)'

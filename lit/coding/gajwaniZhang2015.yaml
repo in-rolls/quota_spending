@@ -1,0 +1,449 @@
+key: gajwaniZhang2015
+versions:
+  - id: dp2008
+    file: gajwani_zhang_2008_ifpri_dp807.pdf
+    citation: "IFPRI Discussion Paper 00807, October 2008, 'Gender, Caste, and Public Goods Provision in Indian Village Governments'"
+    year: 2008
+    page_offset: "printed = pdf - 8 for the arabic-numbered body (pdf p. 9 = printed 1; pdf p. 34 = printed 26). Front matter is roman (abstract = p. vii = pdf p. 7). lit/version_diffs/gajwani.md says pdf - 7; the running folios say pdf - 8 (pdf p. 8 is blank)."
+  - id: wps2014
+    file: gajwani_zhang_2014_wb_wps6854.pdf
+    citation: "World Bank Policy Research Working Paper 6854, May 2014, 'Gender and Public Goods Provision in Tamil Nadu's Village Governments'"
+    year: 2014
+    page_offset: "printed = pdf - 2 (pdf p. 4 = printed 2). Abstract page (pdf p. 2) is unnumbered."
+  - id: wbr2015
+    file: gajwani_zhang_2015_wber.pdf
+    citation: "World Bank Economic Review 29(2): 234-261, 2015 (Advance Access 27 March 2014)"
+    year: 2015
+    page_offset: "printed = pdf + 233 (pdf p. 1 = printed 234)"
+meta:
+  year_first: 2008
+  year_published: 2015
+  setting: "Tamil Nadu: 144 GPs in 12 blocks (PUCs) of 3 districts (Coimbatore, Pudukottai, Vellore); IFPRI-TNAU survey; public goods measured for 1991 and 2005"
+  design: "DID (1991 vs 2005) comparing women-reserved and unreserved GPs; reservation assigned by rank of GP female-population share within block (rotational, not random). 2015 adds covariate DID with GP fixed effects and a fuzzy RD check in the online appendix."
+
+mechanism:
+  # ---- 2008 IFPRI DP: similar performance, explained by husbands' help ----
+  - version: dp2008
+    claim: "Women presidents perform like men despite knowing far less, because their husbands help them run the office (and steer them toward men's preferred goods)."
+    type: proxy_husband
+    status: asserted
+    direction: explains_null
+    quote: "However, using an argument similar to that of Basu and Foster (1998), we hypothesize that women in reserved GPs acquire ability from their husbands. Given women's low scores on the GP knowledge test, they may turn to the men in their households for help while in office."
+    page: "18"
+    note: "The headline mechanism of the 2008 version (also in the abstract, p. vii: 'hypothesize that this may be due to the influence of their male spouses'). Supported only by a descriptive share: '80 percent of the women in our sample told the survey interviewers that they were being influenced by their husbands while in office' (p. 18); no estimate links husband influence to provision, so coded asserted, not tested. Conclusion (p. 26) calls it anecdotal: female presidents '(iii) anecdotally indicate that they are influenced by their husbands'. Husbands vanish from the 2014/2015 versions entirely (see lit/version_diffs/gajwani.md)."
+  - version: dp2008
+    claim: "Women's low scores on a GP knowledge test would predict worse provision; since provision is similar, the low scores are read as evidence that someone else (husbands) is doing the work."
+    type: knowledge_capacity
+    status: tested
+    direction: explains_null
+    quote: "If a sitting president is truly active in the position, he/she should be able to answer more than half of the questions correctly. The very poor results of female presidents on this test at the very least indicate a lack of interest and/or activity while in office."
+    page: "18-19"
+    note: "Tested only descriptively: Table 5 (p. 13) shares scoring 9+ of 17 (36.4% of women vs 83% of men); no regression. Continuation p. 19: 'this again supports our hypothesis that the reserved-women presidents were helped or influences by men'. Same evidence is read the opposite way in 2014/2015 (low knowledge explains fewer goods)."
+  - version: dp2008
+    claim: "Women presidents have much less contact with block and district officials, which the authors read as further evidence that men are involved in women's presidencies."
+    type: contact_networks
+    status: tested
+    direction: explains_null
+    quote: "The significantly lower contact between reserved-female presidents and higher-level officials provides further support for the notion that men may very well be involved in women's presidencies. This would seem to explain how women and men perform similarly while in office, even though the women have much less contact with officials."
+    page: "19"
+    note: "Table 10 (p. 19): logit marginal effects of woman reservation on a high-contact dummy: BDO -0.225**/-0.380***, PUC -0.344***/-0.527***, DPC -0.122*/-0.188***. Here low contact is evidence for husbands; in 2014/2015 the same direction of gap explains fewer schools and roads."
+  - version: dp2008
+    claim: "The one negative result (fewer schools) reflects women's weaker preference for schools."
+    type: preferences
+    status: asserted
+    direction: explains_negative
+    quote: "One exception is in provision of schools, where we see significantly lower provision in women-reserved GPs. This, however, is consistent with the observation that women have a lower preference for schools compared to men."
+    page: "16"
+    note: "Rests on Table 6 top-3 coding (men cite schools +0.0889*, p. 14). The 2015 version calls the top-3 coding 'erroneous' (WBER fn 24, p. 250) and finds no significant preference gap for schools."
+  - version: dp2008
+    claim: "Alternatively, presidents of both sexes may simply provide to the average villager's preference, so provision would not differ by sex."
+    type: preferences
+    status: speculated
+    direction: explains_null
+    quote: "Alternatively (or in addition), it is possible that male and female presidents simply provide to the average preference in Tamil Nadu's villages, in which case we would not see very different provision between the sexes."
+    page: "18"
+    note: "Offered and then discounted in the next sentence: 'even if this is the case, we would still expect to see lower provision in women-reserved GPs, given the lower test scores'."
+
+  # ---- 2014 WPS: fewer schools/roads, explained by knowledge and contact ----
+  - version: wps2014
+    claim: "Women presidents know much less about the GP system (lower ability or disengagement), which explains why women-reserved GPs provide fewer public goods."
+    type: knowledge_capacity
+    status: tested
+    direction: explains_negative
+    quote: "Given women's apparent lack of knowledge regarding the GP coupled with their limited contact with block- and district-level officials, it is not surprising that we find women presidents in reserved GPs providing fewer public goods compared to male presidents. We can identify two pathways through which the knowledge test helps to explain women's poorer performance."
+    page: "21"
+    note: "Tested: knowledge-test regression on gender with controls (Table 5, col 6 gender -3.199***), and test score enters the covariate DID (Table 8), where it is 'positively correlated' with provision but mostly n.s. (p. 20). The paper does not run a formal mediation analysis. Text identical to WBER p. 256."
+  - version: wps2014
+    claim: "Women presidents have much less contact with higher officials, and schools and roads need that contact, so women-led GPs built fewer of them."
+    type: contact_networks
+    status: tested
+    direction: explains_negative
+    quote: "Thus, women GP presidents' significantly lower contact with higher-level officials—particularly at the Union level—provides another reason to suspect that they may have difficulty providing public goods for their constituency."
+    page: "15"
+    note: "Tested: Table 6 mean contact gaps (all ***) and a Contact-BDO dummy in the covariate DID. Discussion p. 21-22: school creation 'requires substantial coordination with higher-level officials. Thus, this finding is consistent with reserved women presidents' clear lack of engagement with higher-level officials.' Text identical to WBER pp. 249, 256."
+  - version: wps2014
+    claim: "Men's greater experience in office does not explain the gender gaps in knowledge and contact."
+    type: experience_learning
+    status: tested
+    direction: explains_negative
+    quote: "However, we can confidently say that differences in experience are not driving the knowledge and contact differences between men and women presidents."
+    page: "16"
+    note: "Tested and REJECTED as the explanation of the gender gap (direction field cannot express 'ruled out'). Only 4 of 46 women and 12 of 98 men are incumbents; dropping them leaves the gaps unchanged and the DID results 'stronger' (Table S1.5, p. 45). The paper does find experienced presidents score higher and have more PUC contact."
+  - version: wps2014
+    claim: "Tamil Nadu's weak panchayat history, unlike West Bengal's, explains why women leaders here do worse than in the West Bengal studies."
+    type: discretion_institutions
+    status: asserted
+    direction: explains_negative
+    quote: "Thus, the performance of panchayats and women in panchayats certainly varies by state given their diverse histories and experiences with panchayat institutions."
+    page: "23"
+    note: "Argued from state histories (Mathew 2000a; Ghosh 2000; Aram and Palanithurai 2000), not estimated. Used to reconcile the result with Chattopadhyay and Duflo. Identical to WBER p. 257."
+
+  # ---- 2015 WBER: same as WPS, journal pagination ----
+  - version: wbr2015
+    claim: "Women presidents know much less about the GP system (lower ability or disengagement), which explains why women-reserved GPs provide fewer public goods."
+    type: knowledge_capacity
+    status: tested
+    direction: explains_negative
+    quote: "Given women's apparent lack of knowledge regarding the GP coupled with their limited contact with block- and district-level officials, it is not surprising that we find women presidents in reserved GPs providing fewer public goods compared to male presidents. We can identify two pathways through which the knowledge test helps to explain women's poorer performance."
+    page: "256"
+    note: "Table 5 (p. 248): gender coefficient on 19-question test score -3.457*** to -3.199*** (WBER text layer prints minus as '2'). Test score included as a covariate in Table 8 (pp. 253-254); positive but mostly n.s., attributed to collinearity with reservation (r = 0.61; p. 255). Same evidence that in 2008 was read as support for husbands' help."
+  - version: wbr2015
+    claim: "Women presidents have much less contact with higher officials, and schools and roads need that contact, so women-led GPs built fewer of them."
+    type: contact_networks
+    status: tested
+    direction: explains_negative
+    quote: "The creation of a new school requires substantial coordination with higher-level officials. Thus, this finding is consistent with reserved women presidents' clear lack of engagement with higher-level officials. A similar story holds for roads, where our results show that the distance to the nearest concrete road is farther in women-reserved GPs."
+    page: "256"
+    note: "Table 6 (p. 249): unreserved minus reserved contact on 0-3 scale: BDO 0.495*** (0.072), PUC 1.497*** (0.129), DPC 0.915*** (0.112). Contact-BDO dummy in Table 8; 'higher test scores and more frequent contact are positively correlated with public goods provision' (p. 255). Abstract (p. 234) frames schools and roads as goods 'that require relatively more contact and coordination with higher-level officials'. The link is a correlation of mechanisms with outcomes, not a mediation estimate; and Table 8 conditions on these possible mediators."
+  - version: wbr2015
+    claim: "Men's greater experience in office does not explain the gender gaps in knowledge and contact."
+    type: experience_learning
+    status: tested
+    direction: explains_negative
+    quote: "However, we can confidently say that differences in experience are not driving the knowledge and contact differences between men and women presidents."
+    page: "249"
+    note: "Tested and REJECTED as the explanation (direction field cannot express 'ruled out'). Dropping the 16 incumbents makes results 'stronger' (p. 255; Table S1.5 online)."
+  - version: wbr2015
+    claim: "Tamil Nadu's weak panchayat history, unlike West Bengal's, explains why women leaders here do worse than in the West Bengal studies."
+    type: discretion_institutions
+    status: asserted
+    direction: explains_negative
+    quote: "Thus, the performance of panchayats and women in panchayats certainly varies by state given their diverse histories and experiences with panchayat institutions."
+    page: "257"
+    note: "Not estimated (one state). New relative to 2008, which instead framed Tamil Nadu as 'a leader in India in terms of women's empowerment' (dp2008 p. 18)."
+
+normative:
+  - version: dp2008
+    claim: "Women providing no fewer public goods supports India's reservation policy; more timely training would help women presidents further."
+    stance: pro_quota
+    quote: "The fact that female presidents are not providing fewer public goods while in office would seem to support India's reservation policies, which encourage the active participation of women in governance. Our results, however, do suggest some policy changes."
+    page: "20"
+    note: "Training is offered as an add-on, not a condition: 'Increased or more targeted training for female presidents may help them improve their performance of official duties' (p. 20). Conclusion p. 26: 'The strong evidence that neither women nor SC presidents provide fewer public goods than their counterparts is encouraging.'"
+  - version: wps2014
+    claim: "The reservation system is falling short on knowledge and connections; reservations need better implementation and training to realize their potential."
+    stance: conditional
+    quote: "These findings contribute to the literature on women's reservations in India by highlighting that the GP reservation system may be falling short in providing knowledge of the GP to women who are new to political office and in providing a pathway for connections between women GP presidents and higher-level officials."
+    page: "24"
+    note: "Same as WBER. Closing line (p. 25): 'the implementation of women's reservations in India needs further improvement to realize the potential of women's representation in government.'"
+  - version: wbr2015
+    claim: "The reservation system is falling short on knowledge and connections; reservations need better implementation and training to realize their potential."
+    stance: conditional
+    quote: "We do, however, interpret our findings as representative of women's reservations in at least some parts of Tamil Nadu and as evidence that the implementation of women's reservations in India needs further improvement to realize the potential of women's representation in government."
+    page: "258"
+    note: "Shift from 2008: from 'would seem to support India's reservation policies' to 'falling short' and 'needs further improvement'. Neither version argues against quotas. Training recommendation on p. 258: 'Increased or more targeted training for female presidents may help to improve their knowledge of the panchayat system'."
+
+measurement:
+  preferences:
+    method: hh_survey_rank
+    unit_of_gap: individual
+    gap_assumption: constant
+    tested_gap: "yes"
+    quote: "We estimate preferences using survey questions posed to 270 citizens (139 men and 131 women) randomly sampled in 27 villages over the three districts surveyed in Tamil Nadu. One question asks citizens to list up to five infrastructure items needed in their village."
+    page: "250 (wbr2015)"
+    note: "Stated needs, not rankings strictly: share of each sex naming an item among up to five. 2008 counted only the first three responses (dp2008 p. 13, fn 17) and found significant gaps (roads, schools favour men; drainage, buses favour women; Table 6 p. 14). 2014/2015 count all five; chi-square cannot reject equal distributions (all responses Pr = 0.614; top 11 Pr = 0.841) and per-item t-tests find only veterinary services significant (WPS Tables S1.3-S1.4, pp. 43-44; WBER fn 24 calls the top-3 coding 'erroneous'). One pooled gap across the 27 villages; respondents treated as independent."
+  outcomes:
+    source: gp_staff_or_records
+    units: "GP-level counts/levels of public goods in 1991 and 2005 (schools, km to concrete road, borewells, common taps, public toilets, HH toilet and water connections, operational streetlights, bus trips, child immunization composite)"
+    n_units: 144
+    assignment_unit: gp
+    quote: "We develop a detailed village-level dataset for two time periods using village-level government records instead of recall data on public goods, as in some previous studies. This allows for a more precise difference-in-differences (DID) analysis."
+    page: "237 (wbr2015)"
+    note: "Collected through a 'secondary data schedule used to gather current and historic data on GP characteristics and levels of public goods' (p. 242). Toilets and bus data are 1995 and 2004 (fn 18, p. 245). The outcome set changed between versions: 2008 used 9 measures incl. composites and distance to borewell (Table 7, p. 15); 2015 uses 10 (App. A2, p. 260). Women-reserved count changed from 33 (2008) to 47 (2015) after a 'data entry error' (fn 20, p. 246)."
+
+estimates:
+  # ---- 2015 WBER, Table 7 basic DID (preferred: one per family) ----
+  - version: wbr2015
+    estimand: provision
+    outcome: "number of schools (1991-2005 change)"
+    outcome_family: schools
+    diff: -0.693
+    se: 0.187
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: 3.622
+    control_sd: 2.375
+    n_units: 144
+    n_obs: null
+    adjusted: false
+    table: "Table 7"
+    page: "251"
+    preferred: true
+    note: "Text layer prints '20.693***'; minus sign confirmed against WPS. control_mean/sd = unreserved GPs' 2005 level (1991 level 2.582). N not printed for Table 7; 144 GPs x 2 years, 46 women-led. Robust SEs."
+  - version: wbr2015
+    estimand: provision
+    outcome: "distance (km) to nearest concrete road (+ = worse)"
+    outcome_family: roads
+    diff: 0.078
+    se: 0.044
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: 0.253
+    control_sd: 0.401
+    n_units: 144
+    n_obs: null
+    adjusted: false
+    table: "Table 7"
+    page: "251"
+    preferred: true
+    note: "Positive = road farther away in women-reserved GPs (worse)."
+  - version: wbr2015
+    estimand: provision
+    outcome: "HH drinking water connections"
+    outcome_family: drinking_water
+    diff: -50.379
+    se: 20.667
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 142.745
+    control_sd: 167.372
+    n_units: 144
+    n_obs: null
+    adjusted: false
+    table: "Table 7"
+    page: "251"
+    preferred: true
+    note: "Chosen for drinking_water because it is the significant one; other water measures n.s.: common taps +15.448 [9.975], borewells +0.139 [0.599]. With covariates (Table 8) -45.331 (29.094) n.s."
+  - version: wbr2015
+    estimand: provision
+    outcome: "HH toilet connections"
+    outcome_family: sanitation
+    diff: -48.621
+    se: 28.273
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: 146.296
+    control_sd: 235.716
+    n_units: 144
+    n_obs: null
+    adjusted: false
+    table: "Table 7"
+    page: "251"
+    preferred: true
+    note: "Public toilets -0.244 [0.281] n.s. Toilet data are 1995 and 2004. With covariates -20.315 (32.610) n.s."
+  - version: wbr2015
+    estimand: provision
+    outcome: "operational streetlights"
+    outcome_family: public_works_other
+    diff: -13.316
+    se: 5.804
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: 107.367
+    control_sd: 75.970
+    n_units: 144
+    n_obs: null
+    adjusted: false
+    table: "Table 7"
+    page: "251"
+    preferred: true
+    note: "Could be coded electricity; coded public_works_other since it is GP street infrastructure. With covariates -4.291 (7.982) n.s."
+  - version: wbr2015
+    estimand: provision
+    outcome: "bus and minibus trips"
+    outcome_family: transport
+    diff: 0.291
+    se: 1.452
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 13.439
+    control_sd: 14.693
+    n_units: 144
+    n_obs: null
+    adjusted: false
+    table: "Table 7"
+    page: "251"
+    preferred: true
+    note: "Bus data 1995 and 2004."
+  - version: wbr2015
+    estimand: provision
+    outcome: "child immunization composite (DPT, BCG, OPV, measles, TT)"
+    outcome_family: health
+    diff: 0.014
+    se: 0.110
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: -0.022
+    control_sd: 1.065
+    n_units: 144
+    n_obs: null
+    adjusted: false
+    table: "Table 7"
+    page: "251"
+    preferred: true
+    note: "Authors say vaccinations are 'completely out of the control of the GP president' (p. 256), i.e. a placebo-like outcome."
+  # ---- 2015 WBER, Table 8 covariate DID (headline schools/roads) ----
+  - version: wbr2015
+    estimand: provision
+    outcome: "number of schools, DID with covariates and GP FE"
+    outcome_family: schools
+    diff: -0.840
+    se: 0.252
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: 143
+    n_obs: 286
+    adjusted: true
+    table: "Table 8"
+    page: "253"
+    preferred: false
+    note: "SEs clustered by village. Controls include test score and Contact-BDO, which are plausibly mediators of gender. The paper's 'strong evidence' claim rests on schools and roads being significant in both Tables 7 and 8; Table 7 marked preferred for one-per-family consistency."
+  - version: wbr2015
+    estimand: provision
+    outcome: "distance (km) to nearest concrete road, DID with covariates and GP FE (+ = worse)"
+    outcome_family: roads
+    diff: 0.106
+    se: 0.062
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: 143
+    n_obs: 286
+    adjusted: true
+    table: "Table 8"
+    page: "253"
+    preferred: false
+    note: "As above."
+  # ---- 2008 DP, Table 8 basic DID (for the version comparison) ----
+  - version: dp2008
+    estimand: provision
+    outcome: "number of schools (1991-2005 change)"
+    outcome_family: schools
+    diff: -0.53
+    se: 0.28
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: 3.46
+    control_sd: 2.30
+    n_units: 144
+    n_obs: 288
+    adjusted: false
+    table: "Table 8"
+    page: "15"
+    preferred: false
+    note: "Superseded version: 33 women-reserved GPs (later recoded to 47). Covariate DID (Table 9, p. 17) -0.489 (0.46) n.s. 2008 text: women 'perform very similarly to men' (p. 16)."
+  - version: dp2008
+    estimand: provision
+    outcome: "distance to nearest concrete road (+ = worse)"
+    outcome_family: roads
+    diff: 0.02
+    se: 0.05
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.24
+    control_sd: 0.30
+    n_units: 143
+    n_obs: 286
+    adjusted: false
+    table: "Table 8"
+    page: "15"
+    preferred: false
+    note: "Superseded version; 143 GPs (one missing). Covariate DID 0.0503 (0.090) n.s."
+  # ---- preference gaps ----
+  - version: wps2014
+    estimand: pref_gap
+    outcome: "share naming drinking water among up to five needed infrastructure items"
+    outcome_family: drinking_water
+    diff: 0.087
+    se: 0.061
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.554
+    control_sd: null
+    n_units: 27
+    n_obs: 270
+    adjusted: false
+    table: "Table S1.4"
+    page: "44"
+    preferred: true
+    note: "Table prints Difference = Men minus Women (-0.087); sign flipped to women minus men here. Men 0.554, women 0.641. control_mean = men's share. WBER puts this table in the online appendix, so it is cited from the WPS."
+  - version: wps2014
+    estimand: pref_gap
+    outcome: "share naming roads"
+    outcome_family: roads
+    diff: -0.017
+    se: 0.061
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.604
+    control_sd: null
+    n_units: 27
+    n_obs: 270
+    adjusted: false
+    table: "Table S1.4"
+    page: "44"
+    preferred: true
+    note: "Printed men minus women 0.017; women 0.588."
+  - version: wps2014
+    estimand: pref_gap
+    outcome: "share naming school/education"
+    outcome_family: schools
+    diff: -0.084
+    se: 0.057
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: 0.367
+    control_sd: null
+    n_units: 27
+    n_obs: 270
+    adjusted: false
+    table: "Table S1.4"
+    page: "44"
+    preferred: true
+    note: "Printed men minus women 0.084; women 0.282."
+  - version: dp2008
+    estimand: pref_gap
+    outcome: "share naming roads among first three responses"
+    outcome_family: roads
+    diff: -0.1141
+    se: null
+    se_source: stars_only
+    p_or_stars: "** (p = 0.046)"
+    control_mean: 0.3813
+    control_sd: null
+    n_units: 27
+    n_obs: 270
+    adjusted: false
+    table: "Table 6"
+    page: "14"
+    preferred: false
+    note: "Superseded top-3 coding (called 'erroneous' in WBER fn 24). Printed Difference = men minus women (+0.1141); flipped here. p-value printed (0.046), no SE."
+  - version: dp2008
+    estimand: pref_gap
+    outcome: "share naming school/education among first three responses"
+    outcome_family: schools
+    diff: -0.0889
+    se: null
+    se_source: stars_only
+    p_or_stars: "* (p = 0.093)"
+    control_mean: 0.2950
+    control_sd: null
+    n_units: 27
+    n_obs: 270
+    adjusted: false
+    table: "Table 6"
+    page: "14"
+    preferred: false
+    note: "Superseded top-3 coding. Printed men minus women +0.0889; flipped. This is the gap 2008 used to explain the school shortfall."

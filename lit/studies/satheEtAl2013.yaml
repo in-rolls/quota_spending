@@ -1,0 +1,92 @@
+key: satheEtAl2013
+label: Sathe et al. (2013)
+pdf: sathe_klasen_priebe_biniwale_2013_epw.pdf
+pdf_version: Economic and Political Weekly 48(11) 2013, pp. 50-57 (JSTOR copy; printed page = pdf page + 48)
+notes: row is empty in the source table
+audit_notes: |-
+  Label and version. Page cites now refer to the published article: Economic and Political Weekly 48(11), March 16, 2013, pp. 50-57, "Can the Female Sarpanch Deliver? Evidence from Maharashtra" (JSTOR copy; pdf p. 1 is the JSTOR cover, so printed page = pdf page + 48, checked against the running heads on pdf pp. 2-8). The audit was first done on the Courant Research Centre (CRC-PEG, Göttingen) Discussion Paper No. 138 (April 2013), whose p. 2 says "A version of this article has appeared in Economic and Political Weekly Vol 48(11): 50-57 (2013)". The EPW text is a lightly copy-edited version of the discussion paper: same sample, same Tables 1-6 with the same numbers, same appendices (moved to p. 57). Wording differs in places (e.g., "3 to three and a half years" became "three to three-and-a-half years"), so quotes below use the EPW wording. In EPW, Tables 1-6 sit in the text (pp. 52-55), not in an appendix.
+
+  Same data as priebe2017. Both papers use the Oct-Nov 2008 Sangli survey: 32 villages, 640 women, 32 sarpanches. Listing both in Table 2 double-counts one sample unless a note says so.
+
+  Treatment is female sarpanch versus male sarpanch. The paper does not say how many of the female-sarpanch seats were reserved (Priebe fn. 6 says 15 of 16). Male-sarpanch villages were chosen by "geographical closeness" to each female-sarpanch village and an open-category sarpanch (p. 51). That makes this a matched comparison, not a random one.
+
+  Weaknesses a referee would note. The comparisons are univariate Z-tests plus an OLS with one-tailed significance (Table 6 note, p. 55: "one-tailed test"). Standard errors are not clustered, although treatment varies at the village level (32 clusters). The 2005-versus-2007 election split confounds female-sarpanch tenure with village-level election timing, and the 2007 split has 5 villages per cell.
+
+  The conclusion contradicts the paper's own Table 5. pp. 56-57 say participation of women is higher in female-sarpanch villages "for elections held both one year back and three-and-a-half years back". Table 5 row 3 (2007 elections, p. 54) shows the reverse: female 26.99 vs male 30.72, "Significant". The text on p. 55 agrees with the table ("if the year of election is 2007, then it is the male sarpanch villages that have a significantly higher iodp"). The published version did not fix this.
+
+  Tables 1-3 (pp. 52-53) report "Sample size 30 30", which is inconsistent with 16 + 16 villages (and with 320 + 320 respondents in Table 3). Table 5 row 1 (p. 54) gives N = 220 for the female group, where the text implies 320. Both errors are also in the published version. The text on p. 54 gives the 2005 female IOSA mean as 49.6; Table 4 row 2 gives 49.46.
+summary:
+  sample:
+    value: ''
+    status: mismatch
+    source: pp. 51-52
+    note: |-
+      Row is empty in the source table. From p. 51: "We conducted a survey in 32 villages of Sangli district in western Maharashtra in October-November 2008". Sixteen female-sarpanch villages were drawn with probability proportional to size across 10 talukas, then at random from the zilla parishad list. "Then we selected one male sarpanch village for every female sarpanch village" by geographic closeness (p. 51). Within each village, 10 BPL and 10 APL households were sampled at random, giving "640 women respondents (32 villages × 20 women)" (p. 52). 22 villages had 2005 elections and 10 had 2007 elections (p. 51). Same sample as the discussion paper.
+    proposed: 32 GPs (16 female-sarpanch, 16 matched male-sarpanch) from 1 district; 640 women (20 per village, 10 BPL + 10 APL)
+  location:
+    value: ''
+    status: mismatch
+    source: p. 51
+    note: |-
+      Row is empty in the source table. Sangli district, Maharashtra (p. 51).
+    proposed: Maharashtra
+  years:
+    value: ''
+    status: mismatch
+    source: p. 51
+    note: |-
+      Row is empty in the source table. "in October-November 2008" (p. 51; the discussion paper has "in Oct.-Nov. 2008"). This is a single cross-section. Sarpanches were elected in 2005 or 2007.
+    proposed: '2008'
+  kind_of_data_for_outcomes:
+    value: ''
+    status: mismatch
+    source: pp. 50, 52
+    note: |-
+      Row is empty in the source table. The outcomes are women's own reports of service availability, quality and satisfaction, plus participation, scored into indices: "we have conducted a survey of the intended beneficiaries and asked them what kind of services they perceive they have access to" (p. 50). A sarpanch questionnaire gives the sarpanches' profiles (p. 52).
+    proposed: Survey of women (perceived service availability and quality) + sarpanch survey
+  number_of_outcomes:
+    value: ''
+    status: mismatch
+    source: p. 52; Appendices A-B (p. 57); Tables 4-6 (pp. 54-55)
+    note: |-
+      Row is empty in the source table. How counted: the paper tests two outcome indices, IOSA (Index of Services Availability) and IODP (Index of Democratic Participation). Each index is a respondent's share of the maximum possible score, and each is compared in Tables 4-5 and regressed in Table 6. IOSA is built from 20 questions (Appendix A) covering 8 service areas (p. 52). IODP is built from 18 questions (Appendix B, which is mislabelled "Questions Asked for IOSA" in the published version too). If the author prefers to count items, the answer is 38. Same counts as the discussion paper.
+    proposed: 2 (indices built from 20 + 18 survey items)
+  outcomes:
+    value: ''
+    status: mismatch
+    source: p. 52; Appendices A-B (p. 57)
+    note: |-
+      Row is empty in the source table. IOSA covers "(1) drinking water, (2) toilets, (3) gutters, (4) schools, (5) ration shops, (6) self-help groups, (7) implementation of welfare schemes with special reference to Nirmal Gram Yojana (i e, cleanliness schemes), Janani Suraksha (i e, maternal health scheme), (8) male alcoholism" (p. 52; EPW wording, the discussion paper numbers them "1. ... 8. Male Alcoholism"). Roads, electricity and health services are deliberately excluded (p. 52; note 2, p. 57). IODP covers voting, gram sabha attendance, knowledge of GP working, meetings with the gram sevak, confidence raising complaints, political and social activity, awareness of rights, and unity among women (p. 52; Appendix B, p. 57).
+    proposed: |-
+      Index of Services Availability (drinking water, toilets, gutters, schools, ration shops, SHGs, welfare schemes (Nirmal Gram Yojana, Janani Suraksha), male alcoholism)
+
+      Index of Democratic Participation (voting, gram sabha attendance and voice, knowledge of GP, contact with gram sevak, political activity, rights awareness, unity among women)
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    source: p. 52; Tables 4-6 (pp. 54-55)
+    note: |-
+      The only protection against multiplicity is aggregation. Items are coded 0-1, summed with "equal weight", and expressed as a percentage of the maximum score (p. 52; the discussion paper says "equal weights"), which produces IOSA from 20 items and IODP from 18 items. Individual items are never tested one by one. The two indices are then tested repeatedly: 6 Z-test rows each in Tables 4-5 (overall, by election year, by gender within year; p. 54), and 5 OLS columns in Table 6 (p. 55). There is no correction for these many comparisons, and Table 6 stars use one-tailed thresholds ("* refers to 90%, ** 95% and ***99% significance (one-tailed test)", p. 55).
+    proposed: summary index (IOSA and IODP are equal-weighted indices of 20 and 18 items. There is no correction across the 12 Z-test comparisons and 5 regressions, and Table 6 uses one-tailed tests)
+  results:
+    value: ''
+    status: mismatch
+    source: p. 56; pp. 54-55; Tables 4-6 (pp. 54-55)
+    note: |-
+      Row is empty in the source table. IOSA overall: female 46.70 vs male 46.78, not significant (Table 4 row 1). For 2005 elections: 49.46 vs 46.73, significant. For 2007 elections: 40.64 vs 46.89, significant in the opposite direction. IODP overall: 39.81 vs 36.78, significant (Table 5). In Table 6 the Gen coefficient on IOSA is -0.478 (not significant). With the interaction, Gen is -4.525*** and Gen*Elect05 is +5.903***. Gen on IODP is 2.601***. All numbers identical in the published version. Do not use the conclusion's claim that participation is higher "for elections held both one year back and three-and-a-half years back" (pp. 56-57), because Table 5 row 3 contradicts it (see audit_notes).
+
+      2026-10-24, switched to published version (EPW 2013): the two quotes in `proposed` now use the EPW wording and pages. Quote 1 was DP p. 12 ("..., if the election has been held 3 to three and a half years before the survey."), now p. 56 (no comma; "three to three-and-a-half years"). Quote 2 was DP p. 9 ("the female democratic participation ..."), now pp. 54-55 (EPW drops the leading "the").
+    proposed: |-
+      “we find that gender of the sarpanch is not a significant causal factor in explaining the availability of public services on average. But we find that the availability of basic services is significantly higher in female sarpanch villages as compared to the male sarpanch villages if the election has been held three to three-and-a-half years before the survey.” (pg. 56; Tables 4 and 6)
+
+      Where the female sarpanch was elected in 2007 (about one year before the survey), service availability is significantly lower than in male-sarpanch villages (40.64 vs 46.89; Table 4).
+
+      “female democratic participation is significantly higher in the female sarpanch villages as compared to the male sarpanch villages” (pgs. 54-55; Table 5)

@@ -1,0 +1,169 @@
+key: brownMitraSingh2025
+label: Brown et al. (2025)
+pdf: brown_mitra_singh_2025_wp.pdf
+pdf_version: working paper Sep 2025
+notes: null
+summary:
+  sample:
+    value: 191 villages. The number of GPs is unspecified.
+    status: confirmed
+    source: p. 7 (Section 3.3), pdf p. 8
+    note: |-
+      "the 2015/16 round of the Rural Economic and Development Survey (REDS), which covers 191 villages across
+      India" (p. 7). Analysis sample: 284,898 working-age individuals in 92,322 households (p. 7). About 15% of
+      villages lack groundwater readings (p. 8), so estimation samples are smaller. GPs are not counted. The
+      number of reserved villages, which sets power, is not reported.
+  location:
+    value: 13 states
+    status: confirmed
+    source: p. 7 fn 7 (pdf p. 8)
+    note: |-
+      "Thirteen states are covered in this survey" (fn 7). States are not named. Section 4 (groundwater vs
+      income) uses all-India CMIE CPHS data, but that part involves no reservation.
+  years:
+    value: 2015-2016
+    status: confirmed
+    source: p. 7 (Section 3.3); Table 5.1 notes
+    note: |-
+      REDS/SEPRI 2015-16 is a single cross-section; reservation is status "in the current electoral period".
+      Groundwater scarcity is measured over 2013-2014. CPHS 2015-2023 is used only in Section 4.
+  kind_of_data_for_outcomes:
+    value: REDS survey
+    status: confirmed
+    source: p. 7 and fn 7; table notes ("Data from SEPRI 2015-16 and CGWB database")
+    note: |-
+      REDS 2015-16 household and village modules (the round is also called SEPRI), merged with CGWB well
+      depths. Panchayat finance and employment and firm employment (Table 5.2) come from the REDS village
+      module.
+  number_of_outcomes:
+    value: '47'
+    status: confirmed
+    source: Tables 5.1-5.7 (pdf p. 14-22; printed p. 13-21)
+    note: |-
+      Counting rule: regression columns reporting the GW>8m x Reserved interaction in Section 5 main tables.
+      Table 5.1 = 6 (agri, non-agri for all, female, male); 5.2 = 8 (revenue, expenditure, Panchayat
+      employment in local infrastructure and in local facilities and schemes, firm employment in trading,
+      construction, manufacturing, other services); 5.3 = 4 (non-NREGS, NREGS for female, male); 5.4 = 8
+      (4 outcomes x female, male); 5.5 = 4; 5.6 = 10; 5.7 = 7. Total 6+8+4+8+4+10+7 = 47. Excludes Section 4
+      CPHS tables 4.1-4.2 (10 columns, no reservation) and appendix tables B and C. Distinct outcome concepts
+      are fewer (female non-NREGS days in 5.3 is the sum of 5.1 cols 3-4, for example). This is a column
+      count, while Chaturvedi et al.'s count is of distinct outcomes; the table should use one rule.
+  outcomes:
+    value: |-
+      Employment: agricultural days worked; non-agricultural days worked; total non-NREGS days worked; NREGS days worked. These are estimated separately for women and men (agricultural and non-agricultural days also for all adults).
+      NREGS access / implementation: registered on a job card; received unemployment allowance; received enough work; average wage rate. Estimated separately for women and men.
+      Local employment structure: Panchayat revenue and expenditure; Panchayat employment in local infrastructure and local facilities/schemes; private employment in trading, construction/repair, manufacturing/production, and other services.
+      Household welfare: total household income; per-capita income; total consumption; per-capita consumption.
+      Consumption composition: total food expenditure; cereals/pulses; milk/meat/eggs; vegetables/fruits; alcohol/tobacco; total non-food expenditure; jewelry/ornaments; clothing/footwear; education expenditure; medical expenditure.
+      Child education: enrolled; attendance; government school; private school; school expenditure for all children, ages 5–10, and ages 11–16.
+    status: mismatch
+    comment: |-
+      2026-10-23, author decision: applied only the "local taxes" fix. Table 5.2 (pdf p. 15) has Panchayat
+      employment in local infrastructure and local facilities & schemes only; "Local Taxes" belongs to the
+      Public Finance expenditure column. Previous wording: "Panchayat employment in local taxes, local
+      infrastructure, and local facilities/schemes". The other points in the note were not applied.
+      2026-10-23, author approved presentation fix (Block D): 'These are estimated separately for all adults, women, and men.' -> 'These are estimated separately for women and men (agricultural and non-agricultural days also for all adults).'; 'trading/repair, construction,' -> 'trading, construction/repair,'
+    source: Tables 5.1-5.7; Table 5.2 (pdf p. 15)
+    note: |-
+      Three errors against the tables. (1) Employment: total non-NREGS and NREGS days (Table 5.3) are
+      estimated for women and men only, not "all adults"; only agri and non-agri days (Table 5.1) include an
+      All column. (2) Table 5.2: there is no Panchayat employment in "local taxes". "Local Taxes" is part of
+      the column-2 header "Expenditure Local Taxes" under Public Finance; Panchayat employment has only two
+      columns, "Local Infrastructure" and "Local Facilities & Schemes". The cell also omits Panchayat revenue
+      and expenditure (cols 1-2). (3) Household welfare: Table 5.5 reports "Total Wage Income" (total and per
+      capita), not total household income.
+    proposed: |-
+      Employment: agricultural and non-agricultural days worked (all adults, women, men); non-NREGS and NREGS days worked (women, men).
+      NREGS access / implementation: registered on a job card; received unemployment allowance; received enough work; average wage rate. Estimated separately for women and men.
+      Panchayat finances and employment: total revenue; total expenditure; Panchayat employment in local infrastructure and in local facilities/schemes; private firm employment in trading, construction/repair, manufacturing/production, and other services.
+      Household welfare: total and per-capita household wage income; total and per-capita consumption.
+      Consumption composition: total food expenditure; cereals/pulses; milk/meat/eggs; vegetables/fruits; alcohol/tobacco; total non-food expenditure; jewelry/ornaments; clothing/footwear; education expenditure; medical expenditure.
+      Child education: enrolled; attendance; government school; private school; school expenditure for all children, ages 5-10, and ages 11-16.
+    previous: |-
+      Employment: agricultural days worked; non-agricultural days worked; total non-NREGS days worked; NREGS days worked. These are estimated separately for all adults, women, and men.
+      NREGS access / implementation: registered on a job card; received unemployment allowance; received enough work; average wage rate. Estimated separately for women and men.
+      Local employment structure: Panchayat revenue and expenditure; Panchayat employment in local infrastructure and local facilities/schemes; private employment in trading/repair, construction, manufacturing/production, and other services.
+      Household welfare: total household income; per-capita income; total consumption; per-capita consumption.
+      Consumption composition: total food expenditure; cereals/pulses; milk/meat/eggs; vegetables/fruits; alcohol/tobacco; total non-food expenditure; jewelry/ornaments; clothing/footwear; education expenditure; medical expenditure.
+      Child education: enrolled; attendance; government school; private school; school expenditure for all children, ages 5–10, and ages 11–16.
+  results:
+    value: |-
+      “...female-led villages generate significantly more non-NREGS employment for male workers outside agriculture” (p. 12).
+
+      “rather than being better at raising revenues or increasing local government spending, female leaders in areas with poor groundwater are more effective at generating local employment through a reallocation of economic activities towards more labour-intensive sectors” (p. 15; see also Table 5.2).
+
+      “...the statistically significant and positive coefficients of the interaction term between poor groundwater availability and female reservation … show that a female leader counteracts the negative impact of groundwater scarcity” (p. 18; see also Table 5.5).
+
+      The paper’s main positive results are about heterogeneity by groundwater scarcity, not about an overall average effect of women’s reservation. In the regression setup, the coefficient on Reserved captures the effect of reservation in the GW < 8 reference group, and in the main employment and household-welfare tables those coefficients are mostly small and statistically insignificant.
+    status: mismatch
+    source: printed p. 12, 15, 18 (pdf p. 13, 16, 19); Tables 5.1-5.7
+    note: |-
+      Quote 1 verbatim, printed p. 12 (pdf 13); Table 5.1 col 6 interaction 28.055*** (10.214). Quote 2
+      verbatim but on printed p. 15 (pdf p. 16), not p. 16. Quote 3 verbatim (ellipsis replaces "in the third
+      row"), printed p. 18; Table 5.5 interactions 0.269**, 0.279**, 0.092**, 0.092**. Paragraph 4 is right
+      for the employment tables (5.1, 5.3: Reserved insignificant except male non-NREGS -8.016*) and Table 5.5
+      (all insignificant), but it omits that in good-groundwater villages Reserved is significantly negative
+      elsewhere: job-card registration -0.036*** (women) and -0.032** (men), unemployment allowance -0.013**
+      (Table 5.4); education spending -0.121** (Table 5.6); child school spending -0.174***, -0.236***,
+      -0.142** (Table 5.7). Also, fn 13 (p. 18) says that with continuous groundwater depth (Table C.2) "only
+      the consumption coefficients remain significant at the 10% level".
+
+      Proposal restated as the full replacement text: the auditor's two edits applied to the current cell.
+      Auditor's original proposal: Same text with "(p. 16; see also Table 5.2)" changed to "(p. 15; see also Table 5.2)", and the last paragraph extended: "...those coefficients are mostly small and statistically insignificant, though in Tables 5.4, 5.6 and 5.7 reservation is significantly negative in good-groundwater villages (e.g. child school expenditure -0.17***). With a continuous groundwater measure, the income interaction loses significance and consumption is significant only at 10% (fn 13, p. 18)."
+    proposed: |-
+      “...female-led villages generate significantly more non-NREGS employment for male workers outside agriculture” (p. 12).
+
+      “rather than being better at raising revenues or increasing local government spending, female leaders in areas with poor groundwater are more effective at generating local employment through a reallocation of economic activities towards more labour-intensive sectors” (p. 15; see also Table 5.2).
+
+      “...the statistically significant and positive coefficients of the interaction term between poor groundwater availability and female reservation … show that a female leader counteracts the negative impact of groundwater scarcity” (p. 18; see also Table 5.5).
+
+      The paper’s main positive results are about heterogeneity by groundwater scarcity, not about an overall average effect of women’s reservation. In the regression setup, the coefficient on Reserved captures the effect of reservation in the GW < 8 reference group, and in the main employment and household-welfare tables those coefficients are mostly small and statistically insignificant, though in Tables 5.4, 5.6 and 5.7 reservation is significantly negative in good-groundwater villages (e.g. child school expenditure -0.17***). With a continuous groundwater measure, the income interaction loses significance and consumption is significant only at 10% (fn 13, p. 18).
+    previous: |-
+      “...female-led villages generate significantly more non-NREGS employment for male workers outside agriculture” (p. 12).
+
+      “rather than being better at raising revenues or increasing local government spending, female leaders in areas with poor groundwater are more effective at generating local employment through a reallocation of economic activities towards more labour-intensive sectors” (p. 16; see also Table 5.2).
+
+      “...the statistically significant and positive coefficients of the interaction term between poor groundwater availability and female reservation … show that a female leader counteracts the negative impact of groundwater scarcity” (p. 18; see also Table 5.5).
+
+      The paper’s main positive results are about heterogeneity by groundwater scarcity, not about an overall average effect of women’s reservation. In the regression setup, the coefficient on Reserved captures the effect of reservation in the GW < 8 reference group, and in the main employment and household-welfare tables those coefficients are mostly small and statistically insignificant.
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): '(p. 16; see also Table 5.2)' -> '(p. 15; see also Table 5.2)'
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (47 interaction coefficients across Tables 5.1-5.7, each tested separately; no index, joint test or adjusted p-values)
+    source: Tables 5.1-5.7 (pdf p. 14-22)
+    note: |-
+      No joint test, summary index, or correction anywhere in the paper (searched for Bonferroni, Romano-Wolf,
+      FDR, q-value, joint, Wald, index; no hits). Of the 47 GW>8m x Reserved coefficients, several headline
+      ones are significant only at 10% (Table 5.2 cols 4, 6-8; Table 5.6 alcohol/tobacco 0.243*; Table 5.7
+      attendance 0.607*), and the paper itself flags sensitivity: with continuous depth, "only the
+      consumption coefficients remain significant at the 10% level" (fn 13, p. 18) and enrollment and
+      attendance lose significance (p. 20-21). Within a 191-village cross-section, this is the first thing a
+      referee would ask about.
+audit_notes: |-
+  Label "Brown et al. 2025" matches the PDF (working paper dated September 2025; appears as an ACEGD 2025
+  conference paper; no published version found by web search). Format differs from the other labels, which
+  use "(Year)"; consider "Brown et al. (2025)".
+  PDF page numbering: printed page = pdf page - 1 (title page unnumbered); quote 2 is cited to the pdf page,
+  the other two to printed pages.
+  Referee points. (1) Only reservation is random. Groundwater depth is not, so the GW>8m x Reserved
+  interaction is a heterogeneity estimate whose interpretation depends on what else differs between deep-
+  and shallow-groundwater villages; the paper says its "identification strategy does not require that the
+  variation in groundwater levels within districts is random" (p. 12), which is true of the Reserved main
+  effect but not of the interaction as a causal moderator. (2) One cross-section of 191 villages, fewer with
+  groundwater data, clustered at village level; the number of reserved villages is never reported. (3) 47
+  interaction tests with no multiplicity adjustment. (4) Table 5.2 has visible errors: Panel B observation
+  counts (175, 352, 309, 485) are identical to Panel A's though the units differ (village-source vs village-
+  firm type); col 4 GW>8m and Reserved have the same SE (41.497); the title says "Using Average GW" while the
+  notes use the 8m cutoff; and the text refers to "columns (4) and (5)" for Panchayat employment, which are
+  cols 3-4. (5) This is not a study of what women want or of public-good provision: the outcomes are
+  household employment, income and spending.

@@ -1,0 +1,292 @@
+key: boseDas2018
+versions:
+  - id: draft2014
+    file: bose_das_2014_draft.pdf
+    citation: "Women's Reservation and India's National Rural Employment Guarantee Scheme, preliminary draft, 17 Sep 2014 (marked 'Please do not cite')"
+    year: 2014
+    page_offset: "printed = pdf (running page numbers 1-40 match pdf pages)"
+  - id: rde2018
+    file: bose_das_2018_rde.pdf
+    citation: "Political reservation for women and delivery of public works program, Review of Development Economics 22(1): 203-219, 2018"
+    year: 2018
+    page_offset: "printed = pdf + 202 (checked on page headers)"
+meta:
+  year_first: 2014
+  year_published: 2018
+  setting: "Uttar Pradesh, 9 districts (5 NREGA Phase I, 4 Phase II); 5,987 GPs (draft) / 5,850 GPs (RDE); NREGA MIS FY2010-11 to FY2013-14"
+  design: "random/rotational reservation (UP rotation rule), GP-year panel; draft: OLS with block FE and Census population levels; RDE: 'random effects' with block and year FE, population shares and caste-reservation controls; outcomes split by NREGA phase and by 2005 reservation status"
+
+mechanism:
+  - version: draft2014
+    claim: "Women leaders act as role models, so more village women take up NREGA work under them."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "These results suggest that female leadership provides a role model effect for women in reserved districts (Ghani et al. (2014), Iyer et al. (2012), and Beaman et al. (2012))."
+    page: "19"
+    note: "Type 'other' = role-model effect on women's labour supply (not in the type list). Tested by the effect on log women's person-days: Table 4A col 1, 0.061* (0.032). Also framed in Conceptual Framework (p. 12). This claim is reversed in rde2018."
+  - version: draft2014
+    claim: "Women leaders issue more job cards and record more demand because they are less corrupt, so elites capture fewer job cards."
+    type: corruption_rents
+    status: asserted
+    direction: explains_effect
+    quote: "This suggests that the concern about denying job cards under NREGA might be lower under female Panchayat leaders. Thus our findings are consistent with Duflo and Topalova (2004) where they find that in Panchayats with women leaders, there is lower level of corruption."
+    page: "18"
+    note: "No corruption measure is estimated; the inference is from the job-card and demand coefficients (Table 3A)."
+  - version: draft2014
+    claim: "Women leaders outperform men on irrigation and land-development works only after a prior reserved term, because they learn on the job."
+    type: experience_learning
+    status: tested
+    direction: explains_effect
+    quote: "These results would suggest that only with experience and learning over time are women leaders able to outperform their male counterparts."
+    page: "19"
+    note: "Tested by splitting on 2005 reservation: irrigation Phase I reserved-in-2005 0.140** (Table 5A col 12, N=515); land development Phase II reserved-in-2005 0.127** (Table 5B col 9). The same draft says 'no evidence of persistence effect' for employment (p. 21)."
+  - version: draft2014
+    claim: "Because women prefer different goods and parties cannot commit candidates, reserved GPs should do more water and sanitation works; the paper tests this and finds no effect."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "Policy preferences of women have been documented to be different in various studies (Duflo and Chattopadhyay (2004), Topalova and Duflo (2004)). Employing the model developed by Pande (2003), we work under the assumption that parties cannot commit their candidates to implement party policies"
+    page: "20"
+    note: "Hypothesis rejected in this version: sanitation 0.067 (0.179), water works -0.010 (0.019) in Phase I (Table 6A). Preferences are assumed from the cited literature, not measured."
+  - version: draft2014
+    claim: "The lack of any effect on types of works reflects poor NREGA implementation in UP, not leader gender."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "The lack of any significant results in the type of works undertaken in Uttar Pradesh is in line with the reports that have shown evidence that the implementation has suffered a lot in spite of the huge budget spent on NREGA in the state."
+    page: "21"
+    note: ""
+  - version: rde2018
+    claim: "No role-model effect: women leaders do not raise women's NREGA work days."
+    type: other
+    status: tested
+    direction: explains_null
+    quote: "Since we do not see any significant impact of women leaders in improving the average number of days worked by women, we find no evidence of a role-model effect by women leaders."
+    page: "216"
+    note: "REVERSAL of draft2014. Table 4 col 1 female person-days 0.048 (0.034). Internal inconsistency: p. 213 says women leaders are 'economically significant in increasing female labor force participation, especially under long-serving female panchayat leaders'."
+  - version: rde2018
+    claim: "Women leaders issue more job cards because they are outside the elite network that refuses job cards."
+    type: corruption_rents
+    status: speculated
+    direction: explains_effect
+    quote: "One possible explanation might be that female leaders are not politically experienced and, therefore, are not part of the elite nexus responsible for refusing job cards."
+    page: "211"
+    note: "Replaces the draft's 'lower corruption' explanation (draft p. 18). Could also be coded contact_networks; coded corruption_rents because the mechanism is elite capture of job cards."
+  - version: rde2018
+    claim: "Job-card and demand gains are concentrated in twice-reserved GPs because women leaders become more effective with experience."
+    type: experience_learning
+    status: tested
+    direction: explains_effect
+    quote: "Our results likely stem from either of the following reasons: with more experience, women leaders become more effective at delivering public goods (Deininger, Jin, Nagarajan, & Xia, 2015; Chattopadhya & Duflo, 2004); or with greater exposure to female leaders, the negative bias against women leaders declines"
+    page: "212"
+    note: "Tested by the twice-reserved split: job cards 0.058*** (0.021), demand 0.043** (0.021) in Table 4 col 3. The split cannot separate experience from voter exposure (next entry). The draft found the job-card effect in the opposite subsample (not-reserved-2005)."
+  - version: rde2018
+    claim: "With exposure, villagers learn that women leaders respond to requests, so more households ask for job cards and work."
+    type: voice_demand
+    status: speculated
+    direction: explains_effect
+    quote: "Over time, villagers may learn that women leaders are actually more responsive to requests for job cards and registering demand for work and that households are less likely to be turned away."
+    page: "212"
+    note: "Same twice-reserved evidence as the experience entry; not separately tested."
+  - version: rde2018
+    claim: "Women leaders choose works that benefit women, such as ponds for water, because women carry the water burden."
+    type: preferences
+    status: tested
+    direction: explains_effect
+    quote: "Since collecting and bringing water to the home is usually considered a woman's responsibility, closer access to water through ponds directly benefits the female village population. Thus, we find some evidence that women leaders target works geared toward improving the welfare of women."
+    page: "213"
+    note: "REVERSAL of draft2014 (null on water works). Evidence: water control and harvesting 0.069* (0.039), Phase I GPs reserved only in 2010 (Table 5 col 2); full sample 0.027 (0.028). Women's preferences are assumed (p. 204; n. 2 p. 216), not measured."
+  - version: rde2018
+    claim: "More recorded demand does not become more work days because elites capture NREGA implementation in UP."
+    type: corruption_rents
+    status: speculated
+    direction: explains_null
+    quote: "Thus, elite capture could be responsible for the lack of an increase in the average number of days worked by registered households."
+    page: "213"
+    note: ""
+  - version: rde2018
+    claim: "SC/ST-targeted works become less productive under women leaders because new women leaders disrupt capture-cum-clientelism ties to SC/ST groups."
+    type: contact_networks
+    status: asserted
+    direction: explains_negative
+    quote: "The presence of new women leaders dismantles the traditional “capture-cum-clientelism” mechanisms through which the local elites provide patronage to the vulnerable SC/ST groups."
+    page: "215"
+    note: "Attributed to Bardhan et al. (2010) and adopted by the authors. Rests on works-per-lakh ratios (Table 6: -41.790*** Phase I, -34.910* Phase II); counts of SC/ST works are null (Table 5; p. 216)."
+  - version: rde2018
+    claim: "Phase II effects are null because these districts are less backward, with outside jobs and better capacity to implement."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "Given that these districts were less backward than those in Phase I, households might have had employment opportunities outside of NREGA. Further, these districts might have better organizational capability to implement the program."
+    page: "212"
+    note: ""
+
+normative:
+  - version: draft2014
+    claim: null
+    stance: none_stated
+    quote: null
+    page: null
+    note: "The draft's policy conclusions are about UP's NREGA administration (more social audits, prioritise water works over rural connectivity, p. 21-22), not about the quota."
+  - version: rde2018
+    claim: "Reservation is welcome, but women leaders need leadership training and integration into local political networks."
+    stance: conditional
+    quote: "In spite of the reservation policy being a welcome approach to improving participation by disadvantaged groups, there are concerns about women leaders being unprepared to execute their tasks once they are elected. Given these concerns, there is a greater need for leadership training and familiarizing women leaders with the workings of local governments."
+    page: "216"
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: constant
+    tested_gap: not_applicable
+    quote: "This allows us to examine the types of works undertaken by female leaders to analyze whether the works reflect the preferences of the median female population."
+    page: "204"
+    note: "rde2018. No preference data. Women's preference for water is assumed everywhere from Chattopadhyay & Duflo (2004) (p. 204) and the 36% water-fetching statistic (n. 2, p. 216). Draft equivalent: 'Policy preferences of women have been documented to be different in various studies' (draft p. 20) and 'thought to be of direct benefit to women (such as rural drinking water, sanitation and water bodies)' (draft p. 2). unit_of_gap is null because no gap is estimated; gap_assumption 'constant' because one assumed gap is applied to all GPs."
+  outcomes:
+    source: admin_mis
+    units: "GP-year logs of job cards issued, recorded demand, person-days per employed household by sex; log counts of works by category; works per lakh rupees spent"
+    n_units: 5850
+    assignment_unit: gp
+    quote: "Our second source is NREGA employment and public works data from the Ministry of Rural Development's NREGA website (MIS)."
+    page: "208"
+    note: "rde2018: 5,850 matched GPs (p. 208; n. 16 p. 217 drops 218 with missing Census data). draft2014: 5,987 GPs (abstract, p. 16). Regression N in RDE Table 4: 9,797 (Phase I) and 6,598 (Phase II) GP-years. The RDE flags that MIS data quality could be correlated with reservation and cannot test it (p. 209)."
+
+estimates:
+  - version: rde2018
+    estimand: provision
+    outcome: "log job cards issued, Phase I, full sample"
+    outcome_family: mnrega_jobcards
+    diff: 0.039
+    se: 0.013
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 9797
+    adjusted: true
+    table: "Table 4 (Part A, col 1)"
+    page: "212"
+    preferred: true
+    note: "Outcome in logs. Level mean in unreserved Phase I GPs is 394.936 (Table 2, p. 210). Phase I GP count not reported. Twice-reserved: 0.058*** (0.021). Phase II full sample 0.002 (0.016). Draft2014 Table 3A col 1: 0.035*** (0.011), N=13,223."
+  - version: rde2018
+    estimand: provision
+    outcome: "log NREGA demand recorded, Phase I, full sample"
+    outcome_family: mnrega_demand
+    diff: 0.028
+    se: 0.013
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 9797
+    adjusted: true
+    table: "Table 4 (Part A, col 1)"
+    page: "212"
+    preferred: true
+    note: "Starred * although t = 2.15 implies p < .05 (printed as is). Level mean unreserved 179.360 (Table 2). Twice-reserved 0.043** (0.021). Draft2014 Table 3A col 4: 0.022* (0.012)."
+  - version: rde2018
+    estimand: provision
+    outcome: "log person-days, female, Phase I, full sample"
+    outcome_family: mnrega_women_days
+    diff: 0.048
+    se: 0.034
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 9797
+    adjusted: true
+    table: "Table 4 (Part B, col 1)"
+    page: "212"
+    preferred: true
+    note: "Table 2 level mean in unreserved Phase I GPs 583.679, reserved 667.401***. Phase II full sample -0.035 (0.032)."
+  - version: rde2018
+    estimand: provision
+    outcome: "log number of water control and harvesting works, Phase I, full sample"
+    outcome_family: drinking_water
+    diff: 0.027
+    se: 0.028
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 8613
+    adjusted: true
+    table: "Table 5 (col 1)"
+    page: "214"
+    preferred: true
+    note: "Coded drinking_water because the authors tie it to drinking water via ponds (p. 213); it is a water-harvesting NREGA category, not piped/handpump supply. Headline is the subsample 'not reserved in 2005' 0.069* (0.039), N=4,907 (col 2). Unreserved level mean 10.982 (Table 2)."
+  - version: rde2018
+    estimand: provision
+    outcome: "log number of rural connectivity works, Phase I, full sample"
+    outcome_family: roads
+    diff: 0.025
+    se: 0.015
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 10114
+    adjusted: true
+    table: "Table 5 (col 1)"
+    page: "214"
+    preferred: true
+    note: "Unreserved level mean 57.262 (Table 2)."
+  - version: rde2018
+    estimand: provision
+    outcome: "log number of irrigation canal works, Phase I, full sample"
+    outcome_family: irrigation
+    diff: 0.029
+    se: 0.045
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 3839
+    adjusted: true
+    table: "Table 5 (col 1)"
+    page: "214"
+    preferred: true
+    note: "Draft2014 Phase I reserved-in-2005 irrigation 0.140** (Table 5A col 12) has no counterpart; RDE twice-reserved 0.084 (0.072)."
+  - version: draft2014
+    estimand: provision
+    outcome: "log person-days, female, Phase I, full sample"
+    outcome_family: mnrega_women_days
+    diff: 0.061
+    se: 0.032
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 13223
+    adjusted: true
+    table: "Table 4A (col 1)"
+    page: "35"
+    preferred: true
+    note: "Row is labelled 'Panchayat reserved in 2005' but the text (p. 14, p. 19) says the regressor is 2010 reservation. OLS with block FE and Census population levels. This is the estimate behind the draft's role-model claim; RDE gives 0.048 (0.034)."
+  - version: draft2014
+    estimand: provision
+    outcome: "water works (completed), Phase I, full sample"
+    outcome_family: drinking_water
+    diff: -0.010
+    se: 0.019
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 12234
+    adjusted: true
+    table: "Table 6A (col 4)"
+    page: "39"
+    preferred: true
+    note: "Row label 'Panchayat reserved in 2005' (see above). The draft's 'Water Works' may be a different MIS category from the RDE's 'water control and harvesting'. Sanitation works 0.067 (0.179), N=272 (col 1)."

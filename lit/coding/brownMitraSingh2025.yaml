@@ -1,0 +1,225 @@
+key: brownMitraSingh2025
+versions:
+  - id: wp2025
+    file: brown_mitra_singh_2025_wp.pdf
+    citation: "Female Leaders and Welfare in a Water-Scarce Economy, working paper, Sep 2025"
+    year: 2025
+    page_offset: "printed = pdf - 1 (title page unnumbered)"
+meta:
+  year_first: 2025
+  year_published: null
+  setting: "REDS/SEPRI 2015-16, 191 villages in 13 states (284,898 working-age adults, 92,322 households), merged with CGWB well depths 2013-14; CPHS 2015-2023 for the groundwater-income link only"
+  design: "random/rotational reservation, cross-section (district FE); heterogeneity by groundwater depth > 8m (not random)"
+
+mechanism:
+  - version: wp2025
+    claim: "In water-scarce villages, women leaders reallocate existing Panchayat resources toward labour-intensive work (infrastructure, services), raising local employment, rather than raising or spending more money."
+    type: other
+    status: tested
+    direction: explains_effect
+    quote: "This suggests that rather than being better at raising revenues or increasing local government spending, female leaders in areas with poor groundwater are more effective at generating local employment through a reallocation of economic activities towards more labour-intensive sectors, such as infrastructure development and service delivery by the Panchayat."
+    page: "15"
+    note: "Type 'other' = resource reallocation / crisis management. Evidence: Table 5.2 interactions, revenue -0.277 n.s., expenditure 0.064 n.s., Panchayat employment in local infrastructure 16.670**, local facilities 79.460* (p. 14). Table 5.2 has data problems flagged in the audit file (identical N across panels, duplicate SEs)."
+  - version: wp2025
+    claim: "Women leaders in water-stressed villages expand NREGS access for women by registering more of them for job cards and relaxing work rationing."
+    type: discretion_institutions
+    status: tested
+    direction: explains_effect
+    quote: "Our finding suggests that female leaders are better than their male counterparts in water-stressed villages at relaxing these demand constraints on NREGS employment, particularly for female workers."
+    page: "16"
+    note: "Leaders' discretion over who gets NREGS work (p. 5). Evidence: Table 5.4 Panel A, job card 0.059*** (0.022), received enough work 0.198** (0.086); women's NREGS days 5.778*** (Table 5.3). Rationing attributed to 'administrative delays to local capture' (p. 16)."
+  - version: wp2025
+    claim: "Women leaders could bring in more state or national public investment; tested via revenue and expenditure and not supported."
+    type: contact_networks
+    status: tested
+    direction: explains_effect
+    quote: "or the local political leadership being able to attract state and national level public investment into the village. Below, we investigate these channels."
+    page: "12"
+    note: "Rejected channel: Panchayat revenue and expenditure interactions are insignificant (Table 5.2 cols 1-2)."
+  - version: wp2025
+    claim: "Shifting employment out of agriculture may be a deliberate response to water scarcity, or just an attempt to reverse the fall in male non-farm jobs."
+    type: other
+    status: speculated
+    direction: explains_effect
+    quote: "This facilitation of structural transformation could be a reasoned choice by the local political leadership in areas with poor groundwater availability, as the scarcity of freshwater for irrigation could make dependence on agriculture for livelihood unsustainable in the long run for those regions."
+    page: "15"
+    note: "Alternative offered in the next sentence: reversing male non-agricultural decline 'without attention to the long-run implications'."
+  - version: wp2025
+    claim: "Women politicians focus on issues that affect women and girls, consistent with women's preferences."
+    type: preferences
+    status: asserted
+    direction: explains_effect
+    quote: "Our results on the effects of local female leadership are consistent with earlier findings that female politicians are more likely to focus on issues directly affecting women and girls, including health, education, and access to infrastructure (Chattopadhyay and Duflo, 2004; Beaman et al., 2012)."
+    page: "21"
+    note: "No preference measure in the paper."
+  - version: wp2025
+    claim: "Future work should test whether community engagement or negotiation with higher-level government drives the effects."
+    type: voice_demand
+    status: speculated
+    direction: explains_effect
+    quote: "Further research could explore the specific mechanisms through which local female leaders achieve these outcomes, for example, by examining differences in community engagement or negotiation with higher-level government bodies."
+    page: "22"
+    note: "Offered as open questions; both community engagement (voice_demand) and negotiation upward (contact_networks) named."
+
+normative:
+  - version: wp2025
+    claim: "The findings underscore the importance of women's reservation under the 73rd Amendment, especially for crisis management."
+    stance: pro_quota
+    quote: "The findings from this study underscore the critical importance of policies like the 73rd Constitutional Amendment, which, beyond simply providing a voice for women in local governance, allows female leaders to bring a distinct and effective approach to crisis management, prioritizing social protection and long-term investment in human capital."
+    page: "22"
+
+measurement:
+  preferences:
+    method: none
+    unit_of_gap: null
+    gap_assumption: not_applicable
+    tested_gap: not_applicable
+    quote: null
+    page: null
+    note: "The paper does not measure what women or men want. It cites prior findings that women leaders focus on women's issues (p. 21)."
+  outcomes:
+    source: villager_survey
+    units: "Individual days worked by sector and sex; NREGS job card, allowance, enough work, wage; household wage income and consumption (logs); consumption components; child enrolment, attendance, school type, school spending; village-source Panchayat revenue/expenditure/employment; village-firm-type employment"
+    n_units: 191
+    assignment_unit: gp
+    quote: "The third source of data is the 2015/16 round of the Rural Economic and Development Survey (REDS), which covers 191 villages across India."
+    page: "7"
+    note: "REDS household and village modules. About 15% of villages lack groundwater readings (p. 8), so estimation villages are fewer; the number of reserved villages is never reported. Reservation status is for the 'current electoral period' from the village governance module. Assignment unit coded gp (REDS samples villages; GP count not given)."
+
+estimates:
+  - version: wp2025
+    estimand: provision
+    outcome: "NREGS days worked, women with a job card: GW>8m x Reserved"
+    outcome_family: mnrega_women_days
+    diff: 5.778
+    se: 1.438
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 26908
+    adjusted: true
+    table: "Table 5.3 (col 2)"
+    page: "16"
+    preferred: true
+    note: "All estimates here are interaction coefficients (extra effect of reservation in villages with groundwater deeper than 8m), the paper's headline. Reserved main effect (effect in GW<8m villages) 0.405 (0.804). Dep. mean 9.157 is the full-sample mean, not a control mean."
+  - version: wp2025
+    estimand: provision
+    outcome: "registered on NREGS job card, women: GW>8m x Reserved"
+    outcome_family: mnrega_jobcards
+    diff: 0.059
+    se: 0.022
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 97051
+    adjusted: true
+    table: "Table 5.4 Panel A (col 1)"
+    page: "17"
+    preferred: true
+    note: "Reserved main effect -0.036*** (0.012): in good-groundwater villages reservation lowers women's job-card registration. Men: interaction 0.013 n.s., main -0.032**."
+  - version: wp2025
+    estimand: provision
+    outcome: "Panchayat total expenditure (log x+1, village-source): GW>8m x Reserved"
+    outcome_family: total_spending
+    diff: 0.064
+    se: 0.289
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 352
+    adjusted: true
+    table: "Table 5.2 Panel A (col 2)"
+    page: "14"
+    preferred: true
+    note: "Reserved main effect 0.118 (0.225). Unit is village x expenditure source."
+  - version: wp2025
+    estimand: provision
+    outcome: "Panchayat employment in local infrastructure (workers): GW>8m x Reserved"
+    outcome_family: public_works_other
+    diff: 16.670
+    se: 6.638
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 309
+    adjusted: true
+    table: "Table 5.2 Panel A (col 3)"
+    page: "14"
+    preferred: true
+    note: "Reserved main effect -10.962** (5.415). Observation counts in Panel B duplicate Panel A (175, 352, 309, 485), a likely table error."
+  - version: wp2025
+    estimand: provision
+    outcome: "male non-agricultural non-NREGS days worked: GW>8m x Reserved"
+    outcome_family: other
+    diff: 28.055
+    se: 10.214
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 113747
+    adjusted: true
+    table: "Table 5.1 (col 6)"
+    page: "13"
+    preferred: true
+    note: "Reserved main effect -9.063 (6.178)."
+  - version: wp2025
+    estimand: provision
+    outcome: "household total consumption (log): GW>8m x Reserved"
+    outcome_family: other
+    diff: 0.092
+    se: 0.040
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 71553
+    adjusted: true
+    table: "Table 5.5 (col 3)"
+    page: "18"
+    preferred: true
+    note: "Reserved main effect 0.013 (0.025). With continuous groundwater depth only consumption stays significant, at 10% (fn 13, p. 18)."
+  - version: wp2025
+    estimand: provision
+    outcome: "child currently enrolled (ages 5-16): GW>8m x Reserved"
+    outcome_family: child_outcomes
+    diff: 0.044
+    se: 0.020
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 76074
+    adjusted: true
+    table: "Table 5.7 (col 1)"
+    page: "21"
+    preferred: true
+    note: "Reserved main effect -0.006 (0.015). Loses significance with continuous groundwater (p. 20)."
+  - version: wp2025
+    estimand: provision
+    outcome: "child school expenditure, all children (log): Reserved main effect (villages with GW<8m)"
+    outcome_family: child_outcomes
+    diff: -0.174
+    se: 0.057
+    se_source: reported
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: null
+    n_obs: 55663
+    adjusted: true
+    table: "Table 5.7 (col 5)"
+    page: "21"
+    preferred: false
+    note: "Recorded because it is the effect of reservation itself in the reference (good-groundwater) group and is significantly negative; the paper's text does not discuss it. Interaction 0.421*** (0.129)."

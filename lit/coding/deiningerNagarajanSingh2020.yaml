@@ -1,0 +1,249 @@
+key: deiningerNagarajanSingh2020
+versions:
+  - id: jce2020
+    file: deininger_nagarajan_singh_2020_jce.pdf
+    citation: "Deininger, Nagarajan & Singh, 'Women's political leadership and economic empowerment: Evidence from public works in India', Journal of Comparative Economics 48(2): 277-291, 2020"
+    year: 2020
+    page_offset: "printed = pdf + 276"
+meta:
+  year_first: 2019
+  year_published: 2020
+  setting: "ARIS-REDS 2014/15 census of all adults in 163 villages, 12 states; 53,612 job-card household members; village NREGS records 2007-13 for 114 villages"
+  design: "random/rotational reservation, cross-section (current and previous-term reservation dummies x female, district FE)"
+  note: >-
+    Only the published article is held. year_first = 2019 because the article was received 15 January 2019 (p. 277) and
+    JDS 2022 / WPS 9350 cite it as Deininger et al. (2019); no earlier version is held. The study is about women's
+    take-up of NREGS and governance, not public-goods provision, so most estimates are mnrega_* families.
+
+mechanism:
+  - version: jce2020
+    claim: "Women leaders draw women into NREGS oversight, civic and electoral participation, which carries the economic effects."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Enhanced female participation in program oversight, civic engagement, and electoral participation are plausible channels for such effects and political and economic empowerment seem to be complementary."
+    page: "277"
+    note: "Social-audit participation (Table 5, p. 287), gram sabha attendance (Table 6, p. 288) and women candidates (Table 8, descriptive only, p. 289) are estimated as outcomes; the channel from them to NREGS take-up is not."
+  - version: jce2020
+    claim: "Women leaders may shift NREGS works toward projects women prefer (e.g. water)."
+    type: preferences
+    status: tested
+    direction: explains_null
+    quote: "if women who came to occupy their seats through reservation cater to voters with distinct preferences (e.g., for water supply and sanitation, as suggested elsewhere in the literature) and council leaders can allocate funds to specific types of work, female leadership could shift the NREGS project portfolio toward types of activities that may be more aligned with women's preferences."
+    page: "280"
+    note: >-
+      Tested in Table 7 (p. 289): no significant effect of current or past reservation on capital-labour ratio or days by
+      work type, except land development days after past reservation (-0.872*). The authors still read a "possibly
+      marginal shift of NREGS activity from irrigation to water conservation" as "in line with assumptions that female
+      leaders invest more on public goods that are aligned with female preferences" (p. 289), which the table does not
+      show at conventional significance. Coded explains_null because the test is null.
+  - version: jce2020
+    claim: "Women leaders act as role models and reach different social networks, raising women's awareness and participation."
+    type: contact_networks
+    status: asserted
+    direction: explains_effect
+    quote: "if women leaders act as role models and interact with different social networks than the male leaders they replace, female reservation may induce shifts in awareness of and participation in NREGS activities."
+    page: "280"
+    note: "Networks and role-model exposure are not measured."
+  - version: jce2020
+    claim: "Benefits from NREGS work feed back into women's political participation, so effects persist after reservation lapses."
+    type: voice_demand
+    status: asserted
+    direction: explains_effect
+    quote: "While we cannot test directly for such interaction effects, changes in electoral dynamics and increased female political participation even after reservations lapsed provide strong support for this."
+    page: "287"
+    note: "The authors say the feedback loop cannot be tested directly; evidence offered is the pattern of lagged effects and Table 8 descriptives."
+  - version: jce2020
+    claim: "Reserved villages show no change in works because projects need lead time to enter the project bank."
+    type: discretion_institutions
+    status: speculated
+    direction: explains_null
+    quote: "A potential explanation could be the lead time required to prepare activities to enter the NREGS \"project bank.\""
+    page: "289"
+    note: ""
+  - version: jce2020
+    claim: "Men attend meetings more under a woman leader, possibly to balance her influence."
+    type: patriarchy_backlash
+    status: speculated
+    direction: explains_effect
+    quote: "One explanation for the observed increase in male participation during periods reserved for female leadership could be a desire to balance the leader's influence."
+    page: "288"
+    note: "Footnote 27. Explains men's higher gram sabha attendance under current reservation (Table 6B)."
+  - version: jce2020
+    claim: "Women's lasting participation reflects experience with decision-making or role models."
+    type: experience_learning
+    status: speculated
+    direction: explains_effect
+    quote: "estimated increases in female participation are consistent with long-term effects of reservation, e.g. through experience with participation in decision-making or female leaders acting as a role model."
+    page: "288"
+    note: "Footnote 27; citizens' learning, not the leader's."
+
+normative:
+  - version: jce2020
+    stance: none_stated
+    claim: null
+    quote: null
+    page: null
+    note: >-
+      Section 6 is titled "Conclusion and policy implications" (p. 290) but makes no recommendation about quotas; it
+      summarises effects and calls political and economic empowerment complementary. No claim for or against
+      reservation policy was found.
+
+measurement:
+  preferences:
+    method: assumed_from_literature
+    unit_of_gap: null
+    gap_assumption: constant
+    tested_gap: not_applicable
+    quote: "if women who came to occupy their seats through reservation cater to voters with distinct preferences (e.g., for water supply and sanitation, as suggested elsewhere in the literature)"
+    page: "280"
+    note: "No measure of men's or women's preferences. A single gap (women want water/sanitation) is taken from the literature. Demand for NREGS work ('ever wanted NREGS work', 'more days desired') is measured, but that is demand for jobs, not a ranking of public goods."
+  outcomes:
+    source: villager_survey
+    units: "Individual and household NREGS participation, applications, rationing, bribes, social audits, bank accounts and gram sabha participation from the 2014/15 REDS census; village-year NREGS work days and capital-labour ratio by work type digitised from local records (Table 7)"
+    n_units: 163
+    assignment_unit: gp
+    quote: "we use individual data from a complete enumeration in 2014/15 of all adult residents in 163 villages in 12 states part of the National Council for Applied Economic Research's (NCAER) long-running ARIS-REDS panel."
+    page: "281"
+    note: "n_units = villages; reservation is assigned to the gram panchayat and SEs are clustered at village council level, but the number of GPs is not reported. Table 7 uses 114 villages x 7 years (gp_staff_or_records, N = 798)."
+
+estimates:
+  - version: jce2020
+    estimand: provision
+    outcome: "household has a job card, current reservation"
+    outcome_family: mnrega_jobcards
+    diff: 0.012
+    se: 0.038
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 163
+    n_obs: 69206
+    adjusted: true
+    table: "Table 3, col. 1"
+    page: "285"
+    preferred: true
+    note: "Past reservation 0.026 (0.045). Dep. var. mean (all households) 0.252, SD 0.434. Descriptive Table 2 shows 30% vs 22% in ever vs never reserved, which the regression does not confirm."
+  - version: jce2020
+    estimand: provision
+    outcome: "share of household NREGS days worked by women, current reservation"
+    outcome_family: mnrega_women_days
+    diff: 0.022
+    se: 0.009
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 163
+    n_obs: 17948
+    adjusted: true
+    table: "Table 3, col. 3"
+    page: "285"
+    preferred: true
+    note: "Past reservation 0.030** (0.008) as printed (0.030/0.008 = 3.75 would be ***). Dep. var. mean 0.637, SD 0.384. Job-card households only."
+  - version: jce2020
+    estimand: provision
+    outcome: "formally applied for NREGS work, current reservation, pooled"
+    outcome_family: mnrega_demand
+    diff: -0.009
+    se: 0.008
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 163
+    n_obs: 53612
+    adjusted: true
+    table: "Table 4, Panel A, col. 1"
+    page: "285"
+    preferred: false
+    note: "Past reservation 0.025*** (0.009). Panel B: women's effect current -0.044+0.071 = 0.027 (F 11.72, p 0.001), past -0.038+0.130 = 0.092 (F 83.12). Dep. var. mean 0.300."
+  - version: jce2020
+    estimand: provision
+    outcome: "women worked in NREGS, past reservation (beta2 + beta4)"
+    outcome_family: other
+    diff: 0.120
+    se: 0.0090
+    se_source: from_t
+    p_or_stars: "p=0.000 (F=178.1)"
+    control_mean: null
+    control_sd: null
+    n_units: 163
+    n_obs: 53612
+    adjusted: true
+    table: "Table 4, Panel B, col. 2"
+    page: "285"
+    preferred: true
+    note: >-
+      Headline result (text: "12.2 pp for past reservation", p. 286). -0.031 + 0.151. SE derived as |diff|/sqrt(F) from
+      the printed F-statistic (one-restriction F = t^2). Men's past effect -0.031*** (0.009). Current, women:
+      -0.045+0.062 = 0.017 (F 4.818). Dep. var. mean 0.233.
+  - version: jce2020
+    estimand: provision
+    outcome: "bribe demanded, current reservation, pooled"
+    outcome_family: other
+    diff: -0.006
+    se: 0.003
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 163
+    n_obs: 53612
+    adjusted: true
+    table: "Table 5, Panel A, col. 1"
+    page: "287"
+    preferred: true
+    note: "Corruption in NREGS access. Past -0.009** (0.004). Dep. var. mean 0.018."
+  - version: jce2020
+    estimand: provision
+    outcome: "attended gram sabha meetings, current reservation, pooled"
+    outcome_family: participation
+    diff: 0.018
+    se: 0.010
+    se_source: reported
+    p_or_stars: "*"
+    control_mean: null
+    control_sd: null
+    n_units: 163
+    n_obs: 53612
+    adjusted: true
+    table: "Table 6, Panel A, col. 1"
+    page: "288"
+    preferred: true
+    note: "Panel B: men +0.035***, women current 0.035-0.041 = -0.006 (p 0.941); women past -0.034+0.067 = 0.033 (p 0.024). Dep. var. mean 0.184."
+  - version: jce2020
+    estimand: provision
+    outcome: "NREGS work days in village-year (total), current reservation"
+    outcome_family: public_works_other
+    diff: 0.148
+    se: 0.225
+    se_source: reported
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 114
+    n_obs: 798
+    adjusted: true
+    table: "Table 7, Panel B, col. 1"
+    page: "289"
+    preferred: true
+    note: "Village administrative records 2007-13; year and district FE. Past -0.348 (0.313). Dep. var. mean 6.391 (units as printed; appears logged or scaled). Capital-labour ratio also null."
+  - version: jce2020
+    estimand: provision
+    outcome: "new bank account opened to receive NREGS payments, current reservation, pooled"
+    outcome_family: other
+    diff: 0.042
+    se: 0.020
+    se_source: reported
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 163
+    n_obs: 53612
+    adjusted: true
+    table: "Table 5, Panel A, col. 4"
+    page: "287"
+    preferred: true
+    note: "Past -0.007 (0.029). The introduction says past reservation 'doubled the share of women opening bank accounts' (p. 278); Table 5 shows the effect for current, not past, reservation."

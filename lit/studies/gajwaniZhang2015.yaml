@@ -1,0 +1,152 @@
+key: gajwaniZhang2015
+label: Gajwani & Zhang (2015)
+pdf: gajwani_zhang_2015_wber.pdf
+pdf_version: World Bank Economic Review 29(2) 2015, pp. 234-261 (printed page = pdf page + 233)
+notes: bib cites the 2015 published version
+audit_notes: |-
+  Label year. The PDF is World Bank Policy Research Working Paper 6854, dated "May 2014" on the cover (pdf p. 1). So "Gajwani & Zhang (2014)" is right for this PDF, and every page cite in the Table 2 row ("pg. 6") uses the working paper's pagination. The bib's 2015 entry is presumably the published version (World Bank Economic Review; I have not verified the volume or pages because that PDF is not in lit/papers). Table 1 (2014), Table 2 and the bib (2015) must agree. If the bib stays at 2015, the page cites need to be re-checked against the journal pagination, since "pg. 6" will not match it. Otherwise, cite WPS 6854 (2014) in the bib.
+
+  What the preference codes measure. These are stated preferences (issue salience), not reservation effects. 270 citizens (139 men, 131 women) in 27 villages were asked to "list up to five infrastructure items needed in their village" (p. 16). A chi-square test cannot reject that men's and women's response distributions are the same: all responses Pearson chi2 = 23.331, Pr = 0.614; top 11, chi2 = 5.689, Pr = 0.841 (Table S1.3, p. 43). Per-item t-tests on the share of each sex naming the item show nothing significant except veterinary services (Table S1.4, p. 44; text p. 17). In Table S1.4, Difference = Men minus Women. NS is therefore the right code for every domain except the one veterinary item. A referee may object that this sample is small: 27 villages, roughly 130 per sex, so a gap of 8-9 points (drinking water, schools) is not detectable.
+
+  Design. Reservation in Tamil Nadu is NOT random. It rotates by rank of the female-population share within each block (pp. 8-9). The paper uses a 1991-to-2005 difference-in-differences (DID): it compares how much public goods grew between 1991 and 2005 in women-reserved GPs versus unreserved GPs. Covariates are added in Table 8 and a fuzzy regression-discontinuity check is in Appendix S3. So "female presidents provide fewer ..." really means that women-reserved GPs grew less than unreserved GPs over 1991-2005. The paper also estimates that 14 of 117 non-SC GPs had a reservation status contrary to the rule (Appendix S2, p. 46).
+
+  Uncoded domains. The Infra. and Irrigation columns are blank for this study. Streetlights (Difference 0.024, SE 0.036) and drainage (-0.036, SE 0.058) are both NS in Table S1.4 and could be coded Infra = NS if the author wants that column filled.
+
+  2026-10-23, switched cites to published WBER 2015 version: the summary cells (sample, location, years, kind_of_data_for_outcomes, number_of_outcomes, outcomes, results) now cite World Bank Economic Review 29(2): 234-261, lit/papers/gajwani_zhang_2015_wber.pdf (printed page = pdf page + 233, checked on pdf pp. 1, 2, 3, 28 = printed 234, 235, 236, 261). Previous PDF: gajwani_zhang_2014_wb_wps6854.pdf (WPS 6854, 2014); the paragraphs above, the preferences cells, joint_tests and multiple_testing still use WPS pagination.
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: NS
+      status: confirmed
+      source: p. 17; Table S1.4 (p. 44)
+      note: |-
+        Measures stated need (share naming "drinking water" among up to five most-needed infrastructure items). Men 0.554, women 0.641, Difference -0.087 (SE 0.061), so t is about 1.4, not significant. The direction favours women, but it is NS.
+    roads:
+      value: NS
+      status: confirmed
+      source: Table S1.4 (p. 44)
+      note: |-
+        Stated need. Roads: men 0.604, women 0.588, Difference 0.017 (SE 0.061), NS.
+    transport:
+      value: NS
+      status: confirmed
+      source: Table S1.4 (p. 44)
+      note: |-
+        Stated need, coded from "Buses": men 0.396, women 0.405, Difference -0.009 (SE 0.060), NS.
+    housing:
+      value: NS
+      status: confirmed
+      source: Table S1.4 (p. 44)
+      note: |-
+        Stated need, coded from "Group houses": men 0.151, women 0.160, Difference -0.009 (SE 0.044), NS.
+    electricity:
+      value: NS
+      status: confirmed
+      source: Table S1.2 (p. 42); Table S1.4 (p. 44)
+      note: |-
+        Stated need. Electricity was named by only 2 men and 0 women (Table S1.2). Difference 0.014 (SE 0.010), NS. NS here reflects near-zero salience for both sexes, not an informative comparison.
+    educ:
+      value: NS
+      status: confirmed
+      source: Table S1.4 (p. 44)
+      note: |-
+        Stated need, "School/Education": men 0.367, women 0.282, Difference 0.084 (SE 0.057), NS. The point estimate leans towards men.
+    sanitation:
+      value: NS
+      status: confirmed
+      source: Table S1.4 (p. 44)
+      note: |-
+        Stated need, "Sanitation": men 0.273, women 0.206, Difference 0.067 (SE 0.052), NS. A separate item, "Individual pipeline or toilet connection", is also NS: men 0.072, women 0.115, Difference -0.043 (SE 0.035).
+    health_child_care:
+      value: NS
+      status: confirmed
+      source: Table S1.4 (p. 44)
+      note: |-
+        Stated need, "Health/Hospital": men 0.460, women 0.466, Difference -0.005 (SE 0.061), NS.
+    other:
+      value: NS
+      status: mismatch
+      source: p. 17; Table S1.4 (p. 44)
+      note: |-
+        This is the only item in the paper with a significant gender difference, and it falls in Other. Text, p. 17: "There are no statistically significant differences, with the exception of veterinary services (mentioned by only 14 citizens)." Table S1.4: veterinary services, men 0.086, women 0.015, Difference 0.071*** (SE 0.027), so men > women. Everything else that would go in Other is NS: drainage, streetlights, companies/industries, library, SHG building, and so on. Plain NS hides the paper's one gendered result. It is based on 12 men versus 2 women.
+
+        Proposal restated as a literal value. The value is unchanged (NS); the auditor's real suggestion is a table-notes footnote that veterinary services are M (p<0.01; 14 mentions, Table S1.4). That is a change to the table notes in lit/tables.yaml, to decide separately.
+        Auditor's original proposal: NS, with a footnote saying that veterinary services are M (p<0.01; 14 mentions, Table S1.4)
+      proposed: NS
+summary:
+  sample:
+    value: |-
+      144 GPs from 3 districts
+
+      Notes: 1. Sampled one district each from the three development strata that were defined based on HDI, 2. 4 Panchayat Union Councils per district
+    status: confirmed
+    source: p. 241; Table 1 (p. 240)
+    note: |-
+      p. 241: districts were split into three HDI categories, one district was drawn at random from each, then 4 PUCs per district and 12 GPs per PUC ("a total of 144 GPs from 12 PUCs from three districts": Coimbatore, Pudukottai, Vellore). Of these, 47 GPs were reserved for women and 46 had a woman president (p. 246). The preference module is a separate sample of 270 citizens in 27 villages (p. 250).
+    comment: |-
+      2026-10-23, switched cites to published WBER 2015 version: source "pp. 10-11; Table 1 (p. 29)" -> "p. 241; Table 1 (p. 240)" (in WBER the HDI strata, 4 PUCs per district and 12 GPs per PUC are all on p. 241); note cites p. 10-11 -> p. 241, p. 13 -> p. 246, p. 16 -> p. 250. Quote "a total of 144 GPs from 12 PUCs from three districts" is verbatim in WBER (p. 241). Value unchanged.
+  location:
+    value: Tamil Nadu
+    status: confirmed
+    source: title; p. 241
+    note: Coimbatore, Pudukottai and Vellore districts, Tamil Nadu.
+    comment: |-
+      2026-10-23, switched cites to published WBER 2015 version: source "title; p. 10" -> "title; p. 241" (the three districts are named on p. 241). Value unchanged.
+  years:
+    value: 2005–2006
+    status: mismatch
+    source: p. 240; p. 245 and fn. 18 (p. 245)
+    note: |-
+      2005-2006 is when the data were collected ("surveys conducted in Tamil Nadu in 2005 and 2006", p. 240). The outcome data, however, are a two-period panel from village records covering 1991 and 2005. The DID compares "the time periods 1991 ... and 2005" (p. 245). Footnote 18: "Data on public toilets, household toilets, and buses and minibuses are from 1995 and 2004." Writing only 2005-2006 suggests a cross-section and hides the pre-period.
+    proposed: 1991 and 2005 (panel of village records; 1995 and 2004 for three goods). Survey fielded 2005–2006.
+    comment: |-
+      2026-10-23, switched cites to published WBER 2015 version: source "p. 10; p. 11 and fn. 18 (p. 12)" -> "p. 240; p. 245 and fn. 18 (p. 245)"; note cites p. 10 -> p. 240, p. 11 -> p. 245. All three quotes (p. 240, p. 245, fn. 18) are verbatim in WBER. Value and proposal unchanged.
+  kind_of_data_for_outcomes:
+    value: Survey + administrative records
+    status: confirmed
+    source: pp. 237, 242
+    note: |-
+      The public-goods outcomes come from GP government records via a "secondary data schedule" (p. 242). The authors stress "village-level government records instead of recall data" (p. 237). The surveys supply president interviews (knowledge test, contact with officials) and the 270-citizen preference module.
+    comment: |-
+      2026-10-23, switched cites to published WBER 2015 version: source "pp. 5, 10" -> "pp. 237, 242"; note cites p. 10 -> p. 242, p. 5 -> p. 237. Both quotes are verbatim in WBER. Value unchanged.
+  number_of_outcomes:
+    value: '10'
+    status: confirmed
+    source: p. 252; Tables 7-8 (pp. 251, 253-254); Appendix A2 (p. 260)
+    note: |-
+      How counted: one per dependent-variable column in Table 7/Table 8. p. 252 says: "We use 10 public goods measures (covering eight areas of public goods)". Not counted: the knowledge-test score (Table 5) and the three contact-frequency measures (Table 6). Those are characteristics of presidents, not outcomes of reservation on provision.
+    comment: |-
+      2026-10-23, switched cites to published WBER 2015 version: source "p. 18; Tables 7-8 (pp. 36-37); Appendix A2 (p. 40)" -> "p. 252; Tables 7-8 (pp. 251, 253-254); Appendix A2 (p. 260)" (Table 8 runs over two pages in WBER); note cite p. 18 -> p. 252. Table numbers are the same in WBER (Tables 5-8, Appendix A2). Quote "We use 10 public goods measures (covering eight areas of public goods)" is verbatim on p. 252; Table 7 still has 10 rows and Table 8 10 columns, so the value 10 holds. Value unchanged.
+  outcomes:
+    value: Health (composite measure), Schools, Distance to nearest concrete road, Bus and minibus trips, streetlights, Public toilets, Common taps, Number of borewells, HH toilet connection, HH drinking water connection
+    status: confirmed
+    source: Table 7 (p. 251); Appendix A2 (p. 260)
+    note: |-
+      Matches the 10 rows of Table 7 exactly. "Health" is a factor-analysis composite of child immunization rates (DPT, BCG, OPV, measles, TT) (A2, p. 260).
+    comment: |-
+      2026-10-23, switched cites to published WBER 2015 version: source "Table 7 (p. 36); Appendix A2 (p. 40)" -> "Table 7 (p. 251); Appendix A2 (p. 260)"; note cite A2, p. 40 -> A2, p. 260. WBER Table 7 has the same 10 rows. Value unchanged.
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (each of the 10 public-goods measures is tested separately. The only aggregation is the Health outcome, a factor-analysis composite of 5 immunization rates)
+    source: pp. 5-6, 18; Tables 7-8 (pp. 36-37); Appendix A2 (p. 40); Table S1.3 (p. 43)
+    note: |-
+      The 10 DID coefficients are reported with their own robust SEs and stars. There is no family-wise or FDR correction and no joint test across outcomes. The paper treats having several outcomes as a robustness strength, not as a multiplicity problem: "We also use several outcome variables to measure public goods provision by the GP, allowing us to check the robustness of our results" (pp. 5-6). The HEALTH variable is "a weighted average of all of the factors listed in the group ... calculated using a factor analysis procedure" (A2, p. 40), so it is a summary index for one domain only. The paper does have a joint test, but only on preferences, not outcomes: a chi-square test of whether men's and women's response distributions differ (Table S1.3; Pr = 0.614 and 0.841). With 10 outcomes at the 10% level, about 1 false positive is expected by chance. So the "weak evidence" results (streetlights, HH toilets, HH water, all significant only without covariates) would probably not survive a correction. Schools (-0.693***, -0.840***) would.
+  results:
+    value: "“The results of our analysis strongly suggest that female presidents provide their GPs with fewer schools and roads.” (pg. 237; see also Table 7 and 8) \n\n“We also find weak evidence that women provide fewer household toilet connections, household drinking water connections, and streetlights. For all other public goods, there is generally no statistically significant difference between provision by male and female presidents” (pg. 237; see also Table 7 and 8)\n\nFemale presidents have lower knowledge of the panchayat system, less contact with higher-level officials (see Tables 5 and 6)."
+    status: confirmed
+    source: p. 237; Tables 5-8 (pp. 248-249, 251, 253-254)
+    note: |-
+      Both quotes are verbatim from p. 237 (WBER pagination). The first one truncates the sentence at "roads", and the original continues ", two public goods that require more connection with higher-level officials". The numbers back it up. In the basic DID (Table 7): schools -0.693***, road distance +0.078*, streetlights -13.316**, HH toilets -48.621*, HH water -50.379**. With covariates (Table 8), only schools (-0.840***) and road distance (0.106*) stay significant, which is why the paper calls the other three "weak evidence". The knowledge gap is -3.457*** points out of 19 (Table 5, col. 1), and the contact gaps are all *** (Table 6). "Pg. 237" is WBER pagination (see audit_notes).
+    previous: "“The results of our analysis strongly suggest that female presidents provide their GPs with fewer schools and roads.” (pg. 6; see also Table 7 and 8) \n\n“We also find weak evidence that women provide fewer household toilet connections, household drinking water connections, and streetlights. For all other public goods, there is generally no statistically significant difference between provision by male and female presidents” (pg. 6; see also Table 7 and 8)\n\nFemale presidents have lower knowledge of the panchayat system, less contact with higher-level officials (see Tables 5 and 6)."
+    comment: |-
+      2026-10-23, switched cites to published WBER 2015 version: value "(pg. 6; see also Table 7 and 8)" -> "(pg. 237; see also Table 7 and 8)" in both places; source "p. 6; Tables 5-8 (pp. 34-37)" -> "p. 237; Tables 5-8 (pp. 248-249, 251, 253-254)"; note "p. 6 (WPS pagination)" -> "p. 237 (WBER pagination)" and ""Pg. 6" is working-paper pagination" -> ""Pg. 237" is WBER pagination". Both quotes are word-for-word the same in WBER (p. 237), so no quote wording changed; table numbers are unchanged, and every coefficient in the note matches WBER Tables 5-8.

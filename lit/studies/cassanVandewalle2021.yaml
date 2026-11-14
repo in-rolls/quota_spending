@@ -1,0 +1,141 @@
+key: cassanVandewalle2021
+label: Cassan & Vandewalle (2021)
+pdf: cassan_vandewalle_2021_wd.pdf
+pdf_version: World Development 143 2021
+notes: null
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: F
+      status: mismatch
+      source: p. 4 (Section 4.1) and Fig. 1 (p. 5)
+      note: |-
+        What is measured: stated preference. REDS 2006 household survey asks head and spouse how the panchayat
+        should allocate Rs 1 lakh; Pref = district share of a group wanting a positive allocation to the good
+        (eq. 1, p. 4). The paper reports the gender gap for water in the opposite direction: "Men have a more
+        pronounced preference for water and roads than women" (p. 4). Fig. 1 (male vs female scatter by
+        district) shows most district points at or above the 45-degree line (men higher). No significance test
+        of the per-good gender gap is reported, so M is the paper's own descriptive reading; NS would also be
+        defensible. F appears to be carried over from Chattopadhyay & Duflo (2004), not from this paper.
+      proposed: M
+    roads:
+      value: M
+      status: confirmed
+      source: p. 4 (Section 4.1) and Fig. 2 (p. 6)
+      note: |-
+        Stated preference (same REDS 2006 allocation question, district-level share wanting a positive
+        allocation). "Men have a more pronounced preference for water and roads than women" (p. 4). Descriptive
+        only; the paper reports no test of the per-good gender gap, and stresses that gaps vary widely across
+        districts ("preference differences for a particular public good are not systematically the same across
+        India", p. 4).
+summary:
+  sample:
+    value: 168 villages. The number of GPs is unspecified.
+    status: confirmed
+    source: p. 3 (Section 3) and Tables 2-4
+    note: |-
+      "Our data provides information about 270 GP elections in 168 villages, of which 65 were reserved for
+      women, and 97 for LCs" (p. 3). The unit is the village-election term (270), times 6 public goods =
+      1,620 observations (Table 3, p. 6). The number of distinct GPs is not reported. Worth adding the 270
+      election terms and 65 women-reserved terms, since power rests on those 65.
+  location:
+    value: Rural India
+    status: confirmed
+    source: p. 3 (Section 3)
+    note: |-
+      REDS "provides a nationally representative sample of rural households" (p. 3). The number of states is
+      not stated in the paper.
+  years:
+    value: '2005–2006'
+    status: mismatch
+    source: p. 2-3 (Sections 1 and 3); Table 1 source line
+    note: |-
+      The paper uses "the 2005-2006 edition" of REDS, cited throughout as "REDS 2006" (pp. 2-3, table source
+      lines). Outcomes are public works in "the current and previous two election terms", with the current
+      unfinished term dropped (p. 3), so provision refers to the two completed terms before 2005-06, not to
+      2005. The paper does not give calendar years for those terms.
+    proposed: 2005-06 survey (REDS 2006); provision in the two completed GP terms before the survey
+    previous: '2005'
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): '2005' -> '2005–2006'
+  kind_of_data_for_outcomes:
+    value: REDS survey
+    status: confirmed
+    source: p. 4 (Section 4.1); Table 4 source line
+    note: |-
+      Outcomes come from the local governance module of the REDS 2006 village questionnaire, street by street;
+      preferences from the REDS household questionnaire.
+  number_of_outcomes:
+    value: '4'
+    status: corrected
+    previous: ''
+    source: Tables 4-8 (pp. 8-10); Table 2 (p. 4)
+    note: |-
+      Cell was missing. Counting rule as elsewhere: distinct dependent variables regressed on women's
+      reservation for allocation outcomes. Tables 4-8 each have the same 4 columns: share construction,
+      share maintenance, any construction, any maintenance. The six goods are stacked in one regression with
+      good fixed effects, so they are not counted separately (6 x 4 = 24 if they were). Not counted: Table 2's
+      4 candidate-selection outcomes (number of candidates, number of HC candidates, any HC candidate,
+      president is HC), which are political, not allocative; counting them gives 8.
+  outcomes:
+    value: The share of streets in the village where a given good was constructed, the share where it was maintained, whether construction occurred in at least one street, and whether maintenance occurred in at least one street.
+    status: confirmed
+    source: p. 4 (Section 4.1); Table 4 (p. 8) notes
+    note: |-
+      Matches the four dependent variables of Tables 4-8. The goods are six: "water, sanitation, public
+      lighting, communication, roads and electricity" (p. 4). The estimand is not the level of provision but
+      the interaction of reservation with the district men-minus-women preference gap for each good.
+  results:
+    value: |-
+      Women presidents are more likely to act on women's preferences. See Table 4. 
+
+      “Indeed, a one standard deviation difference between the preferences of men and women increases the share of streets in which goods preferred by men are constructed by 2.3 percentage points per term per village. On the contrary, gender quotas alter this result, and lead to an increase of 2.4 percentage points in favor of goods preferred by women. The average village constructs public goods in 27% of its streets. This implies the impact is substantial, as it concerns almost 10% of the streets where construction works take place.” (pg. 7)
+    status: confirmed
+    source: p. 7 (Section 4.2.1); Table 4 (p. 8)
+    note: |-
+      Quote is verbatim from p. 7 (page cite missing from the cell; add "p. 7"). Table 4 col 1: Pref diff
+      (men - women) = 0.23** (0.11); interaction with Reserved for women = -0.48** (0.19); total effect under
+      reservation = -0.24* (0.14), i.e. the reversal toward women's preferences is significant only at 10%.
+      With the preference-gap SD of 0.10 (Table 3), 0.23 x 0.10 = 2.3 pp and 0.24 x 0.10 = 2.4 pp. For share
+      maintenance the total effect under reservation is -0.02 (0.13), i.e. reservation removes the male tilt
+      but does not produce a female tilt. The paper's headline contribution is the caste channel (Table 5),
+      which the cell does not mention.
+    previous: |-
+      Women presidents are more likely to act on women's preferences. See Table 4. 
+
+      “Indeed, a one standard deviation difference between the preferences of men and women increases the share of streets in which goods preferred by men are constructed by 2.3 percentage points per term per village. On the contrary, gender quotas alter this result, and lead to an increase of 2.4 percentage points in favor of goods preferred by women. The average village constructs public goods in 27% of its streets. This implies the impact is substantial, as it concerns almost 10% of the streets where construction works take place.”
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'where construction works take place.”' -> 'where construction works take place.” (pg. 7)'
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (six goods are pooled in one stacked regression with good fixed effects, but the four outcome columns and the gender and caste interactions are each tested separately at conventional levels)
+    source: Tables 4-8 (pp. 8-10)
+    note: |-
+      No joint test, index, or p-value correction appears anywhere in the paper (searched for Bonferroni,
+      Romano-Wolf, FDR, q-value, joint, Wald, index; no hits). Pooling the six goods into one regression
+      (1,620 = 270 terms x 6 goods, p. 5) is the only aggregation. The four dependent variables (share
+      constructed, share maintained, any construction, any maintenance) are reported column by column, and the
+      key totals under reservation are significant at 10% in cols 1 and 3 only (Table 4). The one cross-
+      coefficient test is informal: the LC interaction "is not significant (and not significantly different
+      from that of the interaction between reservations for women...)" (p. 7).
+audit_notes: |-
+  Label "Cassan & Vandewalle (2021)" is right: the PDF is the published version, World Development 143
+  (2021) 105408 (open access), so pages cited are journal pages 1-10 (pdf page = printed page).
+  Referee points. (1) The drinking_water F code contradicts the paper, which says men prefer water more
+  (p. 4); only roads M is supported, and neither per-good gap is tested. (2) Preferences are measured once
+  (2006) at the district level and applied to earlier terms; the authors flag possible reverse causality and
+  address it only with a leave-own-village-out measure (Table 7), under which the share-construction
+  interaction drops to -0.27 (0.22), not significant. (3) The women-reserved sample is 65 election terms;
+  19 jointly reserved women+LC terms are dropped. (4) The paper's main finding is about caste, not gender:
+  women's quotas cut high-caste presidents by 20 pp (Table 2) and shift provision toward low-caste
+  preferences (Table 5). (5) Clustering is at district level with few villages per district (2-6, fn 17).

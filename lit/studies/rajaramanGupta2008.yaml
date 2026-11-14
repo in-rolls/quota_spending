@@ -1,0 +1,168 @@
+key: rajaramanGupta2008
+label: Rajaraman & Gupta (2012)
+table2_label: Rajaraman and Gupta (2012)
+pdf: rajaraman_gupta_2012_igdr.pdf
+pdf_version: Indian Growth and Development Review 2012
+notes: bib cites a 2008 tech report with a different title
+audit_notes: |-
+  Version mismatch. The PDF is Indira Rajaraman and Manish Gupta (2012),
+  "Public expenditure choices and gender quotas", Indian Growth and
+  Development Review 5(2): 108-130, doi 10.1108/17538251211268053. The label
+  and bib say 2008 (a tech report with a different title), and I do not have
+  the 2008 report. Every number in this row (780 GPs, 17 districts, 2005-06,
+  the quote on p. 120, Tables III/IV) is verified against the 2012 article
+  only. The "pg. 120" cite is a page of the IGDR article (pp. 108-130), so it
+  cannot be a page of the 2008 report. Either cite the 2012 article (label
+  "Rajaraman & Gupta (2012)") or re-verify against the 2008 report. Recommend
+  the former. Earlier versions did circulate; Bardhan, Mookherjee & Parra
+  Torrado (2010, JGD) cite them as "Rajaraman and Gupta (2008)" and "(2009)".
+  Author spellings are correct.
+  Referee points: (1) the outcome "water" pools drinking water, irrigation,
+  sanitation and drainage ("not differentiating between drinking and
+  irrigation water", p. 115). It is not a drinking-water measure. (2) One
+  cross-section year of SGRY spending. The authors note lumpiness (p. 115).
+  (3) The reservation effect is a marginal effect aggregated over several
+  interactions at means, and no SEs are reported for it (Table II note, "standard
+  errors are not reported"; Tables III-IV likewise show only stars).
+  (4) The paper argues the council's uniform one-third female membership, not
+  the sarpanch, may drive water spending. That is a conjecture, not a test.
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: F
+      status: mismatch
+      source: p. 112; p. 115; pp. 119-120, Table III
+      note: |-
+        The paper does not measure preferences by gender. No households were
+        surveyed ("No households were surveyed", p. 114). The only data are
+        facts reported by the GP secretary. What it measures is the effect of
+        sarpanch gender reservation on whether a GP spends any SGRY funds on
+        "waterworks, including sanitation and drainage, and not differentiating
+        between drinking and irrigation water" (p. 115). That effect is null
+        (Table III probit marginal effects -0.0264, -0.0265; OLS -0.0102,
+        -0.0105; none starred). p. 120 says "The gender of the sarpanch is not
+        significant."
+        The F rests only on the authors' assumption, citing Chattopadhyay &
+        Duflo: water is "commonly regarded as a female preference by virtue of
+        water provisioning being characterized as women's work" (p. 112), and "If
+        it is presumed that women are more concerned with water adequacy and
+        quality than men" (p. 120). Coding F from this study double-counts
+        Chattopadhyay & Duflo.
+        By the table's definitions the defensible code is NS. The reservation
+        effect is null and the paper provides no gendered evidence of its own.
+        Leaving the cell blank would be equally defensible, since the study is
+        not about preferences and "water" is not drinking water.
+      proposed: NS
+summary:
+  sample:
+    value: |-
+      780 GPs from 17 districts across 4 states. 
+
+      Notes: 1. Stratified by backwardness, 2. Sampled 10 GPs on average per block.
+    status: mismatch
+    source: pp. 108 (abstract), 114-116; Tables II-IV
+    note: |-
+      This is largely right, with three small inaccuracies. (a) 780 is the
+      targeted/drawn sample. The expenditure analyses use 776: "Four GPs had no
+      data on SGRY expenditure and therefore had to be deleted, yielding a
+      total sample of 776" (p. 115), and the abstract says "a sample of 776
+      panchayats". Table II (disease incidence) uses 780. (b) Districts were
+      not stratified by backwardness in a sampling sense. The paper says
+      "pre-selection of nine backward districts ... To these nine, a further
+      eight non-backward districts were required to be added on, not
+      pre-selected" (p. 114), and "the selection of districts in the state was
+      non-random by the very design of the project". (c) The paper says "half the constituent blocks in each district selected at the
+      first stage, and ten GPs on average per selected block" (p. 114), from 78
+      blocks. It is not exactly 10 per block.
+    proposed: |-
+      780 GPs drawn (776 in the expenditure analyses) from 78 blocks in 17 districts across 4 states.
+
+      Notes: 1. Districts purposively chosen: 9 backward (Backward District Initiative) + 8 non-backward comparators; 2. Half of blocks per district, then on average 10 GPs per block at random.
+    previous: |-
+      780 GPs from 17 districts across 4 states. 
+
+      Notes: 1. Stratified by backwardness, 2. Sampled 10 GPs per block.
+    comment: |-
+      2026-10-23, author approved presentation fix (Block D): 'Sampled 10 GPs per block.' -> 'Sampled 10 GPs on average per block.'
+  location:
+    value: Madhya Pradesh, Chhattisgarh, Orissa, Rajasthan
+    status: confirmed
+    source: p. 109; p. 114
+    note: |-
+      The paper says "a survey of GPs conducted in 2006 in 17 districts
+      selected from four states, Madhya Pradesh, Chhattisgarh, Rajasthan and
+      Orissa" (p. 109). These are selected districts only, not state-level
+      samples (p. 114).
+  years:
+    value: 2005-2006
+    status: confirmed
+    source: p. 114; Table I
+    note: |-
+      The paper says "The reference year of the survey was 2005-2006" (p.
+      114). The survey was conducted in 2006 (p. 109).
+  kind_of_data_for_outcomes:
+    value: |-
+      Survey of a paid non-elected functionary (“in most cases the GP
+      secretary,”)
+    status: confirmed
+    source: p. 114
+    note: |-
+      The paper says "Both parts of the questionnaire were filled in from the
+      same respondent, who was in most cases the GP secretary, a paid
+      non-elected functionary. The information collected was of a purely
+      factual nature". The outcome is the GP's reported SGRY expenditure by
+      category.
+  number_of_outcomes:
+    value: '3'
+    status: confirmed
+    source: Table III (p. 119); Table IV (p. 121)
+    note: |-
+      Count = distinct dependent variables on which the reservation dummy is
+      tested. Table III has 1, water expenditure y/n. Table IV has 2, ln(1 +
+      water share of SGRY spending) and ln(1 + water expenditure). Total 3,
+      each in 2 specifications (probit/OLS or OLS-1..4). Table II (incidence of
+      water-borne disease) is excluded because it has no reservation variable;
+      it only picks the instruments.
+  outcomes:
+    value: Water expenditure (binary), water expenditure share, water expenditure amount
+    status: confirmed
+    source: Tables III, IV
+    note: |-
+      Matches. "Water" means SGRY spending on "waterworks, including
+      sanitation and drainage, and not differentiating between drinking and
+      irrigation water" (p. 115). Share and amount enter as ln(1 + x).
+  results:
+    value: “The gender of the sarpanch is not significant. Clearly the response to factors determining the incidence of water-borne diseases, in terms of ensuring access to safe (non-surface) drinking water over the entire area of the GP, was the overriding consideration.” (pg. 120; see also Table 3, 4)
+    status: confirmed
+    source: p. 120; Tables III, IV
+    note: |-
+      The quote is verbatim from printed p. 120 of the 2012 IGDR article. In
+      Table III the reservation marginal effects are -0.0264, -0.0265
+      (probit) and -0.0102, -0.0105 (OLS), none starred. In Table IV they are
+      0.0655, 0.0648, 2.6505 and 4.5569, none starred. The paper numbers
+      tables in Roman numerals (III, IV), so the cite should read "Tables III,
+      IV". The page cite is valid only for the 2012 version (see audit_notes).
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (3 water-spending outcomes in 2 specifications each, reservation tested one at a time; no index, joint test or correction)
+    source: pp. 119-121; Tables III, IV; Appendix Table AIII
+    note: |-
+      The reservation effect is reported as a single marginal effect "aggregated
+      across the intercept, and worked through all variables with which gender
+      is interacted, at the means of those variables" (p. 120). It is a point
+      estimate, not a joint test that reservation and all its interactions are
+      zero. The individual interaction terms are tested separately, and none is
+      significant (Table III). A text search finds no joint, Wald, F or
+      corrected test. Balance is checked variable by variable with t-tests
+      (Appendix Table AIII, p. 116): "From the t-values ... the null hypothesis
+      of equivalence between the means cannot be rejected".

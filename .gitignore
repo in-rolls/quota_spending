@@ -10,3 +10,18 @@ data/mnrega/2023-csv/*
 .Rapp.history
 
 .here
+
+# Third-party papers: kept locally for auditing, not redistributed
+lit/papers/
+lit/static
+
+# LaTeX build files for the review note
+review/*.aux
+review/*.log
+review/*.bbl
+review/*.blg
+review/*.fdb_latexmk
+review/*.fls
+review/*.out
+# Python bytecode
+__pycache__/

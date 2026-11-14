@@ -1,0 +1,229 @@
+key: priebe2017
+versions:
+  - id: ods2017
+    file: priebe_2017_ods.pdf
+    citation: "Priebe, 'Political reservation and female empowerment: evidence from Maharashtra, India', Oxford Development Studies 45(4): 499-521, 2017"
+    year: 2017
+    page_offset: "printed = pdf + 497 (pdf p. 1 is the publisher cover sheet; running heads at top of each page)"
+meta:
+  year_first: 2017
+  year_published: 2017
+  setting: "Sangli district, Maharashtra; 32 GPs (16 female, 16 male sarpanch), 640 women (20 per GP), Oct-Nov 2008"
+  design: "random/rotational reservation, cross-section (female-sarpanch dummy; logit/ordered logit with controls)"
+  note: >-
+    Only the published version is held. Same survey as satheEtAl2013 (fn 5, p. 517), so the two are not independent
+    samples. Treatment is having a female sarpanch: 15 of 16 were on reserved seats (fn 6). Only women were surveyed,
+    so no men-women comparison is possible. Public services are an "Extension" (Section 4.3); the main outcome is
+    women's political participation.
+
+mechanism:
+  - version: ods2017
+    claim: "Female sarpanches raise poorer women's political participation, and that participation is the main channel to service delivery."
+    type: voice_demand
+    status: tested
+    direction: explains_effect
+    quote: "Although causality in this case is not entirely clear, the results seem to suggest that a major channel through which the gender of a sarpanch is able to influence public service delivery runs through the empowerment and increased level of women's political participation, particularly of women from lower social strata."
+    page: "515"
+    note: >-
+      'Tested' by adding a village political participation index (PPI) to the service regressions (Table 6, p. 515).
+      The PPI is itself an outcome of the treatment, so this is not a valid mediation test (bad control), and the female
+      coefficient is null in most baseline rows. The author flags that causality is unclear.
+  - version: ods2017
+    claim: "Once participation is controlled, the remaining female-sarpanch effect captures the sarpanch's own preferences and decisions."
+    type: preferences
+    status: asserted
+    direction: explains_null
+    quote: "we indirectly decompose the overall effect of having a female sarpanch on public service delivery into one component which captures the channel of increased political participation and empowerment of women in a village, and a remaining effect which includes, among others, the preferences and decisions taken by a sarpanch."
+    page: "513"
+    note: "The residual is not shown to reflect preferences; leader preferences are never measured."
+  - version: ods2017
+    claim: "More politically active women expect more and so rate services lower, while noticing small improvements."
+    type: other
+    status: speculated
+    direction: explains_negative
+    quote: "it might well be that higher democratic participation and empowerment has created higher expectations in women on the extent and quality of public service delivery. These higher expectations have then lead to women being more critical when evaluating existing services."
+    page: "514"
+    note: "Expectations / rating bias, offered for the negative PPI association with satisfaction."
+  - version: ods2017
+    claim: "Caste ties to the sarpanch matter for participation, but much less under female sarpanches, so the effect is not caste-specific."
+    type: identity_caste
+    status: tested
+    direction: explains_effect
+    quote: "our findings suggest that coming from the same caste as the sarpanch has a strong positive effect on a woman's level of political participation and political empowerment. However, the effect seems to become significantly less pronounced among women in female sarpanch villages"
+    page: "516"
+    note: "Descriptive Table 3B (p. 510) supports it; the regression (Table 4 Specification 2, p. 512) finds 'very little evidence' (p. 513), so the regression evidence does not back the descriptive claim."
+  - version: ods2017
+    claim: "Female sarpanches often come from politically active families, so some elite capture may occur."
+    type: selection_who_runs
+    status: asserted
+    direction: explains_null
+    quote: "Interestingly, for two of the three indicators concerning coming from a politically active family or background we find no difference between male and female sarpanches, which suggests that Rajaraman and Gupta's (2012) elite capture might be present to a certain extent."
+    page: "507"
+    note: "Based on Table 2 (p. 506) with 16 vs 16 sarpanches; not linked to any outcome. The third indicator (political position in family) is lower for women (0.19 vs 0.56, p 0.03)."
+
+normative:
+  - version: ods2017
+    claim: "Gender quotas effectively give disadvantaged women more voice and meet a prime goal of the 73rd Amendment."
+    stance: pro_quota
+    quote: "The results suggest that the imposed gender quotas are an effective means of overcoming inequalities and contributed to giving disadvantaged women more voice and opportunity for political empowerment."
+    page: "499"
+    note: "Abstract. Conclusion: 'The results strongly suggest that the introduction of a reservation system for women in village governments contributes to one of its principal goals' (p. 516). The case rests on political-participation outcomes, not on service delivery."
+
+measurement:
+  preferences:
+    method: none
+    unit_of_gap: null
+    gap_assumption: not_applicable
+    tested_gap: not_applicable
+    quote: null
+    page: null
+    note: "Only women were surveyed and no preference question is reported; services are measured by satisfaction and perceived improvement. The only reference to preferences is hypothetical: 'if, for instance, women exhibit different preferences towards health and education services than men' (p. 501)."
+  outcomes:
+    source: villager_survey
+    units: "Women's responses: 15 political participation/empowerment indicators; 5 objective service indicators, 11 satisfaction ratings and 11 perceived-improvement items (all respondent-level, N = 640)"
+    n_units: 32
+    assignment_unit: gp
+    quote: "The second survey was a household survey of 640 women which took place in the 32 GPs where the sarpanch survey was conducted. In each of the 32 GPs, 20 women were randomly chosen from among the respective GP's female population of at least 18 years of age."
+    page: "505"
+    note: "Even 'objective' indicators (electricity, water source, drainage, ration shop) are respondent-level answers. SEs clustered at village level with 32 clusters."
+
+estimates:
+  - version: ods2017
+    estimand: provision
+    outcome: "share of improved water sources (respondent-level), female minus male sarpanch"
+    outcome_family: drinking_water
+    diff: 0.07
+    se: null
+    se_source: stars_only
+    p_or_stars: "p=0.36 (printed)"
+    control_mean: 0.82
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: false
+    table: "Table 5"
+    page: "514"
+    preferred: false
+    note: >-
+      0.89 vs 0.82. A p-value but no SD/SE is printed, so se is left null. Table 5 p-values look unreliable as two-sided
+      tests (e.g. electricity satisfaction 0.99 vs 0.82, p = 0.98; women's SHG 0.61 vs 0.49, p = 0.94), so I did not
+      back out an SE from them.
+  - version: ods2017
+    estimand: provision
+    outcome: "improved water source (logit odds ratio), female sarpanch"
+    outcome_family: drinking_water
+    diff: 0.583
+    se: null
+    se_source: stars_only
+    p_or_stars: "n.s."
+    control_mean: null
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: true
+    table: "Table 6, baseline"
+    page: "515"
+    preferred: true
+    note: "Odds ratio, not outcome units (null = 1). Note it is identical to the 'satisfaction with water source' baseline odds ratio (0.583*), which suggests a copy error in Table 6."
+  - version: ods2017
+    estimand: provision
+    outcome: "perceived improvement of roads over last 3 years (logit odds ratio), female sarpanch"
+    outcome_family: roads
+    diff: 0.521
+    se: null
+    se_source: stars_only
+    p_or_stars: "**"
+    control_mean: null
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: true
+    table: "Table 6, baseline"
+    page: "515"
+    preferred: true
+    note: "Odds ratio < 1: women in female-sarpanch villages less likely to report improvement. Road satisfaction OR 0.966 (n.s.). Raw means: improvement 0.69 vs 0.73, p 0.11 (Table 5)."
+  - version: ods2017
+    estimand: provision
+    outcome: "share with drainage system (respondent-level), female minus male sarpanch"
+    outcome_family: sanitation
+    diff: 0.06
+    se: null
+    se_source: stars_only
+    p_or_stars: "p=0.11 (printed)"
+    control_mean: 0.56
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: false
+    table: "Table 5"
+    page: "514"
+    preferred: true
+    note: "0.62 vs 0.56. Not in the Table 6 regressions. See the p-value caveat on the water row."
+  - version: ods2017
+    estimand: provision
+    outcome: "has electricity (respondent-level), female minus male sarpanch"
+    outcome_family: electricity
+    diff: -0.02
+    se: null
+    se_source: stars_only
+    p_or_stars: "p=0.49 (printed)"
+    control_mean: 0.72
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: false
+    table: "Table 5"
+    page: "514"
+    preferred: true
+    note: "0.70 vs 0.72. Not in Table 6."
+  - version: ods2017
+    estimand: provision
+    outcome: "satisfaction with bus stop (0-4), female minus male sarpanch"
+    outcome_family: transport
+    diff: -0.22
+    se: null
+    se_source: stars_only
+    p_or_stars: "p=0 (printed)"
+    control_mean: 0.85
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: false
+    table: "Table 5"
+    page: "514"
+    preferred: true
+    note: "0.63 vs 0.85; the only significant Table 5 difference. The text calls it 'the number of bus stops' (p. 513), but the row is a satisfaction rating."
+  - version: ods2017
+    estimand: provision
+    outcome: "ration shop present (logit odds ratio), female sarpanch"
+    outcome_family: other
+    diff: 0.011
+    se: null
+    se_source: stars_only
+    p_or_stars: "***"
+    control_mean: null
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: true
+    table: "Table 6, baseline"
+    page: "515"
+    preferred: true
+    note: "Implausibly extreme given raw means of 0.95 vs 0.96 (Table 5 'Ration shop' coded 1 = yes, 2 = no). With 32 villages this likely reflects near-perfect prediction by village controls."
+  - version: ods2017
+    estimand: provision
+    outcome: "regular attendance of gram sabha meeting (logit odds ratio), female sarpanch"
+    outcome_family: participation
+    diff: 1.772
+    se: null
+    se_source: stars_only
+    p_or_stars: "*"
+    control_mean: 0.90
+    control_sd: null
+    n_units: 32
+    n_obs: 640
+    adjusted: true
+    table: "Table 4, baseline"
+    page: "512"
+    preferred: true
+    note: "Odds ratio. Raw means 0.96 vs 0.90 (Table 3A, p. 508, no star). Headline count: 6 of 15 indicators significant in baseline regressions, 7 of 15 in the descriptive table; vote in last GP election OR 4.570***."

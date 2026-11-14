@@ -1,0 +1,171 @@
+key: chaturvediDasMahajan2025
+label: Chaturvedi et al. (2025)
+table2_label: Chaturvedi et al. (2025)
+pdf: chaturvedi_das_mahajan_2025_edcc.pdf
+pdf_version: Economic Development and Cultural Change 73(2) 2025, pp. 749-779 (printed page = pdf page + 748)
+notes: null
+preferences:
+- row: null
+  codes:
+    drinking_water:
+      value: F
+      status: mismatch
+      source: p. 770-772 (Section VI, REDS evidence), Table 4 (p. 772)
+      note: |-
+        Nothing in the paper measures men's versus women's preference for drinking water. The only water item
+        is the REDS 2006 grievance question in Table 4, where the outcome is whether a woman respondent who
+        faced a water-supply or sewage problem approached the Sarpanch. The authors use it only as a proxy for
+        sanitation demand: "We do not have a direct measure of complaints regarding sanitation in the REDS
+        data. As a proxy, we focus on women respondents who faced water- and sewage-related issues"
+        (pp. 770-771). It is a sample of women only (no male comparison), water and sewage are pooled, and the result
+        is an effect of reservation on complaints, not a gender gap in preference. Female reservation x female-
+        headed household = 0.242** for Muslims but -0.0473 (NS) for Hindus, and the Muslim main effect of
+        reservation is -0.0837*** (Table 4, cols 1-2). No basis for any code.
+
+        Proposal restated as a literal value: blank (the paper does not classify drinking water).
+        Auditor's original proposal: blank (remove the drinking_water key; the paper does not classify this domain)
+      proposed: ''
+    sanitation:
+      value: F
+      status: confirmed
+      source: 'p. 752, 755 (Section II.B); online appendix p. 1 (Section A.1) and Table C1 Panel A (appendix not in the published PDF; appendix pages are to the 2023 WP: appendix p. 19, WP pdf p. 61)'
+      note: |-
+        What is measured: stated and revealed preference for a household toilet, from the SQUAT survey (rural
+        Bihar, UP, Haryana, MP, Rajasthan, Dec 2013-Apr 2014), not from this paper's reservation data. Table C1
+        Panel A: among toilet owners, women are 9.3 pp more likely to use it (0.0933***, col 1; 0.0940*** with
+        household FE, col 2). Among non-owners asked to rank items they would buy "if there is no lack of
+        money", women are more likely to name a toilet as top priority, 0.0507* (0.0300), col 3, but top-2
+        (0.0114) and top-3 (0.0215) are not significant. The paper states the conclusion: "women have a
+        stronger preference for a household toilet than men" (appendix p. 1), and also leans on cited work
+        (Coffey et al. 2014; Khanna & Das 2016; Stopnitzky 2017, p. 752). F follows, but note (a) the good is a
+        private household toilet, not public sanitation (drains, waste), and (b) the stated-preference gap is
+        significant only at 10% on one of three measures; the usage gap is the stronger evidence.
+summary:
+  sample:
+    value: 9,179 GPs
+    status: confirmed
+    source: p. 764, Table 1; p. 767, Table 3
+    note: |-
+      9,179 GPs is the estimation sample at the widest bandwidth (0.100), with 2,470,191 eligible households;
+      the narrower bandwidths use 7,234 and 5,277 GPs (Tables 1 and 3). The universe is "about 59,000 GPs" and
+      over 25 million rural households (p. 752). Consider "9,179 GPs near the RD cutoff (of about 59,000)".
+  location:
+    value: Uttar Pradesh
+    status: confirmed
+    source: p. 750-752
+    note: |-
+      Rural Uttar Pradesh. Mechanism evidence comes from elsewhere: SQUAT (5 north Indian states), REDS 2006
+      (all-India) and NFHS-4.
+  years:
+    value: 2013–18
+    status: mismatch
+    source: p. 758 (Section III.A), p. 759 (Section III.B), p. 762-763, Table C5 Panel B (online appendix)
+    note: |-
+      The election is the 2015 Sarpanch election (Nov-Dec 2015, p. 759) and the outcome is toilet receipt in
+      one year: "we focus on toilet construction in the year 2016-17" (p. 758). Toilet provision in 2013-14,
+      2014-15 and 2015-16 is used only for pre-election balance tests (p. 762; Table C5 Panel B). 2017-18
+      appears only in a data-quality comparison (p. 758). "2013-18" reads as a five-year outcome window.
+    proposed: 2015 election; outcome 2016-17 (pre-election checks 2013-14 to 2015-16)
+  kind_of_data_for_outcomes:
+    value: Administrative data
+    status: confirmed
+    source: p. 757-758 (Section III.A), p. 759 (Section III.B)
+    note: |-
+      Toilet data scraped from the official SBM website of the Ministry of Drinking Water and Sanitation
+      (pp. 757-758); election data from the UP State Election Commission (p. 759). Survey data (SQUAT, REDS, NFHS)
+      are used only for preference and mechanism evidence.
+  number_of_outcomes:
+    value: '1'
+    status: mismatch
+    source: Table 1 (p. 764), Table 4 (p. 772), Table C15 (online appendix; 2023 WP appendix p. 30, WP pdf p. 72)
+    note: |-
+      Counting rule used here: distinct dependent variables regressed on female reservation and reported in
+      the main text or in an appendix table that the cell itself cites. (1) household received a toilet in
+      2016-17 (Tables 1, 3, 5); (2) woman approached the Sarpanch about water/sewage, REDS 2006 (Table 4);
+      (3) NREGS expenditure per capita 2016-17 (Table C15). The results cell already reports (3), so '1' is
+      internally inconsistent. Balance and pre-period placebo outcomes (Table C5) are excluded. Note this is a
+      count of distinct outcomes, whereas Brown et al.'s 47 counts regression columns; the table needs one
+      rule. Under a column count this paper would be far larger (Tables 1, 3, 5, C9-C19 across 3 bandwidths).
+    proposed: '3'
+  outcomes:
+    value: Whether an eligible household received a toilet in 2016–17 under SBM
+    status: mismatch
+    source: p. 763 (eq. 1), Table 4 (p. 772), Table C15 (online appendix; 2023 WP pdf p. 72)
+    note: |-
+      The stated outcome is right for the main analysis (eq. 1, p. 763: "a dummy variable that takes a value of
+      1 if household h in GP g received a toilet during 2016-17 under the SBM"). Incomplete if the NREGS
+      placebo (which the results cell reports) and the REDS complaints outcome are to be counted.
+    proposed: Whether an eligible household received a toilet in 2016-17 under SBM; placebo outcome GP NREGS expenditure per capita in 2016-17 (Table C15); mechanism outcome whether women approached the Sarpanch about water/sewage problems (REDS 2006, Table 4)
+  results:
+    value: |-
+      “...there is no statistically significant average effect of the gender quota.” (pg. 765; see also Table 1 and Figure 2).
+
+      “For every 10 percentage point increase in Muslim population share in a GP, the quota effect increases by 3–5 percentage points. This is large considering that the average probability of toilet provision in 2016–17 was 10%.” (pg. 752; see also Table 3)
+
+      Table C15 uses per capita NREGS expenditure in 2016-17 as the outcome. Columns (1)-(3) show no average effect of female reservation on NREGS spending: coefficients range from 0.006 to 0.009, all insignificant.
+    status: corrected
+    source: p. 765 and Fig. 2 (p. 765); p. 752 and Table 3 (p. 767); Table C15 (online appendix; 2023 WP appendix p. 30, WP pdf p. 72)
+    note: |-
+      Quote 1 is verbatim from p. 765 ("They also demonstrate that there is no statistically significant
+      average effect of the gender quota"); Table 1 coefficients 0.0133 (0.0156), 0.0200 (0.0186), 0.0285
+      (0.0235). The paper frames the average as "positive but noisy", 13-28% of the control mean (p. 764).
+      Quote 2 was verbatim in the 2023 WP (p. 5) but the published wording on p. 752 differs: "For every 10
+      percentage point increase in Muslim population share in a GP, the quota effect increases by 3-5 percentage
+      points. This is large considering that the average probability of toilet provision in 2016-17 was 10%."
+      ("points" -> "point"; "considering the" -> "considering that the"). The value keeps the WP wording with the page
+      updated; the published wording is in proposed. Table C15 is in the online appendix, not in the
+      published PDF, so the C15 figures below are from the WP appendix and were not re-checked against
+      the published appendix. Table 3 interaction 0.292**, 0.403**, 0.539***. Table C15 checked on the
+      rendered page: cols 1-3 female reservation 0.00648 (0.0240), 0.00648 (0.0289), 0.00913 (0.0372), none
+      significant; units are thousands of rupees, control mean about 0.29-0.30. Cols 4-6 heterogeneity by
+      Muslim share 0.139, 0.141, 0.132, also insignificant. The cell omits that C15 is a placebo for leader
+      ability (appendix Section B.3), which is why the paper runs it; C15 uses 8,648 / 6,822 / 4,978 GPs.
+    previous: |-
+      “...there is no statistically significant average effect of the gender quota.” (pg. 21; see also Table 1 and Figure 2).
+
+      “For every 10 percentage points increase in Muslim population share in a GP, the quota effect increases by 3–5 percentage points. This is large considering the average probability of toilet provision in 2016–17 was 10%.” (pg. 5; see also Table 3)
+
+      Table C15 uses per capita NREGS expenditure in 2016-17 as the outcome. Columns (1)-(3) show no average effect of female reservation on NREGS spending: coefficients range from 0.006 to 0.009, all insignificant.
+    comment: |-
+      2026-10-24, switched to published version (EDCC 2025): page cites pg. 21 -> pg. 765 and pg. 5 -> pg. 752; quote 2 wording differs in the published version (see proposed)
+      2026-10-24, adopted published wording of the quote (copyedits only) with printed page.
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: none (one pre-specified primary outcome, toilet receipt, reported at three bandwidths; balance covariates and robustness outcomes tested one at a time)
+    source: Tables 1, 3; Table C5 (balance)
+    note: |-
+      No joint test, index, or corrected p-values anywhere (searched for Bonferroni, Romano-Wolf, FDR,
+      q-value, joint, Wald, index; the only "index" hit is an NFHS wealth index). The design limits the
+      problem because there is a single primary outcome. Balance on many Census covariates is shown column by
+      column: "We find that there is no discontinuity in these covariates at the threshold across all
+      bandwidths" (p. 762), with no joint F-test. The heterogeneity result is checked by many specifications
+      (Tables C9-C19) that are not treated as a family.
+audit_notes: |-
+  Version. The PDF is now the published article, "When Do Gender Quotas Change Policy? Evidence from
+  Household Toilet Provision in India", Economic Development and Cultural Change 73(2), January 2025,
+  pp. 749-779 (doi 10.1086/729342, as printed on the article's first page). Main-text page cites are printed
+  journal pages (printed page = pdf page + 748). Main-text Tables 1, 3 and 4 keep their numbers and the
+  coefficients cited here as in the September 2023 SSRN working paper (chaturvedi_das_mahajan_2023_wp.pdf). The
+  online appendix (Tables C1-C22) is not part of the published PDF; appendix cites (C1, C5, C9-C19, C15,
+  Sections A.1, B.3) are still to the 2023 WP appendix (appendix restarts at 1, so appendix p. 30 = WP pdf
+  p. 72). The published text cites C1, C5, C14, C15, C16 for the same content as the WP, but the appendix
+  itself was not re-checked.
+  Labels. Table 1 "Chaturvedi et al. (2025)" is right for the published article. Table 2 "Chatruverdi et
+  al. (2023)" is misspelled and uses the working-paper year; it should be "Chaturvedi et al. (2025)" to match
+  the bib, or the bib should cite the 2023 working paper. Same study, two different labels, is what a
+  referee will notice first.
+  Table 1 role. Only the sanitation code has support in this paper (SQUAT toilet usage and ranking, Table
+  C1); drinking_water F has none. And the good is a private household toilet, which may not map onto a
+  "Sanitation" column meant for public goods.
+  Design. Fuzzy RD on UP's rule-based reservation, not random rotation; the average quota effect is null and
+  the headline result is heterogeneity by Muslim share, identified by a difference-in-discontinuities. The
+  authors themselves concede they cannot rule out that Muslim share changes GP political dynamics (p. 769).

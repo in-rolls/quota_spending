@@ -1,0 +1,153 @@
+key: dufloTopolova2004
+label: Duflo & Topalova (2004)
+table2_label: Duflo and Topalova (2004)
+pdf: duflo_topalova_2004_wp.pdf
+pdf_version: working paper Oct 2004
+notes: null
+audit_notes: |-
+  Label misspells the second author. The PDF title page reads "Esther Duflo and
+  Petia Topalova", October 2004, "Unappreciated Service: Performance,
+  Perceptions, and Women Leaders in India". Both label and table2_label say
+  "Topolova"; they should say "Topalova". Check the bib entry spelling too.
+  The PDF is the October 2004 working paper, which matches pdf_version. All page
+  cites in this row are printed page numbers of that version and they check out.
+  Things a referee would catch:
+  (1) The design is a single cross-section (PAC Millennial Survey, fielded from the
+  end of 2000). The "years" cell reads like a panel; the ranges are the Pradhan
+  terms whose reservation status is used, not years of outcome data.
+  (2) The location cell lists only the eight states for which 2000-05
+  reservation status was available (fn 9, used for flow/quality measures). The
+  main sample uses 1995-2000 status from the 11 states in fn 6, which adds
+  Himachal Pradesh, Rajasthan and Uttar Pradesh. The paper itself is
+  inconsistent here ("available for seven states" followed by eight names).
+  (3) The quoted bribe sentence (p. 12) is the authors' text, but their own
+  Table 3 does not bear it out as stated. The pooled weighted average is
+  -0.015 (s.e. 0.010), male -0.026 (0.016), female -0.025 (0.016), none
+  significant at 5%. The police-bribe coefficient for men is +0.010 and the
+  medical-bribe coefficient for women is +0.005, so "for all types of bribes,
+  ... both men and women" is not literally true. Quoting it without that caveat
+  overstates the corruption finding.
+  (4) The satisfaction effect -0.020 (0.010) is borderline (t = 2.0).
+summary:
+  sample:
+    value: |-
+      810 villages for some analyses and 680 villages for other analyses
+
+      The number of GPs is unspecified.
+    status: confirmed
+    source: p. 10; Table 2 (p. 20 of PDF)
+    note: |-
+      p. 10 says "Our sample thus consists of approximately 810 villages when
+      analyzing household satisfaction and availability of public services, and
+      680 villages when analyzing the quality of public services." No GP count
+      is reported. Per-good Ns in Table 2 vary (quantity 633-810, quality
+      355-611 villages; satisfaction 741-7212 respondents).
+  location:
+    value: Andhra Pradesh, Karnataka, Kerala, Maharashtra, Orissa, Punjab, Tamil Nadu, West Bengal
+    status: mismatch
+    source: p. 9 fn 6; p. 10 and fn 9
+    note: |-
+      The listed states are fn 9, the states with 2000-05 reservation status,
+      which is used only for flow measures of quality. Main analyses use
+      1995-2000 status, collected for 11 states (fn 6): "The 11 states included
+      are Andhra Pradesh, Himachal Pradesh, Karnataka, Kerala, Maharashtra,
+      Orissa, Punjab, Rajasthan, Tamil Nadu, Uttar Pradesh and West Bengal."
+      p. 10 says "we used the 1995-2000 reservation status in all states", and
+      fn 7 discusses UP matching, so UP is in the sample. The paper does not
+      give a per-state count after matching, so the 11-state reading is the
+      paper's description, not a tabulation. Also note that water quantity
+      excludes HP, Kerala and Punjab (p. 8).
+    proposed: |-
+      Andhra Pradesh, Himachal Pradesh, Karnataka, Kerala, Maharashtra, Orissa, Punjab, Rajasthan, Tamil Nadu, Uttar Pradesh, West Bengal (quality/flow measures: the 8 states in fn 9 only)
+  years:
+    value: "1995–2000 \nFor all measures except flow measures\n\n2000–2005 for flow measures"
+    status: mismatch
+    source: pp. 9-10
+    note: |-
+      These are the Pradhan terms whose reservation status is the treatment,
+      not the years the outcomes were measured. The outcome data are one
+      cross-section. p. 9 says "As the Millennial Survey was conducted in the
+      end of 2000", and p. 10 says "The Millennial data was collected over a
+      period of several months, beginning in the end of 2000 ... we used the
+      1995-2000 reservation status in all states. However, for flow measures ...
+      we use the reservation status of the current Pradhan, i.e. during the
+      2000-2005 mandate."
+    proposed: |-
+      2000 (single cross-section, PAC Millennial Survey fielded from late 2000). Treatment = reservation in the 1995–2000 term; 2000–2005 term for flow measures of quality
+  kind_of_data_for_outcomes:
+    value: HH Survey + Independent site visits of select public facilities
+    status: confirmed
+    source: p. 8
+    note: |-
+      p. 8 says "The PAC data consist of three parts: a household survey, an
+      independent assessment of facilities available in each village, and a
+      village profile sheet", and "The household survey was complemented by
+      independent site visits, which included assessments of select public
+      facilities". The 1991 census is used only for the balance test (Table 1).
+  number_of_outcomes:
+    value: '23'
+    status: confirmed
+    source: Table 2 (pdf p. 20), Table 3 (pdf p. 21)
+    note: |-
+      Count = distinct dependent variables in the main results tables. Table 2
+      has 5 goods (water, education, transportation, fair price shops, public
+      health) x 3 measures (quantity, quality, satisfaction) = 15, plus 3
+      weighted averages = 18. Table 3 has 4 bribe variables (public tap, ration
+      card, police, medical) + 1 weighted average = 5. Total 23. Men/women splits
+      and the individual-controls columns are not counted separately. Table 4
+      (satisfaction on quality/quantity interactions) is not counted because it
+      reuses the satisfaction outcomes. Excluding the 4 averages gives 19.
+  outcomes:
+    value: |-
+      Quantity, Quality, Satisfaction: Water, Education, Transportation, Fair Price Shops, Public Health Facilities, and Overall score
+
+      Corruption (Bribe for public tap, ration card, police, medical services, overall)
+    status: confirmed
+    source: Table 2 (pdf p. 20), Table 3 (pdf p. 21)
+    note: |-
+      Matches the rows and columns of Tables 2 and 3. "Overall score" is the
+      N-weighted average of the standardized coefficients (p. 11), not a
+      separately measured index.
+  results:
+    value: |-
+      “Overall, the average effect of reservation on the availability of public goods in a village is positive and significant (the coefficient is 0.078 standard deviations, with a standard error of 0.041). The average effect of the reservation on the quality of public goods is positive as well, but not significant (the coefficient is 0.016 standard deviations, with a standard error of 0.011).” (pg. 12; see also Table 2)
+
+      “For all types of bribes, respondents (both men and women) are less likely to report that they needed to pay a bribe to obtain a service when the GP is reserved for a woman than when it is not reserved.” (pg. 12; see also Table 3)
+
+      “respondents are less likely to declare that they are satisfied with the public goods they are receiving in villages with female Pradhans. On average, they are 2 percentage points less likely to be satisfied.” (pg. 12; see also Table 2 and 4)
+    status: confirmed
+    source: p. 12; Table 2 col 2, 4, 6; Table 3
+    note: |-
+      All three quotes are verbatim from printed p. 12, and the numbers match
+      Table 2 (0.078 (0.041), 0.016 (0.011), -0.020 (0.010)). The
+      satisfaction sentence cites "column 6 of table 2", and Table 4 is a
+      supporting decomposition. Caveat, not a transcription error: the bribe
+      sentence overstates the paper's own Table 3, where the weighted average is
+      -0.015 (0.010) and two sex-specific coefficients are positive (men,
+      police +0.010; women, medical +0.005). See audit_notes.
+  joint_tests:
+    value: ''
+    status: mismatch
+    proposed: |-
+      none
+    source: see multiple_testing
+    note: |-
+      Split out of multiple_testing; the audit found no joint significance test in the paper.
+  multiple_testing:
+    value: ''
+    status: mismatch
+    proposed: summary index (N-weighted average of standardized reservation effects across the 5 public goods, SEs from SUR; separately for quantity, quality, satisfaction and bribes)
+    source: p. 11; Table 2 panel A; Table 3 panel A
+    note: |-
+      p. 11 says "all the variables are expressed as standard deviations from
+      the mean of the distribution in the unreserved villages. A central
+      variable of interest is the average of these coefficients across all
+      goods", where beta-hat = (1/N) sum_k N_k beta-hat_k and "The standard error
+      for these averages is derived from the variance covariance matrix for the
+      5 coefficients obtained from jointly estimating the equations for the 5
+      public goods (see Katz, Kling and Liebman (2004))." The same is done for
+      the 4 bribe outcomes (Table 3 note b, "SUR framework"). Results are
+      quantity 0.078 (0.041), quality 0.016 (0.011), satisfaction -0.020
+      (0.010), and bribes -0.015 (0.010). There is no p-value correction for the
+      per-good coefficients. The only joint F-test is the 1991 balance test
+      (Table 1 note c, p = 0.68), which is not an outcome test.
