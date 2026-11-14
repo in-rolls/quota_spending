@@ -68,7 +68,7 @@ custom_stargazer(models,
   column.labels = unlist(unname(health_var)),
   add.lines = list(c("Covariates", rep("No", length(health_var)))),
   label = "up_shrug_health_05_10",
-  notes = paste(cons_term, "The outcomes are from the Mission Antyodya Facilities Survey from 2019. The village level outcomes have been aggregated to a GP level. The outcomes are:
+  notes = paste(cons_term, "The outcomes are from the Mission Antyodaya Facilities Survey from 2019. The village level outcomes have been aggregated to a GP level. The outcomes are:
                     (i) Primary Health Ctr.: Is there a primary health center?;
                     (ii) Community Health Ctr.: Is there a community health center?;
                     (iii) Maternal Health Ctr.: Is there a maternal health facility?;

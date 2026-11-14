@@ -75,7 +75,7 @@ custom_stargazer(models,
   column.labels = unlist(unname(children_var)),
   add.lines = list(c("Covariates", rep("No", length(children_var)))),
   label = "raj_shrug_children_05_10",
-  notes = paste(cons_term, "The outcomes are from the Mission Antyodya Survey from 2019.
+  notes = paste(cons_term, "The outcomes are from the Mission Antyodaya Survey from 2019.
                    The village level outcomes have been aggregated to a GP level. The outcomes are:
                     (i) Immunized: The number of 0--3 year old children who are immunized;
                     (ii) Underweight: The number of underweight children under 6;

@@ -82,7 +82,7 @@ custom_stargazer(models,
   label = "up_shrug_other_05_10",
   notes = paste(
     cons_term,
-    "The first three outcomes are from the Mission Antyodya Survey from
+    "The first three outcomes are from the Mission Antyodaya Survey from
     2019; housing shares are from SECC (2012). Counts are summed to GP
     level; shares use SECC household counts as weights. A GP housing
     share is missing if any linked village share is missing. The outcomes

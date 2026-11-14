@@ -4,7 +4,7 @@ library(dplyr)
 library(haven)
 library(here)
 
-source_dir <- Sys.getenv("CDM_DATA_DIR", here("../tolet/data"))
+source_dir <- Sys.getenv("CDM_DATA_DIR", here("../../tolet/data"))
 spending_columns <- as.vector(outer(
   c(
     "water_Labour_exp_Lakhs", "water_Material_exp_Lakhs",

@@ -75,12 +75,12 @@ custom_stargazer(models,
   column.labels = unlist(unname(children_var)),
   add.lines = list(c("Covariates", rep("No", length(children_var)))),
   label = "up_shrug_children_05_10",
-  notes = paste(cons_term, "The outcome variables are from Antyodya Survey from 2019.
+  notes = paste(cons_term, "The outcome variables are from Antyodaya Survey from 2019.
                    The village level outcomes have been aggregated to a GP level. The outcomes are:
                    (i) Immunized: Percent of 0--3 year old children who are immunized.
                    (ii) Underweight: Percent underweight children under 6.
                    (iii) Truant: Percent children not attending school.
-                   (iv) Anganwadi: Percent of children under 6 registered in Aanganwadis.
+                   (iv) Anganwadi: Percent of children under 6 registered in Anganwadis.
                    (v) SC/ST: Number of SC/ST/OBC/minority children getting scholarship."),
   out = here("tabs/shrug_up_05_10_children.tex")
 )

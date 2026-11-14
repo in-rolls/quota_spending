@@ -45,7 +45,7 @@ count_below_threshold <- p_values %>%
      summarize(count = sum(p_value < 0.05))
 
 custom_stargazer(list(rand_or_not, rand_or_not_fe, rand_or_not_p1),
-          title = "Predicting 2010 GP Reservation Status Using the 2005 Reservation Status in Rajastan.",
+          title = "Predicting 2010 GP Reservation Status Using the 2005 Reservation Status in Rajasthan.",
           covariate.labels = c("2005", "Constant"),
           column.labels = c("All", "With District FE", "Phase 1 and 2"),
           omit = "as\\.factor\\(dist_name_new_2010\\)",
