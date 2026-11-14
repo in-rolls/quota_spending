@@ -107,7 +107,7 @@ names for a separate near-term demand analysis; it does not establish national
 GP codes, unchanged boundaries or continuity with the Birbhum surveys.
 
 Sources: [Chattopadhyay–Duflo, NBER w8615](https://www.nber.org/system/files/working_papers/w8615/w8615.pdf),
-[Beaman public mirror](https://github.com/in-rolls/beaman), and
+[Beaman public mirror](https://github.com/in-rolls/quota_aspirations), and
 [estimatr inference documentation](https://declaredesign.org/r/estimatr/reference/lm_robust.html).
 
 Nadia raw subsets live in `data/nadia_raw/`; their original archive/Git

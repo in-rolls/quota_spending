@@ -165,13 +165,19 @@ https://mnregaweb4.nic.in/netnrega/SocialAuditFindings/SA-GPReport.aspx?page=S&l
 
 Don Green, Manu Singh, and Gaurav Sood
 
+<!-- adjacent:start -->
+
 ## 🔗 Adjacent Repositories
 
-- [in-rolls/mnrega_social](https://github.com/in-rolls/mnrega_social) — MNREGA Social Audit Data
-- [in-rolls/electoral_rolls_up_2023](https://github.com/in-rolls/electoral_rolls_up_2023)
-- [in-rolls/local_elections_kerala](https://github.com/in-rolls/local_elections_kerala) — Kerala Local Government Seat Reservation Data and Winner Attributes
-- [in-rolls/local_elections_up](https://github.com/in-rolls/local_elections_up) — UP Local Election Data --- GP and ULB. Seat reservation, winner, and candidates for some elections
-- [in-rolls/local_elections_bihar](https://github.com/in-rolls/local_elections_bihar) — Candidate Info. + Valid Votes Won by Cands. in the 2016 Bihar Panchayat Elections
+- [in-rolls/quota_elite_quality](https://github.com/in-rolls/quota_elite_quality) — Effect of Gender Quotas on Some Qualities of Elites
+- [in-rolls/quota_governance](https://github.com/in-rolls/quota_governance) — Women's political reservations and local governance in India
+- [in-rolls/quota_representation](https://github.com/in-rolls/quota_representation) — The Effect of Gender Quotas in Local Bodies on Women's Representation in Rural India
+- [in-rolls/quota_corruption](https://github.com/in-rolls/quota_corruption) — Women’s seat reservations and corruption in rural India: published bribery evidence and SEPRI survey analysis.
+- [in-rolls/quota_sanitation](https://github.com/in-rolls/quota_sanitation) — Replication and analysis of gender quotas, sanitation preferences and toilet provision in India
+
+_Powered by [Adjacent](https://github.com/gojiplus/adjacent)_
+
+<!-- adjacent:end -->
 
 Rajasthan election sources and historical manual election linkages are consumed from a pinned commit of `local_elections_rajasthan`, with SHA-256 checks in `data/manifest.yaml`. Files resolve from the versioned cache, a sibling checkout, or the pinned GitHub source. The migration preserves source values and historical links; study-specific exclusions and election-to-outcome joins remain here. These Rajasthan manual-history inputs are a separate upstream vintage from the one-to-one panels used by `quota_representation`. They retain older link decisions and 2020 reservation values; sharing the provider does not make those panels interchangeable.
 
