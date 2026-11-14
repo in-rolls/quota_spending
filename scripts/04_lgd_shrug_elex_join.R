@@ -33,10 +33,12 @@ census_keys <- semi_join(census_keys, census_2001, by = "shrid2")
 
 for (state in c("raj", "up")) {
   state_id <- if (state == "raj") "08" else "09"
-  lgd <- read_csv(
-    here("data/lgd", paste0(state, "_village_gp_mapping_2024.csv")),
-    col_types = cols(.default = col_character())
-  ) |>
+  lgd_file <- if (state == "raj") {
+    raj_path("data/reference/geography/raj_village_gp_mapping_2024.csv")
+  } else {
+    sibling_path("data/external/lgd/up_village_gp_mapping_2024.csv")
+  }
+  lgd <- read_csv(lgd_file, col_types = cols(.default = col_character())) |>
     clean_names() |>
     mutate(
       district_key = normalize_string(district_name),
@@ -92,30 +94,25 @@ for (state in c("raj", "up")) {
   write_parquet(geography, here("data", state, "shrug_lgd_geography.parquet"))
 
   if (state == "raj") {
-    elections <- read_parquet(here("data/raj/elex_raj_05_10.parquet"))
-    subdistricts <- read_csv(
-      here("data/raj/elex_lgd_crosswalk.csv"),
-      col_types = cols(.default = col_character())
-    ) |>
-      filter(type == "subdistrict", !is.na(elex_area)) |>
-      select(elex_area, lgd_area)
-    elections <- elections |>
-      left_join(subdistricts,
-        by = c("samiti_name_new_2010" = "elex_area"),
-        relationship = "many-to-one"
-      ) |>
+    # Rajasthan's election-to-LGD links are built and reviewed in the state repository.
+    elections <- read_parquet(here("data/raj/elex_raj_05_10.parquet")) |>
       mutate(
         election_id = key_2010,
-        valid_election = if_all(
-          c(dist_name_new_2010, lgd_area, gp_new_2010),
-          ~ !is.na(.x) & str_trim(.x) != ""
-        ),
-        district_key = normalize_string(dist_name_new_2010),
-        election_name = str_remove_all(
-          normalize_string(str_c(dist_name_new_2010, lgd_area, gp_new_2010)),
-          " "
-        )
+        district_key = dist_name_new_2010,
+        election_name = match_name
       )
+    matched <- elections |>
+      inner_join(
+        read_parquet(raj_path("data/release/linkage/gp_lgd_crosswalk.parquet")),
+        by = "match_key", relationship = "one-to-one"
+      ) |>
+      transmute(
+        election_id,
+        local_body_code = as.character(as.integer(lgd_gp_code)),
+        dist_elex_lgd_match = match_distance,
+        match_status = match_type
+      )
+    unmatched_status <- "no_state_link"
   } else {
     elections <- read_parquet(here("data/up/up_05_10.parquet")) |>
       mutate(
@@ -136,34 +133,38 @@ for (state in c("raj", "up")) {
   stopifnot(
     !anyDuplicated(elections$election_id), !anyNA(elections$election_id)
   )
-  eligible_elections <- elections |>
-    filter(
-      valid_election, !is.na(election_name), election_name != "",
-      !is.na(district_key),
-      !is.na(female_res_2005), !is.na(female_res_2010)
-    )
-  links <- eligible_elections |>
-    group_split(district_key) |>
-    map(function(district_elections) {
-      catalog <- filter(
-        gp_catalog, district_key == unique(district_elections$district_key)
+  if (state == "up") {
+    eligible_elections <- elections |>
+      filter(
+        valid_election, !is.na(election_name), election_name != "",
+        !is.na(district_key),
+        !is.na(female_res_2005), !is.na(female_res_2010)
       )
-      match_panchayats(district_elections, catalog)
-    }) |>
-    list_rbind()
+    matched <- eligible_elections |>
+      group_split(district_key) |>
+      map(function(district_elections) {
+        catalog <- filter(
+          gp_catalog, district_key == unique(district_elections$district_key)
+        )
+        match_panchayats(district_elections, catalog)
+      }) |>
+      list_rbind()
+    unmatched_status <- "missing_election_fields"
+  }
+  accepted_status <- c("exact", "fuzzy", "exact_other_block")
   links <- elections |>
     select(
       election_id, key_2005, district_key, election_name,
       female_res_2005, female_res_2010
     ) |>
-    left_join(links, by = "election_id", relationship = "one-to-many") |>
+    left_join(matched, by = "election_id", relationship = "one-to-many") |>
     mutate(
-      match_status = coalesce(match_status, "missing_election_fields"),
+      match_status = coalesce(match_status, unmatched_status),
       match_status = case_when(
-        match_status %in% c("exact", "fuzzy") &
+        match_status %in% accepted_status &
           local_body_code %in% unresolved_gps$local_body_code ~
           "unresolved_geography",
-        match_status %in% c("exact", "fuzzy") &
+        match_status %in% accepted_status &
           !local_body_code %in% gp_villages$local_body_code ~
           "no_census_2001_mapping",
         TRUE ~ match_status
@@ -178,7 +179,7 @@ for (state in c("raj", "up")) {
   print(coverage, n = Inf)
 
   accepted <- links |>
-    filter(match_status %in% c("exact", "fuzzy")) |>
+    filter(match_status %in% accepted_status) |>
     select(election_id, local_body_code, dist_elex_lgd_match, match_status)
   stopifnot(
     !anyDuplicated(accepted$election_id),

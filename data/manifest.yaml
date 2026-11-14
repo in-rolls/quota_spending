@@ -13,23 +13,23 @@ cache_dir: ~/data
 upstream:
   local_elections_rajasthan:
     repo: in-rolls/local_elections_rajasthan
-    ref: b543c4759519dd44682fbd278d81bdccaa152e99
+    ref: 854c415c9a4bf3beef393c170419b1bf8f41b189
     raw: https://raw.githubusercontent.com/in-rolls/local_elections_rajasthan
     sibling: ../local_elections_rajasthan
     files:
-      data/source/sarpanch/sarpanch_2005.csv: 642c992acc6aa6f81dcfdfbe630a71b017aff551736c435e3ac839bbd85e2c92
-      data/source/sarpanch/sarpanch_2010.csv: 84c9ed22680e75ac5e06f05fcc93e57bc38cc6d835e5cb22887e9d5f982089db
-      data/source/sarpanch/sarpanch_2015.csv: cffa013832efa807b67ee8fe6d42ef4511a3d29f2e48243e1af8707ffeaf7c79
-      data/source/sarpanch/sarpanch_2015_manual_sex.csv: 4b787ccd8115cbdf4edcf22ae38aa2b7b02e8e9be48dd3e6c696e69965901cc0
-      data/source/sarpanch/sarpanch_2020_clean.csv: 0f13bc76ea6d5203a55bb42d858fc832852136f18afd0cc7baf6fd66422f0449
-      data/source/sarpanch/sp_2005_2010_manually_reviewed.csv: 05257b7240f04498ee5a2322decc2a16a3a97fb2212e5cfb93db13730a6ee04b
-      data/source/sarpanch/sp_05_10_15_20_best_manual.csv: a7eee0ce69fe8536e6db682c4ac62522b633833ac79ceee51eb7d0f11fb0d395
+      data/release/linkage/gp_lgd_crosswalk.parquet: 3a30702011c86c2227542082f4dd44b83068d685d547de55736cbbebc27e0e40
+      data/release/linkage/sarpanch_2005_2010.parquet: 3507238fa021529cb2e79939df6f3a9662ef6989d78d44b65048421ba32b7a29
+      data/release/linkage/sarpanch_2005_2020.parquet: a12d693532f2c42fd5bb6390a11633d3b682004bb838852300f7029fe2bbe406
+      data/release/linkage/sarpanch_lgd.parquet: 55920c4dc5843f6e8521a00c66482ce2f129c47e60b1f04bdbecb6c8067d0517
+      data/release/sarpanch_source_records.parquet: 0b1c9997f26b4ad0fe62aa639d9692b24cb117dbfda73f7002b4dd5a4e40c855
+      data/reference/geography/raj_village_gp_mapping_2024.csv: 469888c02b619802be44933fdb9a4a14e4c921c46712d6d4f15f83dc784342b6
   local_elections_up:
     repo: in-rolls/local_elections_up
     ref: 3ef1d56f278a2ca98a2b9a61027c130781fb236f
     raw: https://raw.githubusercontent.com/in-rolls/local_elections_up
     sibling: ../local_elections_up
     files:
+      data/external/lgd/up_village_gp_mapping_2024.csv: 01ce35bbaed75b94dc4b8272e31ad986eb1527dd30f7cc7ce0114f462acbb344
       data/release/panels/gp_adjacent_links.parquet: 16e7f28ebd926b2db6b0cecd0f767ab7335b63429a95dcb0dac25526f54df5e9
       data/release/panels/gp_four_election_links.parquet: af379f5a584dffdcd8062d48c39c697c5dda4ab198632eb973f409b3623733b7
       data/release/panels/gp_panel_2005_2010.parquet: 95b7578b6165206fdf3e8adfa1cdd201443ad424f5399fa907774521dbdf9af0

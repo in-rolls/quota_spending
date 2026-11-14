@@ -13,9 +13,7 @@ library(fuzzyjoin)
 source(here("scripts/00_utils.R"))
 
 # Let's load elex data
-elex_raj_10 <- read_csv(raj_path("data/source/sarpanch/sarpanch_2010.csv"))
-elex_raj_15 <- read_csv(raj_path("data/source/sarpanch/sarpanch_2015.csv"))
-elex_raj_20 <- read_csv(raj_path("data/source/sarpanch/sarpanch_2020_clean.csv"))
+elex_raj <- read_parquet(raj_path("data/release/sarpanch_source_records.parquet"))
 
 elex_raj_05_10 <- read_parquet(here("data/raj/elex_raj_05_10.parquet"))
 elex_raj_05_20 <- read_parquet(here("data/raj/elex_raj_05_20.parquet"))
@@ -26,42 +24,22 @@ elex_raj_05_20 <- read_parquet(here("data/raj/elex_raj_05_20.parquet"))
 # Options = 1-many match or this may reflect Gehlot's 2023 announcement of 19 new districts
 elex_mnrega_ps_block <- read_csv(here("data/raj/elex_mnrega_ps_block_crosswalk.csv"))
 
+mnrega_match_name <- function(data, district, samiti, gp) {
+     data %>%
+          left_join(elex_mnrega_ps_block, by = setNames(c("district_std", "samiti_std"), c(district, samiti))) %>%
+          mutate(match_name = normalize_string(gsub(" ", "", paste0(.data[[district]], mnrega_block_name, .data[[gp]])))) %>%
+          filter(!is.na(mnrega_block_name)) %>%
+          filter(!match_name %in% match_name[duplicated(match_name)])
+}
+
 # Year wise
-elex_raj_10_r <- elex_raj_10 %>%
-     mutate(samiti_name_new = tolower(samiti_name_new)) %>%
-     left_join(elex_mnrega_ps_block, by = c("samiti_name_new" = "elex_samiti_name")) %>%
-     mutate(match_name = normalize_string(gsub(" ", "", paste0(dist_name_new, mnrega_block_name, gp_new)))) %>%
-     filter(!is.na(mnrega_block_name)) %>%
-     filter(!match_name %in% match_name[duplicated(match_name)])
-
-elex_raj_15_r <- elex_raj_15 %>%
-     mutate(samiti_name_new = tolower(samiti_name_new)) %>%
-     left_join(elex_mnrega_ps_block, by = c("samiti_name_new" = "elex_samiti_name")) %>%
-     mutate(match_name = normalize_string(gsub(" ", "", paste0(dist_name_new, mnrega_block_name, gp_new)))) %>%
-     filter(!is.na(mnrega_block_name)) %>%
-     filter(!match_name %in% match_name[duplicated(match_name)])
-
-elex_raj_20_r <- elex_raj_20 %>%
-     mutate(samiti_name_new = tolower(PanchayatSamiti)) %>%
-     left_join(elex_mnrega_ps_block, by = c("samiti_name_new" = "elex_samiti_name")) %>%
-     mutate(match_name = normalize_string(gsub(" ", "", paste0(District, mnrega_block_name, NameOfGramPanchyat)))) %>%
-     filter(!is.na(mnrega_block_name)) %>%
-     filter(!match_name %in% match_name[duplicated(match_name)])
+elex_raj_10_r <- elex_raj %>% filter(year == 2010) %>% mnrega_match_name("district_std", "samiti_std", "gp_std")
+elex_raj_15_r <- elex_raj %>% filter(year == 2015) %>% mnrega_match_name("district_std", "samiti_std", "gp_std")
+elex_raj_20_r <- elex_raj %>% filter(year == 2020) %>% mnrega_match_name("district_std", "samiti_std", "gp_std")
 
 # Multi-year
-elex_raj_05_10_r <- elex_raj_05_10 %>%
-     mutate(samiti_name_new_2010 = tolower(samiti_name_new_2010)) %>%
-     left_join(elex_mnrega_ps_block, by = c("samiti_name_new_2010" = "elex_samiti_name")) %>%
-     mutate(match_name = normalize_string(gsub(" ", "", paste0(dist_name_new_2010, mnrega_block_name, gp_new_2010)))) %>%
-     filter(!is.na(mnrega_block_name)) %>%
-     filter(!match_name %in% match_name[duplicated(match_name)])
-
-elex_raj_05_20_r <- elex_raj_05_20 %>%
-     mutate(samiti_name_new_2010 = tolower(samiti_name_new_2010)) %>%
-     left_join(elex_mnrega_ps_block, by = c("samiti_name_new_2010" = "elex_samiti_name")) %>%
-     mutate(match_name = normalize_string(gsub(" ", "", paste0(dist_name_new_2010, mnrega_block_name, gp_new_2010)))) %>%
-     filter(!is.na(mnrega_block_name)) %>%
-     filter(!match_name %in% match_name[duplicated(match_name)])
+elex_raj_05_10_r <- elex_raj_05_10 %>% mnrega_match_name("district_std_2010", "samiti_std_2010", "gp_std_2010")
+elex_raj_05_20_r <- elex_raj_05_20 %>% mnrega_match_name("district_std_2010", "samiti_std_2010", "gp_std_2010")
 
 # Load dat
 mnrega_r1 <- read_parquet(here("data/mnrega/mnrega_r1.parquet"))
@@ -85,7 +63,10 @@ mnrega_raj <- mnrega_raj %>%
      mutate(
           district = tolower(district),
           district = case_when(
-               district == "sawai madhopur" ~ "sawaimadhopur",
+               district == "chittorgarh" ~ "chittaurgarh",
+               district == "dholpur" ~ "dhaulpur",
+               district == "jalore" ~ "jalor",
+               district == "jhunjhunu" ~ "jhunjhunun",
                district == "sri ganganagar" ~ "ganganagar",
                TRUE ~ district
           )
