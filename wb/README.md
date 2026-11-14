@@ -23,7 +23,7 @@ and [audit](NADIA_AUDIT.md).
 ## Broader source availability
 
 The Birbhum and Nadia exercises address different outcomes and were not chosen
-under an exhaustive statewide sampling rule. The [WB source availability audit](../../local_elections/data/wb/vintage_search/head_outcome_availability.md)
+under an exhaustive statewide sampling rule. The [WB source availability audit](../../local_elections/data/west_bengal/discovery/vintage_search/head_outcome_availability.md)
 now inventories the acquired research and official records and a substantial
 six-district election-package lead. That package is the next acquisition
 priority for the sibling `quota_representation` persistence question; its metadata counts
@@ -46,7 +46,7 @@ Rscript --vanilla wb/tests/run_tests.R
 
 `--prepare-only` runs source preparation and data contracts without estimation.
 The scripts locate their own folder, so they also work from other directories.
-By default the raw sources are read from the sibling `../local_elections`.
+By default the raw sources are read from the `../../local_elections` repository.
 Set `WB_LOCAL_ELECTIONS` to override that path. No network download runs during
 analysis. Every raw source must match [source_manifest.csv](source_manifest.csv).
 

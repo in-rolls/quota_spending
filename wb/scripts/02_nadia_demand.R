@@ -58,7 +58,10 @@ wb_nadia_verify_pdf <- function(rows, source_root) {
   sources <- unique(rows[c("source_path", "source_sha256")])
   for (i in seq_len(nrow(sources))) {
     if (digest::digest(
-      file = file.path(source_root, sources$source_path[i]),
+      file = file.path(
+        source_root, "data/west_bengal/discovery/gp_source_search/historical_expansion",
+        basename(sources$source_path[i])
+      ),
       algo = "sha256"
     ) != sources$source_sha256[i]) {
       stop("Nadia PDF checksum mismatch")

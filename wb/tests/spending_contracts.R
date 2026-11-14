@@ -18,7 +18,7 @@ wb_test_spending_synthetic <- function() {
 wb_test_spending_contracts <- function(result, source_root) {
   panel <- result$panel
   audit <- result$audit
-  checks <- jsonlite::fromJSON(file.path(source_root, "data/wb/derived/pradhan_gp/checks.json"))
+  checks <- jsonlite::fromJSON(file.path(source_root, "data/west_bengal/release/pradhan_gp/checks.json"))
 
   # every reserved GP is in every fiscal year of its term, or its absence is recorded
   stopifnot(all(audit$in_r6 | nzchar(audit$exclusion_reason)))
